@@ -1,0 +1,18 @@
+Using Fungus:
+
+1) Create a flowchart (Tools > Fungus > Create > Flowchart)
+2) To open up the flowchart window click on the flowchart in the hierachy and find the button in the inspector that says "Flowchart Window". OR 
+Tools > Fungus > Flowchart Window.
+3) To add a command i.e make it say "hello world" on start up - click the default box given to you for the start of the game (in the flowchart) and 
+in the inspector click "commands" and add a "say" command (by clicking the plus symbol, going down to narrative and choosing say). 
+* You can add several lines of speech etc to one box in the same way. 
+4) To add a choice you do the same thing as above by going into narrative and then choosing a menu instead.
+5) You will need to add extra boxes for the conversation direction to start going if a certain choice is made. - To add more choices you add more menus and more blocks
+for the conversation to move to if that choice is selected.
+* You can drag boxes to rearragne them and organise them. - You can also zoom out using a scrollbar on the flowchart window.
+6)If you need more than one flowchart to keep it cleaner - you can use the "call" command on a box to call a box from another flowchart. (If you make more than one flowchart
+make sure to turn off all the game starting boxs' except the one you want the game to start on - otherwise they conflict).
+
+EVENTS
+
+(You can add things such as camera shake and audio to play when certain dialogue is said but I already know how to do this so ask and I can show you).

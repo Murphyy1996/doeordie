@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: ffefc2e6c14946343867ff8034934d42
+timeCreated: 1521549399
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: goon_01:goon_01:polySurface7
+    100004: Goon_Right:Character1_Ctrl_ChestEndEffector
+    100006: Goon_Right:Character1_Ctrl_ChestOriginEffector
+    100008: Goon_Right:Character1_Ctrl_Head
+    100010: Goon_Right:Character1_Ctrl_HeadEffector
+    100012: Goon_Right:Character1_Ctrl_Hips
+    100014: Goon_Right:Character1_Ctrl_HipsEffector
+    100016: Goon_Right:Character1_Ctrl_LeftAnkleEffector
+    100018: Goon_Right:Character1_Ctrl_LeftArm
+    100020: Goon_Right:Character1_Ctrl_LeftElbowEffector
+    100022: Goon_Right:Character1_Ctrl_LeftFoot
+    100024: Goon_Right:Character1_Ctrl_LeftFootEffector
+    100026: Goon_Right:Character1_Ctrl_LeftForeArm
+    100028: Goon_Right:Character1_Ctrl_LeftHand
+    100030: Goon_Right:Character1_Ctrl_LeftHandIndex1
+    100032: Goon_Right:Character1_Ctrl_LeftHandIndex2
+    100034: Goon_Right:Character1_Ctrl_LeftHandIndex3
+    100036: Goon_Right:Character1_Ctrl_LeftHandIndex4
+    100038: Goon_Right:Character1_Ctrl_LeftHandIndexEffector
+    100040: Goon_Right:Character1_Ctrl_LeftHandMiddle1
+    100042: Goon_Right:Character1_Ctrl_LeftHandMiddle2
+    100044: Goon_Right:Character1_Ctrl_LeftHandMiddle3
+    100046: Goon_Right:Character1_Ctrl_LeftHandMiddle4
+    100048: Goon_Right:Character1_Ctrl_LeftHandMiddleEffector
+    100050: Goon_Right:Character1_Ctrl_LeftHandPinky1
+    100052: Goon_Right:Character1_Ctrl_LeftHandPinky2
+    100054: Goon_Right:Character1_Ctrl_LeftHandPinky3
+    100056: Goon_Right:Character1_Ctrl_LeftHandPinky4
+    100058: Goon_Right:Character1_Ctrl_LeftHandPinkyEffector
+    100060: Goon_Right:Character1_Ctrl_LeftHandRing1
+    100062: Goon_Right:Character1_Ctrl_LeftHandRing2
+    100064: Goon_Right:Character1_Ctrl_LeftHandRing3
+    100066: Goon_Right:Character1_Ctrl_LeftHandRing4
+    100068: Goon_Right:Character1_Ctrl_LeftHandRingEffector
+    100070: Goon_Right:Character1_Ctrl_LeftHandThumb1
+    100072: Goon_Right:Character1_Ctrl_LeftHandThumb2
+    100074: Goon_Right:Character1_Ctrl_LeftHandThumb3
+    100076: Goon_Right:Character1_Ctrl_LeftHandThumb4
+    100078: Goon_Right:Character1_Ctrl_LeftHandThumbEffector
+    100080: Goon_Right:Character1_Ctrl_LeftHipEffector
+    100082: Goon_Right:Character1_Ctrl_LeftKneeEffector
+    100084: Goon_Right:Character1_Ctrl_LeftLeg
+    100086: Goon_Right:Character1_Ctrl_LeftShoulder
+    100088: Goon_Right:Character1_Ctrl_LeftShoulderEffector
+    100090: Goon_Right:Character1_Ctrl_LeftToeBase
+    100092: Goon_Right:Character1_Ctrl_LeftUpLeg
+    100094: Goon_Right:Character1_Ctrl_LeftWristEffector
+    100096: Goon_Right:Character1_Ctrl_Neck
+    100098: Goon_Right:Character1_Ctrl_Reference
+    100100: Goon_Right:Character1_Ctrl_RightAnkleEffector
+    100102: Goon_Right:Character1_Ctrl_RightArm
+    100104: Goon_Right:Character1_Ctrl_RightElbowEffector
+    100106: Goon_Right:Character1_Ctrl_RightFoot
+    100108: Goon_Right:Character1_Ctrl_RightFootEffector
+    100110: Goon_Right:Character1_Ctrl_RightForeArm
+    100112: Goon_Right:Character1_Ctrl_RightHand
+    100114: Goon_Right:Character1_Ctrl_RightHandIndex1
+    100116: Goon_Right:Character1_Ctrl_RightHandIndex2
+    100118: Goon_Right:Character1_Ctrl_RightHandIndex3
+    100120: Goon_Right:Character1_Ctrl_RightHandIndex4
+    100122: Goon_Right:Character1_Ctrl_RightHandIndexEffector
+    100124: Goon_Right:Character1_Ctrl_RightHandMiddle1
+    100126: Goon_Right:Character1_Ctrl_RightHandMiddle2
+    100128: Goon_Right:Character1_Ctrl_RightHandMiddle3
+    100130: Goon_Right:Character1_Ctrl_RightHandMiddle4
+    100132: Goon_Right:Character1_Ctrl_RightHandMiddleEffector
+    100134: Goon_Right:Character1_Ctrl_RightHandPinky1
+    100136: Goon_Right:Character1_Ctrl_RightHandPinky2
+    100138: Goon_Right:Character1_Ctrl_RightHandPinky3
+    100140: Goon_Right:Character1_Ctrl_RightHandPinky4
+    100142: Goon_Right:Character1_Ctrl_RightHandPinkyEffector
+    100144: Goon_Right:Character1_Ctrl_RightHandRing1
+    100146: Goon_Right:Character1_Ctrl_RightHandRing2
+    100148: Goon_Right:Character1_Ctrl_RightHandRing3
+    100150: Goon_Right:Character1_Ctrl_RightHandRing4
+    100152: Goon_Right:Character1_Ctrl_RightHandRingEffector
+    100154: Goon_Right:Character1_Ctrl_RightHandThumb1
+    100156: Goon_Right:Character1_Ctrl_RightHandThumb2
+    100158: Goon_Right:Character1_Ctrl_RightHandThumb3
+    100160: Goon_Right:Character1_Ctrl_RightHandThumb4
+    100162: Goon_Right:Character1_Ctrl_RightHandThumbEffector
+    100164: Goon_Right:Character1_Ctrl_RightHipEffector
+    100166: Goon_Right:Character1_Ctrl_RightKneeEffector
+    100168: Goon_Right:Character1_Ctrl_RightLeg
+    100170: Goon_Right:Character1_Ctrl_RightShoulder
+    100172: Goon_Right:Character1_Ctrl_RightShoulderEffector
+    100174: Goon_Right:Character1_Ctrl_RightToeBase
+    100176: Goon_Right:Character1_Ctrl_RightUpLeg
+    100178: Goon_Right:Character1_Ctrl_RightWristEffector
+    100180: Goon_Right:Character1_Ctrl_Spine
+    100182: Goon_Right:Character1_Ctrl_Spine1
+    100184: Goon_Right:Character1_Ctrl_Spine2
+    100186: Goon_Right:Character1_Head
+    100188: Goon_Right:Character1_Hips
+    100190: Goon_Right:Character1_LeftArm
+    100192: Goon_Right:Character1_LeftFoot
+    100194: Goon_Right:Character1_LeftForeArm
+    100196: Goon_Right:Character1_LeftHand
+    100198: Goon_Right:Character1_LeftHandIndex1
+    100200: Goon_Right:Character1_LeftHandIndex2
+    100202: Goon_Right:Character1_LeftHandIndex3
+    100204: Goon_Right:Character1_LeftHandIndex4
+    100206: Goon_Right:Character1_LeftHandMiddle1
+    100208: Goon_Right:Character1_LeftHandMiddle2
+    100210: Goon_Right:Character1_LeftHandMiddle3
+    100212: Goon_Right:Character1_LeftHandMiddle4
+    100214: Goon_Right:Character1_LeftHandPinky1
+    100216: Goon_Right:Character1_LeftHandPinky2
+    100218: Goon_Right:Character1_LeftHandPinky3
+    100220: Goon_Right:Character1_LeftHandPinky4
+    100222: Goon_Right:Character1_LeftHandRing1
+    100224: Goon_Right:Character1_LeftHandRing2
+    100226: Goon_Right:Character1_LeftHandRing3
+    100228: Goon_Right:Character1_LeftHandRing4
+    100230: Goon_Right:Character1_LeftHandThumb1
+    100232: Goon_Right:Character1_LeftHandThumb2
+    100234: Goon_Right:Character1_LeftHandThumb3
+    100236: Goon_Right:Character1_LeftHandThumb4
+    100238: Goon_Right:Character1_LeftLeg
+    100240: Goon_Right:Character1_LeftShoulder
+    100242: Goon_Right:Character1_LeftToeBase
+    100244: Goon_Right:Character1_LeftUpLeg
+    100246: Goon_Right:Character1_Neck
+    100248: Goon_Right:Character1_Reference
+    100250: Goon_Right:Character1_RightArm
+    100252: Goon_Right:Character1_RightFoot
+    100254: Goon_Right:Character1_RightForeArm
+    100256: Goon_Right:Character1_RightHand
+    100258: Goon_Right:Character1_RightHandIndex1
+    100260: Goon_Right:Character1_RightHandIndex2
+    100262: Goon_Right:Character1_RightHandIndex3
+    100264: Goon_Right:Character1_RightHandIndex4
+    100266: Goon_Right:Character1_RightHandMiddle1
+    100268: Goon_Right:Character1_RightHandMiddle2
+    100270: Goon_Right:Character1_RightHandMiddle3
+    100272: Goon_Right:Character1_RightHandMiddle4
+    100274: Goon_Right:Character1_RightHandPinky1
+    100276: Goon_Right:Character1_RightHandPinky2
+    100278: Goon_Right:Character1_RightHandPinky3
+    100280: Goon_Right:Character1_RightHandPinky4
+    100282: Goon_Right:Character1_RightHandRing1
+    100284: Goon_Right:Character1_RightHandRing2
+    100286: Goon_Right:Character1_RightHandRing3
+    100288: Goon_Right:Character1_RightHandRing4
+    100290: Goon_Right:Character1_RightHandThumb1
+    100292: Goon_Right:Character1_RightHandThumb2
+    100294: Goon_Right:Character1_RightHandThumb3
+    100296: Goon_Right:Character1_RightHandThumb4
+    100298: Goon_Right:Character1_RightLeg
+    100300: Goon_Right:Character1_RightShoulder
+    100302: Goon_Right:Character1_RightToeBase
+    100304: Goon_Right:Character1_RightUpLeg
+    100306: Goon_Right:Character1_Spine
+    100308: Goon_Right:Character1_Spine1
+    100310: Goon_Right:Character1_Spine2
+    100312: Goon_Right:gun:pCone1
+    100314: Goon_Right:gun:pCube1
+    100316: Goon_Right:gun:pCylinder1
+    100318: Goon_Right:gun:pCylinder2
+    100320: Goon_Right:gun:polySurface13
+    100322: Goon_Right:gun:polySurface19
+    100324: Goon_Right:gun:polySurface21
+    100326: Goon_Right:gun:polySurface5
+    100328: Goon_Right:gun:polySurface6
+    100330: Goon_Right:gun:polySurface7
+    100332: Goon_Right:gun:polySurface8
+    100334: Goon_Right:gun:transform1
+    100336: Goon_Right:gun:transform10
+    100338: Goon_Right:gun:transform11
+    100340: Goon_Right:gun:transform2
+    100342: Goon_Right:gun:transform3
+    100344: Goon_Right:gun:transform4
+    100346: Goon_Right:gun:transform5
+    100348: Goon_Right:gun:transform6
+    100350: Goon_Right:gun:transform7
+    100352: Goon_Right:gun:transform8
+    100354: Goon_Right:gun:transform9
+    100356: Goon_Right:pCone1
+    100358: Goon_Right:pCube1
+    100360: Goon_Right:pCylinder1
+    100362: Goon_Right:pCylinder2
+    100364: Goon_Right:polySurface13
+    100366: Goon_Right:polySurface19
+    100368: Goon_Right:polySurface20
+    100370: Goon_Right:polySurface21
+    100372: Goon_Right:polySurface22
+    100374: Goon_Right:polySurface5
+    100376: Goon_Right:polySurface6
+    100378: Goon_Right:polySurface7
+    100380: Goon_Right:polySurface8
+    100382: Goon_Right:transform1
+    100384: Goon_Right:transform10
+    100386: Goon_Right:transform11
+    100388: Goon_Right:transform12
+    100390: Goon_Right:transform13
+    100392: Goon_Right:transform2
+    100394: Goon_Right:transform3
+    100396: Goon_Right:transform4
+    100398: Goon_Right:transform5
+    100400: Goon_Right:transform6
+    100402: Goon_Right:transform7
+    100404: Goon_Right:transform8
+    100406: Goon_Right:transform9
+    400000: //RootNode
+    400002: goon_01:goon_01:polySurface7
+    400004: Goon_Right:Character1_Ctrl_ChestEndEffector
+    400006: Goon_Right:Character1_Ctrl_ChestOriginEffector
+    400008: Goon_Right:Character1_Ctrl_Head
+    400010: Goon_Right:Character1_Ctrl_HeadEffector
+    400012: Goon_Right:Character1_Ctrl_Hips
+    400014: Goon_Right:Character1_Ctrl_HipsEffector
+    400016: Goon_Right:Character1_Ctrl_LeftAnkleEffector
+    400018: Goon_Right:Character1_Ctrl_LeftArm
+    400020: Goon_Right:Character1_Ctrl_LeftElbowEffector
+    400022: Goon_Right:Character1_Ctrl_LeftFoot
+    400024: Goon_Right:Character1_Ctrl_LeftFootEffector
+    400026: Goon_Right:Character1_Ctrl_LeftForeArm
+    400028: Goon_Right:Character1_Ctrl_LeftHand
+    400030: Goon_Right:Character1_Ctrl_LeftHandIndex1
+    400032: Goon_Right:Character1_Ctrl_LeftHandIndex2
+    400034: Goon_Right:Character1_Ctrl_LeftHandIndex3
+    400036: Goon_Right:Character1_Ctrl_LeftHandIndex4
+    400038: Goon_Right:Character1_Ctrl_LeftHandIndexEffector
+    400040: Goon_Right:Character1_Ctrl_LeftHandMiddle1
+    400042: Goon_Right:Character1_Ctrl_LeftHandMiddle2
+    400044: Goon_Right:Character1_Ctrl_LeftHandMiddle3
+    400046: Goon_Right:Character1_Ctrl_LeftHandMiddle4
+    400048: Goon_Right:Character1_Ctrl_LeftHandMiddleEffector
+    400050: Goon_Right:Character1_Ctrl_LeftHandPinky1
+    400052: Goon_Right:Character1_Ctrl_LeftHandPinky2
+    400054: Goon_Right:Character1_Ctrl_LeftHandPinky3
+    400056: Goon_Right:Character1_Ctrl_LeftHandPinky4
+    400058: Goon_Right:Character1_Ctrl_LeftHandPinkyEffector
+    400060: Goon_Right:Character1_Ctrl_LeftHandRing1
+    400062: Goon_Right:Character1_Ctrl_LeftHandRing2
+    400064: Goon_Right:Character1_Ctrl_LeftHandRing3
+    400066: Goon_Right:Character1_Ctrl_LeftHandRing4
+    400068: Goon_Right:Character1_Ctrl_LeftHandRingEffector
+    400070: Goon_Right:Character1_Ctrl_LeftHandThumb1
+    400072: Goon_Right:Character1_Ctrl_LeftHandThumb2
+    400074: Goon_Right:Character1_Ctrl_LeftHandThumb3
+    400076: Goon_Right:Character1_Ctrl_LeftHandThumb4
+    400078: Goon_Right:Character1_Ctrl_LeftHandThumbEffector
+    400080: Goon_Right:Character1_Ctrl_LeftHipEffector
+    400082: Goon_Right:Character1_Ctrl_LeftKneeEffector
+    400084: Goon_Right:Character1_Ctrl_LeftLeg
+    400086: Goon_Right:Character1_Ctrl_LeftShoulder
+    400088: Goon_Right:Character1_Ctrl_LeftShoulderEffector
+    400090: Goon_Right:Character1_Ctrl_LeftToeBase
+    400092: Goon_Right:Character1_Ctrl_LeftUpLeg
+    400094: Goon_Right:Character1_Ctrl_LeftWristEffector
+    400096: Goon_Right:Character1_Ctrl_Neck
+    400098: Goon_Right:Character1_Ctrl_Reference
+    400100: Goon_Right:Character1_Ctrl_RightAnkleEffector
+    400102: Goon_Right:Character1_Ctrl_RightArm
+    400104: Goon_Right:Character1_Ctrl_RightElbowEffector
+    400106: Goon_Right:Character1_Ctrl_RightFoot
+    400108: Goon_Right:Character1_Ctrl_RightFootEffector
+    400110: Goon_Right:Character1_Ctrl_RightForeArm
+    400112: Goon_Right:Character1_Ctrl_RightHand
+    400114: Goon_Right:Character1_Ctrl_RightHandIndex1
+    400116: Goon_Right:Character1_Ctrl_RightHandIndex2
+    400118: Goon_Right:Character1_Ctrl_RightHandIndex3
+    400120: Goon_Right:Character1_Ctrl_RightHandIndex4
+    400122: Goon_Right:Character1_Ctrl_RightHandIndexEffector
+    400124: Goon_Right:Character1_Ctrl_RightHandMiddle1
+    400126: Goon_Right:Character1_Ctrl_RightHandMiddle2
+    400128: Goon_Right:Character1_Ctrl_RightHandMiddle3
+    400130: Goon_Right:Character1_Ctrl_RightHandMiddle4
+    400132: Goon_Right:Character1_Ctrl_RightHandMiddleEffector
+    400134: Goon_Right:Character1_Ctrl_RightHandPinky1
+    400136: Goon_Right:Character1_Ctrl_RightHandPinky2
+    400138: Goon_Right:Character1_Ctrl_RightHandPinky3
+    400140: Goon_Right:Character1_Ctrl_RightHandPinky4
+    400142: Goon_Right:Character1_Ctrl_RightHandPinkyEffector
+    400144: Goon_Right:Character1_Ctrl_RightHandRing1
+    400146: Goon_Right:Character1_Ctrl_RightHandRing2
+    400148: Goon_Right:Character1_Ctrl_RightHandRing3
+    400150: Goon_Right:Character1_Ctrl_RightHandRing4
+    400152: Goon_Right:Character1_Ctrl_RightHandRingEffector
+    400154: Goon_Right:Character1_Ctrl_RightHandThumb1
+    400156: Goon_Right:Character1_Ctrl_RightHandThumb2
+    400158: Goon_Right:Character1_Ctrl_RightHandThumb3
+    400160: Goon_Right:Character1_Ctrl_RightHandThumb4
+    400162: Goon_Right:Character1_Ctrl_RightHandThumbEffector
+    400164: Goon_Right:Character1_Ctrl_RightHipEffector
+    400166: Goon_Right:Character1_Ctrl_RightKneeEffector
+    400168: Goon_Right:Character1_Ctrl_RightLeg
+    400170: Goon_Right:Character1_Ctrl_RightShoulder
+    400172: Goon_Right:Character1_Ctrl_RightShoulderEffector
+    400174: Goon_Right:Character1_Ctrl_RightToeBase
+    400176: Goon_Right:Character1_Ctrl_RightUpLeg
+    400178: Goon_Right:Character1_Ctrl_RightWristEffector
+    400180: Goon_Right:Character1_Ctrl_Spine
+    400182: Goon_Right:Character1_Ctrl_Spine1
+    400184: Goon_Right:Character1_Ctrl_Spine2
+    400186: Goon_Right:Character1_Head
+    400188: Goon_Right:Character1_Hips
+    400190: Goon_Right:Character1_LeftArm
+    400192: Goon_Right:Character1_LeftFoot
+    400194: Goon_Right:Character1_LeftForeArm
+    400196: Goon_Right:Character1_LeftHand
+    400198: Goon_Right:Character1_LeftHandIndex1
+    400200: Goon_Right:Character1_LeftHandIndex2
+    400202: Goon_Right:Character1_LeftHandIndex3
+    400204: Goon_Right:Character1_LeftHandIndex4
+    400206: Goon_Right:Character1_LeftHandMiddle1
+    400208: Goon_Right:Character1_LeftHandMiddle2
+    400210: Goon_Right:Character1_LeftHandMiddle3
+    400212: Goon_Right:Character1_LeftHandMiddle4
+    400214: Goon_Right:Character1_LeftHandPinky1
+    400216: Goon_Right:Character1_LeftHandPinky2
+    400218: Goon_Right:Character1_LeftHandPinky3
+    400220: Goon_Right:Character1_LeftHandPinky4
+    400222: Goon_Right:Character1_LeftHandRing1
+    400224: Goon_Right:Character1_LeftHandRing2
+    400226: Goon_Right:Character1_LeftHandRing3
+    400228: Goon_Right:Character1_LeftHandRing4
+    400230: Goon_Right:Character1_LeftHandThumb1
+    400232: Goon_Right:Character1_LeftHandThumb2
+    400234: Goon_Right:Character1_LeftHandThumb3
+    400236: Goon_Right:Character1_LeftHandThumb4
+    400238: Goon_Right:Character1_LeftLeg
+    400240: Goon_Right:Character1_LeftShoulder
+    400242: Goon_Right:Character1_LeftToeBase
+    400244: Goon_Right:Character1_LeftUpLeg
+    400246: Goon_Right:Character1_Neck
+    400248: Goon_Right:Character1_Reference
+    400250: Goon_Right:Character1_RightArm
+    400252: Goon_Right:Character1_RightFoot
+    400254: Goon_Right:Character1_RightForeArm
+    400256: Goon_Right:Character1_RightHand
+    400258: Goon_Right:Character1_RightHandIndex1
+    400260: Goon_Right:Character1_RightHandIndex2
+    400262: Goon_Right:Character1_RightHandIndex3
+    400264: Goon_Right:Character1_RightHandIndex4
+    400266: Goon_Right:Character1_RightHandMiddle1
+    400268: Goon_Right:Character1_RightHandMiddle2
+    400270: Goon_Right:Character1_RightHandMiddle3
+    400272: Goon_Right:Character1_RightHandMiddle4
+    400274: Goon_Right:Character1_RightHandPinky1
+    400276: Goon_Right:Character1_RightHandPinky2
+    400278: Goon_Right:Character1_RightHandPinky3
+    400280: Goon_Right:Character1_RightHandPinky4
+    400282: Goon_Right:Character1_RightHandRing1
+    400284: Goon_Right:Character1_RightHandRing2
+    400286: Goon_Right:Character1_RightHandRing3
+    400288: Goon_Right:Character1_RightHandRing4
+    400290: Goon_Right:Character1_RightHandThumb1
+    400292: Goon_Right:Character1_RightHandThumb2
+    400294: Goon_Right:Character1_RightHandThumb3
+    400296: Goon_Right:Character1_RightHandThumb4
+    400298: Goon_Right:Character1_RightLeg
+    400300: Goon_Right:Character1_RightShoulder
+    400302: Goon_Right:Character1_RightToeBase
+    400304: Goon_Right:Character1_RightUpLeg
+    400306: Goon_Right:Character1_Spine
+    400308: Goon_Right:Character1_Spine1
+    400310: Goon_Right:Character1_Spine2
+    400312: Goon_Right:gun:pCone1
+    400314: Goon_Right:gun:pCube1
+    400316: Goon_Right:gun:pCylinder1
+    400318: Goon_Right:gun:pCylinder2
+    400320: Goon_Right:gun:polySurface13
+    400322: Goon_Right:gun:polySurface19
+    400324: Goon_Right:gun:polySurface21
+    400326: Goon_Right:gun:polySurface5
+    400328: Goon_Right:gun:polySurface6
+    400330: Goon_Right:gun:polySurface7
+    400332: Goon_Right:gun:polySurface8
+    400334: Goon_Right:gun:transform1
+    400336: Goon_Right:gun:transform10
+    400338: Goon_Right:gun:transform11
+    400340: Goon_Right:gun:transform2
+    400342: Goon_Right:gun:transform3
+    400344: Goon_Right:gun:transform4
+    400346: Goon_Right:gun:transform5
+    400348: Goon_Right:gun:transform6
+    400350: Goon_Right:gun:transform7
+    400352: Goon_Right:gun:transform8
+    400354: Goon_Right:gun:transform9
+    400356: Goon_Right:pCone1
+    400358: Goon_Right:pCube1
+    400360: Goon_Right:pCylinder1
+    400362: Goon_Right:pCylinder2
+    400364: Goon_Right:polySurface13
+    400366: Goon_Right:polySurface19
+    400368: Goon_Right:polySurface20
+    400370: Goon_Right:polySurface21
+    400372: Goon_Right:polySurface22
+    400374: Goon_Right:polySurface5
+    400376: Goon_Right:polySurface6
+    400378: Goon_Right:polySurface7
+    400380: Goon_Right:polySurface8
+    400382: Goon_Right:transform1
+    400384: Goon_Right:transform10
+    400386: Goon_Right:transform11
+    400388: Goon_Right:transform12
+    400390: Goon_Right:transform13
+    400392: Goon_Right:transform2
+    400394: Goon_Right:transform3
+    400396: Goon_Right:transform4
+    400398: Goon_Right:transform5
+    400400: Goon_Right:transform6
+    400402: Goon_Right:transform7
+    400404: Goon_Right:transform8
+    400406: Goon_Right:transform9
+    4300000: goon_01:goon_01:polySurface7
+    7400000: Arm_Right
+    9500000: //RootNode
+    13700000: goon_01:goon_01:polySurface7
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Arm_Right
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: goon_01:goon_01:polySurface7
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_LeftUpLeg/Goon_Right:Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_LeftUpLeg/Goon_Right:Character1_Ctrl_LeftLeg/Goon_Right:Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_LeftUpLeg/Goon_Right:Character1_Ctrl_LeftLeg/Goon_Right:Character1_Ctrl_LeftFoot/Goon_Right:Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_RightUpLeg/Goon_Right:Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_RightUpLeg/Goon_Right:Character1_Ctrl_RightLeg/Goon_Right:Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_RightUpLeg/Goon_Right:Character1_Ctrl_RightLeg/Goon_Right:Character1_Ctrl_RightFoot/Goon_Right:Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandIndex1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandIndex1/Goon_Right:Character1_Ctrl_LeftHandIndex2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandIndex1/Goon_Right:Character1_Ctrl_LeftHandIndex2/Goon_Right:Character1_Ctrl_LeftHandIndex3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandIndex1/Goon_Right:Character1_Ctrl_LeftHandIndex2/Goon_Right:Character1_Ctrl_LeftHandIndex3/Goon_Right:Character1_Ctrl_LeftHandIndex4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandMiddle1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandMiddle1/Goon_Right:Character1_Ctrl_LeftHandMiddle2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandMiddle1/Goon_Right:Character1_Ctrl_LeftHandMiddle2/Goon_Right:Character1_Ctrl_LeftHandMiddle3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandMiddle1/Goon_Right:Character1_Ctrl_LeftHandMiddle2/Goon_Right:Character1_Ctrl_LeftHandMiddle3/Goon_Right:Character1_Ctrl_LeftHandMiddle4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandPinky1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandPinky1/Goon_Right:Character1_Ctrl_LeftHandPinky2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandPinky1/Goon_Right:Character1_Ctrl_LeftHandPinky2/Goon_Right:Character1_Ctrl_LeftHandPinky3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandPinky1/Goon_Right:Character1_Ctrl_LeftHandPinky2/Goon_Right:Character1_Ctrl_LeftHandPinky3/Goon_Right:Character1_Ctrl_LeftHandPinky4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandRing1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandRing1/Goon_Right:Character1_Ctrl_LeftHandRing2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandRing1/Goon_Right:Character1_Ctrl_LeftHandRing2/Goon_Right:Character1_Ctrl_LeftHandRing3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandRing1/Goon_Right:Character1_Ctrl_LeftHandRing2/Goon_Right:Character1_Ctrl_LeftHandRing3/Goon_Right:Character1_Ctrl_LeftHandRing4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandThumb1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandThumb1/Goon_Right:Character1_Ctrl_LeftHandThumb2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandThumb1/Goon_Right:Character1_Ctrl_LeftHandThumb2/Goon_Right:Character1_Ctrl_LeftHandThumb3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_LeftShoulder/Goon_Right:Character1_Ctrl_LeftArm/Goon_Right:Character1_Ctrl_LeftForeArm/Goon_Right:Character1_Ctrl_LeftHand/Goon_Right:Character1_Ctrl_LeftHandThumb1/Goon_Right:Character1_Ctrl_LeftHandThumb2/Goon_Right:Character1_Ctrl_LeftHandThumb3/Goon_Right:Character1_Ctrl_LeftHandThumb4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_Neck
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_Neck/Goon_Right:Character1_Ctrl_Head
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandIndex1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandIndex1/Goon_Right:Character1_Ctrl_RightHandIndex2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandIndex1/Goon_Right:Character1_Ctrl_RightHandIndex2/Goon_Right:Character1_Ctrl_RightHandIndex3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandIndex1/Goon_Right:Character1_Ctrl_RightHandIndex2/Goon_Right:Character1_Ctrl_RightHandIndex3/Goon_Right:Character1_Ctrl_RightHandIndex4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandMiddle1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandMiddle1/Goon_Right:Character1_Ctrl_RightHandMiddle2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandMiddle1/Goon_Right:Character1_Ctrl_RightHandMiddle2/Goon_Right:Character1_Ctrl_RightHandMiddle3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandMiddle1/Goon_Right:Character1_Ctrl_RightHandMiddle2/Goon_Right:Character1_Ctrl_RightHandMiddle3/Goon_Right:Character1_Ctrl_RightHandMiddle4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandPinky1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandPinky1/Goon_Right:Character1_Ctrl_RightHandPinky2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandPinky1/Goon_Right:Character1_Ctrl_RightHandPinky2/Goon_Right:Character1_Ctrl_RightHandPinky3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandPinky1/Goon_Right:Character1_Ctrl_RightHandPinky2/Goon_Right:Character1_Ctrl_RightHandPinky3/Goon_Right:Character1_Ctrl_RightHandPinky4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandRing1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandRing1/Goon_Right:Character1_Ctrl_RightHandRing2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandRing1/Goon_Right:Character1_Ctrl_RightHandRing2/Goon_Right:Character1_Ctrl_RightHandRing3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandRing1/Goon_Right:Character1_Ctrl_RightHandRing2/Goon_Right:Character1_Ctrl_RightHandRing3/Goon_Right:Character1_Ctrl_RightHandRing4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandThumb1
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandThumb1/Goon_Right:Character1_Ctrl_RightHandThumb2
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandThumb1/Goon_Right:Character1_Ctrl_RightHandThumb2/Goon_Right:Character1_Ctrl_RightHandThumb3
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_Hips/Goon_Right:Character1_Ctrl_Spine/Goon_Right:Character1_Ctrl_Spine1/Goon_Right:Character1_Ctrl_Spine2/Goon_Right:Character1_Ctrl_RightShoulder/Goon_Right:Character1_Ctrl_RightArm/Goon_Right:Character1_Ctrl_RightForeArm/Goon_Right:Character1_Ctrl_RightHand/Goon_Right:Character1_Ctrl_RightHandThumb1/Goon_Right:Character1_Ctrl_RightHandThumb2/Goon_Right:Character1_Ctrl_RightHandThumb3/Goon_Right:Character1_Ctrl_RightHandThumb4
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHandIndexEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHandMiddleEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHandPinkyEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHandRingEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHandThumbEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHandIndexEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHandMiddleEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHandPinkyEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHandRingEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHandThumbEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Goon_Right:Character1_Ctrl_Reference/Goon_Right:Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Goon_Right:Character1_Reference
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_LeftUpLeg
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_LeftUpLeg/Goon_Right:Character1_LeftLeg
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_LeftUpLeg/Goon_Right:Character1_LeftLeg/Goon_Right:Character1_LeftFoot
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_LeftUpLeg/Goon_Right:Character1_LeftLeg/Goon_Right:Character1_LeftFoot/Goon_Right:Character1_LeftToeBase
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_RightUpLeg
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_RightUpLeg/Goon_Right:Character1_RightLeg
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_RightUpLeg/Goon_Right:Character1_RightLeg/Goon_Right:Character1_RightFoot
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_RightUpLeg/Goon_Right:Character1_RightLeg/Goon_Right:Character1_RightFoot/Goon_Right:Character1_RightToeBase
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandIndex1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandIndex1/Goon_Right:Character1_LeftHandIndex2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandIndex1/Goon_Right:Character1_LeftHandIndex2/Goon_Right:Character1_LeftHandIndex3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandIndex1/Goon_Right:Character1_LeftHandIndex2/Goon_Right:Character1_LeftHandIndex3/Goon_Right:Character1_LeftHandIndex4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandMiddle1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandMiddle1/Goon_Right:Character1_LeftHandMiddle2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandMiddle1/Goon_Right:Character1_LeftHandMiddle2/Goon_Right:Character1_LeftHandMiddle3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandMiddle1/Goon_Right:Character1_LeftHandMiddle2/Goon_Right:Character1_LeftHandMiddle3/Goon_Right:Character1_LeftHandMiddle4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandPinky1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandPinky1/Goon_Right:Character1_LeftHandPinky2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandPinky1/Goon_Right:Character1_LeftHandPinky2/Goon_Right:Character1_LeftHandPinky3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandPinky1/Goon_Right:Character1_LeftHandPinky2/Goon_Right:Character1_LeftHandPinky3/Goon_Right:Character1_LeftHandPinky4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandRing1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandRing1/Goon_Right:Character1_LeftHandRing2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandRing1/Goon_Right:Character1_LeftHandRing2/Goon_Right:Character1_LeftHandRing3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandRing1/Goon_Right:Character1_LeftHandRing2/Goon_Right:Character1_LeftHandRing3/Goon_Right:Character1_LeftHandRing4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandThumb1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandThumb1/Goon_Right:Character1_LeftHandThumb2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandThumb1/Goon_Right:Character1_LeftHandThumb2/Goon_Right:Character1_LeftHandThumb3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_LeftShoulder/Goon_Right:Character1_LeftArm/Goon_Right:Character1_LeftForeArm/Goon_Right:Character1_LeftHand/Goon_Right:Character1_LeftHandThumb1/Goon_Right:Character1_LeftHandThumb2/Goon_Right:Character1_LeftHandThumb3/Goon_Right:Character1_LeftHandThumb4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_Neck
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_Neck/Goon_Right:Character1_Head
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandIndex1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandIndex1/Goon_Right:Character1_RightHandIndex2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandIndex1/Goon_Right:Character1_RightHandIndex2/Goon_Right:Character1_RightHandIndex3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandIndex1/Goon_Right:Character1_RightHandIndex2/Goon_Right:Character1_RightHandIndex3/Goon_Right:Character1_RightHandIndex4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandMiddle1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandMiddle1/Goon_Right:Character1_RightHandMiddle2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandMiddle1/Goon_Right:Character1_RightHandMiddle2/Goon_Right:Character1_RightHandMiddle3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandMiddle1/Goon_Right:Character1_RightHandMiddle2/Goon_Right:Character1_RightHandMiddle3/Goon_Right:Character1_RightHandMiddle4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandPinky1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandPinky1/Goon_Right:Character1_RightHandPinky2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandPinky1/Goon_Right:Character1_RightHandPinky2/Goon_Right:Character1_RightHandPinky3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandPinky1/Goon_Right:Character1_RightHandPinky2/Goon_Right:Character1_RightHandPinky3/Goon_Right:Character1_RightHandPinky4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandRing1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandRing1/Goon_Right:Character1_RightHandRing2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandRing1/Goon_Right:Character1_RightHandRing2/Goon_Right:Character1_RightHandRing3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandRing1/Goon_Right:Character1_RightHandRing2/Goon_Right:Character1_RightHandRing3/Goon_Right:Character1_RightHandRing4
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandThumb1
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandThumb1/Goon_Right:Character1_RightHandThumb2
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandThumb1/Goon_Right:Character1_RightHandThumb2/Goon_Right:Character1_RightHandThumb3
+        weight: 1
+      - path: Goon_Right:Character1_Reference/Goon_Right:Character1_Hips/Goon_Right:Character1_Spine/Goon_Right:Character1_Spine1/Goon_Right:Character1_Spine2/Goon_Right:Character1_RightShoulder/Goon_Right:Character1_RightArm/Goon_Right:Character1_RightForeArm/Goon_Right:Character1_RightHand/Goon_Right:Character1_RightHandThumb1/Goon_Right:Character1_RightHandThumb2/Goon_Right:Character1_RightHandThumb3/Goon_Right:Character1_RightHandThumb4
+        weight: 1
+      - path: Goon_Right:gun:pCone1
+        weight: 1
+      - path: Goon_Right:gun:pCone1/Goon_Right:gun:transform3
+        weight: 1
+      - path: Goon_Right:gun:pCube1
+        weight: 1
+      - path: Goon_Right:gun:pCube1/Goon_Right:gun:transform8
+        weight: 1
+      - path: Goon_Right:gun:pCylinder1
+        weight: 1
+      - path: Goon_Right:gun:pCylinder1/Goon_Right:gun:transform6
+        weight: 1
+      - path: Goon_Right:gun:pCylinder2
+        weight: 1
+      - path: Goon_Right:gun:pCylinder2/Goon_Right:gun:transform10
+        weight: 1
+      - path: Goon_Right:gun:polySurface5
+        weight: 1
+      - path: Goon_Right:gun:polySurface5/Goon_Right:gun:transform1
+        weight: 1
+      - path: Goon_Right:gun:polySurface6
+        weight: 1
+      - path: Goon_Right:gun:polySurface6/Goon_Right:gun:transform5
+        weight: 1
+      - path: Goon_Right:gun:polySurface7
+        weight: 1
+      - path: Goon_Right:gun:polySurface7/Goon_Right:gun:transform4
+        weight: 1
+      - path: Goon_Right:gun:polySurface8
+        weight: 1
+      - path: Goon_Right:gun:polySurface8/Goon_Right:gun:transform2
+        weight: 1
+      - path: Goon_Right:gun:polySurface13
+        weight: 1
+      - path: Goon_Right:gun:polySurface13/Goon_Right:gun:transform9
+        weight: 1
+      - path: Goon_Right:gun:polySurface19
+        weight: 1
+      - path: Goon_Right:gun:polySurface19/Goon_Right:gun:transform7
+        weight: 1
+      - path: Goon_Right:gun:polySurface21
+        weight: 1
+      - path: Goon_Right:gun:polySurface21/Goon_Right:gun:transform11
+        weight: 1
+      - path: Goon_Right:pCone1
+        weight: 1
+      - path: Goon_Right:pCone1/Goon_Right:transform3
+        weight: 1
+      - path: Goon_Right:pCube1
+        weight: 1
+      - path: Goon_Right:pCube1/Goon_Right:transform8
+        weight: 1
+      - path: Goon_Right:pCylinder1
+        weight: 1
+      - path: Goon_Right:pCylinder1/Goon_Right:transform6
+        weight: 1
+      - path: Goon_Right:pCylinder2
+        weight: 1
+      - path: Goon_Right:pCylinder2/Goon_Right:transform10
+        weight: 1
+      - path: Goon_Right:polySurface5
+        weight: 1
+      - path: Goon_Right:polySurface5/Goon_Right:transform1
+        weight: 1
+      - path: Goon_Right:polySurface6
+        weight: 1
+      - path: Goon_Right:polySurface6/Goon_Right:transform5
+        weight: 1
+      - path: Goon_Right:polySurface7
+        weight: 1
+      - path: Goon_Right:polySurface7/Goon_Right:transform4
+        weight: 1
+      - path: Goon_Right:polySurface8
+        weight: 1
+      - path: Goon_Right:polySurface8/Goon_Right:transform2
+        weight: 1
+      - path: Goon_Right:polySurface13
+        weight: 1
+      - path: Goon_Right:polySurface13/Goon_Right:transform9
+        weight: 1
+      - path: Goon_Right:polySurface19
+        weight: 1
+      - path: Goon_Right:polySurface19/Goon_Right:transform7
+        weight: 1
+      - path: Goon_Right:polySurface20
+        weight: 1
+      - path: Goon_Right:polySurface20/Goon_Right:transform13
+        weight: 1
+      - path: Goon_Right:polySurface21
+        weight: 1
+      - path: Goon_Right:polySurface21/Goon_Right:transform11
+        weight: 1
+      - path: Goon_Right:polySurface22
+        weight: 1
+      - path: Goon_Right:polySurface22/Goon_Right:transform12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

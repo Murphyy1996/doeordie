@@ -1,0 +1,521 @@
+﻿//Author: James Murphy && Kate Georgiou (Head bob code)
+//Placement: On the player
+//Purpose: Make the guns shoot
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Shooting : MonoBehaviour
+{
+    private AmmoManager ammoManagerScript;
+    private Crouch crouchScript;
+    [SerializeField]
+    private bool allowedToShoot = true;
+    [SerializeField]
+    private GameObject bulletPrefab, bulletHitDecalPrefab;
+    private List<GameObject> bulletObjPool = new List<GameObject>();
+    private List<GameObject> bulletHitObjPool = new List<GameObject>();
+    private Transform gunPlacementZone;
+    [SerializeField]
+    private float switchWeaponCooldown = 1f;
+    public WeaponInfo currentWeaponScript;
+    [HideInInspector]
+    public List<WeaponInfo> weaponList = new List<WeaponInfo>();
+    private float currentWeaponDamage = 0, currentWeaponFireDelay = 0;
+    private float currentWeaponRecoil = 0;
+    [HideInInspector]
+    public WeaponInfo pistolScript, machineGunScript, shotgunScript;
+    private CharacterController thisCC;
+    private CharacterControllerMovement movement;
+    //Need to destroy this variable if the weapon has been changed
+    private GameObject currentWeaponObj;
+    private float selectedWeaponFloat = 0;
+    private bool gunCooldownFinished = true, weaponChangeCooldownFinished = true, canSwitchWeapons = true, isHeadBobEnabled = true;
+    // animate the game object from -1 to +1 and back
+    [SerializeField]
+    private float minimumBob = -3.0F, maximumBob = 3.0F;
+    private GameObject bulletOrigin, muzzleFlash;
+    // starting value for the Lerp
+    static float headBobSpeed = 0.0f;
+    private bool isShooting = false;
+    private Animator animatorComponent;
+    private KeyCode changeWeaponKeycode = KeyCode.Q;
+    private Teleporting teleportScript;
+
+    private void Awake() //Spawn in bullets for the object pool
+    {
+        //Get the crouch script
+        crouchScript = GetComponent<Crouch>();
+        //Create the object pool parent
+        GameObject objectPool = new GameObject();
+        objectPool.name = "Object Pools";
+        objectPool.transform.position = transform.position;
+        //Get the ammo manager script
+        ammoManagerScript = GetComponent<AmmoManager>();
+        //Spawn objects into the object pool
+        for (int i = 0; i < 500; i++)
+        {
+            //Spawn the bullet, child it to the object pool and track it in the list
+            GameObject spawnedBullet;
+            spawnedBullet = Instantiate(bulletPrefab, objectPool.transform.position, bulletPrefab.transform.rotation);
+            spawnedBullet.name = "Spawned Bullet " + i;
+            spawnedBullet.transform.SetParent(objectPool.transform);
+            bulletObjPool.Add(spawnedBullet);
+        }
+        //Spawn decals into the object pool
+        for (int i = 0; i < 500; i++)
+        {
+            //Spawn the bullet, child it to the object pool and track it in the list
+            GameObject spawnedBulletDecal;
+            spawnedBulletDecal = Instantiate(bulletHitDecalPrefab, objectPool.transform.position, bulletPrefab.transform.rotation);
+            spawnedBulletDecal.name = "Spawned Decal " + i;
+            spawnedBulletDecal.transform.SetParent(objectPool.transform);
+            bulletHitObjPool.Add(spawnedBulletDecal);
+        }
+    }
+
+    private void Start()
+    {
+        //Get this character controller
+        thisCC = GetComponent<CharacterController>();
+        //Get movement script
+        movement = GetComponent<CharacterControllerMovement>();
+        teleportScript = GetComponent<Teleporting>();
+    }
+
+    public void GiveGunPlacementZone(Transform placementZone)
+    {
+        gunPlacementZone = placementZone;
+    }
+
+    private void Update()
+    {
+        //Control some non shooting animations
+        ControlNonShootingGunAnimations();
+        //This code will switch weapons with middle mouse
+        SwitchWeapons();
+        //This code will render the first picked up weapon
+        RenderWeapon();
+        if (teleportScript.ReturnTeleportEmpty() == null || teleportScript.ReturnTeleportEmpty().activeSelf == false)
+        {
+            //This will run the shoot weapon code
+            ShootWeapon();
+        }
+        if (isHeadBobEnabled == true)
+        {
+            //Gun bob code
+            GunBob();
+        }
+    }
+
+    private void RenderWeapon() //Render the selected weapon
+    {
+        //if there is no weapon rendered but one has been picked up, render it
+        if (currentWeaponScript != null && weaponChangeCooldownFinished == true && gunPlacementZone != null)
+        {
+            //Create the weapon
+            if (currentWeaponObj == null)
+            {
+                //Rotate and spawn the weapon
+                gunPlacementZone.transform.rotation = Camera.main.transform.rotation;
+                currentWeaponObj = Instantiate(currentWeaponScript.weaponModelToSpawn, gunPlacementZone.transform.position, gunPlacementZone.transform.rotation);
+                //Set the gun to the gun layer if it is not already
+                if (currentWeaponObj.layer != 17)
+                {
+                    currentWeaponObj.layer = 17;
+                    foreach (Transform child in currentWeaponObj.transform)
+                    {
+                        child.gameObject.layer = 17;
+                    }
+                }
+                if (currentWeaponObj.GetComponentInChildren<Animator>() != null)
+                {
+                    animatorComponent = currentWeaponObj.GetComponentInChildren<Animator>();
+                }
+                else
+                {
+                    animatorComponent = null;
+                }
+                //Find where the bullet origin is
+                bulletOrigin = currentWeaponObj.transform.Find("bulletOrigin").gameObject;
+                try
+                {
+                    muzzleFlash = currentWeaponObj.transform.Find("Muzzle").gameObject;
+                    muzzleFlash.transform.SetParent(animatorComponent.transform);
+                    //Make sure all parts of the muzzle have the correct layer too
+                    foreach (Transform child in muzzleFlash.transform)
+                    {
+                        child.gameObject.layer = 17;
+                    }
+                }
+                catch
+                {
+                    print("can't get muzzle flash");
+                }
+                currentWeaponDamage = currentWeaponScript.damage;
+                currentWeaponFireDelay = currentWeaponScript.fireDelay;
+                currentWeaponRecoil = currentWeaponScript.recoilStrength;
+            }
+            //Make the gun object follow the weapon object
+            currentWeaponObj.transform.SetParent(gunPlacementZone);
+        }
+    }
+
+    private void SwitchWeapons() //Switch weapons with middle mouse
+    {
+        //Only allow changing between weapons if you have more than one weapon
+        if (weaponList.Count >= 2 && canSwitchWeapons == true)
+        {
+            //float inputValue = Input.GetAxis("Mouse ScrollWheel");
+            //if (inputValue > 0)
+            //{
+            //inputValue = 1;
+            //}
+            //if (inputValue < 0)
+            //{
+            //inputValue = -1;
+            //}
+            float inputValue = 0;
+            if (Input.GetKeyDown(changeWeaponKeycode))
+            {
+                inputValue = 1;
+            }
+            //Only run this code if the input has been changed
+            if (inputValue != 0)
+            {
+                //Add the input value to the selected weapon number
+                selectedWeaponFloat += inputValue;
+                //If the selected weapon number is bigger than the max amount of weapons
+                if (selectedWeaponFloat > weaponList.Count - 1)
+                {
+                    selectedWeaponFloat = 0;
+                }
+                if (selectedWeaponFloat < 0)
+                {
+                    selectedWeaponFloat = weaponList.Count - 1;
+                }
+                //Convert the selected weapon number to an int
+                int selectedWeaponInt = Mathf.RoundToInt(selectedWeaponFloat);
+                //Select the current weapon
+                currentWeaponScript = weaponList[selectedWeaponInt];
+                DeleteRenderedWeapon();
+                //If the weapon has been changed activate the cooldown
+                StopCoroutine(WeaponCooldown());
+                gunCooldownFinished = true;
+                StartCoroutine(SwitchWeaponCooldown());
+                canSwitchWeapons = false;
+                Invoke("FixInstantSwitch", 0.2f);
+            }
+        }
+    }
+
+    private void ShootWeapon() //Shoot the currently selected weapon
+    {
+        //if (Input.GetKeyDown(KeyCode.Mouse0) && Time.timeScale != 0)
+        //{
+        //    print("Current weapon script: " + currentWeaponScript);
+        //    print("Current weapon obj: " + currentWeaponObj);
+        //    print("allowed to shoot: " + allowedToShoot);
+        //    print("enough ammo to shoot: " + CheckIfYouHaveEnoughAmmoToShoot());
+        //    print("gun cooldown finished? " + gunCooldownFinished);
+        //    print("weapon change cooldown finished? " + weaponChangeCooldownFinished);
+        //}
+        //Do not allow if there is no currently selected weapon
+        if (currentWeaponScript != null && currentWeaponObj != null && allowedToShoot == true && CheckIfYouHaveEnoughAmmoToShoot() == true && gunCooldownFinished == true && weaponChangeCooldownFinished == true)
+        {
+            //This if will shoot the bullet and remove the relevant ammo
+            if (Input.GetMouseButton(0) && Time.timeScale != 0 && currentWeaponScript.holdDownToShoot == true || Input.GetMouseButtonDown(0) && Time.timeScale != 0 && currentWeaponScript.holdDownToShoot == false)
+            {
+                //Change the has shot recently bool to true
+                isShooting = true;
+                //Start the weapon cooldown until the next bullet can be fired
+                StartCoroutine(WeaponCooldown());
+                //Try and make stuff work for the machine gun
+                if (animatorComponent != null)
+                {
+                    animatorComponent.SetBool("shooting", true);
+                    if (currentWeaponScript.weaponModel == WeaponInfo.weapon.machineGun)
+                    {
+                        Invoke("StopShotgunAnimation", (currentWeaponFireDelay / 2f));
+                    }
+                }
+
+                //Only remove ammo if not the pistol
+                if (currentWeaponScript.holdDownToShoot == true)
+                {
+                    //Remove the relevant ammo
+                    RemoveWeaponAmmo();
+                }
+                //Get the bullet reference in the object pool
+                GameObject bullet = bulletObjPool[0];
+                //Get the bullet script
+                Bullet bulletScript = bullet.GetComponent<Bullet>();
+                //Set the bullet origin as camera as the player camera transform
+                bulletScript.bulletOrigin = Camera.main.transform;
+                //Set the bullet recoil
+                bulletScript.recoil = currentWeaponRecoil;
+                //Set the bullet damage
+                bulletScript.bulletDamage = Mathf.RoundToInt(currentWeaponDamage);
+                //Mark the bullet as a player bullet
+                bulletScript.playerBullet = true;
+                //Remove it from the object pool
+                bulletObjPool.Remove(bullet);
+
+                //Muzzle flash
+                if (muzzleFlash != null)
+                {
+                    //Increase reticule size
+                    Reticule.inst.IncreaseReticuleSize(2f);
+                    //Activate the muzzle flash
+                    muzzleFlash.SetActive(true);
+                    try
+                    {
+                        switch (currentWeaponScript.weaponModel)
+                        {
+                            case WeaponInfo.weapon.pistol:
+                                AudioManage.inst.pistolShot.Play();
+                                break;
+
+
+                            case WeaponInfo.weapon.machineGun:
+                                AudioManage.inst.machShot.Play();
+                                break;
+                        }
+                    }
+                    catch
+                    {
+                        print("Error playing weapon audio");
+                    }
+                    //audio for gunshot here
+                    // need to make this a switch case so that it can change depending on the gun being used
+
+
+                    Invoke("CloseMuzzleFlash", 0.05f);
+                }
+                //Move the object to the player
+                bullet.transform.SetPositionAndRotation(bulletOrigin.transform.position, gunPlacementZone.transform.rotation);
+                //Activate the bullet once it has been configured
+                bullet.SetActive(true);
+
+
+                //Loop shot if shotgun
+                if (currentWeaponScript.weaponModel == WeaponInfo.weapon.shotgun)
+                {
+                    //Make the camera shake
+                    this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.1f, 1.5f);
+                    //Get the default recoil values
+                    int lastUseWeaponDamage = Mathf.RoundToInt(currentWeaponDamage);
+                    float lastUsedWeaponRecoil = currentWeaponRecoil;
+                    //Get the additional origins
+                    List<Transform> additionalOrigins = new List<Transform>();
+                    foreach (Transform child in bulletOrigin.transform)
+                    {
+                        additionalOrigins.Add(child);
+                    }
+                    //Set up the bullets before being shot as doing it while being shot causes glitches
+                    int count = 0;
+                    foreach (GameObject obj in bulletObjPool)
+                    {
+                        if (count <= additionalOrigins.Count)
+                        {
+                            Bullet extraBulletScript = obj.GetComponent<Bullet>();
+                            extraBulletScript.bulletDamage = lastUseWeaponDamage;
+                            extraBulletScript.recoil = lastUsedWeaponRecoil;
+                            extraBulletScript.bulletOrigin = Camera.main.transform;
+                            extraBulletScript.playerBullet = true;
+                        }
+                    }
+                    //Iterate through the additional origins and activate the bullets
+                    for (int i = 0; i < additionalOrigins.Count; i++)
+                    {
+                        //Get the bullet reference in the object pool
+                        GameObject extraBullets = bulletObjPool[0];
+                        //Remove it from the object pool
+                        bulletObjPool.Remove(extraBullets);
+                        //Move the object to the player
+                        extraBullets.transform.SetPositionAndRotation(additionalOrigins[i].position, gunPlacementZone.transform.rotation);
+                        //Activate the bullet once it has been configured
+                        extraBullets.SetActive(true);
+                    }
+                    if (animatorComponent != null)
+                    {
+                        Invoke("StopShotgunAnimation", 0.2f);
+                    }
+                }
+            }
+        }
+        else if (!Input.GetMouseButton(0))
+        {
+            isShooting = false;
+        }
+    }
+
+    private void StopShotgunAnimation()
+    {
+        animatorComponent.SetBool("shooting", false);
+    }
+
+    private void ControlNonShootingGunAnimations() //This will control non shooting animations such as running
+    {
+        if (animatorComponent != null)
+        {
+            if (thisCC.velocity.magnitude >= 18)
+            {
+                animatorComponent.SetBool("running", true);
+            }
+            else
+            {
+                animatorComponent.SetBool("running", false);
+            }
+        }
+    }
+
+    private void CloseMuzzleFlash()
+    {
+        if (muzzleFlash != null)
+        {
+            muzzleFlash.SetActive(false);
+        }
+        Reticule.inst.ResetReticuleSize();
+    }
+
+    private void FixInstantSwitch() //Will limit the player to switching weapons every 0.1 seconds
+    {
+        canSwitchWeapons = true;
+    }
+
+    private void RemoveWeaponAmmo() //This method will remove ammo on weapons when shot
+    {
+        //This variable will hold the current amount of ammo you have
+        int currentWeaponAmmo = 0;
+
+        //Remove ammo on the relevant weapon
+        if (currentWeaponScript == pistolScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
+            ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, currentWeaponAmmo - 1);
+        }
+        else if (currentWeaponScript == machineGunScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+            ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.machineGun, currentWeaponAmmo - 1);
+        }
+        else if (currentWeaponScript == shotgunScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+            ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.shotgun, currentWeaponAmmo - 1);
+        }
+    }
+
+    private IEnumerator WeaponCooldown() //This controls the weapon fire rate
+    {
+        gunCooldownFinished = false;
+        yield return new WaitForSeconds(currentWeaponFireDelay);
+        if (animatorComponent != null)
+        {
+            animatorComponent.SetBool("shooting", false);
+        }
+        gunCooldownFinished = true;
+    }
+
+    private IEnumerator SwitchWeaponCooldown() //Apply the switch weapon cooldown to stop super shooting rates when switching weapons
+    {
+        weaponChangeCooldownFinished = false;
+        yield return new WaitForSeconds(switchWeaponCooldown);
+        weaponChangeCooldownFinished = true;
+    }
+
+    private bool CheckIfYouHaveEnoughAmmoToShoot() //This function will return true or false depending if you have enough ammo
+    {
+        //This variable will hold the current amount of ammo you have
+        int currentWeaponAmmo = 0;
+
+        //Get the ammount of the current weapon
+        if (currentWeaponScript == pistolScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
+        }
+        else if (currentWeaponScript == machineGunScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+        }
+        else if (currentWeaponScript == shotgunScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+        }
+
+        //Check if the current weapon has enough ammo to shoot
+        if (currentWeaponAmmo > 0)
+        {
+            return true;
+        }
+        //Return false if you can't shoot
+        return false;
+    }
+
+    public void DeleteRenderedWeapon()
+    {
+        if (currentWeaponObj != null)
+        {
+            Destroy(currentWeaponObj);
+        }
+    }
+
+    public void SetShootAllowedValue(bool value)
+    {
+        allowedToShoot = value;
+    }
+
+    public List<GameObject> ReturnBulletObjectPool()
+    {
+        return bulletObjPool;
+    }
+
+    public List<GameObject> ReturnDecalObjectPool()
+    {
+        return bulletHitObjPool;
+    }
+
+    private void GunBob()
+    {
+        if (movement != null && gunPlacementZone != null && crouchScript != null && movement.CheckIfWalking() == true && crouchScript.IsPlayerSliding() == false)
+        {
+            // animate the position of the game object...
+            gunPlacementZone.transform.localEulerAngles = new Vector3(Mathf.Lerp(minimumBob, maximumBob, headBobSpeed), 0, 0);
+
+            // .. and increate the t interpolater
+            headBobSpeed += 1.5f * Time.deltaTime;
+
+            // now check if the interpolator has reached 1.0
+            // and swap maximum and minimum so game object moves
+            // in the opposite direction.
+            if (headBobSpeed > 1.0f)
+            {
+                float temp = maximumBob;
+                maximumBob = minimumBob;
+                minimumBob = temp;
+                headBobSpeed = 0.0f;
+
+            }
+        }
+
+    }
+
+    public bool IsPlayerShooting()
+    {
+        return isShooting;
+    }
+
+    public KeyCode ReturnWeaponKeycode()
+    {
+        return changeWeaponKeycode;
+    }
+
+    public void SetWeaponKeycode(KeyCode value)
+    {
+        changeWeaponKeycode = value;
+    }
+
+
+}

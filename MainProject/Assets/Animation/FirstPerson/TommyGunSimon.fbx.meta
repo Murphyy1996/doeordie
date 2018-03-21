@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: dadb564d2ce435e40a953360a1cceeed
+timeCreated: 1517914809
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arms
+    100002: L_Elbow
+    100004: L_Index_Ankle
+    100006: L_Index_End
+    100008: L_Index_Knee
+    100010: L_Index_Knuckle
+    100012: L_Little_Ankle
+    100014: L_Little_End
+    100016: L_Little_Knee
+    100018: L_Little_Knuckle
+    100020: L_Middle_Ankle
+    100022: L_Middle_End
+    100024: L_Middle_Knee
+    100026: L_Middle_Knuckle
+    100028: L_Ring_Ankle
+    100030: L_Ring_End
+    100032: L_Ring_Knee
+    100034: L_Ring_Knuckle
+    100036: L_Shoulder
+    100038: L_Thumb_End
+    100040: L_Thumb_Knee
+    100042: L_Thumb_Knuckle
+    100044: L_Wrist
+    100046: PPSTOM4
+    100048: R_Elbow
+    100050: R_Index_Ankle
+    100052: R_Index_End
+    100054: R_Index_Knee
+    100056: R_Index_Knuckle
+    100058: R_Little_Ankle
+    100060: R_Little_End
+    100062: R_Little_Knee
+    100064: R_Little_Knuckle
+    100066: R_Middle_Ankle
+    100068: R_Middle_End
+    100070: R_Middle_Knee
+    100072: R_Middle_Knuckle
+    100074: R_Ring_Ankle
+    100076: R_Ring_End
+    100078: R_Ring_Knee
+    100080: R_Ring_Knuckle
+    100082: R_Shoulder
+    100084: R_Thumb_End
+    100086: R_Thumb_Knee
+    100088: R_Thumb_Knuckle
+    100090: R_Wrist
+    100092: //RootNode
+    100094: transform1
+    400000: arms
+    400002: L_Elbow
+    400004: L_Index_Ankle
+    400006: L_Index_End
+    400008: L_Index_Knee
+    400010: L_Index_Knuckle
+    400012: L_Little_Ankle
+    400014: L_Little_End
+    400016: L_Little_Knee
+    400018: L_Little_Knuckle
+    400020: L_Middle_Ankle
+    400022: L_Middle_End
+    400024: L_Middle_Knee
+    400026: L_Middle_Knuckle
+    400028: L_Ring_Ankle
+    400030: L_Ring_End
+    400032: L_Ring_Knee
+    400034: L_Ring_Knuckle
+    400036: L_Shoulder
+    400038: L_Thumb_End
+    400040: L_Thumb_Knee
+    400042: L_Thumb_Knuckle
+    400044: L_Wrist
+    400046: PPSTOM4
+    400048: R_Elbow
+    400050: R_Index_Ankle
+    400052: R_Index_End
+    400054: R_Index_Knee
+    400056: R_Index_Knuckle
+    400058: R_Little_Ankle
+    400060: R_Little_End
+    400062: R_Little_Knee
+    400064: R_Little_Knuckle
+    400066: R_Middle_Ankle
+    400068: R_Middle_End
+    400070: R_Middle_Knee
+    400072: R_Middle_Knuckle
+    400074: R_Ring_Ankle
+    400076: R_Ring_End
+    400078: R_Ring_Knee
+    400080: R_Ring_Knuckle
+    400082: R_Shoulder
+    400084: R_Thumb_End
+    400086: R_Thumb_Knee
+    400088: R_Thumb_Knuckle
+    400090: R_Wrist
+    400092: //RootNode
+    400094: transform1
+    2300000: PPSTOM4
+    3300000: PPSTOM4
+    4300000: PPSTOM4
+    4300002: arms
+    7400000: Idle
+    7400002: Walk/Run
+    7400004: Shoot
+    9500000: //RootNode
+    13700000: arms
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 2.5
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: PPSTOM4
+        weight: 1
+      - path: R_Shoulder
+        weight: 1
+      - path: R_Shoulder/R_Elbow
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle/R_Index_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle/R_Little_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle/R_Middle_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle/R_Ring_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee/R_Thumb_End
+        weight: 1
+      - path: transform1
+        weight: 1
+      - path: transform1/L_Shoulder
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle/L_Index_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle/L_Little_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle/L_Middle_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle/L_Ring_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee/L_Thumb_End
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk/Run
+      takeName: Take 001
+      firstFrame: 230
+      lastFrame: 350
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: PPSTOM4
+        weight: 1
+      - path: R_Shoulder
+        weight: 1
+      - path: R_Shoulder/R_Elbow
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle/R_Index_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle/R_Little_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle/R_Middle_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle/R_Ring_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee/R_Thumb_End
+        weight: 1
+      - path: transform1
+        weight: 1
+      - path: transform1/L_Shoulder
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle/L_Index_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle/L_Little_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle/L_Middle_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle/L_Ring_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee/L_Thumb_End
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Shoot
+      takeName: Take 001
+      firstFrame: 355
+      lastFrame: 415
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: arms
+        weight: 1
+      - path: PPSTOM4
+        weight: 1
+      - path: R_Shoulder
+        weight: 1
+      - path: R_Shoulder/R_Elbow
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Index_Knuckle/R_Index_Knee/R_Index_Ankle/R_Index_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Little_Knuckle/R_Little_Knee/R_Little_Ankle/R_Little_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Middle_Knuckle/R_Middle_Knee/R_Middle_Ankle/R_Middle_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Ring_Knuckle/R_Ring_Knee/R_Ring_Ankle/R_Ring_End
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee
+        weight: 1
+      - path: R_Shoulder/R_Elbow/R_Wrist/R_Thumb_Knuckle/R_Thumb_Knee/R_Thumb_End
+        weight: 1
+      - path: transform1
+        weight: 1
+      - path: transform1/L_Shoulder
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Index_Knuckle/L_Index_Knee/L_Index_Ankle/L_Index_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Little_Knuckle/L_Little_Knee/L_Little_Ankle/L_Little_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Middle_Knuckle/L_Middle_Knee/L_Middle_Ankle/L_Middle_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Ring_Knuckle/L_Ring_Knee/L_Ring_Ankle/L_Ring_End
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee
+        weight: 1
+      - path: transform1/L_Shoulder/L_Elbow/L_Wrist/L_Thumb_Knuckle/L_Thumb_Knee/L_Thumb_End
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
