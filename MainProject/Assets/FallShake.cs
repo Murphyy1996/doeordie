@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Author: Kate Georgiou
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
