@@ -1,4 +1,5 @@
 using UnityEngine;
+using RootMotion.FinalIK;
 
 namespace BehaviorDesigner.Runtime.Tasks.Movement
 {
@@ -38,12 +39,23 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         public SharedGameObject returnedObject;
         //Custom
         public SharedBool spottedPlayer = false;
+        GameObject player;
+        AimIK aimIK;
+        LookAtIK lookAtIk;
 
         public override void OnStart()
         {
-
+            player = GameObject.Find("Player");
+            aimIK = GetComponent<AimIK>();
+            lookAtIk = GetComponent<LookAtIK>();
         }
 
+        //Custom
+        public override void OnLateUpdate()
+        {
+            aimIK.solver.target = player.transform;
+            lookAtIk.solver.target = player.transform;
+        }
 
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
@@ -64,7 +76,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                                 objectFound = obj;
 
                                 //Custom
-                                
+                                aimIK.solver.target = player.transform;
+                                lookAtIk.solver.target = player.transform;
                                 spottedPlayer = true;
                                 //
                             }
