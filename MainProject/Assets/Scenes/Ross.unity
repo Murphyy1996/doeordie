@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -86,7 +86,8 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: fb4c4b5a115322d4d94cb6b80f39db83,
+    type: 2}
   m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
@@ -5739,6 +5740,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &448245206 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4925956289216378, guid: 403b5bae47653174fa536c8c1cfa4a4c,
+    type: 2}
+  m_PrefabInternal: {fileID: 448245205}
 --- !u!1 &459568840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,7 +7408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &847364726
 Transform:
   m_ObjectHideFlags: 0
@@ -7723,7 +7729,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 928286234}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -12.03, y: 16.83, z: -2.35}
+  m_LocalPosition: {x: -12.03, y: 12.9, z: -44.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17317,10 +17323,6 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400184, guid: 0bdd8633db696094bb6faa41123b5bff, type: 3}
   m_PrefabInternal: {fileID: 1690347305}
---- !u!4 &1690347308 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400244, guid: 0bdd8633db696094bb6faa41123b5bff, type: 3}
-  m_PrefabInternal: {fileID: 1690347305}
 --- !u!4 &1690347309 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400308, guid: 0bdd8633db696094bb6faa41123b5bff, type: 3}
@@ -17554,47 +17556,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixTransforms: 1
   solver:
-    IKPosition: {x: 14.566089, y: 1.9697253, z: -86.12568}
+    IKPosition: {x: 14.566089, y: 2.254429, z: -85.89775}
     IKPositionWeight: 1
     root: {fileID: 1690347317}
-    target: {fileID: 847364726}
-    spine:
-    - transform: {fileID: 1690347315}
-      weight: 0
-      solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: 1.0785208e-34, y: 0.004375, z: 0}
-      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-      length: 0
-      sqrMag: 0
-      axis: {x: 0, y: 0, z: 1}
-    - transform: {fileID: 1690347314}
-      weight: 0
-      solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: 7.935654e-34, y: 0.008047709, z: 0}
-      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-      length: 0
-      sqrMag: 0
-      axis: {x: 0, y: 0, z: 1}
-    - transform: {fileID: 1690347309}
-      weight: 0
-      solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: 8.764331e-19, y: 0.008047709, z: 0.0031883828}
-      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-      length: 0
-      sqrMag: 0
-      axis: {x: 0, y: 0, z: 1}
-    - transform: {fileID: 1690347308}
-      weight: 0
-      solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: 1.1964033e-18, y: 0.008047709, z: 0.0032639722}
-      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
-      length: 0
-      sqrMag: 0
-      axis: {x: 0, y: 0, z: 1}
+    target: {fileID: 448245206}
+    spine: []
     head:
       transform: {fileID: 1690347307}
       weight: 1
@@ -17606,11 +17572,11 @@ MonoBehaviour:
       sqrMag: 0
       axis: {x: 0, y: 0, z: 1}
     eyes: []
-    bodyWeight: 0.5
-    headWeight: 0.129
+    bodyWeight: 0
+    headWeight: 0.5
     eyesWeight: 1
     clampWeight: 0.5
-    clampWeightHead: 0.5
+    clampWeightHead: 0.7
     clampWeightEyes: 0.5
     clampSmoothing: 2
     spineWeightCurve:
@@ -17644,10 +17610,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixTransforms: 1
   solver:
-    IKPosition: {x: 13.441411, y: 1.339, z: -85.59984}
-    IKPositionWeight: 0.2
+    IKPosition: {x: 15.089371, y: 1.8433695, z: -85.374535}
+    IKPositionWeight: 1
     root: {fileID: 1690347317}
-    target: {fileID: 847364726}
+    target: {fileID: 448245206}
     tolerance: 0
     maxIterations: 2
     useRotationLimits: 1
@@ -17719,10 +17685,10 @@ MonoBehaviour:
     transform: {fileID: 2052220524}
     axis: {x: 0, y: 0, z: 1}
     poleAxis: {x: 0, y: 1, z: 0}
-    polePosition: {x: 13.124, y: 4.339, z: -88.583}
+    polePosition: {x: 14.771959, y: 4.8433695, z: -88.3577}
     poleWeight: 0
     poleTarget: {fileID: 0}
-    clampWeight: 1
+    clampWeight: 0.5
     clampSmoothing: 2
 --- !u!1 &1693811939
 GameObject:
