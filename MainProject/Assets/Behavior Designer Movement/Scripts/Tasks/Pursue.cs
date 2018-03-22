@@ -57,7 +57,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 anim.SetBool("isRunning", false);
                 anim.SetBool("isPatrolling", false);
                 anim.SetBool("isShooting", true);
-                //IkTarget.transform.position = GameObject.Find("Player").transform.position;
 
                 return TaskStatus.Success;
             }
