@@ -103,15 +103,34 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                     returnedObject.Value = MovementUtility.WithinSight(transform, offset.Value, fieldOfViewAngle.Value, viewDistance.Value, targetObject.Value, targetOffset.Value, ignoreLayerMask, useTargetBone.Value, targetBone);
                 }
             }
-            if (returnedObject.Value != null) {
-                AudioManage.inst.combatMusic.Play();
-                Debug.Log("la musique");
+            if (returnedObject.Value != null)
+            {
+                //Custom
+                if (spottedPlayer.Value == false) //if the player cant be seen and gets scene change the bool to true
+                {
+                    
+                    spottedPlayer = true;
+                    
+                }
+                if (spottedPlayer.Value == true && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
+                {
+                    AudioManage.inst.combatMusic.Play();
+                    Debug.Log("la musique");
+                }
+              
+                
                 // Return success if an object was found
                 return TaskStatus.Success;
             }
             // An object is not within sight so return failure
             spottedPlayer = false;
+            if (AudioManage.inst.combatMusic.isPlaying == true && spottedPlayer.Value == false) // should stop the music from player when the player gets away or is lost?
+            {
+                AudioManage.inst.combatMusic.Stop();  //for some reason it stops the music whenever the player cant see tthe enemy which isnt right lmao
+            }
             return TaskStatus.Failure;
+
+           
         }
 
         // Reset the public variables
