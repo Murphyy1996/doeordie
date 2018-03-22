@@ -2272,7 +2272,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
   m_LocalRotation: {x: -0, y: -0.7059533, z: -0, w: -0.7082584}
-  m_LocalPosition: {x: -745.41376, y: 3.9536963, z: -11.128701}
+  m_LocalPosition: {x: -277.23004, y: -8.512903, z: -291.40753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -3315,7 +3315,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d78c6b17cafc92c43b474db763417a5b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 48e23c34f43257e4e9fea3391be1680e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3702,7 +3702,7 @@ MonoBehaviour:
   grapple: {fileID: 82056900699594928}
   player: {fileID: 82161989400783974}
   combatMusic: {fileID: 82314843804066156}
-  walking: {fileID: 8300000, guid: 2d1088c18b312554ea24744d1e013579, type: 3}
+  walking: {fileID: 8300000, guid: 142529350eb7c7346baaffab723ceb79, type: 3}
   running: {fileID: 8300000, guid: 2b4dcfa21b5090b47a2ea34da8d415c1, type: 3}
 --- !u!114 &114305613708270920
 MonoBehaviour:
@@ -18522,7 +18522,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1283117127
+  randomSeed: -844956689
   InitialModule:
     serializedVersion: 3
     enabled: 1
