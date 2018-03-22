@@ -2272,7 +2272,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
   m_LocalRotation: {x: -0, y: -0.7059533, z: -0, w: -0.7082584}
-  m_LocalPosition: {x: -276.02954, y: -7.0916557, z: -292.54163}
+  m_LocalPosition: {x: -277.1021, y: -8.358343, z: -291.55823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -3703,7 +3703,7 @@ MonoBehaviour:
   player: {fileID: 82161989400783974}
   combatMusic: {fileID: 82314843804066156}
   walking: {fileID: 8300000, guid: 142529350eb7c7346baaffab723ceb79, type: 3}
-  running: {fileID: 8300000, guid: 142529350eb7c7346baaffab723ceb79, type: 3}
+  running: {fileID: 8300000, guid: c82c597b8c679db4185e6d05f573d58e, type: 3}
 --- !u!114 &114305613708270920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18522,7 +18522,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -790489529
+  randomSeed: 1414657698
   InitialModule:
     serializedVersion: 3
     enabled: 1
