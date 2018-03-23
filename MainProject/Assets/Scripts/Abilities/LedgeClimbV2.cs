@@ -45,6 +45,25 @@ public class LedgeClimbV2 : MonoBehaviour
         Invoke("DelayedAwake", 0.2f);
     }
 
+    public void ResetToDefault() //Will reset the ledge climb to defaults to hopefully avoid issues
+    {
+        scriptSetUp = false;
+        runOnce = false;
+        shouldCheckForClimableLedge = false;
+        inLedgeZone = false;
+        timeInClimb = 0;
+        isLedgeClimbing = false;
+        if (downwardsRayStartEmpty != null)
+        {
+            Destroy(downwardsRayStartEmpty);
+        }
+        if (collisionCheckObj != null)
+        {
+            Destroy(collisionCheckObj);
+        }
+        scriptSetUp = true;
+    }
+
     private void DelayedAwake() //Get all required components
     {
         firstPerson = GetComponentInChildren<FirstPersonCamera>();
