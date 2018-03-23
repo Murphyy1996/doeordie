@@ -22,7 +22,7 @@ public class EnableAnotherWallRun : MonoBehaviour
         {
             wallClimbScript = GameObject.FindGameObjectWithTag("Player").GetComponent<WallClimbV2>();
             GetComponent<BoxCollider>().isTrigger = true;
-            GetComponent<MeshRenderer>().enabled = true;
+            GetComponent<MeshRenderer>().enabled = false;
         }
         catch
         {
