@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 //Author: Kate Georgiou Date: 10/10/17 Purpose : lets the creators (in editor mode) to attach this script to a trigger that they 
@@ -9,14 +10,14 @@ public class ChooseLvl : MonoBehaviour
 {
     public enum LevelToLoad
     {
-        main, test, simon, ross, fabio, hub, barracks, mainmenu, speedrun
+        main, test, simon, ross, fabio, foundry, hub, barracks, mainmenu, speedrun
     };
     [SerializeField]
     private LevelToLoad selectedLevel;
-   
-     
+
+
     // Use this for initialization
-    
+
     void Start()
     {
         UIElements.singleton.travelIndication.enabled = false;
@@ -34,6 +35,10 @@ public class ChooseLvl : MonoBehaviour
                 {
                     case LevelToLoad.fabio:
                         LoadingDifferentScenes.inst.LoadFabio();
+                        UIElements.singleton.travelIndication.enabled = false;
+                        break;
+                    case LevelToLoad.foundry:
+                        SceneManager.LoadScene("Level3Blockout");
                         UIElements.singleton.travelIndication.enabled = false;
                         break;
                     case LevelToLoad.main:
@@ -71,11 +76,11 @@ public class ChooseLvl : MonoBehaviour
                 }
 
             }
-          
-          
+
+
         }
-      
-      
+
+
 
     }
     private void OnTriggerExit(Collider other)
