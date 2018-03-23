@@ -63,7 +63,6 @@ public class LedgeCollisionDetection : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && scriptSetUp == true)
         {
-
             if (ledgeClimb.WallInfrontOfPlayer() == true)
             {
                 UIElements.singleton.ledgeClimb.enabled = true;
@@ -76,17 +75,11 @@ public class LedgeCollisionDetection : MonoBehaviour
             if (movement.ReturnObjectPlayerIsStandingOnAccurate() == null && grapple.IsCurrentlyGrappling() == false)
             {
                 ledgeClimb.SetLedgeCollisionVariable(true);
-
             }
             else
             {
                 ledgeClimb.SetLedgeCollisionVariable(false);
             }
-
-        }
-        else
-        {
-            ledgeClimb.SetLedgeCollisionVariable(false);
         }
     }
     private void OnTriggerExit(Collider other)
