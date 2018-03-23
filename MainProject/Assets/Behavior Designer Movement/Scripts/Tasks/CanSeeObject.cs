@@ -39,12 +39,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         public SharedGameObject returnedObject;
         //Custom
         public SharedBool spottedPlayer = false;
+        BehaviorTree rangedTree;
         GameObject player;
         AimIK aimIK;
         LookAtIK lookAtIk;
 
         public override void OnStart()
         {
+            rangedTree = GetComponent<BehaviorTree>();
             player = GameObject.Find("Player");
             aimIK = GetComponent<AimIK>();
             lookAtIk = GetComponent<LookAtIK>();
@@ -60,6 +62,14 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
         {
+            if (spottedPlayer.Value == true)
+            {
+                Debug.Log("running");
+                GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
+            } else
+            {
+                GlobalVariables.Instance.SetVariableValue("globalSpotted", false);
+            }
             
             if (usePhysics2D) {
                
@@ -76,9 +86,12 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                                 objectFound = obj;
 
                                 //Custom
-                                aimIK.solver.target = player.transform;
-                                lookAtIk.solver.target = player.transform;
+                                GlobalVariables.Instance.GetVariable("globalSpotted");
+                             
                                 spottedPlayer = true;
+
+                           
+                            
                                 //
                             }
                         }
