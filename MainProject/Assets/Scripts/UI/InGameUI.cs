@@ -186,7 +186,6 @@ public class InGameUI : MonoBehaviour
                 AudioManage.inst.player.Stop();
                 //Reload the audio clip
                 AudioManage.inst.player.clip = AudioManage.inst.walking;
-                Debug.Log("loading walking clip");
             }
             //Check if the audio source is playing the audio clip
             if (AudioManage.inst.player.isPlaying == false && move.GetCurrentSpeedandDirection().magnitude > 0.1f)

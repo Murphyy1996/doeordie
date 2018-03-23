@@ -8,13 +8,13 @@ public class EnableAnotherWallRun : MonoBehaviour
 {
     private WallClimbV2 wallClimbScript;
 
-	private void Start ()
+    private void Start()
     {
         //Only collide with the player
         this.gameObject.layer = 23;
         //Run the delayed start code
         Invoke("DelayedStart", 0.2f);
-	}
+    }
 
     private void DelayedStart()
     {
@@ -22,6 +22,7 @@ public class EnableAnotherWallRun : MonoBehaviour
         {
             wallClimbScript = GameObject.FindGameObjectWithTag("Player").GetComponent<WallClimbV2>();
             GetComponent<BoxCollider>().isTrigger = true;
+            GetComponent<MeshRenderer>().enabled = true;
         }
         catch
         {
