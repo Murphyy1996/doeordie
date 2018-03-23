@@ -189,6 +189,11 @@ public class Drone : MonoBehaviour
                 //Look at the player
                 Quaternion droneRotation = Quaternion.LookRotation(player.position - transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, droneRotation, (Time.fixedDeltaTime * turningSpeed));
+                if (AudioManage.inst.combatMusic.isPlaying == false)
+                {
+                    AudioManage.inst.combatMusic.Play();
+                }
+
                 //Run the collision code
                 RegularDroneCollisions();
                 //Always drive forwards
