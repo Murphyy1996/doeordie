@@ -145,7 +145,7 @@ public class InGamePause : MonoBehaviour
 
     public void ReturnToMenuButton()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenuTest");
     }
 
     public void ExitGameButton()
