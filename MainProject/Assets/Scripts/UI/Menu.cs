@@ -42,13 +42,16 @@ public class Menu : MonoBehaviour
 
     public void GoBack()
     {
-        if (options == null)
+        if (SceneManager.GetActiveScene().buildIndex != 0)
         {
-            options = GameObject.Find("OptionsMenu").GetComponent<Canvas>();
-        }
-        if (options != null)
-        {
-            options.enabled = false;
+            if (options == null)
+            {
+                options = GameObject.Find("OptionsMenu").GetComponent<Canvas>();
+            }
+            if (options != null)
+            {
+                options.enabled = false;
+            }
         }
     }
 
@@ -59,19 +62,24 @@ public class Menu : MonoBehaviour
 
     public void GoBackToMenu()
     {
-        //options.enabled = false;
-        OptionsConfig.inst.SaveOptions();
-        if (menu != null)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            if (SceneManager.GetActiveScene().buildIndex == 0)
+            //options.enabled = false;
+            OptionsConfig.inst.SaveOptions();
+            if (menu != null)
             {
-                menu.enabled = true;
+                if (SceneManager.GetActiveScene().buildIndex == 0)
+                {
+                    menu.enabled = true;
+                }
+                else
+                {
+                    GameObject.Find("Player").GetComponent<InGamePause>().OpenPauseMenu();
+                }
             }
-            else
-            {
-                GameObject.Find("Player").GetComponent<InGamePause>().OpenPauseMenu();
-            }
+
         }
+      
     }
 
     private void OnLevelWasLoaded(int level)
