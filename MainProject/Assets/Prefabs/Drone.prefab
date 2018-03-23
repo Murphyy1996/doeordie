@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 114134530353341206}
   - component: {fileID: 54628493325298016}
   - component: {fileID: 64073217727197680}
+  - component: {fileID: 65735432241954840}
   m_Layer: 19
   m_Name: Drone
   m_TagString: enemy
@@ -236,7 +237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487657286132412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -766.1962, y: 1.6941798, z: -14.504505}
+  m_LocalPosition: {x: 9.218313, y: 0.5148821, z: 86.08299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4280521297106408}
@@ -538,6 +539,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65735432241954840
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487657286132412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0550175, y: 1.584723, z: 3.1356256}
+  m_Center: {x: 0.047961235, y: -0.009450555, z: 0}
 --- !u!65 &65869741586482010
 BoxCollider:
   m_ObjectHideFlags: 1
