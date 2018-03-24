@@ -234,7 +234,7 @@ public class ReusableHealth : MonoBehaviour
         {
             return;
         }
-     
+
     }
 
     public void ApplyDamage(int damageValue) //This code will apply the damage value when called
@@ -295,6 +295,8 @@ public class ReusableHealth : MonoBehaviour
 
             if (this.gameObject.tag == "Player" && Time.timeScale != 0)
             {
+                //Make a shot force exit the players grapple
+                GetComponent<Grapple>().ExitGrapple();
                 this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.2f, 0.1f);
             }
             else if (Time.timeScale == 0)
@@ -449,7 +451,7 @@ public class ReusableHealth : MonoBehaviour
             if (this.gameObject.tag == "enemy")
             {
                 behaviourHealth.Value = healthValue;
-             
+
                 if (wepDropped == false)
                 {
                     wepDropped = true;
