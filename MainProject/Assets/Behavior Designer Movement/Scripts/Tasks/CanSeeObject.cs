@@ -64,7 +64,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         {
             if (spottedPlayer.Value == true)
             {
-                Debug.Log("running");
                 GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
             } else
             {
@@ -141,7 +140,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 if (spottedPlayer.Value == true && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
                 {
                     AudioManage.inst.combatMusic.Play();
-                    Debug.Log("la musique");
                 }
               
                 
