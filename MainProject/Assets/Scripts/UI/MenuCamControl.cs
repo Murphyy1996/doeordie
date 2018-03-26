@@ -25,7 +25,7 @@ public class MenuCamControl : MonoBehaviour
 
     bool stillMoving = false;
 
-    //game objects
+   //game objects
     [SerializeField]
     GameObject player;
     [SerializeField]
@@ -46,74 +46,142 @@ public class MenuCamControl : MonoBehaviour
     Transform leaderboardsPosition;
     [SerializeField]
     Transform creditsPosition;
+    //if passed the time out, do the force lerp
+    [SerializeField]
+    private float counter = 0, timeout = 2f;
+
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        //Increase the time 
+        counter = counter + Time.fixedDeltaTime;
+        float lerpSpeed = speedFactor * Time.fixedDeltaTime;
         Cursor.visible = true;
         //All the if statements that involve moving the camera
         if (mainMenu == true)
         {
-            transform.position = Vector3.Lerp(transform.position, mainMenuPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, mainMenuPosition.rotation, speedFactor);
+            if (transform.position != mainMenuPosition.position && transform.rotation != mainMenuPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, mainMenuPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, mainMenuPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                mainMenu = false;
+                stillMoving = false;
+            }
             //Force the main menu position
-            if (Vector3.Distance(transform.position, mainMenuPosition.position) <= 3f)
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(mainMenuPosition.position, mainMenuPosition.rotation);
+                mainMenu = false;
+                stillMoving = false;
             }
-            //            StartCoroutine(TurnOffBools());
         }
 
         if (titleCard == true)
         {
-            transform.position = Vector3.Lerp(transform.position, titleCardPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, titleCardPosition.rotation, speedFactor);
-            if (Vector3.Distance(transform.position, titleCardPosition.position) <= 3f)
+            if (transform.position != titleCardPosition.position && transform.rotation != titleCardPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, titleCardPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, titleCardPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                titleCard = false;
+                stillMoving = false;
+            }
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(titleCardPosition.position, titleCardPosition.rotation);
+                titleCard = false;
+                stillMoving = false;
             }
-            //            StartCoroutine(TurnOffBools());
         }
 
         if (levelSelect == true)
         {
-            transform.position = Vector3.Lerp(transform.position, levelSelectPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, levelSelectPosition.rotation, speedFactor);
-            if (Vector3.Distance(transform.position, levelSelectPosition.position) <= 3f)
+            if (transform.position != levelSelectPosition.position && transform.rotation != levelSelectPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, levelSelectPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, levelSelectPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                levelSelect = false;
+                stillMoving = false;
+            }
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(levelSelectPosition.position, levelSelectPosition.rotation);
+                levelSelect = false;
+                stillMoving = false;
             }
-            //            StartCoroutine(TurnOffBools());
         }
 
         if (options == true)
         {
-            transform.position = Vector3.Lerp(transform.position, optionsPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, optionsPosition.rotation, speedFactor);
-            if (Vector3.Distance(transform.position, optionsPosition.position) <= 3f)
+            if (transform.position != optionsPosition.position && transform.rotation != optionsPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, optionsPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, optionsPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                options = false;
+                stillMoving = false;
+            }
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(optionsPosition.position, optionsPosition.rotation);
+                options = false;
+                stillMoving = false;
             }
         }
 
         if (leaderboards == true)
         {
-            transform.position = Vector3.Lerp(transform.position, leaderboardsPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, leaderboardsPosition.rotation, speedFactor);
-            if (Vector3.Distance(transform.position, leaderboardsPosition.position) <= 3f)
+            if (transform.position != leaderboardsPosition.position && transform.rotation != leaderboardsPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, leaderboardsPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, leaderboardsPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                leaderboards = false;
+                stillMoving = false;
+            }
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(leaderboardsPosition.position, leaderboardsPosition.rotation);
+                leaderboards = false;
+                stillMoving = false;
             }
         }
 
         if (credits == true)
         {
-            transform.position = Vector3.Lerp(transform.position, creditsPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, creditsPosition.rotation, speedFactor);
-            if (Vector3.Distance(transform.position, creditsPosition.position) <= 3f)
+            if (transform.position != creditsPosition.position && transform.rotation != creditsPosition.rotation)
+            {
+                transform.position = Vector3.Lerp(transform.position, creditsPosition.position, lerpSpeed);
+                transform.rotation = Quaternion.Slerp(transform.rotation, creditsPosition.rotation, lerpSpeed);
+            }
+            else
+            {
+                credits = false;
+                stillMoving = false;
+            }
+            if (counter > timeout)
             {
                 transform.SetPositionAndRotation(creditsPosition.position, creditsPosition.rotation);
+                credits = false;
+                stillMoving = false;
             }
         }
 
@@ -122,21 +190,10 @@ public class MenuCamControl : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
-
-        //If that lets the player click
-        if (stillMoving == false)
+        else
         {
             Cursor.lockState = CursorLockMode.None;
         }
-
-        //Statement that allows you to take control of the player
-        if (controlPlayer == true)
-        {
-            transform.position = Vector3.Lerp(transform.position, playerPosition.position, speedFactor);
-            transform.rotation = Quaternion.Slerp(transform.rotation, playerPosition.rotation, speedFactor);
-            StartCoroutine(StartPlayer());
-        }
-
     }
 
 
@@ -146,12 +203,14 @@ public class MenuCamControl : MonoBehaviour
     //Public voids that tell which camera position to move to. Have to turn off all the bools somehow and at somepoint
     public void SwitchToMainMenu()
     {
+        counter = 0;
         mainMenu = true;
         StartCoroutine(TurnOffBools());
     }
 
     public void SwitchToTitleCard()
     {
+        counter = 0;
         titleCard = true;
         StartCoroutine(TurnOffBools());
 
@@ -159,32 +218,31 @@ public class MenuCamControl : MonoBehaviour
 
     public void SwitchToLevelSelect()
     {
+        counter = 0;
         levelSelect = true;
         StartCoroutine(TurnOffBools());
     }
 
     public void SwitchToOptions()
     {
+        counter = 0;
         options = true;
         StartCoroutine(TurnOffBools());
     }
 
     public void SwitchToLeaderboards()
     {
+        counter = 0;
         leaderboards = true;
         StartCoroutine(TurnOffBools());
     }
 
     public void SwitchToCredits()
     {
+        counter = 0;
         credits = true;
         StartCoroutine(TurnOffBools());
     }
-
-
-
-
-
 
     //Public void that allows control of the player
     public void SwitchToPlayer()
@@ -192,13 +250,10 @@ public class MenuCamControl : MonoBehaviour
         controlPlayer = true;
     }
 
-
-
-
-
     //Coroutine that turns off all bools, so you can go backwards
     private IEnumerator TurnOffBools()
     {
+        counter = 0;
         Time.timeScale = 1;
         //When true, stops the player pressing buttons
         stillMoving = true;
@@ -213,7 +268,6 @@ public class MenuCamControl : MonoBehaviour
 
         //allows the player to click again
         stillMoving = false;
-        Time.timeScale = 0;
         //make sure the cursor is visible
 
 
