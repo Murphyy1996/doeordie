@@ -19,6 +19,7 @@ public class WeaponInfo : MonoBehaviour
     public enum weapon
     {
         pistol,
+        dualPistol,
         machineGun,
         shotgun
     }
@@ -82,6 +83,16 @@ public class WeaponInfo : MonoBehaviour
                     calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol) + pickUpAmmo;
                     ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, calculatedAmmoToAdd);
                     break;
+                case weapon.dualPistol:
+                    if (shootingScript.dualPistolscript == null && ammoPickupOnly == false)
+                    {
+                        shootingScript.dualPistolscript = this;
+                        shootingScript.weaponList.Add(this);
+                    }
+                    //Add the ammo picked up on this gun to the current amount of ammo
+                    calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol) + pickUpAmmo;
+                    ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, calculatedAmmoToAdd);
+                    break;
                 case weapon.machineGun:
                     if (shootingScript.machineGunScript == null && ammoPickupOnly == false)
                     {
@@ -112,6 +123,10 @@ public class WeaponInfo : MonoBehaviour
             //Destroy this object as its no longer needed
             collider.enabled = false;
             GetComponent<MeshRenderer>().enabled = false;
+            if (GetComponentInChildren<MeshRenderer>() != null)
+            {
+                GetComponentInChildren<MeshRenderer>().gameObject.SetActive(false);
+            }
         }
     }
 

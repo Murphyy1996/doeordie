@@ -25,7 +25,7 @@ public class Shooting : MonoBehaviour
     private float currentWeaponDamage = 0, currentWeaponFireDelay = 0;
     private float currentWeaponRecoil = 0;
     [HideInInspector]
-    public WeaponInfo pistolScript, machineGunScript, shotgunScript;
+    public WeaponInfo pistolScript, dualPistolscript, machineGunScript, shotgunScript;
     private CharacterController thisCC;
     private CharacterControllerMovement movement;
     //Need to destroy this variable if the weapon has been changed
@@ -396,6 +396,11 @@ public class Shooting : MonoBehaviour
             currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
             ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, currentWeaponAmmo - 1);
         }
+        else if (currentWeaponScript == dualPistolscript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
+            ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, currentWeaponAmmo - 1);
+        }
         else if (currentWeaponScript == machineGunScript)
         {
             currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
@@ -433,6 +438,10 @@ public class Shooting : MonoBehaviour
 
         //Get the ammount of the current weapon
         if (currentWeaponScript == pistolScript)
+        {
+            currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
+        }
+        else if (currentWeaponScript == dualPistolscript)
         {
             currentWeaponAmmo = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol);
         }
