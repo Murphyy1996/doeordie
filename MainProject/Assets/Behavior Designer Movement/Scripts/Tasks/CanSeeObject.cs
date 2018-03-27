@@ -55,8 +55,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         //Custom
         public override void OnLateUpdate()
         {
-            aimIK.solver.target = player.transform;
-            lookAtIk.solver.target = player.transform;
+//            aimIK.solver.target = player.transform;
+//            lookAtIk.solver.target = player.transform;
         }
 
         // Returns success if an object was found otherwise failure
