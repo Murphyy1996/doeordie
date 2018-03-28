@@ -8,6 +8,9 @@ using UnityEngine;
 public class RefreshHealthIfPlayerDies : MonoBehaviour
 {
     private ReusableHealth thisHealth, playerHealth;
+    [SerializeField]
+    private bool refreshPositionUponPlayerDeath = false;
+    private Vector3 defaultPosition;
 
     // Use this for initialization
     private void Start()
@@ -15,6 +18,7 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
         //Get the required references
         thisHealth = GetComponent<ReusableHealth>();
         playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
+        defaultPosition = transform.position;
         
         //Delete this script is the required references are not got
         if (thisHealth == null || playerHealth == null)
@@ -33,6 +37,11 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
             {
                 //Refresh this object health
                 thisHealth.healthValue = thisHealth.maxHealth;
+                if (refreshPositionUponPlayerDeath == true)
+                {
+                    //Refresh the position
+                    transform.position = defaultPosition;
+                }
             }
         }
     }
