@@ -216,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1097620416224886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -760.81, y: 11.16, z: -213.2}
+  m_LocalPosition: {x: 14.874023, y: 36.215385, z: -33.107773}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4529704061141988}
@@ -675,7 +675,7 @@ MonoBehaviour:
   unparentChild: 1
   useExistingTags: 1
   limitAmountOfObjects: 1
-  maxAmountOfObjects: 30
+  maxAmountOfObjects: 7
   spawnedObjects: []
 --- !u!114 &114549835570632384
 MonoBehaviour:
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAIState: 1
-  playerDetectionSensitivity: 100
+  playerDetectionSensitivity: 40
   outOfRangeGiveUpTimer: 60
   rangeToCallOtherDronesIntoBattle: 4
   playerDetectionRaymask:
