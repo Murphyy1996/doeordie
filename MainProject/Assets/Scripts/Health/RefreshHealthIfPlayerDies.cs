@@ -9,7 +9,7 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
 {
     private ReusableHealth thisHealth, playerHealth;
     [SerializeField]
-    private bool refreshPositionUponPlayerDeath = false;
+    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false;
     private Vector3 defaultPosition;
 
     // Use this for initialization
@@ -41,6 +41,16 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
                 {
                     //Refresh the position
                     transform.position = defaultPosition;
+                }
+                //Kill all existing drones
+                GameObject[] foundEnemies = GameObject.FindGameObjectsWithTag("enemy");
+
+                foreach (GameObject enemy in foundEnemies)
+                {
+                    if (enemy.name == "AlwaysAttackDrone(Clone)")
+                    {
+                        Destroy(enemy.gameObject);
+                    }
                 }
             }
         }
