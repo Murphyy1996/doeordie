@@ -414,7 +414,7 @@ ModelImporter:
     400404: goon_01:goon_01:polySurface7
     400406: //RootNode
     4300000: goon_01:goon_01:polySurface7
-    7400000: Ranged_Walk
+    7400000: Ranged_Walking
     9500000: //RootNode
     13700000: goon_01:goon_01:polySurface7
   materials:
@@ -435,7 +435,7 @@ ModelImporter:
       improve retargeting quality.\n\t'Arm_out:Character1_RightLeg' has translation
       animation that will be discarded.\n"
     animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
+    animationDoRetargetingWarnings: 1
     animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -444,7 +444,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Ranged_Walk
+      name: Ranged_Walking
       takeName: Take 001
       firstFrame: 1
       lastFrame: 40
@@ -900,7 +900,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
