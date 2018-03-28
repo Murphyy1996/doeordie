@@ -37,6 +37,7 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadFabio()
     {
+        print("hello");
         SceneManager.LoadScene("Level1Bl2");
     }
     public void LoadSimon()
