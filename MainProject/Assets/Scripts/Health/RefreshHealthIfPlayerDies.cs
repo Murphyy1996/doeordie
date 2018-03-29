@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Author: James Murphy
 //Purpose: Refresh health of this obj if the player dies
@@ -9,7 +10,7 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
 {
     private ReusableHealth thisHealth, playerHealth;
     [SerializeField]
-    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false;
+    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false, restartSceneUponPlayerDeath = false;
     private Vector3 defaultPosition;
 
     // Use this for initialization
@@ -35,6 +36,11 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
         {
             if (playerHealth.healthValue <= 0)
             {
+                //Restart the scene upon player death - Useful for the boss
+                if (restartSceneUponPlayerDeath == true)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
                 //Refresh this object health
                 thisHealth.healthValue = thisHealth.maxHealth;
                 if (refreshPositionUponPlayerDeath == true)

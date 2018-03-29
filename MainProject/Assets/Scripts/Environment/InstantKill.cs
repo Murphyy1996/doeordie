@@ -11,16 +11,10 @@ public class InstantKill : MonoBehaviour
         GetComponent<BoxCollider>().isTrigger = true;
         teleportScript = GameObject.Find("Player").GetComponent<Teleporting>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && other.gameObject.GetComponent<ReusableHealth>() != null && teleportScript.ReturnIfTeleporting() == false)
+        if (other.tag == "Player" && other.gameObject.GetComponent<ReusableHealth>() != null && teleportScript.ReturnIfTeleporting() == false || other.tag == "enemy" && other.gameObject.GetComponent<ReusableHealth>() != null)
         {
             other.gameObject.GetComponent<ReusableHealth>().healthValue = 0;
             other.gameObject.GetComponent<ReusableHealth>().CheckToSeeIfDead();

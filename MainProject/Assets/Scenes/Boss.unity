@@ -45046,7 +45046,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1341488726
+  randomSeed: -575815274
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -48735,9 +48735,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1002bac73bb51f45b51c8552835275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthValue: 150
+  healthValue: 120
   armorValue: 100
-  maxHealth: 150
+  maxHealth: 120
   maxArmor: 100
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
@@ -75151,6 +75151,7 @@ GameObject:
   - component: {fileID: 1441386234}
   - component: {fileID: 1441386233}
   - component: {fileID: 1441386232}
+  - component: {fileID: 1441386237}
   m_Layer: 0
   m_Name: Truck
   m_TagString: enemy
@@ -75310,6 +75311,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441386230}
   m_Mesh: {fileID: 4300000, guid: dbfe05c782b9d4245ad8a0527e25c028, type: 3}
+--- !u!114 &1441386237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441386230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80237313342df3345a6e9e763e19546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refreshPositionUponPlayerDeath: 0
+  destroyAllSpawnedDrones: 0
+  restartSceneUponPlayerDeath: 1
 --- !u!1 &1442612098
 GameObject:
   m_ObjectHideFlags: 0
