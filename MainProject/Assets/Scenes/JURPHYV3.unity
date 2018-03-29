@@ -49842,6 +49842,101 @@ Prefab:
     - {fileID: 64567983872360778, guid: 15aa5b7d909620d4b8e6efb7aed8a424, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 15aa5b7d909620d4b8e6efb7aed8a424, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2089450972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2089450975}
+  - component: {fileID: 2089450974}
+  - component: {fileID: 2089450973}
+  m_Layer: 0
+  m_Name: RespawnPickups
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2089450973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089450972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80237313342df3345a6e9e763e19546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refreshPositionUponPlayerDeath: 0
+  destroyAllSpawnedDrones: 0
+  restartSceneUponPlayerDeath: 0
+  respawnPickups: 1
+--- !u!114 &2089450974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089450972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1002bac73bb51f45b51c8552835275d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthValue: 1
+  armorValue: 0
+  maxHealth: 1
+  maxArmor: 0
+  bossHealthUI: {fileID: 0}
+  glowWhenDamaged: 0
+  glowMaterialRegularHit: {fileID: 0}
+  glowMaterialCritical: {fileID: 0}
+  glowMaterialToUse: {fileID: 0}
+  glowTime: 0.5
+  defaultMaterials: []
+  behaviourHealth:
+    mIsShared: 0
+    mIsGlobal: 0
+    mName: 
+    mPropertyMapping: 
+    mPropertyMappingOwner: {fileID: 0}
+    mNetworkSync: 0
+    mValue: 0
+  currentHealth:
+    mIsShared: 0
+    mIsGlobal: 0
+    mName: 
+    mPropertyMapping: 
+    mPropertyMappingOwner: {fileID: 0}
+    mNetworkSync: 0
+    mValue: 0
+  behaviourPlayerDied:
+    mIsShared: 0
+    mIsGlobal: 0
+    mName: 
+    mPropertyMapping: 
+    mPropertyMappingOwner: {fileID: 0}
+    mNetworkSync: 0
+    mValue: 0
+  healthBox: {fileID: 0}
+  wepToDrop: {fileID: 0}
+  bloods: {fileID: 1692625562509538, guid: 050ac1ec8a0acc947a78a6132593b54b, type: 2}
+  explos: {fileID: 0}
+--- !u!4 &2089450975
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089450972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 654.5818, y: 58.60108, z: -90.84285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2089842275
 Prefab:
   m_ObjectHideFlags: 0
