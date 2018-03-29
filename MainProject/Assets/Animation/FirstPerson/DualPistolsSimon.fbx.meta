@@ -320,8 +320,8 @@ ModelImporter:
     4300008: Pistol_main
     7400000: Idle
     7400002: Run
-    7400004: Single Shot
-    7400006: Continuous shooting
+    7400004: Right Shot
+    7400006: Left Shot
     9500000: //RootNode
     13700000: arms
   materials:
@@ -1004,7 +1004,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Single Shot
+      name: Right Shot
       takeName: Take 001
       firstFrame: 280
       lastFrame: 300
@@ -1332,9 +1332,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Continuous shooting
+      name: Left Shot
       takeName: Take 001
-      firstFrame: 280
+      firstFrame: 300
       lastFrame: 320
       wrapMode: 0
       orientationOffsetY: 0
