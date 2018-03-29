@@ -120,12 +120,19 @@ public class WeaponInfo : MonoBehaviour
                     }
                     break;
             }
-            //Destroy this object as its no longer needed
-            collider.enabled = false;
-            GetComponent<MeshRenderer>().enabled = false;
-            if (GetComponentInChildren<MeshRenderer>() != null)
+            if (ammoPickupOnly == false)
             {
-                GetComponentInChildren<MeshRenderer>().gameObject.SetActive(false);
+                //Destroy this object as its no longer needed
+                collider.enabled = false;
+                GetComponent<MeshRenderer>().enabled = false;
+                if (GetComponentInChildren<MeshRenderer>() != null)
+                {
+                    GetComponentInChildren<MeshRenderer>().gameObject.SetActive(false);
+                }
+            }
+            else //Simply turn off this object if its just an ammo pick up
+            {
+                this.gameObject.SetActive(false);
             }
         }
     }
