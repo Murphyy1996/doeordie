@@ -60,13 +60,14 @@ GameObject:
   - component: {fileID: 54146649709506182}
   - component: {fileID: 64921619895389336}
   - component: {fileID: 114608241956944242}
+  - component: {fileID: 114737326955735964}
   m_Layer: 19
   m_Name: DaddyDrone
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1290120662375784
 GameObject:
   m_ObjectHideFlags: 1
@@ -675,7 +676,7 @@ MonoBehaviour:
   unparentChild: 1
   useExistingTags: 1
   limitAmountOfObjects: 1
-  maxAmountOfObjects: 7
+  maxAmountOfObjects: 15
   spawnedObjects: []
 --- !u!114 &114549835570632384
 MonoBehaviour:
@@ -714,6 +715,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objToEnable: {fileID: 1944781863577456}
+--- !u!114 &114737326955735964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1097620416224886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80237313342df3345a6e9e763e19546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refreshPositionUponPlayerDeath: 1
+  destroyAllSpawnedDrones: 1
 --- !u!114 &114783374997852794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -750,9 +764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1002bac73bb51f45b51c8552835275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthValue: 300
+  healthValue: 250
   armorValue: 200
-  maxHealth: 300
+  maxHealth: 250
   maxArmor: 200
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
