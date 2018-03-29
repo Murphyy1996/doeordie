@@ -23,12 +23,14 @@ public class DroneStab : MonoBehaviour
     private bool canLerp = true, canApplyDamage = true, allSetUp = false;
     private Drone droneMovementScript;
     private Rigidbody parentRB;
+    private Teleporting playerTeleportScript;
 
 
     private void Awake() //Set up the lerp points
     {
         //Get the drone RB
         parentRB = GetComponentInParent<Rigidbody>();
+        playerTeleportScript = GameObject.Find("Player").GetComponent<Teleporting>();
         //Get the drone movement script
         droneMovementScript = GetComponentInParent<Drone>();
         //Create the lerp points
@@ -97,7 +99,7 @@ public class DroneStab : MonoBehaviour
 
     private void OnTriggerStay(Collider otherObject)
     {
-        if (otherObject.tag == "Player" && droneMovementScript.CheckIfAttacking() == true && canApplyDamage == true)
+        if (otherObject.tag == "Player" && droneMovementScript.CheckIfAttacking() == true && canApplyDamage == true && playerTeleportScript.ReturnIfTeleporting() == false)
         {
             GameObject player = otherObject.gameObject;
             if (player.GetComponent<ReusableHealth>() != null)
