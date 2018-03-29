@@ -10,7 +10,7 @@ public class ChooseLvl : MonoBehaviour
 {
     public enum LevelToLoad
     {
-        main, test, simon, ross, fabio, foundry, hub, barracks, mainmenu, speedrun
+        main, test, simon, ross, fabio, foundry, hub, barracks, mainmenu, speedrun, boss
     };
     [SerializeField]
     private LevelToLoad selectedLevel;
@@ -71,6 +71,10 @@ public class ChooseLvl : MonoBehaviour
                         break;
                     case LevelToLoad.speedrun:
                         LoadingDifferentScenes.inst.SpeedRun();
+                        UIElements.singleton.travelIndication.enabled = false;
+                        break;
+                    case LevelToLoad.boss:
+                        LoadingDifferentScenes.inst.boss();
                         UIElements.singleton.travelIndication.enabled = false;
                         break;
                 }

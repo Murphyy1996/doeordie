@@ -66,5 +66,9 @@ public class LoadingDifferentScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("JURPHYV3");
     }
+    public void boss()
+    {
+        SceneManager.LoadScene("Boss");
+    }
    
 }
