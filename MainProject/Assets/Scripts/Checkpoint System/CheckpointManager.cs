@@ -26,7 +26,6 @@ public class CheckpointManager : MonoBehaviour
         {
             print("Save system manager hasn't loaded in. You need to run the game from the main menu.");   
         }
-
     }
 
     public GameObject GetCurrentCheckpoint() //Return the current checkpoint if a script needs it

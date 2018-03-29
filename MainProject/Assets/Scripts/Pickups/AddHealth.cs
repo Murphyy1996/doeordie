@@ -23,7 +23,7 @@ public class AddHealth : MonoBehaviour {
             if (healthScript.healthValue != healthScript.maxHealth)
             {
                 healthScript.healthValue += amountToIncrease;
-                Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
             }
         }
 

@@ -10,8 +10,9 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
 {
     private ReusableHealth thisHealth, playerHealth;
     [SerializeField]
-    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false, restartSceneUponPlayerDeath = false;
+    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false, restartSceneUponPlayerDeath = false, respawnPickups = true;
     private Vector3 defaultPosition;
+    private GameObject[] foundPickups;
 
     // Use this for initialization
     private void Start()
@@ -20,6 +21,7 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
         thisHealth = GetComponent<ReusableHealth>();
         playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
         defaultPosition = transform.position;
+        foundPickups = GameObject.FindGameObjectsWithTag("Pickup");
         
         //Delete this script is the required references are not got
         if (thisHealth == null || playerHealth == null)
@@ -40,6 +42,14 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
                 if (restartSceneUponPlayerDeath == true)
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                //Refresh pick ups
+                if (respawnPickups == true)
+                {
+                    foreach (GameObject pickups in foundPickups)
+                    {
+                        pickups.SetActive(true);
+                    }
                 }
                 //Refresh this object health
                 thisHealth.healthValue = thisHealth.maxHealth;
