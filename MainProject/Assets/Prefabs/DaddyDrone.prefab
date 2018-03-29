@@ -676,7 +676,7 @@ MonoBehaviour:
   unparentChild: 1
   useExistingTags: 1
   limitAmountOfObjects: 1
-  maxAmountOfObjects: 15
+  maxAmountOfObjects: 9
   spawnedObjects: []
 --- !u!114 &114549835570632384
 MonoBehaviour:
@@ -728,6 +728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refreshPositionUponPlayerDeath: 1
   destroyAllSpawnedDrones: 1
+  restartSceneUponPlayerDeath: 0
+  respawnPickups: 1
 --- !u!114 &114783374997852794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -765,9 +767,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthValue: 250
-  armorValue: 200
+  armorValue: 250
   maxHealth: 250
-  maxArmor: 200
+  maxArmor: 250
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
