@@ -61,4 +61,10 @@ public class LoadingDifferentScenes : MonoBehaviour {
     {
         SceneManager.LoadScene("SpeedRun");
     }
+
+    public void LoadFoundry()
+    {
+        SceneManager.LoadScene("JURPHYV3");
+    }
+   
 }
