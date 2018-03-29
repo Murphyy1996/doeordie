@@ -196,10 +196,16 @@ public class TurretAI : MonoBehaviour
         {
             lookAnim.Stop();
             transform.LookAt(new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z));
+            if (AudioManage.inst.combatMusic.isPlaying == false)
+            {
+                AudioManage.inst.combatMusic.Play();
+            }
+            
         }
         else
         {
             //return;
+            AudioManage.inst.combatMusic.Stop();
         }
 
     }
