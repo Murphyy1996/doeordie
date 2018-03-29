@@ -14,6 +14,10 @@ public class GameOverScreen : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
+            //Allow camera movement again
+            player.GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(false);
+            //Rotate the player 
+            player.transform.rotation = CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation;
             //Force the player camera back in line
             Camera.main.transform.localPosition = new Vector3(0, Camera.main.transform.localPosition.y, 0);
             //Allow camera movement again
