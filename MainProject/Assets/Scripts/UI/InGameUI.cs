@@ -16,6 +16,11 @@ public class InGameUI : MonoBehaviour
     [SerializeField]
     private Image Health, hitFront, hitBack, hitRight, hitLeft, blackBullet, redBullet;
 
+    private float timer = 0, target = 1;
+    private bool timerAllowed = false;
+    private Vector3 defaultHealthScale;
+
+
     [SerializeField]
     private Text ammoText;
     GameObject player;
@@ -48,6 +53,7 @@ public class InGameUI : MonoBehaviour
         hitBack.enabled = false;
         hitRight.enabled = false;
         hitLeft.enabled = false;
+        defaultHealthScale = Health.transform.localScale;
 
         //Control the default states of grapple UI
         if (UIElements.singleton != null)
@@ -60,6 +66,19 @@ public class InGameUI : MonoBehaviour
             {
                 UIElements.singleton.cooldownTele.enabled = false;
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (timerAllowed == true)
+        {
+            timer = timer + Time.fixedDeltaTime;
+        }
+        if (timer >= target)
+        {
+            //method for making small
+            makeBarSmall(1.2f);
         }
     }
 
@@ -277,6 +296,32 @@ public class InGameUI : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
+
+    public void makeBarBigger(float sizeToGo)
+    {
+        timer = 0;
+        timerAllowed = true;
+        //big boy
+        if (Health.transform.localScale == defaultHealthScale)
+        {
+            Health.transform.localScale = Health.transform.localScale * sizeToGo;
+        }
+      //  else if (Health.transform.localScale != defaultHealthScale)
+      //  {
+            // makeBarSmall(2);
+        //    return;
+       // }
+    }
+
+    private void makeBarSmall(float sizeToGo)
+    {
+        timer = 0;
+        timerAllowed = false;
+        Health.transform.localScale = Health.transform.localScale = defaultHealthScale;
+
+        //smallboy
+    }
+
 }
 
 

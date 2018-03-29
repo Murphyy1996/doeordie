@@ -295,6 +295,8 @@ public class ReusableHealth : MonoBehaviour
 
             if (this.gameObject.tag == "Player" && Time.timeScale != 0)
             {
+                InGameUI.inst.makeBarBigger(1.2f);
+                Debug.Log("running to make big boy");
                 //Make a shot force exit the players grapple
                 GetComponent<Grapple>().ExitGrapple();
                 this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.2f, 0.1f);
