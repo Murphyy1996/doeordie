@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossAI : MonoBehaviour
 {
@@ -532,22 +533,6 @@ public class BossAI : MonoBehaviour
 
     private void TransitionToPlatformingSection() //Transition to the on foot section
     {
-        //Unparent this object
-        transform.SetParent(null);
-        //Destroy the boss level as its no longer needed
-        Destroy(wholeBossLevelObj.gameObject);
-        //Enable the new level
-        platformingLevelObj.SetActive(true);
-        //Move the player to the new point
-        playerHealthScript.transform.SetPositionAndRotation(playerSpawnPoint.transform.position, playerSpawnPoint.transform.rotation);
-        GameObject player = playerHealthScript.gameObject;
-        //Change player movement speed
-        player.GetComponent<CharacterControllerMovement>().BossLevelQuickReset();
-        //Activate the required scripts on the player
-        player.GetComponent<Teleporting>().SetTeleportEnabledValue(true);
-        player.GetComponent<Grapple>().SetGrappleAllowedValue(true);
-        player.GetComponent<Crouch>().SetCrouchAllowedValue(true);
-        player.GetComponent<WallClimbV2>().RefreshHorizontalMovementSpeed();
-        this.gameObject.SetActive(false);
+        SceneManager.LoadScene("SpeedRun");
     }
 }
