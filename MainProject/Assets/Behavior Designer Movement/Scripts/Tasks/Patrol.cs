@@ -22,7 +22,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 
         //Custom variable
         private UnityEngine.AI.NavMeshAgent agent;
-        private Animator meleeAnim;
+        private Animator meleeAnim, rangedAnim;
         private GameObject look;
         private int newWaypointIndex;
         Reference reference;
@@ -34,6 +34,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 
             //Custom
             meleeAnim = GetComponent<Animator>();
+            rangedAnim = GetComponent<Animator>();
             reference = GetComponent<Reference>();
             look = GameObject.Find("lookClone" + this.gameObject.name);
 
@@ -44,6 +45,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             }
 
             newWaypointIndex = waypointIndex;
+            rangedAnim.GetFloat("Speed");
+            rangedAnim.SetFloat("Speed", 0.5f);
             meleeAnim.SetBool("isPatrolling", true);
             meleeAnim.SetBool("isRunning", false);
             meleeAnim.SetBool("isCharging", false);
@@ -72,7 +75,9 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Patrol around the different waypoints specified in the waypoint array. Always return a task status of running. 
         public override TaskStatus OnUpdate()
         {
+            
             //Custom
+            rangedAnim.SetFloat("Speed", 0.5f);
             LookAtWaypoint();
             //
 
