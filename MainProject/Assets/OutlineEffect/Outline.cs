@@ -126,7 +126,6 @@ namespace cakeslice
             {
                 if (raycastHit.collider.gameObject.tag == "Player")
                 {
-                    print("hit: " + raycastHit.collider.gameObject.name);
                     return true;
                 }
             }
