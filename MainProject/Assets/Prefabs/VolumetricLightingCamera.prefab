@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114362134431356158}
   - component: {fileID: 114669991985060466}
   - component: {fileID: 114785880997923890}
+  - component: {fileID: 114687928070820292}
   m_Layer: 0
   m_Name: VolumetricLightingCamera
   m_TagString: MainCamera
@@ -123,6 +124,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: a81f464c2ad6f374892a4d701f9b290a, type: 2}
+--- !u!114 &114687928070820292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510990050109970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10504ed50764cc94594120d2be0c145c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineThickness: 2
+  lineIntensity: 0.5
+  fillAmount: 0.05
+  lineColor0: {r: 0.41561887, g: 0.36764705, b: 1, a: 1}
+  lineColor1: {r: 0.6102941, g: 0.9354969, b: 1, a: 1}
+  lineColor2: {r: 0, g: 1, b: 0, a: 1}
+  additiveRendering: 0
+  backfaceCulling: 1
+  cornerOutlines: 0
+  addLinesBetweenColors: 0
+  scaleWithScreenSize: 1
+  alphaCutoff: 0.5
+  flipY: 0
+  sourceCamera: {fileID: 0}
+  outlineCamera: {fileID: 0}
+  outlineShaderMaterial: {fileID: 0}
+  renderTexture: {fileID: 0}
+  extraRenderTexture: {fileID: 0}
 --- !u!114 &114785880997923890
 MonoBehaviour:
   m_ObjectHideFlags: 1

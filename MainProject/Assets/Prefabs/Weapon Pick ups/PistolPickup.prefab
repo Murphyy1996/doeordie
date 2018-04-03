@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65825072866564926}
   - component: {fileID: 114577686356092278}
   - component: {fileID: 114188035091586904}
+  - component: {fileID: 114939606578342008}
   m_Layer: 23
   m_Name: PistolPickup
   m_TagString: Pickup
@@ -131,3 +132,17 @@ MonoBehaviour:
   recoilStrength: 0.1
   pickUpAmmo: 50
   holdDownToShoot: 1
+--- !u!114 &114939606578342008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1537598940728490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bc2879bd9133749a2e7bd47e7c504d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  eraseRenderer: 0
+  hideBehindObjects: 1
