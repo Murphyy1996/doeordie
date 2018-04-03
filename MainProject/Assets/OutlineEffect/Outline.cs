@@ -21,6 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 */
+//Edits for hiding behind other objects made by James Murphy
 
 using UnityEngine;
 using System.Linq;
