@@ -77,7 +77,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         {
             
             //Custom
-            rangedAnim.SetFloat("Speed", 0.5f);
+            rangedAnim.SetFloat("Speed", 0f);
             LookAtWaypoint();
             //
 
