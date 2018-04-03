@@ -17,7 +17,7 @@ public class CheckIfBossDead : MonoBehaviour
     {
         if (droneBoss == null)
         {
-            SceneManager.LoadScene("SpeedRun");
+            SceneManager.LoadScene("Boss");
         }
     }
 }
