@@ -36,6 +36,7 @@ public class ReusableHealth : MonoBehaviour
     bool wepDropped = false, playerDied = false;
     private float glowCounter = 10, glowCounterTarget = 0;
     private bool glowRunOnce = false, returnToDefaultRunOnce = false;
+    private float errorCounter = 0;
 
     private void Start()
     {
@@ -93,7 +94,7 @@ public class ReusableHealth : MonoBehaviour
         }
         catch
         {
-            print("Can't stop explode");
+            errorCounter++;
         }
     }
 
