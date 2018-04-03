@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65884371973647334}
   - component: {fileID: 114668787724881746}
   - component: {fileID: 114504668286570066}
+  - component: {fileID: 114889104468630286}
   m_Layer: 0
   m_Name: AmmoCrate
   m_TagString: Pickup
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464738802772234}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 746.87616, y: 60.802814, z: -114.4128}
+  m_LocalPosition: {x: -281.62897, y: 8.077, z: -319.5476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -122,9 +123,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoPickupOnly: 1
   weaponModelToSpawn: {fileID: 100000, guid: aafaff0b4ba0e5f409a6d9fc43180085, type: 3}
-  weaponModel: 2
+  weaponModel: 3
   damage: 1
   fireDelay: 1
   recoilStrength: 1
   pickUpAmmo: 50
   holdDownToShoot: 1
+--- !u!114 &114889104468630286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464738802772234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bc2879bd9133749a2e7bd47e7c504d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 2
+  eraseRenderer: 0
+  hideBehindObjects: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 33025

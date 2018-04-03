@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33424483464047470}
   - component: {fileID: 23925003465954334}
   - component: {fileID: 95405283263276162}
+  - component: {fileID: 114537684716646984}
   m_Layer: 2
   m_Name: med box
   m_TagString: Untagged
@@ -67,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1674817928231052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -97.45626, y: 7.79, z: -25.446754}
+  m_LocalPosition: {x: -283.38818, y: 8.457, z: -324.53992}
   m_LocalScale: {x: 0.6223591, y: 0.6223591, z: 0.6223591}
   m_Children:
   - {fileID: 4378239321135820}
@@ -161,3 +162,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToIncrease: 25
+--- !u!114 &114537684716646984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374057042581794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bc2879bd9133749a2e7bd47e7c504d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 2
+  eraseRenderer: 0
+  hideBehindObjects: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 33025

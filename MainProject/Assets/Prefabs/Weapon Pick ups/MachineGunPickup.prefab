@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 65106816084128802}
   - component: {fileID: 114113753389496080}
   - component: {fileID: 114442055011901816}
+  - component: {fileID: 114100311757532156}
   m_Layer: 23
   m_Name: MachineGunPickup
   m_TagString: Pickup
@@ -117,6 +118,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114100311757532156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036589500525934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bc2879bd9133749a2e7bd47e7c504d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  eraseRenderer: 0
+  hideBehindObjects: 1
 --- !u!114 &114113753389496080
 MonoBehaviour:
   m_ObjectHideFlags: 1

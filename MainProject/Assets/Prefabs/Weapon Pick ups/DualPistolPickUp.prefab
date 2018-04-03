@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 65113074348421394}
   - component: {fileID: 114531885186873238}
   - component: {fileID: 114594692099081322}
+  - component: {fileID: 114673361694658434}
   m_Layer: 23
   m_Name: DualPistolPickUp
   m_TagString: Pickup
@@ -203,3 +204,17 @@ MonoBehaviour:
   selectedAxis: 1
   rotationSpeed: 20
   simulatePlayerRotationPhysics: 0
+--- !u!114 &114673361694658434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730280095011004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bc2879bd9133749a2e7bd47e7c504d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  eraseRenderer: 0
+  hideBehindObjects: 1
