@@ -170,8 +170,17 @@ public class Bullet : MonoBehaviour
                     }
                     //Create a bullet decal
                     CreateBulletDecal();
+                    if (AudioManage.inst.bulletEnvironment.isPlaying == false)
+                    {
+                        AudioManage.inst.bulletEnvironment.Play();
+                        Debug.Log("playing audio source");
+                        Invoke("StopBulletShotEnvironment", 1f);
+                    }
+
+
                     //Remove this bullet from the scene
                     RepoolBullet();
+
                 }
             }
         }
@@ -291,6 +300,14 @@ public class Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         RepoolBullet();
+    }
+    public void StopBulletShotEnvironment()
+    {
+        if (AudioManage.inst.bulletEnvironment.isPlaying == true)
+        {
+            AudioManage.inst.bulletEnvironment.Stop();
+        }
+        
     }
 }
 
