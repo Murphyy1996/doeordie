@@ -5,28 +5,28 @@ public class BossCameraShake : MonoBehaviour
 {
     private Transform camTransform;
     public float shakeDuration = 0.5f, shakeAmount = 0.7f, decreaseFactor = 1.0f;
-    Vector3 originalLocalPos;
+    private FirstPersonCamera fpsCam;
 
     private void OnEnable() //Get the required defaults and components
     {
         camTransform = Camera.main.transform;
-        originalLocalPos = camTransform.localPosition;
+        fpsCam = camTransform.GetComponent<FirstPersonCamera>();
     }
 
     private void Update()
     {
-        if (camTransform != null && Time.deltaTime != 0)
+        if (camTransform != null && Time.deltaTime != 0 && fpsCam != null)
         {
             if (shakeDuration > 0)
             {
-                camTransform.localPosition = originalLocalPos + Random.insideUnitSphere * shakeAmount;
+                camTransform.localPosition = fpsCam.defaultLocalPos + Random.insideUnitSphere * shakeAmount;
 
                 shakeDuration -= Time.deltaTime * decreaseFactor;
             }
             else
             {
                 shakeDuration = 0f;
-                camTransform.localPosition = originalLocalPos;
+                camTransform.localPosition = fpsCam.defaultLocalPos;
                 //Once returned to position, turn this script off
                 Destroy(this);
             }
