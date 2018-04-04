@@ -199,7 +199,10 @@ public class ReusableHealth : MonoBehaviour
 
     void DestroyGameobject()
     {
-        Destroy(this.gameObject);
+        if (this.gameObject.layer == 19)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     //Manage particle effects for death
@@ -469,29 +472,32 @@ public class ReusableHealth : MonoBehaviour
     //Spawn dropped weapon
     private void DropWeapon() //Author: Kate Georgiou - handles the random n umber generation so it knows what to spawn on each enemy who dies
     {
-        int lowerRandomRange = 0, higherRandomRange = 25;
+        bool active = false;
 
-        int randoNumber = Random.Range(lowerRandomRange, higherRandomRange);
-        GameObject spawnedObject;
-        if (randoNumber <= decidingPoint && randoNumber >= lowerRandomRange) //if the random number ranges between 0 and 25 then drop the health kits...
+        if (active == true)
         {
-            if (healthBox != null)
+            int lowerRandomRange = 0, higherRandomRange = 25;
+
+            int randoNumber = Random.Range(lowerRandomRange, higherRandomRange);
+            GameObject spawnedObject;
+            if (randoNumber <= decidingPoint && randoNumber >= lowerRandomRange) //if the random number ranges between 0 and 25 then drop the health kits...
             {
-                spawnedObject = Instantiate(healthBox, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity) as GameObject;
-                spawnedObject.name = "Dropped Item"; //name the object that is dropped this name
+                if (healthBox != null)
+                {
+                    spawnedObject = Instantiate(healthBox, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity) as GameObject;
+                    spawnedObject.name = "Dropped Item"; //name the object that is dropped this name
+                }
+            }
+            else if (randoNumber >= decidingPoint && randoNumber <= higherRandomRange) //if the random number is more than 25 but less than 100 spawn a weapon...
+            {
+                if (wepToDrop != null)
+                {
+                    //Check if null for turret tag
+                    spawnedObject = Instantiate(wepToDrop, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity) as GameObject;
+                    spawnedObject.name = "Dropped Item"; //name the object that is dropped this name
+                }
             }
         }
-        else if (randoNumber >= decidingPoint && randoNumber <= higherRandomRange) //if the random number is more than 25 but less than 100 spawn a weapon...
-        {
-            if (wepToDrop != null)
-            {
-                //Check if null for turret tag
-                spawnedObject = Instantiate(wepToDrop, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity) as GameObject;
-                spawnedObject.name = "Dropped Item"; //name the object that is dropped this name
-            }
-
-        }
-
     }
 
     //Method for spawning blood decals
