@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4378239321135820}
   - component: {fileID: 33424483464047470}
   - component: {fileID: 23925003465954334}
-  - component: {fileID: 95405283263276162}
   - component: {fileID: 114537684716646984}
   m_Layer: 2
   m_Name: med box
@@ -133,23 +132,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6268115, y: 2.8304513, z: 4.4889607}
   m_Center: {x: 0.31237328, y: 0.7252841, z: 0.31770366}
---- !u!95 &95405283263276162
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1374057042581794}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 3233132e0ab420a4690907d097e6c17b, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114347526928086256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,6 +158,7 @@ MonoBehaviour:
   color: 2
   eraseRenderer: 0
   hideBehindObjects: 1
+  pickUpOutlineRange: 50
   layerMask:
     serializedVersion: 2
     m_Bits: 33025
