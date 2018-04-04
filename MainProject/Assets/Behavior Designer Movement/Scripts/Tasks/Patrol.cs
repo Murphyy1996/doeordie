@@ -45,8 +45,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             }
 
             newWaypointIndex = waypointIndex;
-            rangedAnim.GetFloat("Speed");
-            rangedAnim.SetFloat("Speed", 0.5f);
+
             meleeAnim.SetBool("isPatrolling", true);
             meleeAnim.SetBool("isRunning", false);
             meleeAnim.SetBool("isCharging", false);
@@ -77,7 +76,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         {
             
             //Custom
-            rangedAnim.SetFloat("Speed", 0f);
+
             LookAtWaypoint();
             //
 
