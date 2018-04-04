@@ -45,12 +45,34 @@ namespace cakeslice
         private LayerMask layerMask;
         private bool outlineEnabled = true;
         private int errorCounter = 0;
+        private GameObject emptyRepresentationPoint;
+        private Transform playerTransform;
+        private RaycastHit raycastHit;
 
         private void Awake()
         {
             Renderer = GetComponent<Renderer>();
             if (hideBehindObjects == true)
             {
+                //Set up the empty representation point
+                emptyRepresentationPoint = new GameObject();
+                emptyRepresentationPoint.name = this.gameObject.name + " transform empty";
+                emptyRepresentationPoint.transform.SetParent(transform);
+                emptyRepresentationPoint.transform.localPosition = new Vector3(0, 0, 0);
+                emptyRepresentationPoint.transform.SetParent(null);
+                GameObject foundEmpty = GameObject.Find("OutlineEmpty");
+                if (foundEmpty == null)
+                {
+                    foundEmpty = new GameObject();
+                    foundEmpty.name = "OutlineEmpty";
+                    emptyRepresentationPoint.transform.SetParent(foundEmpty.transform);
+                }
+                else
+                {
+                    emptyRepresentationPoint.transform.SetParent(foundEmpty.transform);
+                }
+                playerTransform = GameObject.Find("Player").transform;
+                //Run the render tick
                 InvokeRepeating("RenderTick", 0, 0.2f);
             }
         }
@@ -108,20 +130,32 @@ namespace cakeslice
                     if (CheckIfPlayerCanBeSeen() == true)
                     {
                         eraseRenderer = false;
+                        mainCameraEffectScript.AddOutline(this);
                     }
                     else
                     {
                         eraseRenderer = true;
+                        mainCameraEffectScript.RemoveOutline(this);
                     }
+                }
+            }
+        }
+
+        private void FixedUpdate() //Always look at the player
+        {
+            if (hideBehindObjects == true)
+            {
+                if (emptyRepresentationPoint != null && playerTransform != null)
+                {
+                    emptyRepresentationPoint.transform.LookAt(playerTransform.position);
+                    Debug.DrawLine(emptyRepresentationPoint.transform.position, raycastHit.point, Color.red);
                 }
             }
         }
 
         private bool CheckIfPlayerCanBeSeen() //Will raycast and return if this obj is visible
         {
-            Vector3 direction = mainCameraEffectScript.transform.position - transform.position;
-            RaycastHit raycastHit;
-            if (Physics.Raycast(transform.position, direction, out raycastHit, 20f, layerMask))
+            if (Physics.Raycast(emptyRepresentationPoint.transform.position, emptyRepresentationPoint.transform.forward, out raycastHit, 20f, layerMask))
             {
                 if (raycastHit.collider.gameObject.tag == "Player")
                 {
