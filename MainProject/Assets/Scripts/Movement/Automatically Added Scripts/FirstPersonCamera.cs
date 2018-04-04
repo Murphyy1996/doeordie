@@ -28,6 +28,8 @@ public class FirstPersonCamera : MonoBehaviour
     private Transform player;
     float verticalAxis = 0;
     private bool invertedCamera = false;
+    [HideInInspector]
+    public Vector3 defaultLocalPos;
 
     private void Awake() //Get components and set defaults
     {
@@ -49,6 +51,7 @@ public class FirstPersonCamera : MonoBehaviour
     private void DelayedAwake() //Enable the camera movement
     {
         IsCameraAllowedToMove(true);
+        defaultLocalPos = transform.localPosition;
     }
 
     private void LateUpdate()
