@@ -45,7 +45,7 @@ namespace cakeslice
         private OutlineEffect mainCameraEffectScript;
         [SerializeField]
         private LayerMask layerMask;
-        private bool outlineEnabled = true;
+        private bool outlineAllowed = true;
         private int errorCounter = 0;
         private GameObject emptyRepresentationPoint;
         private Transform playerTransform;
@@ -84,6 +84,7 @@ namespace cakeslice
             try
             {
                 Camera.main.GetComponent<OutlineEffect>().AddOutline(this);
+                outlineAllowed = true;
             }
             catch
             {
@@ -96,6 +97,7 @@ namespace cakeslice
             try
             {
                 Camera.main.GetComponent<OutlineEffect>().RemoveOutline(this);
+                outlineAllowed = false;
             }
             catch
             {
@@ -107,37 +109,40 @@ namespace cakeslice
 
         private void RenderTick()
         {
-            //Get the main camera script if possible
-            if (mainCameraEffectScript == null)
+            if (outlineAllowed == true)
             {
-                try
+                //Get the main camera script if possible
+                if (mainCameraEffectScript == null)
                 {
-                    if (Camera.main != null)
+                    try
                     {
-                        mainCameraEffectScript = Camera.main.GetComponent<OutlineEffect>();
-                        layerMask = (1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Default")) | (1 << LayerMask.NameToLayer("No Teleport"));
+                        if (Camera.main != null)
+                        {
+                            mainCameraEffectScript = Camera.main.GetComponent<OutlineEffect>();
+                            layerMask = (1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Default")) | (1 << LayerMask.NameToLayer("No Teleport"));
+                        }
+                    }
+                    catch
+                    {
+                        errorCounter++;
                     }
                 }
-                catch
+                //This will hide the outline behind over objects
+                if (mainCameraEffectScript != null)
                 {
-                    errorCounter++;
-                }
-            }
-            //This will hide the outline behind over objects
-            if (mainCameraEffectScript != null)
-            {
-                if (hideBehindObjects == true)
-                {
-                    //If the renderer can be seen then enable the outline
-                    if (CheckIfPlayerCanBeSeen() == true)
+                    if (hideBehindObjects == true)
                     {
-                        eraseRenderer = false;
-                        mainCameraEffectScript.AddOutline(this);
-                    }
-                    else
-                    {
-                        eraseRenderer = true;
-                        mainCameraEffectScript.RemoveOutline(this);
+                        //If the renderer can be seen then enable the outline
+                        if (CheckIfPlayerCanBeSeen() == true)
+                        {
+                            eraseRenderer = false;
+                            mainCameraEffectScript.AddOutline(this);
+                        }
+                        else
+                        {
+                            eraseRenderer = true;
+                            mainCameraEffectScript.RemoveOutline(this);
+                        }
                     }
                 }
             }
@@ -150,6 +155,15 @@ namespace cakeslice
                 if (emptyRepresentationPoint != null && playerTransform != null)
                 {
                     emptyRepresentationPoint.transform.LookAt(playerTransform.position);
+                }
+                //If the renderer is turned off then disabled the outline
+                if (Renderer.enabled == true)
+                {
+                    outlineAllowed = true;
+                }
+                else
+                {
+                    outlineAllowed = false;
                 }
             }
         }
