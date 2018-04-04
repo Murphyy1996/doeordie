@@ -40,6 +40,8 @@ namespace cakeslice
         [SerializeField]
         [Header("Experimental")]
         private bool hideBehindObjects = false;
+        [SerializeField]
+        private float pickUpOutlineRange = 50;
         private OutlineEffect mainCameraEffectScript;
         [SerializeField]
         private LayerMask layerMask;
@@ -148,14 +150,13 @@ namespace cakeslice
                 if (emptyRepresentationPoint != null && playerTransform != null)
                 {
                     emptyRepresentationPoint.transform.LookAt(playerTransform.position);
-                    Debug.DrawLine(emptyRepresentationPoint.transform.position, raycastHit.point, Color.red);
                 }
             }
         }
 
         private bool CheckIfPlayerCanBeSeen() //Will raycast and return if this obj is visible
         {
-            if (Physics.Raycast(emptyRepresentationPoint.transform.position, emptyRepresentationPoint.transform.forward, out raycastHit, 20f, layerMask))
+            if (Physics.Raycast(emptyRepresentationPoint.transform.position, emptyRepresentationPoint.transform.forward, out raycastHit, pickUpOutlineRange, layerMask))
             {
                 if (raycastHit.collider.gameObject.tag == "Player")
                 {
