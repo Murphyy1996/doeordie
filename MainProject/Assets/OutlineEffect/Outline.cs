@@ -21,6 +21,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 */
+//Edits for hiding behind other objects made by James Murphy
 
 using UnityEngine;
 using System.Linq;
@@ -40,9 +41,10 @@ namespace cakeslice
         [Header("Experimental")]
         private bool hideBehindObjects = false;
         private OutlineEffect mainCameraEffectScript;
-
+        [SerializeField]
         private LayerMask layerMask;
         private bool outlineEnabled = true;
+        private int errorCounter = 0;
 
         private void Awake()
         {
@@ -55,25 +57,25 @@ namespace cakeslice
 
         private void OnEnable()
         {
-            IEnumerable<OutlineEffect> effects = Camera.allCameras.AsEnumerable()
-                           .Select(c => c.GetComponent<OutlineEffect>())
-                           .Where(e => e != null);
-
-            foreach (OutlineEffect effect in effects)
+            try
             {
-                effect.AddOutline(this);
+                Camera.main.GetComponent<OutlineEffect>().AddOutline(this);
+            }
+            catch
+            {
+                errorCounter++;
             }
         }
 
         private void OnDisable()
         {
-            IEnumerable<OutlineEffect> effects = Camera.allCameras.AsEnumerable()
-                            .Select(c => c.GetComponent<OutlineEffect>())
-                            .Where(e => e != null);
-
-            foreach (OutlineEffect effect in effects)
+            try
             {
-                effect.RemoveOutline(this);
+                Camera.main.GetComponent<OutlineEffect>().RemoveOutline(this);
+            }
+            catch
+            {
+                errorCounter++;
             }
         }
 
@@ -84,45 +86,42 @@ namespace cakeslice
             //Get the main camera script if possible
             if (mainCameraEffectScript == null)
             {
-                if (Camera.main != null)
+                try
                 {
-                    mainCameraEffectScript = Camera.main.GetComponent<OutlineEffect>();
-                    layerMask = (1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Default")) | (1 << LayerMask.NameToLayer("No Teleport"));
+                    if (Camera.main != null)
+                    {
+                        mainCameraEffectScript = Camera.main.GetComponent<OutlineEffect>();
+                        layerMask = (1 << LayerMask.NameToLayer("Player")) | (1 << LayerMask.NameToLayer("Default")) | (1 << LayerMask.NameToLayer("No Teleport"));
+                    }
+                }
+                catch
+                {
+                    errorCounter++;
                 }
             }
-
             //This will hide the outline behind over objects
             if (mainCameraEffectScript != null)
             {
                 if (hideBehindObjects == true)
                 {
                     //If the renderer can be seen then enable the outline
-                    if (CheckIfThisObjIsVisible() == true)
+                    if (CheckIfPlayerCanBeSeen() == true)
                     {
-                        if (outlineEnabled == false)
-                        {
-                            eraseRenderer = false;
-                            outlineEnabled = true;
-                        }
+                        eraseRenderer = false;
                     }
                     else
                     {
-                        //if the renderer can't be seen don't enable the outline
-                        if (outlineEnabled == true)
-                        {
-                            eraseRenderer = true;
-                            outlineEnabled = false;
-                        }
+                        eraseRenderer = true;
                     }
                 }
             }
         }
 
-        private bool CheckIfThisObjIsVisible() //Will raycast and return if this obj is visible
+        private bool CheckIfPlayerCanBeSeen() //Will raycast and return if this obj is visible
         {
             Vector3 direction = mainCameraEffectScript.transform.position - transform.position;
             RaycastHit raycastHit;
-            if (Physics.Raycast(transform.position, direction, out raycastHit, 100f, layerMask))
+            if (Physics.Raycast(transform.position, direction, out raycastHit, 20f, layerMask))
             {
                 if (raycastHit.collider.gameObject.tag == "Player")
                 {
