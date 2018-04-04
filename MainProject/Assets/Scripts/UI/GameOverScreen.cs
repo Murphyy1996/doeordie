@@ -14,6 +14,10 @@ public class GameOverScreen : MonoBehaviour
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
+            //Refresh player ammo
+            AmmoManager ammo = player.GetComponent<AmmoManager>();
+            ammo.SetAmmoAmount(AmmoManager.ammoType.machineGun, ammo.ReturnMaxAmmoForMachineGun() / 2);
+            ammo.SetAmmoAmount(AmmoManager.ammoType.shotgun, ammo.ReturnMaxAmmoForShotgun() / 2);
             //Allow camera movement again
             player.GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(false);
             //Rotate the player 

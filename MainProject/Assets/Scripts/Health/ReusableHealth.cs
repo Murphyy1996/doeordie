@@ -186,19 +186,6 @@ public class ReusableHealth : MonoBehaviour
         //Get weapon ammos back to default
         Shooting shootScript = GetComponent<Shooting>();
         AmmoManager ammoScript = GetComponent<AmmoManager>();
-        //Reset all respective weapons to default ammos
-        foreach (WeaponInfo weapon in shootScript.weaponList)
-        {
-            switch (weapon.weaponModel)
-            {
-                case WeaponInfo.weapon.pistol:
-                    ammoScript.SetAmmoAmount(AmmoManager.ammoType.pistol, weapon.ReturnStartingAmmo());
-                    break;
-                case WeaponInfo.weapon.machineGun:
-                    ammoScript.SetAmmoAmount(AmmoManager.ammoType.machineGun, weapon.ReturnStartingAmmo());
-                    break;
-            }
-        }
         //Move the player back to the closest checkpoint
         if (CheckpointManager.singleton.GetCurrentCheckpoint() != null)
         {
