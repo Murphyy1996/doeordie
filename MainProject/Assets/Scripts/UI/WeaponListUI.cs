@@ -17,6 +17,7 @@ public class WeaponListUI : MonoBehaviour
     private GameObject playerObj;
     private AmmoManager ammoScript;
     private Shooting shootingScript;
+    private Outline slot1Outline, slot2Outline, slot3Outline, slot4Outline;
 
     private void Start() //Get required components
     {
@@ -24,6 +25,10 @@ public class WeaponListUI : MonoBehaviour
         slot2Image = transform.Find("slot2").GetComponent<Image>();
         slot3Image = transform.Find("slot3").GetComponent<Image>();
         slot4Image = transform.Find("slot4").GetComponent<Image>();
+        slot1Outline = slot1Image.gameObject.GetComponent<Outline>();
+        slot2Outline = slot2Image.gameObject.GetComponent<Outline>();
+        slot3Outline = slot3Image.gameObject.GetComponent<Outline>();
+        slot4Outline = slot4Image.gameObject.GetComponent<Outline>();
         playerObj = GameObject.Find("Player");
         ammoScript = playerObj.GetComponent<AmmoManager>();
         shootingScript = playerObj.GetComponent<Shooting>();
@@ -34,6 +39,7 @@ public class WeaponListUI : MonoBehaviour
 
     private void FixedUpdate() //Depending on the amount of weapons keep the list updated
     {
+        UpdateCurrentlySelectedWeapon();
         int gunsPickedUp = shootingScript.weaponList.Count;
         EnableAmountOfSlots(gunsPickedUp);
     }
@@ -120,6 +126,47 @@ public class WeaponListUI : MonoBehaviour
                     case WeaponInfo.weapon.machineGun:
                         slot4Image.sprite = machinegunSprite;
                         break;
+                }
+            }
+        }
+    }
+
+    private void UpdateCurrentlySelectedWeapon() //Update the currently selected weapon
+    {
+        if (shootingScript != null)
+        {
+            for (int i = 0; i < shootingScript.weaponList.Count; i++)
+            {
+                if (shootingScript.weaponList[i] == shootingScript.currentWeaponScript)
+                {
+                    if (i == 0)
+                    {
+                        slot1Outline.enabled = true;
+                        slot2Outline.enabled = false;
+                        slot3Outline.enabled = false;
+                        slot4Outline.enabled = false;
+                    }
+                    else if (i == 1)
+                    {
+                        slot2Outline.enabled = true;
+                        slot1Outline.enabled = false;
+                        slot3Outline.enabled = false;
+                        slot4Outline.enabled = false;
+                    }
+                    else if (i == 2)
+                    {
+                        slot3Outline.enabled = true;
+                        slot1Outline.enabled = false;
+                        slot2Outline.enabled = false;
+                        slot4Outline.enabled = false;
+                    }
+                    else if (i == 3)
+                    {
+                        slot4Outline.enabled = true;
+                        slot1Outline.enabled = false;
+                        slot2Outline.enabled = false;
+                        slot3Outline.enabled = false;
+                    }
                 }
             }
         }
