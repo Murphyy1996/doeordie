@@ -207,6 +207,37 @@ public class Shooting : MonoBehaviour
                 canSwitchWeapons = false;
                 Invoke("FixInstantSwitch", 0.2f);
             }
+            //Allow for switching via numbers
+            //Options for selecting with numbers
+            int selectedWeap = 100;
+            if (Input.GetKey(KeyCode.Alpha1) && currentWeaponScript != weaponList[0])
+            {
+                selectedWeap = 0;
+            }
+            if (Input.GetKey(KeyCode.Alpha2) && currentWeaponScript != weaponList[1])
+            {
+                selectedWeap = 1;
+            }
+            if (Input.GetKey(KeyCode.Alpha3) && 2 <= weaponList.Count - 1 && currentWeaponScript != weaponList[2])
+            {
+                selectedWeap = 2;
+            }
+            if (Input.GetKey(KeyCode.Alpha4) && 3 <= weaponList.Count - 1 && currentWeaponScript != weaponList[3])
+            {
+                selectedWeap = 3;
+            }
+            if (selectedWeap != 100)
+            {
+                //Select the current weapon
+                currentWeaponScript = weaponList[selectedWeap];
+                DeleteRenderedWeapon();
+                //If the weapon has been changed activate the cooldown
+                StopCoroutine(WeaponCooldown());
+                gunCooldownFinished = true;
+                StartCoroutine(SwitchWeaponCooldown());
+                canSwitchWeapons = false;
+                Invoke("FixInstantSwitch", 0.2f);
+            }
         }
     }
 
