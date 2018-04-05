@@ -30,7 +30,8 @@ public class CheckIfDead : Conditional
             if (this.gameObject.tag == "enemy")
             {
                 navMeshAgent.enabled = false;
-                rangedTree.FindTask<CanSeeObject>().spottedPlayer = false;
+                //rangedTree.FindTask<CanSeeObject>().spottedPlayer = false;
+
                 return TaskStatus.Success;
             }
 

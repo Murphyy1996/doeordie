@@ -38,7 +38,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         [Tooltip("The object that is within sight")]
         public SharedGameObject returnedObject;
         //Custom
-        public SharedBool spottedPlayer = false;
+        public SharedBool spottedPlayer;
         BehaviorTree rangedTree;
         GameObject player;
         AimIK aimIK;
@@ -50,6 +50,9 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             player = GameObject.Find("Player");
             aimIK = GetComponent<AimIK>();
             lookAtIk = GetComponent<LookAtIK>();
+            spottedPlayer = (SharedBool)GlobalVariables.Instance.GetVariable("globalSpotted");
+            spottedPlayer.Value = true;
+            spottedPlayer.Value = false;
         }
 
         //Custom
@@ -62,14 +65,16 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
         {
-            if (spottedPlayer.Value == true)
+            //Custom
+            if (returnedObject.Value == GameObject.Find("body"))
             {
-                GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
-            } else
-            {
-                GlobalVariables.Instance.SetVariableValue("globalSpotted", false);
+                spottedPlayer.Value = true;
             }
-            
+
+          
+            Debug.Log(spottedPlayer.Value);
+            //
+
             if (usePhysics2D) {
                
                 if (targetObjects.Value != null && targetObjects.Value.Count > 0) { // If there are objects in the group list then search for the object within that list
@@ -81,21 +86,15 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                         if ((obj = MovementUtility.WithinSight(transform, offset.Value, fieldOfViewAngle.Value, viewDistance.Value, targetObjects.Value[i], targetOffset.Value, true, angleOffset2D.Value, out angle, ignoreLayerMask, useTargetBone.Value, targetBone)) != null) {
                             // This object is within sight. Set it to the objectFound GameObject if the angle is less than any of the other objects
                             if (angle < minAngle) {
+                          
                                 minAngle = angle;
                                 objectFound = obj;
 
-                                //Custom
-                                GlobalVariables.Instance.GetVariable("globalSpotted");
-                             
-                                spottedPlayer = true;
-
-                           
-                            
-                                //
                             }
                         }
                     }
                     returnedObject.Value = objectFound;
+           
                 } else if (targetObject.Value == null) { // If the target object is null then determine if there are any objects within sight based on the layer mask
                     returnedObject.Value = MovementUtility.WithinSight2D(transform, offset.Value, fieldOfViewAngle.Value, viewDistance.Value, objectLayerMask, targetOffset.Value, angleOffset2D.Value, ignoreLayerMask);
                 } else if (!string.IsNullOrEmpty(targetTag.Value)) { // If the target tag is not null then determine if there are any objects within sight based on the tag
@@ -115,7 +114,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                             if (angle < minAngle) {
                                 minAngle = angle;
                                 objectFound = obj;
-                                
+
+          
                             }
                         }
                     }
@@ -130,31 +130,31 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             }
             if (returnedObject.Value != null)
             {
+    
                 //Custom
-                if (spottedPlayer.Value == false) //if the player cant be seen and gets scene change the bool to true
-                {
-                    
-                    spottedPlayer = true;
-                    
-                }
-                if (spottedPlayer.Value == true && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
+//                if (spottedPlayer.Value == false) //if the player cant be seen and gets scene change the bool to true
+//                {
+//                    spottedPlayer = true; 
+//                }
+                if (spottedPlayer.Value && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
                 {
                     AudioManage.inst.combatMusic.Play();
                 }
               
-                
+                //GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
                 // Return success if an object was found
                 return TaskStatus.Success;
             }
             // An object is not within sight so return failure
-            spottedPlayer = false;
+            //spottedPlayer = false;
+    
             if (AudioManage.inst.combatMusic.isPlaying == true && spottedPlayer.Value == false) // should stop the music from player when the player gets away or is lost?
             {
                 AudioManage.inst.combatMusic.Stop();  //for some reason it stops the music whenever the player cant see tthe enemy which isnt right lmao
             }
+                
             return TaskStatus.Failure;
 
-           
         }
 
         // Reset the public variables
