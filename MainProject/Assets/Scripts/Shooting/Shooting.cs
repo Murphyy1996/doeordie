@@ -213,18 +213,22 @@ public class Shooting : MonoBehaviour
             if (Input.GetKey(KeyCode.Alpha1) && currentWeaponScript != weaponList[0])
             {
                 selectedWeap = 0;
+                selectedWeaponFloat = selectedWeap;
             }
             if (Input.GetKey(KeyCode.Alpha2) && currentWeaponScript != weaponList[1])
             {
                 selectedWeap = 1;
+                selectedWeaponFloat = selectedWeap;
             }
             if (Input.GetKey(KeyCode.Alpha3) && 2 <= weaponList.Count - 1 && currentWeaponScript != weaponList[2])
             {
                 selectedWeap = 2;
+                selectedWeaponFloat = selectedWeap;
             }
             if (Input.GetKey(KeyCode.Alpha4) && 3 <= weaponList.Count - 1 && currentWeaponScript != weaponList[3])
             {
                 selectedWeap = 3;
+                selectedWeaponFloat = selectedWeap;
             }
             if (selectedWeap != 100)
             {
