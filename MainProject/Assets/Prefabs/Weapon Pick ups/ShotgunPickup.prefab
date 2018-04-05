@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208784418821652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -771.43, y: 1.854, z: -19.734653}
+  m_LocalPosition: {x: -69.58, y: 38.01, z: 194.921}
   m_LocalScale: {x: 0.79999995, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,6 +127,10 @@ MonoBehaviour:
   color: 1
   eraseRenderer: 0
   hideBehindObjects: 1
+  pickUpOutlineRange: 50
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114941339463973200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,7 +147,7 @@ MonoBehaviour:
     type: 2}
   weaponModel: 3
   damage: 10
-  fireDelay: 2
+  fireDelay: 1
   recoilStrength: 1
   pickUpAmmo: 40
   holdDownToShoot: 1
