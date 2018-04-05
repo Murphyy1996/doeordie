@@ -51,7 +51,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             aimIK = GetComponent<AimIK>();
             lookAtIk = GetComponent<LookAtIK>();
             spottedPlayer = (SharedBool)GlobalVariables.Instance.GetVariable("globalSpotted");
-            spottedPlayer.Value = true;
+            //spottedPlayer.Value = true;
             spottedPlayer.Value = false;
         }
 
@@ -65,9 +65,11 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
         {
+          
             //Custom
             if (returnedObject.Value == GameObject.Find("body"))
             {
+                Debug.Log("te");
                 spottedPlayer.Value = true;
             }
 
