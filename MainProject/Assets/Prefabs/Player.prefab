@@ -2273,8 +2273,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
-  m_LocalRotation: {x: -0, y: -0.7059533, z: -0, w: -0.7082584}
-  m_LocalPosition: {x: -252.78444, y: 19.87377, z: -264.6822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.1901, y: 69.6, z: -189.25821}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -2292,7 +2292,7 @@ Transform:
   - {fileID: 4758122784484346}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -119.441, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4936910706553010
 Transform:
   m_ObjectHideFlags: 1
@@ -4177,7 +4177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrappleAllowed: 1
-  grappleRange: 45
+  grappleRange: 35
   grappleSpeed: 55
   grappleCooldown: 1
   grapplePointLayer: 9
@@ -4288,7 +4288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pistolAmmo: 999
   machineGunAmmo: 0
-  shotgunAmmo: 4
+  shotgunAmmo: 0
   mgMaxAmmo: 40
   shotgunMaxAmmo: 4
 --- !u!114 &114919005892021800
@@ -18687,7 +18687,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1776161280
+  randomSeed: 1339689029
   InitialModule:
     serializedVersion: 3
     enabled: 1
