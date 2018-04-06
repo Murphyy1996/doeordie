@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class Shooting : MonoBehaviour
     private KeyCode changeWeaponKeycode = KeyCode.Q;
     private Teleporting teleportScript;
     private int outOfAmmoCount = 0;
+    private Text outOfAmmoPrompt;
 
     private void Awake() //Spawn in bullets for the object pool
     {
@@ -74,6 +76,12 @@ public class Shooting : MonoBehaviour
             spawnedBulletDecal.transform.SetParent(objectPool.transform);
             bulletHitObjPool.Add(spawnedBulletDecal);
         }
+        Invoke("DelayedAwake", 0.2f);
+    }
+
+    private void DelayedAwake() //Get the out of ammo prompt
+    {
+        outOfAmmoPrompt = GameObject.Find("OutOfAmmoPrompt").GetComponent<Text>();
     }
 
     private void Start()
@@ -510,9 +518,11 @@ public class Shooting : MonoBehaviour
         if (currentWeaponAmmo > 0)
         {
             outOfAmmoCount = 0;
+            outOfAmmoPrompt.enabled = false;
             return true;
         }
         //Return false if you can't shoot
+        outOfAmmoPrompt.enabled = true;
         return false;
     }
 
