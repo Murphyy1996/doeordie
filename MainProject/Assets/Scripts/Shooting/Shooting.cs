@@ -42,6 +42,7 @@ public class Shooting : MonoBehaviour
     private Animator animatorComponent;
     private KeyCode changeWeaponKeycode = KeyCode.Q;
     private Teleporting teleportScript;
+    private int outOfAmmoCount = 0;
 
     private void Awake() //Spawn in bullets for the object pool
     {
@@ -94,7 +95,7 @@ public class Shooting : MonoBehaviour
         //Control some non shooting animations
         ControlNonShootingGunAnimations();
         //This code will switch weapons with middle mouse
-        SwitchWeapons();
+        SwitchWeapons(false);
         //This code will render the first picked up weapon
         RenderWeapon();
         if (teleportScript.ReturnTeleportEmpty() == null || teleportScript.ReturnTeleportEmpty().activeSelf == false)
@@ -162,7 +163,7 @@ public class Shooting : MonoBehaviour
         }
     }
 
-    private void SwitchWeapons() //Switch weapons with middle mouse
+    private void SwitchWeapons(bool calledManually) //Switch weapons with middle mouse
     {
         //Only allow changing between weapons if you have more than one weapon
         if (weaponList.Count >= 2 && canSwitchWeapons == true)
@@ -177,6 +178,10 @@ public class Shooting : MonoBehaviour
             //inputValue = -1;
             //}
             float inputValue = 0;
+            if (calledManually == true)
+            {
+                inputValue = 1;
+            }
             if (Input.GetKeyDown(changeWeaponKeycode))
             {
                 inputValue = 1;
@@ -380,6 +385,18 @@ public class Shooting : MonoBehaviour
                 }
             }
         }
+        else if (Input.GetMouseButtonUp(0) && CheckIfYouHaveEnoughAmmoToShoot() == false)
+        {
+            isShooting = false;
+            if (outOfAmmoCount == 1)
+            {
+                SwitchWeapons(true);
+            }
+            else
+            {
+                outOfAmmoCount++;
+            }
+        }
         else if (!Input.GetMouseButton(0))
         {
             isShooting = false;
@@ -492,6 +509,7 @@ public class Shooting : MonoBehaviour
         //Check if the current weapon has enough ammo to shoot
         if (currentWeaponAmmo > 0)
         {
+            outOfAmmoCount = 0;
             return true;
         }
         //Return false if you can't shoot
