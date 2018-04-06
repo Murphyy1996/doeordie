@@ -6,12 +6,17 @@ using UnityEngine.UI;
 public class HideIfParentImageOff : MonoBehaviour
 {
     [SerializeField]
-    private Image thisImage, parentImage; 
+    private Image thisImage, parentImage;
+    [SerializeField]
+    private bool automaticallyGetParent = true;
 
     private void Start()
     {
         thisImage = GetComponent<Image>();
-        parentImage = transform.parent.GetComponent<Image>();
+        if (automaticallyGetParent == true)
+        {
+            parentImage = transform.parent.GetComponent<Image>();
+        }
     }
 
     private void FixedUpdate()

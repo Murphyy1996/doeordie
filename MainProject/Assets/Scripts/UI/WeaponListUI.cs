@@ -18,6 +18,7 @@ public class WeaponListUI : MonoBehaviour
     private AmmoManager ammoScript;
     private Shooting shootingScript;
     private Outline slot1Outline, slot2Outline, slot3Outline, slot4Outline;
+    private Text slot1Ammo, slot2Ammo, slot3Ammo, slot4Ammo;
 
     private void Start() //Get required components
     {
@@ -29,6 +30,10 @@ public class WeaponListUI : MonoBehaviour
         slot2Outline = slot2Image.gameObject.GetComponent<Outline>();
         slot3Outline = slot3Image.gameObject.GetComponent<Outline>();
         slot4Outline = slot4Image.gameObject.GetComponent<Outline>();
+        slot1Ammo = slot1Image.gameObject.GetComponentInChildren<Text>();
+        slot2Ammo = slot2Image.gameObject.GetComponentInChildren<Text>();
+        slot3Ammo = slot3Image.gameObject.GetComponentInChildren<Text>();
+        slot4Ammo = slot4Image.gameObject.GetComponentInChildren<Text>();
         playerObj = GameObject.Find("Player");
         ammoScript = playerObj.GetComponent<AmmoManager>();
         shootingScript = playerObj.GetComponent<Shooting>();
@@ -40,6 +45,7 @@ public class WeaponListUI : MonoBehaviour
     private void FixedUpdate() //Depending on the amount of weapons keep the list updated
     {
         UpdateCurrentlySelectedWeapon();
+        UpdateAmmoCounters();
         int gunsPickedUp = shootingScript.weaponList.Count;
         EnableAmountOfSlots(gunsPickedUp);
     }
@@ -58,7 +64,7 @@ public class WeaponListUI : MonoBehaviour
         {
             if (i == 0) //Slot 1
             {
-               switch (shootingScript.weaponList[i].weaponModel)
+                switch (shootingScript.weaponList[i].weaponModel)
                 {
                     case WeaponInfo.weapon.pistol:
                         slot1Image.sprite = pistolSpite;
@@ -127,6 +133,117 @@ public class WeaponListUI : MonoBehaviour
                         slot4Image.sprite = machinegunSprite;
                         break;
                 }
+            }
+        }
+    }
+
+    private void UpdateAmmoCounters() //Update the ammo counters
+    {
+        //Reset the ammo counters
+        slot1Ammo.text = "";
+        slot2Ammo.text = "";
+        slot3Ammo.text = "";
+        slot4Ammo.text = "";
+        //Reset ammo counter colour
+        slot1Ammo.color = Color.white;
+        slot2Ammo.color = Color.white;
+        slot3Ammo.color = Color.white;
+        slot4Ammo.color = Color.white;
+        //Only update if the ammo if the weapon slots are being used
+        if (slot1Image.enabled == true)
+        {
+            switch (shootingScript.weaponList[0].weaponModel)
+            {
+                case WeaponInfo.weapon.pistol:
+                    slot1Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.dualPistol:
+                    slot1Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.shotgun:
+                    slot1Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+                    break;
+                case WeaponInfo.weapon.machineGun:
+                    slot1Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+                    break;
+            }
+
+            //Make it red if there is no ammo
+            if (slot1Ammo.text == "0")
+            {
+                slot1Ammo.color = Color.red;
+            }
+        }
+        if (slot2Image.enabled == true)
+        {
+            switch (shootingScript.weaponList[1].weaponModel)
+            {
+                case WeaponInfo.weapon.pistol:
+                    slot2Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.dualPistol:
+                    slot2Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.shotgun:
+                    slot2Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+                    break;
+                case WeaponInfo.weapon.machineGun:
+                    slot2Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+                    break;
+            }
+
+            //Make it red if there is no ammo
+            if (slot2Ammo.text == "0")
+            {
+                slot2Ammo.color = Color.red;
+            }
+        }
+        if (slot3Image.enabled == true)
+        {
+            switch (shootingScript.weaponList[2].weaponModel)
+            {
+                case WeaponInfo.weapon.pistol:
+                    slot3Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.dualPistol:
+                    slot3Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.shotgun:
+                    slot3Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+                    break;
+                case WeaponInfo.weapon.machineGun:
+                    slot3Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+                    break;
+            }
+
+            //Make it red if there is no ammo
+            if (slot3Ammo.text == "0")
+            {
+                slot3Ammo.color = Color.red;
+            }
+        }
+        if (slot4Image.enabled == true)
+        {
+            switch (shootingScript.weaponList[3].weaponModel)
+            {
+                case WeaponInfo.weapon.pistol:
+                    slot4Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.dualPistol:
+                    slot4Ammo.text = "∞";
+                    break;
+                case WeaponInfo.weapon.shotgun:
+                    slot4Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun);
+                    break;
+                case WeaponInfo.weapon.machineGun:
+                    slot4Ammo.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
+                    break;
+            }
+
+            //Make it red if there is no ammo
+            if (slot4Ammo.text == "0")
+            {
+                slot4Ammo.color = Color.red;
             }
         }
     }
