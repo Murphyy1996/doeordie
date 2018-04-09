@@ -9,6 +9,8 @@ using BehaviorDesigner.Runtime;
 public class ReusableHealth : MonoBehaviour
 {
     public int healthValue, armorValue = 0, maxHealth, maxArmor = 100;
+    [SerializeField]
+    private bool destroyAfterDeath = false;
     private List<Drone> droneScriptList = new List<Drone>();
     private bool bloodDecalsCreated = false, invincible = false;
     [SerializeField]
@@ -31,6 +33,7 @@ public class ReusableHealth : MonoBehaviour
     [SerializeField] private GameObject wepToDrop;
     [SerializeField] private GameObject bloods;
     [SerializeField] private ParticleSystem explos;
+    [SerializeField] private GameObject workingExplosion;
 
     private int decidingPoint;
     bool wepDropped = false, playerDied = false;
@@ -138,14 +141,10 @@ public class ReusableHealth : MonoBehaviour
                 //Destroy enemies to allow for animation unless they're drones
                 if (this.gameObject.tag == "enemy" && this.gameObject.GetComponent<Drone>() == null)
                 {
+                    //Disable colliders
                     if (GetComponent<Collider>() != null)
                     {
                         GetComponent<Collider>().enabled = false;
-                    }
-                    //Enable explosion if a turret
-                    if (GetComponent<BehaviorTree>() != null)
-                    {
-
                     }
                     //Only spawn blood if needed
                     if (bloods != null)
@@ -159,7 +158,11 @@ public class ReusableHealth : MonoBehaviour
                     //Death audio (Need to change depending on obj though)
                     AudioManage.inst.death.Play();
                     //Destroy this game object
-                    Invoke("DestroyGameobject", 2f);
+                    if (workingExplosion != null)
+                    {
+                        Invoke("WorkingExplosionCode", 0.8f);
+                    }
+                    Invoke("DestroyGameobject", 1f);
                 }
                 else //For generic objects just destroy them
                 {
@@ -213,9 +216,18 @@ public class ReusableHealth : MonoBehaviour
         InGameUI.inst.gameObject.AddComponent<GameOverScreen>();
     }
 
-    void DestroyGameobject()
+    private void WorkingExplosionCode() //Run me just before destroy code
     {
-        if (this.gameObject.layer == 19 || this.gameObject.tag == "enemy")
+        //Enable the explosion
+        if (workingExplosion != null)
+        {
+            workingExplosion.SetActive(true);
+        }
+    }
+
+    void DestroyGameobject() //This will destroy the game object
+    {
+        if (destroyAfterDeath == true) //Only destroy if told to
         {
             Destroy(this.gameObject);
         }

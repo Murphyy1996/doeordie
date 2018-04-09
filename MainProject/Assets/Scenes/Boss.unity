@@ -43346,6 +43346,11 @@ Transform:
   m_Father: {fileID: 494559594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &756298300 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1161222848}
 --- !u!1 &756576748
 GameObject:
   m_ObjectHideFlags: 0
@@ -48741,6 +48746,7 @@ MonoBehaviour:
   armorValue: 100
   maxHealth: 120
   maxArmor: 100
+  destroyAfterDeath: 0
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
@@ -48776,6 +48782,7 @@ MonoBehaviour:
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
   explos: {fileID: 0}
+  workingExplosion: {fileID: 0}
 --- !u!23 &792852137
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49110,7 +49117,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799768635}
-  m_LocalRotation: {x: 0.5249796, y: 0.5814104, z: 0.6150764, w: -0.08966362}
+  m_LocalRotation: {x: 0.52497953, y: 0.58141035, z: 0.61507636, w: -0.08966361}
   m_LocalPosition: {x: -4.391373, y: 13.73467, z: 1.5075709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -61623,6 +61630,7 @@ Transform:
   - {fileID: 1770895920}
   - {fileID: 1494057234}
   - {fileID: 493401542}
+  - {fileID: 756298300}
   m_Father: {fileID: 1199038338}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
@@ -61642,6 +61650,7 @@ MonoBehaviour:
   armorValue: 50
   maxHealth: 100
   maxArmor: 50
+  destroyAfterDeath: 1
   bossHealthUI: {fileID: 147858191}
   glowWhenDamaged: 1
   glowMaterialRegularHit: {fileID: 2100000, guid: e512a8e60544e36438df7a02e48f6e21,
@@ -61677,8 +61686,9 @@ MonoBehaviour:
     mValue: 0
   healthBox: {fileID: 0}
   wepToDrop: {fileID: 0}
-  bloods: {fileID: 1692625562509538, guid: 050ac1ec8a0acc947a78a6132593b54b, type: 2}
+  bloods: {fileID: 0}
   explos: {fileID: 0}
+  workingExplosion: {fileID: 0}
 --- !u!64 &1133291981
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -62355,6 +62365,79 @@ Transform:
   m_Father: {fileID: 2134048056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1161222848
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1133291979}
+    m_Modifications:
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012569031976, guid: ecdd96beb7f93494880c052dfccf9dc1,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1299013184
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012942003240, guid: ecdd96beb7f93494880c052dfccf9dc1,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1797036414
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010217891986, guid: ecdd96beb7f93494880c052dfccf9dc1,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1290123007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1161721237
 GameObject:
   m_ObjectHideFlags: 0
@@ -75216,6 +75299,7 @@ MonoBehaviour:
   armorValue: 350
   maxHealth: 350
   maxArmor: 350
+  destroyAfterDeath: 0
   bossHealthUI: {fileID: 147858191}
   glowWhenDamaged: 1
   glowMaterialRegularHit: {fileID: 2100000, guid: e512a8e60544e36438df7a02e48f6e21,
@@ -75253,6 +75337,7 @@ MonoBehaviour:
   wepToDrop: {fileID: 0}
   bloods: {fileID: 1692625562509538, guid: 050ac1ec8a0acc947a78a6132593b54b, type: 2}
   explos: {fileID: 0}
+  workingExplosion: {fileID: 0}
 --- !u!64 &1441386234
 MeshCollider:
   m_ObjectHideFlags: 0

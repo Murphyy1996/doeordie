@@ -770,6 +770,7 @@ MonoBehaviour:
   armorValue: 300
   maxHealth: 350
   maxArmor: 300
+  destroyAfterDeath: 1
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
@@ -805,6 +806,7 @@ MonoBehaviour:
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
   explos: {fileID: 0}
+  workingExplosion: {fileID: 0}
 --- !u!114 &114973114581892700
 MonoBehaviour:
   m_ObjectHideFlags: 1
