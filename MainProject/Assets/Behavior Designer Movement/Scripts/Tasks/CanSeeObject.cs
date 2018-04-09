@@ -51,7 +51,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             aimIK = GetComponent<AimIK>();
             lookAtIk = GetComponent<LookAtIK>();
             spottedPlayer = (SharedBool)GlobalVariables.Instance.GetVariable("globalSpotted");
-            //spottedPlayer.Value = true;
             spottedPlayer.Value = false;
         }
 
@@ -148,7 +147,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 return TaskStatus.Success;
             }
             // An object is not within sight so return failure
-            //spottedPlayer = false;
+            spottedPlayer = false;
     
             if (AudioManage.inst.combatMusic.isPlaying == true && spottedPlayer.Value == false) // should stop the music from player when the player gets away or is lost?
             {
