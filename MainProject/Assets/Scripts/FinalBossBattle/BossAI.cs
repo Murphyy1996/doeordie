@@ -121,11 +121,6 @@ public class BossAI : MonoBehaviour
                 Phase4();
                 break;
         }
-        if (bossDead == true) //Move towards the player
-        {
-            float step = movementSpeed * Time.fixedDeltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, playerHealthScript.gameObject.transform.position, step);
-        }
     }
 
     private void ReplenishAmmo() //Replenish player ammo
@@ -420,6 +415,10 @@ public class BossAI : MonoBehaviour
             targetID = 0;
             //Mark the final phase as ready
             finalPhaseReady = true;
+            //Remove the look animation to make the rotate around the tunnel correctly
+            phase4Turret.GetComponent<TurretAI>().lookAnim = null;
+            //Force the drone to attack the player
+            phase4Turret.GetComponent<TurretAI>().manuallyTriggerAttack = true;
         }
         //If the boss is dead then make it invincible
         if (bossReusableHealth.healthValue <= 60)
@@ -484,6 +483,8 @@ public class BossAI : MonoBehaviour
                 //Move towards the target
                 float step = movementSpeed * Time.fixedDeltaTime;
                 transform.position = Vector3.MoveTowards(transform.position, movementTargetArray[targetID].transform.position, step);
+                //Force boss into a local rotation
+                phase4Turret.localRotation = Quaternion.Euler(0, 180, 0);
                 //If the boss has reached the target then rotate it slightly
                 if (Vector3.Distance(transform.position, movementTargetArray[targetID].transform.position) < 0.5f)
                 {

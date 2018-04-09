@@ -32,8 +32,12 @@ public class TurretAI : MonoBehaviour
     private Transform bulletOrigin;
     private int droneLayer;
     private RaycastHit fovHit;
+    [HideInInspector]
+    public bool manuallyTriggerAttack = false;
+    private float forceAttackTimer = 0;
 
     //Script References
+    ReusableHealth playerHealthScript;
     Shooting shooting;
     ReusableHealth reusableHealth;
 
@@ -51,6 +55,7 @@ public class TurretAI : MonoBehaviour
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        playerHealthScript = playerTransform.GetComponent<ReusableHealth>();
         droneLayer = LayerMask.NameToLayer("Drone");
         muzzleFlash = transform.Find("MuzzleObj").gameObject;
         muzzleFlash.SetActive(false);
@@ -76,14 +81,29 @@ public class TurretAI : MonoBehaviour
     void FixedUpdate()
     {
         //Add or remove states here...
-        switch (currentState)
+        if (manuallyTriggerAttack == false)
         {
-            case States.Observing:
-                StartCoroutine(Looking());
-                break;
-            case States.Alert:
-                Shoot();
-                break;
+            switch (currentState)
+            {
+                case States.Observing:
+                    StartCoroutine(Looking());
+                    break;
+                case States.Alert:
+                    Shoot();
+                    break;
+            }
+        }
+        else
+        {
+            forceAttackTimer = forceAttackTimer + Time.fixedDeltaTime;
+
+            if (forceAttackTimer >= timeBetweenShots)
+            {
+                //Wait for the next shot
+                forceAttackTimer = 0;
+                //force the turret to shoot at the player
+                ForceShootAtPlayer();
+            }
         }
 
     }
@@ -181,7 +201,7 @@ public class TurretAI : MonoBehaviour
     //Defualt state, play ping-pong animation
     IEnumerator Looking()
     {
-        if (currentState == States.Observing)
+        if (currentState == States.Observing && lookAnim != null)
         {
             lookAnim.Play();
         }
@@ -192,7 +212,7 @@ public class TurretAI : MonoBehaviour
     void LookAtPlayer()
     {
 
-        if (currentState == States.Alert)
+        if (currentState == States.Alert && lookAnim != null)
         {
             lookAnim.Stop();
             transform.LookAt(new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z));
@@ -244,6 +264,15 @@ public class TurretAI : MonoBehaviour
             StartCoroutine(ResetBehavior());
         }
 
+    }
+
+    //Player has been spotted in FOV, shoot the player
+    void ForceShootAtPlayer()
+    {
+        playerHealthScript.CalculateHitDirection(transform.position);
+        playerHealthScript.ApplyDamage(turretDamage);
+        
+        StartCoroutine(MuzzleFlash());
     }
 
     //Enable/Disable muzzle flash for the turret
