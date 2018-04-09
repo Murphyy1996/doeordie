@@ -2274,7 +2274,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.1901, y: 69.6, z: -189.25821}
+  m_LocalPosition: {x: -274.17828, y: 76.45047, z: -282.94763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -2677,7 +2677,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ce39a67aa06fe7c4e9afbb007d10e79e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cf7053ffbbef30846b52d335b25eb5fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4209,6 +4209,7 @@ MonoBehaviour:
   armorValue: 0
   maxHealth: 100
   maxArmor: 0
+  destroyAfterDeath: 0
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
@@ -4244,6 +4245,7 @@ MonoBehaviour:
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
   explos: {fileID: 0}
+  workingExplosion: {fileID: 0}
 --- !u!114 &114812025907779568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18687,7 +18689,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1339689029
+  randomSeed: 2106811247
   InitialModule:
     serializedVersion: 3
     enabled: 1
