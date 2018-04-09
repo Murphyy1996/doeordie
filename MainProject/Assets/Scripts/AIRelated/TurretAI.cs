@@ -242,7 +242,10 @@ public class TurretAI : MonoBehaviour
 
         if (Vector3.Distance(transform.position, playerTransform.position) < maxSightDistance && timer >= timeBetweenShots)
         {
-
+            if (AudioManage.inst.combatMusic.isPlaying == false)
+            {
+                AudioManage.inst.combatMusic.Play();
+            }
             bullet = shooting.ReturnBulletObjectPool()[0];
             bullet.GetComponent<Bullet>().bulletOrigin = bulletOrigin;
             bullet.GetComponent<Bullet>().recoil = 0.8f;

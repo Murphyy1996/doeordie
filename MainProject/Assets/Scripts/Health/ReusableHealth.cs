@@ -464,6 +464,10 @@ public class ReusableHealth : MonoBehaviour
         if (this.gameObject.GetComponent<ReusableHealth>().healthValue <= 0)
         {
             Invoke("PlayExplosion", 1.65f);
+            if (AudioManage.inst.combatMusic.isPlaying == true)
+            {
+                AudioManage.inst.combatMusic.Stop();
+            }
             if (this.gameObject.tag == "enemy")
             {
                 behaviourHealth.Value = healthValue;
