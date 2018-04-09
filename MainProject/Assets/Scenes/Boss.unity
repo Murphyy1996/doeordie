@@ -12093,7 +12093,7 @@ MonoBehaviour:
   damage: 10
   fireDelay: 1
   recoilStrength: 1
-  pickUpAmmo: 40
+  pickUpAmmo: 4
   holdDownToShoot: 1
 --- !u!114 &210136651
 MonoBehaviour:
@@ -45058,7 +45058,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -575815274
+  randomSeed: -489329316
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -48587,7 +48587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pistolAmmo: 999
   machineGunAmmo: 0
-  shotgunAmmo: 4
+  shotgunAmmo: 0
   mgMaxAmmo: 40
   shotgunMaxAmmo: 4
 --- !u!114 &792852132
@@ -49122,7 +49122,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799768635}
-  m_LocalRotation: {x: 0.5249796, y: 0.5814104, z: 0.6150764, w: -0.08966362}
+  m_LocalRotation: {x: 0.52497953, y: 0.58141035, z: 0.61507636, w: -0.08966361}
   m_LocalPosition: {x: -4.391373, y: 13.73467, z: 1.5075709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
