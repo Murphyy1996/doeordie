@@ -260,11 +260,14 @@ public class ReusableHealth : MonoBehaviour
     {
         if (invincible == false)
         {
-            if (AudioManage.inst.combatMusic.isPlaying == false)
+            if (AudioManage.inst.combatMusic != null)
             {
-                AudioManage.inst.combatMusic.Play();
+                if (AudioManage.inst.combatMusic.isPlaying == false)
+                {
+                    AudioManage.inst.combatMusic.Play();
+                }
             }
-               
+
 
             //This should make the object glow
             if (glowWhenDamaged == true)
@@ -312,11 +315,14 @@ public class ReusableHealth : MonoBehaviour
             if (healthValue < 0)
             {
                 healthValue = 0;
-                if (AudioManage.inst.combatMusic.isPlaying == true)
+                if (AudioManage.inst.combatMusic != null)
                 {
-                    AudioManage.inst.combatMusic.Stop();
+                    if (AudioManage.inst.combatMusic.isPlaying == true)
+                    {
+                        AudioManage.inst.combatMusic.Stop();
+                    }
                 }
-                
+
             }
             if (armorValue < 0)
             {
@@ -464,10 +470,14 @@ public class ReusableHealth : MonoBehaviour
         if (this.gameObject.GetComponent<ReusableHealth>().healthValue <= 0)
         {
             Invoke("PlayExplosion", 1.65f);
-            if (AudioManage.inst.combatMusic.isPlaying == true)
+            if (AudioManage.inst.combatMusic != null)
             {
-                AudioManage.inst.combatMusic.Stop();
+                if (AudioManage.inst.combatMusic.isPlaying == true)
+                {
+                    AudioManage.inst.combatMusic.Stop();
+                }
             }
+
             if (this.gameObject.tag == "enemy")
             {
                 behaviourHealth.Value = healthValue;
