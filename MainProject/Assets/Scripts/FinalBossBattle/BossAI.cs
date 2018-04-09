@@ -63,6 +63,8 @@ public class BossAI : MonoBehaviour
     private bool beganTransition = false;
     private AmmoManager ammoManagerScript;
     private float secondPhaseDodgeTimer = 0;
+    [SerializeField]
+    private GameObject hatchToOpen;
 
     private void Start() //Get the default position and rotations
     {
@@ -278,6 +280,11 @@ public class BossAI : MonoBehaviour
                 bossReusableHealth.glowMaterialToUse = bossReusableHealth.glowMaterialRegularHit;
                 //Replenish Ammo
                 ReplenishAmmo();
+                //Open the hatch for saker to pop out of
+                if (hatchToOpen != null)
+                {
+                    hatchToOpen.SetActive(true);
+                }
                 //Remove driver saker
                 if (sakerDriver != null)
                 {
@@ -505,9 +512,9 @@ public class BossAI : MonoBehaviour
                                 tran.GetComponent<MeshCollider>().convex = true;
                             }
                         }
-                        truckRigidbody.gameObject.GetComponent<MeshCollider>().convex = true;
+                        truckRigidbody.gameObject.GetComponent<MeshCollider>().enabled = false;
                         truckRigidbody.useGravity = true;
-                        truckRigidbody.isKinematic = false;
+                        //truckRigidbody.isKinematic = false;
                         bossDead = true;
                     }
                     targetRotation = Quaternion.Euler(transform.rotation.x, 180f, bossFlipTargetRotation);
@@ -523,6 +530,12 @@ public class BossAI : MonoBehaviour
                     StartCoroutine(BeginPlatformingTransition(1f));
                 }
             }
+        }
+        //If the boss is dead pull it towards the player
+        if (bossDead == true)
+        {
+            float step = movementSpeed * Time.fixedDeltaTime;
+            truckRigidbody.transform.position = Vector3.MoveTowards(truckRigidbody.transform.position, playerHealthScript.transform.position, step);
         }
     }
 
