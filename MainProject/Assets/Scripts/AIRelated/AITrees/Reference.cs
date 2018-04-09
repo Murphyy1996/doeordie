@@ -28,7 +28,7 @@ public class Reference : MonoBehaviour
     {
         SetLocationVars(meleeTree);
 
-        if (canSeeObject.spottedPlayer)
+        if (canSeeObject.spottedPlayer.Value)
         {
             AudioManage.inst.combatMusic.Play();
         }
