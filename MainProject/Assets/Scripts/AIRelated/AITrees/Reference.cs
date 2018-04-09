@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using BehaviorDesigner.Runtime;
+using BehaviorDesigner.Runtime.Tasks.Movement;
 
 public class Reference : MonoBehaviour
 {
@@ -12,17 +13,29 @@ public class Reference : MonoBehaviour
     public GameObject body;
     public List<GameObject> waypoint = new List<GameObject>();
 
+    CanSeeObject canSeeObject;
 
     void Start()
     {
         meleeTree = GetComponent<BehaviorTree>();
         SetLocationVars(meleeTree);
         SpawnLookObject();
+
+        canSeeObject = GetComponent<CanSeeObject>();
     }
 
     void Update()
     {
         SetLocationVars(meleeTree);
+
+        if (canSeeObject.spottedPlayer)
+        {
+            AudioManage.inst.combatMusic.Play();
+        }
+        else
+        {
+            AudioManage.inst.combatMusic.Stop();
+        }
     }
 
     public void SetLocationVars(BehaviorTree behaviorTree)
