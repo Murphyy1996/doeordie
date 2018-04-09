@@ -121,6 +121,11 @@ public class BossAI : MonoBehaviour
                 Phase4();
                 break;
         }
+        if (bossDead == true) //Move towards the player
+        {
+            float step = movementSpeed * Time.fixedDeltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, playerHealthScript.gameObject.transform.position, step);
+        }
     }
 
     private void ReplenishAmmo() //Replenish player ammo
@@ -434,9 +439,13 @@ public class BossAI : MonoBehaviour
                 {
                     rocketParticle.gameObject.SetActive(true);
                 }
-                //Move towards the target
-                float step = movementSpeed * Time.fixedDeltaTime;
-                transform.position = Vector3.MoveTowards(transform.position, movementTargetArray[targetID].transform.position, step);
+                //Only move towards the target when the boss is dead
+                if (bossDead == false)
+                {
+                    //Move towards the target
+                    float step = movementSpeed * Time.fixedDeltaTime;
+                    transform.position = Vector3.MoveTowards(transform.position, movementTargetArray[targetID].transform.position, step);
+                }
                 //If the boss has reached the target then rotate it slightly
                 if (Vector3.Distance(transform.position, movementTargetArray[targetID].transform.position) < 0.5f)
                 {
@@ -499,7 +508,6 @@ public class BossAI : MonoBehaviour
                         truckRigidbody.useGravity = true;
                         truckRigidbody.isKinematic = false;
                         bossDead = true;
-                        truckRigidbody.AddForce(0, -100, 9999);
                     }
                     targetRotation = Quaternion.Euler(transform.rotation.x, 180f, bossFlipTargetRotation);
                 }
@@ -511,7 +519,7 @@ public class BossAI : MonoBehaviour
                 if (beganTransition == false)
                 {
                     StartCoroutine(Explosion(0.8f));
-                    StartCoroutine(BeginPlatformingTransition(2f));
+                    StartCoroutine(BeginPlatformingTransition(1f));
                 }
             }
         }
