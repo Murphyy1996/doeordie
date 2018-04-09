@@ -37,6 +37,7 @@ public class ReusableHealth : MonoBehaviour
     private float glowCounter = 10, glowCounterTarget = 0;
     private bool glowRunOnce = false, returnToDefaultRunOnce = false;
     private float errorCounter = 0;
+    private bool amDead = false;
 
     private void Start()
     {
@@ -102,6 +103,7 @@ public class ReusableHealth : MonoBehaviour
     {
         if (healthValue <= 0) //Check if the health value is below zero and if so, destroy the object
         {
+            amDead = true;
             if (this.gameObject.tag == "Player") //If it is the player respawn at the latest checkpoint
             {
                 //Fade in the game over screen
@@ -140,17 +142,26 @@ public class ReusableHealth : MonoBehaviour
                     {
                         GetComponent<Collider>().enabled = false;
                     }
-                    //audio
-                    AudioManage.inst.death.Play();
-                    Invoke("DestroyGameobject", 2f);
-                    if (this.gameObject.GetComponent<BehaviorTree>() != null && bloodDecalsCreated == false)
+                    //Enable explosion if a turret
+                    if (GetComponent<BehaviorTree>() != null)
                     {
-                        bloodDecalsCreated = true;
-                        Invoke("SpawnBlood", 0.5f);
-                    }
-                }
 
-                else
+                    }
+                    //Only spawn blood if needed
+                    if (bloods != null)
+                    {
+                        if (this.gameObject.GetComponent<BehaviorTree>() != null && bloodDecalsCreated == false)
+                        {
+                            bloodDecalsCreated = true;
+                            Invoke("SpawnBlood", 0.5f);
+                        }
+                    }
+                    //Death audio (Need to change depending on obj though)
+                    AudioManage.inst.death.Play();
+                    //Destroy this game object
+                    Invoke("DestroyGameobject", 2f);
+                }
+                else //For generic objects just destroy them
                 {
                     Destroy(this.gameObject);
                 }
@@ -204,7 +215,7 @@ public class ReusableHealth : MonoBehaviour
 
     void DestroyGameobject()
     {
-        if (this.gameObject.layer == 19)
+        if (this.gameObject.layer == 19 || this.gameObject.tag == "enemy")
         {
             Destroy(this.gameObject);
         }
@@ -292,7 +303,6 @@ public class ReusableHealth : MonoBehaviour
             if (this.gameObject.tag == "Player" && Time.timeScale != 0)
             {
                 InGameUI.inst.makeBarBigger(1.2f);
-                Debug.Log("running to make big boy");
                 //Make a shot force exit the players grapple
                 GetComponent<Grapple>().ExitGrapple();
                 this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.2f, 0.1f);
@@ -377,25 +387,10 @@ public class ReusableHealth : MonoBehaviour
     private void Update() //Reset player on delete (For debugging)
     {
         StartCoroutine(CheckAIDeath());
-
-        //if (this.gameObject.tag == "Player")
-        //{
-        //    if (Input.GetKeyUp(KeyCode.Clear))
-        //    {
-        //        healthValue = 0;
-        //        CheckToSeeIfDead();
-        //    }
-        //}
-
-        if (this.gameObject.tag == "enemy")
+        if (amDead == false)
         {
-            if (Input.GetKeyUp(KeyCode.Delete))
-            {
-                healthValue = 0;
-
-            }
+            CheckToSeeIfDead();
         }
-
     }
 
     private void FixedUpdate()

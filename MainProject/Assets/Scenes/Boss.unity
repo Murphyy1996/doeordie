@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2961,6 +2961,8 @@ MonoBehaviour:
   grapple: {fileID: 65883794}
   player: {fileID: 792852115}
   combatMusic: {fileID: 0}
+  bulletEnvironment: {fileID: 0}
+  falling: {fileID: 0}
   walking: {fileID: 8300000, guid: 371bd356eb77fe643868785665f8a78a, type: 3}
   running: {fileID: 8300000, guid: 073d3d0674de9904192af74c97db096a, type: 3}
 --- !u!82 &65883801
@@ -12089,7 +12091,7 @@ MonoBehaviour:
     type: 2}
   weaponModel: 3
   damage: 10
-  fireDelay: 2
+  fireDelay: 1
   recoilStrength: 1
   pickUpAmmo: 40
   holdDownToShoot: 1
@@ -27290,14 +27292,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457081005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.257324, y: -5.630295, z: -278.8006}
+  m_LocalPosition: {x: -17.262135, y: -20.992664, z: -189.96365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 659936657}
   - {fileID: 210136649}
   - {fileID: 694452731}
-  m_Father: {fileID: 807505618}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457825618
 GameObject:
@@ -49175,9 +49177,8 @@ Transform:
   m_Children:
   - {fileID: 2051133692}
   - {fileID: 147858190}
-  - {fileID: 457081006}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &807888646
 GameObject:
