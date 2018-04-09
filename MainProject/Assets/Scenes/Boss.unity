@@ -43346,6 +43346,11 @@ Transform:
   m_Father: {fileID: 494559594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &756298299 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1161222848}
 --- !u!4 &756298300 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011428506136, guid: ecdd96beb7f93494880c052dfccf9dc1,
@@ -49117,7 +49122,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799768635}
-  m_LocalRotation: {x: 0.52497953, y: 0.58141035, z: 0.61507636, w: -0.08966361}
+  m_LocalRotation: {x: 0.5249796, y: 0.5814104, z: 0.6150764, w: -0.08966362}
   m_LocalPosition: {x: -4.391373, y: 13.73467, z: 1.5075709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -61688,7 +61693,7 @@ MonoBehaviour:
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
   explos: {fileID: 0}
-  workingExplosion: {fileID: 0}
+  workingExplosion: {fileID: 756298299}
 --- !u!64 &1133291981
 MeshCollider:
   m_ObjectHideFlags: 0
