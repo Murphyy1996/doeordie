@@ -24,7 +24,7 @@ public class OptionsConfig : MonoBehaviour
     private Toggle invertCamToggle;
     [SerializeField]
     private Toggle crouchToggle, sprintToggle, fullscreen, vSync, zoomTog, crouchInputKey, sprintInputKey, zoomInputKey, grappleInputKey, postPToggle, weaponSwapInputkey; //a refrence to the toggles
-    public Slider vol, fov, mouseX, mouseY;
+    public Slider vol, mouseX, mouseY;
     public Text sprintKeyText, grappleKeyText, zoomKeyText, crouchKeyText, weaponSwapKeyText; //refrence to the buttons text so that it can be changed when a new input is chosen
     private Camera mainCamera;
     private FirstPersonCamera fpsScript;
@@ -46,7 +46,7 @@ public class OptionsConfig : MonoBehaviour
     private string optionsPath;
     private PostProcessingBehaviour postPScript;
     [SerializeField]
-    private float FOVAmount = 60, mouseXCurrent, mouseYCurrent, mouseXTarget, mouseYTarget;
+    private float mouseXCurrent, mouseYCurrent, mouseXTarget, mouseYTarget;
     [SerializeField]
     private Image visual, inputWarning;
     [SerializeField]
@@ -162,10 +162,7 @@ public class OptionsConfig : MonoBehaviour
             weaponSwapKeyText = weaponSwapInputkey.gameObject.GetComponentInChildren<Text>();
             weaponSwapKeyText.text = weaponSwapcode.ToString();
         }
-        if (fov == null)
-        {
-            fov = GameObject.Find("FOV").GetComponent<Slider>();
-        }
+       
         if (menu == null)
         {
             menu = GameObject.Find("Options").GetComponent<Transform>();
@@ -237,7 +234,7 @@ public class OptionsConfig : MonoBehaviour
             ControlSprintKeycode();
             ControlZoomKeycode();
             ControlGrappleKeycode();
-            ControlFOV();
+          
             PostProcessingToggle();
             ControlMouseSens();
             ControlWeaponSwapKeycode();
@@ -666,8 +663,7 @@ public class OptionsConfig : MonoBehaviour
             }
         }
 
-        // float max = 100f,min = 15f; NOT IN USE PLS REMOVE ME 
-        //  FOVAmount = GUI.HorizontalSlider(new Rect(20, 20, 100, 40), FOVAmount, min, max);
+
     }
     private void ControlCrouchKeycode() //This will allow you to set the crouch keycode
     {
@@ -1004,13 +1000,13 @@ public class OptionsConfig : MonoBehaviour
 
             currentLine.WriteLine(OptionsConfig.inst.postPEnabled); //save whether the post proccessing is on or not 13
 
-            currentLine.WriteLine(OptionsConfig.inst.fov.value.ToString()); // vsync toggle  value   14
+           
 
-            currentLine.WriteLine(OptionsConfig.inst.mouseX.value.ToString()); //saves the value of the mouse sensitibity onther x axis    15
-            currentLine.WriteLine(OptionsConfig.inst.mouseY.value.ToString()); //saves the value of the mouse sensitibity onther y axis    16
+            currentLine.WriteLine(OptionsConfig.inst.mouseX.value.ToString()); //saves the value of the mouse sensitibity onther x axis    14
+            currentLine.WriteLine(OptionsConfig.inst.mouseY.value.ToString()); //saves the value of the mouse sensitibity onther y axis    15
             Debug.Log("mouse X saved as" + mouseX.value);
 
-            currentLine.WriteLine(OptionsConfig.inst.weaponSwapcode.ToString()); //17
+            currentLine.WriteLine(OptionsConfig.inst.weaponSwapcode.ToString()); //116
 
         }
         Invoke("DelayedStart", 1f);
@@ -1138,22 +1134,18 @@ public class OptionsConfig : MonoBehaviour
                             OptionsConfig.inst.postPToggle.isOn = false;
                         }
                     }
-                    else if (lineCount == 14) //fov
-                    {
-                        float amount = int.Parse(line.ToString());
-                        OptionsConfig.inst.fov.value = amount;
-                    }
-                    else if (lineCount == 15)
+                   
+                    else if (lineCount == 14)
                     {
                         float amount = int.Parse(line.ToString());
                         OptionsConfig.inst.mouseX.value = amount;
                     }
-                    else if (lineCount == 16)
+                    else if (lineCount == 15)
                     {
                         float amount = int.Parse(line.ToString());
                         OptionsConfig.inst.mouseY.value = amount;
                     }
-                    else if (lineCount == 17)
+                    else if (lineCount == 16)
                     {
                         OptionsConfig.inst.weaponSwapcode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
                         OptionsConfig.inst.weaponSwapKeyText.text = OptionsConfig.inst.weaponSwapKeyText.ToString();
@@ -1215,26 +1207,7 @@ public class OptionsConfig : MonoBehaviour
         }
     }
 
-    public void ControlFOV()
-    {
-        if (fov != null)
-        {
-            //If on a new scene set the value of the  ui so it can transfer accross scene
-            if (SceneManager.GetActiveScene().buildIndex != lastKnownScene)
-            {
-                //Make sure it equals the default
-                fov.value = 70f;
-            }
-            else //Allow for updating and changing on runtime
-            {
-                //Apply the bool
-                if (fov != null && zoomScript != null)
-                {
-                    zoomScript.defaultFOV = fov.value;
-                }
-            }
-        }
-    }
+   
 
   private void ControlMouseSens()
     {
