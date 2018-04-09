@@ -518,11 +518,17 @@ public class Shooting : MonoBehaviour
         if (currentWeaponAmmo > 0)
         {
             outOfAmmoCount = 0;
-            outOfAmmoPrompt.enabled = false;
+            if (outOfAmmoPrompt != null)
+            {
+                outOfAmmoPrompt.enabled = false;
+            }
             return true;
         }
         //Return false if you can't shoot
-        outOfAmmoPrompt.enabled = true;
+        if (outOfAmmoPrompt != null)
+        {
+            outOfAmmoPrompt.enabled = true;
+        }
         return false;
     }
 

@@ -46,7 +46,7 @@ public class TurretAI : MonoBehaviour
         Alert,
         End
     }
-        
+
 
     void Start()
     {
@@ -148,7 +148,7 @@ public class TurretAI : MonoBehaviour
                                 //revert back to normal behavior
                                 StartCoroutine(ResetBehavior());
                             }
-                                
+
 
                         }
 
@@ -196,16 +196,22 @@ public class TurretAI : MonoBehaviour
         {
             lookAnim.Stop();
             transform.LookAt(new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z));
-            if (AudioManage.inst.combatMusic.isPlaying == false)
+            if (AudioManage.inst.combatMusic != null)
             {
-                AudioManage.inst.combatMusic.Play();
+                if (AudioManage.inst.combatMusic.isPlaying == false)
+                {
+                    AudioManage.inst.combatMusic.Play();
+                }
             }
-            
+
         }
         else
         {
             //return;
-            AudioManage.inst.combatMusic.Stop();
+            if (AudioManage.inst.combatMusic != null)
+            {
+                AudioManage.inst.combatMusic.Stop();
+            }
         }
 
     }
@@ -213,10 +219,10 @@ public class TurretAI : MonoBehaviour
     //Player has been spotted in FOV, shoot the player
     void Shoot()
     {
-        
+
         if (Vector3.Distance(transform.position, playerTransform.position) < maxSightDistance && timer >= timeBetweenShots)
         {
-			
+
             bullet = shooting.ReturnBulletObjectPool()[0];
             bullet.GetComponent<Bullet>().bulletOrigin = bulletOrigin;
             bullet.GetComponent<Bullet>().recoil = 0.8f;
@@ -254,32 +260,32 @@ public class TurretAI : MonoBehaviour
     public void OnDrawGizmos()
     {
 
-//        if (playerTransform == null)
-//        {
-//            return;
-//        }
-//
-//        try
-//        {
-//            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-//        }
-//        catch
-//        {
-//
-//        }
-//
-//        Vector3 frontRayPoint = transform.forward * maxSightDistance;
-//
-//        //Visualise rough field of view
-//        Vector3 leftRayPoint = frontRayPoint;
-//        leftRayPoint.x += maxFieldOfView;
-//
-//        Vector3 rightRayPoint = frontRayPoint;
-//        rightRayPoint.x -= maxFieldOfView;
-//
-//        Debug.DrawLine(transform.position, frontRayPoint * maxSightDistance, Color.red);
-//        Debug.DrawLine(transform.position, leftRayPoint * maxSightDistance, Color.green);
-//        Debug.DrawLine(transform.position, rightRayPoint * maxSightDistance, Color.green);
+        //        if (playerTransform == null)
+        //        {
+        //            return;
+        //        }
+        //
+        //        try
+        //        {
+        //            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        //        }
+        //        catch
+        //        {
+        //
+        //        }
+        //
+        //        Vector3 frontRayPoint = transform.forward * maxSightDistance;
+        //
+        //        //Visualise rough field of view
+        //        Vector3 leftRayPoint = frontRayPoint;
+        //        leftRayPoint.x += maxFieldOfView;
+        //
+        //        Vector3 rightRayPoint = frontRayPoint;
+        //        rightRayPoint.x -= maxFieldOfView;
+        //
+        //        Debug.DrawLine(transform.position, frontRayPoint * maxSightDistance, Color.red);
+        //        Debug.DrawLine(transform.position, leftRayPoint * maxSightDistance, Color.green);
+        //        Debug.DrawLine(transform.position, rightRayPoint * maxSightDistance, Color.green);
 
     }
 
@@ -306,6 +312,6 @@ public class TurretAI : MonoBehaviour
     {
         currentState = States.Alert;
     }
-        
+
 
 }
