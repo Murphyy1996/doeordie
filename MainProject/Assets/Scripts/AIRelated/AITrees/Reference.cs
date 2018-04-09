@@ -28,14 +28,16 @@ public class Reference : MonoBehaviour
     {
         SetLocationVars(meleeTree);
 
-        if (canSeeObject.spottedPlayer.Value)
+       /* if (canSeeObject.spottedPlayer.Value)
         {
             AudioManage.inst.combatMusic.Play();
+            Debug.Log("turning combat music on");
         }
         else
         {
             AudioManage.inst.combatMusic.Stop();
-        }
+            Debug.Log("turning combat music off");
+        }*/
     }
 
     public void SetLocationVars(BehaviorTree behaviorTree)

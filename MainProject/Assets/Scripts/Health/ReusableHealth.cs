@@ -260,6 +260,12 @@ public class ReusableHealth : MonoBehaviour
     {
         if (invincible == false)
         {
+            if (AudioManage.inst.combatMusic.isPlaying == false)
+            {
+                AudioManage.inst.combatMusic.Play();
+            }
+               
+
             //This should make the object glow
             if (glowWhenDamaged == true)
             {
@@ -306,6 +312,11 @@ public class ReusableHealth : MonoBehaviour
             if (healthValue < 0)
             {
                 healthValue = 0;
+                if (AudioManage.inst.combatMusic.isPlaying == true)
+                {
+                    AudioManage.inst.combatMusic.Stop();
+                }
+                
             }
             if (armorValue < 0)
             {
