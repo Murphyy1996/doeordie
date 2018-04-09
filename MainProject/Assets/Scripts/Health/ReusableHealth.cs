@@ -160,7 +160,7 @@ public class ReusableHealth : MonoBehaviour
                     //Destroy this game object
                     if (workingExplosion != null)
                     {
-                        Invoke("WorkingExplosionCode", 0.8f);
+                        Invoke("WorkingExplosionCode", 0.6f);
                     }
                     Invoke("DestroyGameobject", 1f);
                 }
