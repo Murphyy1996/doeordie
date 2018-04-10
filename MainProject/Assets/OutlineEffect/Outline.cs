@@ -123,7 +123,7 @@ namespace cakeslice
 
         private void RenderTick()
         {
-            if (outlineAllowed == true)
+            if (outlineAllowed == true && Renderer.enabled == true)
             {
                 //Get the main camera script if possible
                 if (mainCameraEffectScript == null)
@@ -159,6 +159,11 @@ namespace cakeslice
                         }
                     }
                 }
+            }
+            else //Hide this outline
+            {
+                eraseRenderer = true;
+                mainCameraEffectScript.RemoveOutline(this);
             }
         }
 
