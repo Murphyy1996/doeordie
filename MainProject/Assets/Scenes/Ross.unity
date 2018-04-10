@@ -912,6 +912,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 639
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &39777960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 39777961}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &39777961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39777960}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1256
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42225717
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,88 +996,6 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1164
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &44767294
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 448245206}
-    m_Modifications:
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.031
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.411
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.16609955
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.099488825
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.013714622
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0013713854
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99494326
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_Name
-      value: ClimbingArms
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f1e91e291ca37ec48b403ebd7f4ff6ef, type: 2}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.2036495
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.203649
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.203649
-      objectReference: {fileID: 0}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -11.4210005
-      objectReference: {fileID: 0}
-    - target: {fileID: 13700000, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13700000, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 13700000, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6e4508e568bd3194293da3e446d81f0a, type: 2}
-    - target: {fileID: 400308, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.5790001
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c2058f56cc272ad468b1811be143d804, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &44964991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +3720,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 212
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &184306378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 184306379}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184306379
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184306378}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1252
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185938518
 GameObject:
@@ -11981,66 +11955,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 1362341622549050, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 137075829558458068, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_AABB.m_Center.y
-      value: -1.104805
-      objectReference: {fileID: 0}
-    - target: {fileID: 137075829558458068, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_AABB.m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137075829558458068, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.x
-      value: 32.913876
-      objectReference: {fileID: 0}
-    - target: {fileID: 137075829558458068, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.y
-      value: 40.212395
-      objectReference: {fileID: 0}
-    - target: {fileID: 137075829558458068, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_AABB.m_Extent.z
-      value: 25.593758
-      objectReference: {fileID: 0}
-    - target: {fileID: 114305613708270920, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 183976736939046978, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114749904937623796, guid: 403b5bae47653174fa536c8c1cfa4a4c,
-        type: 2}
-      propertyPath: isGrappleAllowed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4837779657447682, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4796122643492336, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758122784484346, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1788117300670612, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403b5bae47653174fa536c8c1cfa4a4c, type: 2}
   m_IsPrefabParent: 0
@@ -12725,6 +12639,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1974141877}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &484482812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 484482813}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484482813
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484482812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1250
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484929403
 GameObject:
@@ -19158,6 +19100,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 157
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &809640113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 809640114}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809640114
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809640113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1254
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &810294011
 GameObject:
   m_ObjectHideFlags: 0
@@ -22514,6 +22484,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 957
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &952150636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 952150637}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &952150637
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952150636}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1253
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &952990691
 GameObject:
   m_ObjectHideFlags: 0
@@ -23449,6 +23447,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 539
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &997938315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 997938316}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997938316
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997938315}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1248
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999675111
 GameObject:
@@ -32202,6 +32228,20 @@ Transform:
   - {fileID: 1518712781}
   - {fileID: 490631538}
   - {fileID: 616181845}
+  - {fileID: 1906715438}
+  - {fileID: 1764319115}
+  - {fileID: 997938316}
+  - {fileID: 1396305469}
+  - {fileID: 484482813}
+  - {fileID: 1315146867}
+  - {fileID: 184306379}
+  - {fileID: 952150637}
+  - {fileID: 809640114}
+  - {fileID: 1831842302}
+  - {fileID: 39777961}
+  - {fileID: 1282969156}
+  - {fileID: 1301419094}
+  - {fileID: 1217720664}
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32263,6 +32303,34 @@ Transform:
   - {fileID: 1965295462}
   m_Father: {fileID: 532040949}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1217720663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1217720664}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1217720664
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217720663}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1259
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218065653
 GameObject:
@@ -33635,6 +33703,34 @@ Transform:
   m_Father: {fileID: 432637863}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1282969155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1282969156}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282969156
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282969155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1257
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285114334
 GameObject:
   m_ObjectHideFlags: 0
@@ -34002,6 +34098,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301419093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1301419094}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1301419094
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301419093}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1258
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1301432860
 GameObject:
@@ -34611,6 +34735,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1193
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1315146866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1315146867}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315146867
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315146866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1251
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317951606
 GameObject:
@@ -39368,6 +39520,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 501
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1396305468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1396305469}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1396305469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396305468}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1249
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400289293
 GameObject:
@@ -54352,6 +54532,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 831
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1764319114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1764319115}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1764319115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764319114}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1247
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770061352
 GameObject:
   m_ObjectHideFlags: 0
@@ -55826,6 +56034,34 @@ Transform:
   m_Father: {fileID: 1718671589}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1831842301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1831842302}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831842302
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831842301}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1255
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833649609
 GameObject:
   m_ObjectHideFlags: 0
@@ -57236,6 +57472,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 959
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1906715437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1906715438}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1906715438
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906715437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 1246
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906977865
 GameObject:
