@@ -26,10 +26,13 @@ public class FirstPersonCamera : MonoBehaviour
     private bool onRotationZone = false;
     private CharacterControllerMovement ccMovement;
     private Transform player;
-    float verticalAxis = 0;
+    float verticalAxis = 0, horizontalAxis = 0;
     private bool invertedCamera = false;
     [HideInInspector]
     public Vector3 defaultLocalPos;
+    [HideInInspector]
+    public bool horizontalClampAllowed = false;
+    private float horizontalClampValue;
 
     private void Awake() //Get components and set defaults
     {
@@ -86,11 +89,25 @@ public class FirstPersonCamera : MonoBehaviour
             verticalAxis += Input.GetAxis("Mouse Y") * tempSensY;
             verticalAxis = Mathf.Clamp(verticalAxis, -yClampValue, yClampValue);
 
+            //Clamp the horizontal axis
+            if (horizontalClampAllowed == true)
+            {
+                horizontalAxis += Input.GetAxis("Mouse X") * sensitivityX;
+                horizontalAxis = Mathf.Clamp(horizontalAxis, -horizontalClampValue, horizontalClampValue);
+            }
+
             //Run this code if gravity is enabled
             if (ccMovement.GetGravityValue() == true)
             {
-                //Rotate the players horizontal axis
-                player.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+                if (horizontalClampAllowed == false)
+                {
+                    //Rotate the players horizontal axis
+                    player.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+                }
+                else
+                {
+                    player.localEulerAngles = new Vector3(player.localEulerAngles.x, horizontalAxis, player.localEulerAngles.z);
+                }
                 //Rotate the camera for vertical input
                 transform.localEulerAngles = new Vector3(verticalAxis, transform.localEulerAngles.y, transform.localEulerAngles.z);
             }
@@ -104,6 +121,12 @@ public class FirstPersonCamera : MonoBehaviour
     public void IsCameraAllowedToMove(bool value) //This public method will allow the user to control the camera movement from different scripts
     {
         cameraMovementAllowed = value;
+    }
+
+    public void AllowHorizontalClamp(float clampValue) //Allow horizontal clamp
+    {
+        horizontalClampValue = clampValue;
+        horizontalClampAllowed = true;
     }
 
     public void SetValues(float sensY, float sensX, float clampValue, bool cameraInverted, bool controllerSupport, string rightAnalogXAxis, string rightAnalogYAxis) //When this variable is called from the Set up script it will set all of the values of this script

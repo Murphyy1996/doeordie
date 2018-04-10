@@ -2,6 +2,7 @@
 //Purpose: To keep track of the health values on the player and enemies
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using BehaviorDesigner.Runtime;
@@ -329,7 +330,7 @@ public class ReusableHealth : MonoBehaviour
                 armorValue = 0;
             }
 
-            if (this.gameObject.tag == "Player" && Time.timeScale != 0)
+            if (this.gameObject.tag == "Player" && Time.timeScale != 0 && SceneManager.GetActiveScene().name != "Boss")
             {
                 InGameUI.inst.makeBarBigger(1.2f);
                 //Make a shot force exit the players grapple
