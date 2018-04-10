@@ -21,8 +21,8 @@ public class InGameUI : MonoBehaviour
     private Vector3 defaultHealthScale;
 
 
-    [SerializeField]
-    private Text ammoText;
+  //  [SerializeField]
+    public Text ammoText, pickedAmmo;
     GameObject player;
     Shooting shot;
     AmmoManager ammoScript;

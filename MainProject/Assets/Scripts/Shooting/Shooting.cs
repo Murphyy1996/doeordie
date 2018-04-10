@@ -46,6 +46,8 @@ public class Shooting : MonoBehaviour
     private int outOfAmmoCount = 0;
     private Text outOfAmmoPrompt;
 
+    private float pickUpAmmoTimer = 999, pickUpAmmoLimit = 2;
+
     private void Awake() //Spawn in bullets for the object pool
     {
         //Get the crouch script
@@ -116,6 +118,29 @@ public class Shooting : MonoBehaviour
             //Gun bob code
             GunBob();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        pickUpAmmoTimer = pickUpAmmoTimer + Time.fixedDeltaTime;
+        if (pickUpAmmoTimer <= pickUpAmmoLimit)
+        {
+          
+            //Show the pick up ammo thing here
+            InGameUI.inst.pickedAmmo.enabled = true;
+        }
+        else
+        {
+           
+            //Hide the pick up ammo thing here
+            InGameUI.inst.pickedAmmo.enabled = false;
+        }
+    }
+
+    public void ShowPickUpAmmoLabel() //Will activate the time code
+    {
+        print("i got run");
+        pickUpAmmoTimer = 0;
     }
 
     private void RenderWeapon() //Render the selected weapon
