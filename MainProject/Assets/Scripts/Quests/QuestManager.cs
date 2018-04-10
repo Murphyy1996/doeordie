@@ -18,8 +18,7 @@ public class QuestManager : MonoBehaviour
     private FirstPersonCamera fpsScript;
     public bool inConvo = false;
     private float timer = 0, timerTarget = 0;
-    [SerializeField]
-    private AudioSource subtitleAudioSource;
+    public AudioSource subtitleAudioSource;
 
     private void Awake()
     {

@@ -14,6 +14,7 @@ public class InGamePause : MonoBehaviour
     [SerializeField]
     private GameObject optionsPrefab;
     private Canvas spawnedOptionsCanvas;
+    private List<AudioSource> audioSourcesThatNeedsUnpausing = new List<AudioSource>();
 
 
     private void Start()
@@ -95,6 +96,11 @@ public class InGamePause : MonoBehaviour
 
     public void OpenPauseMenu() //This code will open the pause menu
     {
+        if (QuestManager.inst.subtitleAudioSource.isPlaying == true)
+        {
+            QuestManager.inst.subtitleAudioSource.Pause();
+            audioSourcesThatNeedsUnpausing.Add(QuestManager.inst.subtitleAudioSource);
+        }
         //Get the pause obj and fps script
         FirstPersonCamera fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
         GameObject pauseObj = GameObject.Find("Pause menu");
@@ -118,6 +124,10 @@ public class InGamePause : MonoBehaviour
 
     private void ClosePauseMenu()
     {
+        foreach (AudioSource audioSource in audioSourcesThatNeedsUnpausing)
+        {
+            audioSource.UnPause();
+        }
         //Get the pause obj and fps script
         FirstPersonCamera fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
         GameObject pauseObj = GameObject.Find("Pause menu");
