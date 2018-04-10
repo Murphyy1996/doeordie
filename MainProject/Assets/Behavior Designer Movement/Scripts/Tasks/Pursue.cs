@@ -43,6 +43,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             anim.SetBool("isLooking", false);
             anim.SetBool("isPatrolling", false);
             anim.SetBool("isCharging", false);
+            anim.SetFloat("Speed", 1f);
         }
 
         // Pursue the destination. Return success once the agent has reached the destination.
@@ -57,6 +58,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 anim.SetBool("isRunning", false);
                 anim.SetBool("isPatrolling", false);
                 anim.SetBool("isShooting", true);
+                anim.SetFloat("Speed", 0f);
 
                 return TaskStatus.Success;
             }
@@ -74,6 +76,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             anim.SetBool("isPatrolling", false);
             anim.SetBool("isCharging", false);
             anim.SetBool("isRunning", true);
+            anim.SetFloat("Speed", 1f);
             return TaskStatus.Running;
         }
 

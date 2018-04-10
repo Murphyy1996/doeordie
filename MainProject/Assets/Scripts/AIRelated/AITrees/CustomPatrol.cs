@@ -45,11 +45,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 
             newWaypointIndex = waypointIndex;
 
-            rangedAnim.GetFloat("Speed");
-            meleeAnim.SetBool("isPatrolling", true);
-            meleeAnim.SetBool("isRunning", false);
-            meleeAnim.SetBool("isCharging", false);
-            meleeAnim.SetBool("isShooting", false);
+            rangedAnim.SetFloat("Speed", 0f);
             waypoints.Value.AddRange(reference.waypoint);
             //
 
@@ -76,7 +72,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         {
 
             //Custom
-            rangedAnim.SetFloat("Speed", 0f);
+            rangedAnim.SetFloat("Speed", 0.5f);
             LookAtWaypoint();
             //
 
@@ -89,8 +85,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             {
 
                 //Custom
-                meleeAnim.SetBool("isPatrolling", false);
-                meleeAnim.SetBool("isIdle", true);
+                rangedAnim.SetFloat("Speed", 0f);
                 //
 
                 if (waypointReachedTime == -1) 
@@ -158,7 +153,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             {
                 if (direction != Vector3.zero)
                 {
-                    meleeAnim.SetBool("isLooking", true);
                     Quaternion lookAtPoint = Quaternion.LookRotation(direction);
                     //transform.localRotation = Quaternion.Slerp(transform.localRotation, lookAtPoint, (Time.deltaTime * 1.4f)); //1.3f for more looking behaviour, 2f is default
                     transform.localRotation = Quaternion.RotateTowards(transform.localRotation, lookAtPoint, Time.deltaTime * 75f);
@@ -167,9 +161,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             } 
             else
             {
-                meleeAnim.SetBool("isLooking", false);
-                meleeAnim.SetBool("isIdle", false);
-                meleeAnim.SetBool("isPatrolling", true);
+                rangedAnim.SetFloat("Speed", 0.5f);
 
                 SetDestination(Target());
             }
