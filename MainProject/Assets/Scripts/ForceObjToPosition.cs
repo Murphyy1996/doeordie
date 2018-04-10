@@ -2,34 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForcePlayerToPosition : MonoBehaviour
+public class ForceObjToPosition : MonoBehaviour
 {
-    private Transform player;
     [SerializeField]
-    private Transform transformToForcePlayer;
+    private Transform objToForce;
+    [SerializeField]
+    private Transform transformToForceTo;
     [SerializeField]
     private bool localPosition = false;
     public bool allowedToForce = true;
 	
-    // Use this for initialization
-	private void Start ()
-    {
-        player = GameObject.Find("Player").transform;
-	}
-	
 	// Update is called once per frame
 	private void FixedUpdate()
     {
-        if (player != null)
+        if (objToForce != null)
         {
             //Force to the location position
             if (localPosition == true)
             {
-                player.localPosition = transformToForcePlayer.localPosition;
+                objToForce.localPosition = transformToForceTo.localPosition;
             }
             else
             {
-                player.position = transformToForcePlayer.position;
+                objToForce.position = transformToForceTo.position;
             }
         }      
 	}

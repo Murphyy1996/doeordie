@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5382,7 +5382,8 @@ Prefab:
       propertyPath: hatchToOpen
       value: 
       objectReference: {fileID: 1797835937}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114835095402660472, guid: 0cc34b1a7c84e074f92eb1d79b190846, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0cc34b1a7c84e074f92eb1d79b190846, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &694198136
@@ -5887,8 +5888,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 792852112}
-  m_LocalRotation: {x: -0, y: 0.9996678, z: -0, w: 0.025773836}
-  m_LocalPosition: {x: -17.515125, y: -23.687244, z: 85.50931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 65883793}
@@ -5904,9 +5905,9 @@ Transform:
   - {fileID: 707840910}
   - {fileID: 697528797}
   - {fileID: 383301986}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1949629686}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 177.046, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &792852114
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5964,7 +5965,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -489329316
+  randomSeed: -943329159
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9590,7 +9591,7 @@ MonoBehaviour:
   fieldOfView: 60
   cameraXAxisSensitivity: 4
   cameraYAxisSensitivity: 4
-  cameraYClampValue: 80
+  cameraYClampValue: 60
   invertYAxis: 0
   verticalOffset: 0.5
   distanceFromPlayer: 0
@@ -9910,6 +9911,26 @@ Transform:
   m_Father: {fileID: 407769497}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &973110325 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1890048025633114, guid: 0cc34b1a7c84e074f92eb1d79b190846,
+    type: 2}
+  m_PrefabInternal: {fileID: 664381781}
+--- !u!114 &973110328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 973110325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff0b66f821e9e54e8f4cb45d1336746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToForce: {fileID: 1949629686}
+  transformToForceTo: {fileID: 1388344433}
+  localPosition: 0
+  allowedToForce: 1
 --- !u!1 &1006768197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10310,6 +10331,11 @@ Transform:
   m_Father: {fileID: 407769497}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1388344433 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4811257562721016, guid: 0cc34b1a7c84e074f92eb1d79b190846,
+    type: 2}
+  m_PrefabInternal: {fileID: 664381781}
 --- !u!1 &1443470267
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,6 +11119,35 @@ Transform:
   m_Father: {fileID: 149464309}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1949629685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1949629686}
+  m_Layer: 23
+  m_Name: PlayerHolderEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949629686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949629685}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -17.515125, y: -23.687244, z: 85.50931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 792852113}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2090776184
 GameObject:
   m_ObjectHideFlags: 0
