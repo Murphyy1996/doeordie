@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0fa95e09244a062438e603bad2b64a99
-timeCreated: 1523358795
+guid: 315b91419f02b264eb5f7dc5739f1476
+timeCreated: 1523360207
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -362,7 +362,7 @@ ModelImporter:
     400352: Goon_walk:transform9
     400354: //RootNode
     4300000: goon_01:goon_01:polySurface7
-    7400000: Ranged_WalkFix
+    7400000: Ranged_WalkHandFix
     9500000: //RootNode
     13700000: goon_01:goon_01:polySurface7
   materials:
@@ -392,7 +392,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Ranged_WalkFix
+      name: Ranged_WalkHandFix
       takeName: Take 001
       firstFrame: 0
       lastFrame: 32
@@ -407,7 +407,7 @@ ModelImporter:
       loopBlendOrientation: 1
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 1
@@ -1219,18 +1219,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: walk (1)(Clone)
+    - name: walk_fix(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: goon_01:goon_01:polySurface7
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_Reference
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.0029818139, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -1445,23 +1445,22 @@ ModelImporter:
     - name: Goon_walk:Character1_Ctrl_RightShoulder
       parentName: Goon_walk:Character1_Ctrl_Spine2
       position: {x: 0.004375, y: 0.0056520603, z: 0.0015966925}
-      rotation: {x: 0.000000007717772, y: 0.000000019075783, z: -0.0000000045122253,
-        w: 1}
+      rotation: {x: 1.8041127e-16, y: 0.00000018472146, z: -1.4571681e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightArm
       parentName: Goon_walk:Character1_Ctrl_RightShoulder
       position: {x: 0.00396722, y: -0.0016050767, z: -0.0023194503}
-      rotation: {x: -0.04133899, y: -0.019928034, z: -0.51970214, w: 0.8531141}
+      rotation: {x: -0.04133927, y: -0.019928686, z: -0.51970536, w: 0.8531121}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightForeArm
       parentName: Goon_walk:Character1_Ctrl_RightArm
       position: {x: 0.015059967, y: -0.0034229946, z: -0.0017462167}
-      rotation: {x: -0.02667141, y: -0.41608006, z: -0.055374257, w: 0.90724844}
+      rotation: {x: -0.06965096, y: -0.4934331, z: -0.008030135, w: 0.8669533}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightHand
       parentName: Goon_walk:Character1_Ctrl_RightForeArm
       position: {x: 0.0129442, y: -0.0024562455, z: 0.0009822118}
-      rotation: {x: 0.21954772, y: -0.1549241, z: 0.08981734, w: 0.9590257}
+      rotation: {x: -0.1544995, y: -0.16338721, z: 0.14750883, w: 0.9631592}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightHandIndex1
       parentName: Goon_walk:Character1_Ctrl_RightHand
@@ -1636,8 +1635,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightElbowEffector
       parentName: Goon_walk:Character1_Ctrl_Reference
-      position: {x: 0.012108862, y: 0.057379965, z: -0.0038606261}
-      rotation: {x: -0.24262573, y: -0.40528092, z: -0.5133895, w: 0.7164575}
+      position: {x: 0.01208719, y: 0.057355527, z: -0.003790248}
+      rotation: {x: -0.32115206, y: -0.44750497, z: -0.4561076, w: 0.6989753}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightFootEffector
       parentName: Goon_walk:Character1_Ctrl_Reference
@@ -1681,16 +1680,16 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightShoulderEffector
       parentName: Goon_walk:Character1_Ctrl_Reference
-      position: {x: 0.00805372, y: 0.0723841, z: -0.0038911179}
-      rotation: {x: -0.009843822, y: -0.069844365, z: -0.51624084, w: 0.853534}
+      position: {x: 0.008061522, y: 0.072367534, z: -0.0038399782}
+      rotation: {x: -0.008274465, y: -0.07225777, z: -0.51710904, w: 0.8528239}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Ctrl_RightWristEffector
       parentName: Goon_walk:Character1_Ctrl_Reference
-      position: {x: 0.011361761, y: 0.050281223, z: 0.0072569307}
-      rotation: {x: -0.19132534, y: -0.5905928, z: -0.30143636, w: 0.72369254}
+      position: {x: 0.011862424, y: 0.05273702, z: 0.008585911}
+      rotation: {x: -0.557845, y: -0.427381, z: -0.35286635, w: 0.61777}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:Character1_Reference
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.0029818139, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -1760,17 +1759,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftShoulder
       parentName: Goon_walk:Character1_Spine2
       position: {x: -0.0043750005, y: 0.0056520626, z: 0.0015966926}
-      rotation: {x: 7.6341566e-10, y: 0.12281459, z: -0.08498853, w: 0.9887839}
+      rotation: {x: 0.0000000046041357, y: 0.12281454, z: -0.084988505, w: 0.9887839}
       scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
     - name: Goon_walk:Character1_LeftArm
       parentName: Goon_walk:Character1_LeftShoulder
       position: {x: -0.003967228, y: -0.0016050762, z: -0.0023194544}
-      rotation: {x: 0.007507772, y: -0.027768053, z: -0.0103174895, w: 0.999533}
+      rotation: {x: 0.0075077685, y: -0.027768046, z: -0.0103174895, w: 0.999533}
       scale: {x: 1.0000004, y: 1.0000006, z: 0.99999976}
     - name: Goon_walk:Character1_LeftForeArm
       parentName: Goon_walk:Character1_LeftArm
       position: {x: -0.015059967, y: -0.003423012, z: -0.0017462166}
-      rotation: {x: 0.017745279, y: -0.09234354, z: 0.0029317234, w: 0.99556476}
+      rotation: {x: 0.017745258, y: -0.09234346, z: 0.0029317243, w: 0.99556476}
       scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
     - name: Goon_walk:Character1_LeftHand
       parentName: Goon_walk:Character1_LeftForeArm
@@ -1781,17 +1780,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftHandThumb1
       parentName: Goon_walk:Character1_LeftHand
       position: {x: -0.0027089247, y: -0.0018150442, z: 0.0033708578}
-      rotation: {x: -0.048280697, y: -0.004423309, z: -0.043405175, w: 0.99788046}
+      rotation: {x: -0.048280407, y: -0.0044226535, z: -0.04340472, w: 0.9978806}
       scale: {x: 1, y: 0.99999994, z: 1.0000001}
     - name: Goon_walk:Character1_LeftHandThumb2
       parentName: Goon_walk:Character1_LeftHandThumb1
       position: {x: -0.0009595202, y: -0.00073987385, z: 0.0011426923}
-      rotation: {x: -0.05880344, y: 0.008667822, z: -0.043764953, w: 0.99727213}
+      rotation: {x: -0.05880171, y: 0.00866863, z: -0.043762837, w: 0.9972723}
       scale: {x: 1.0000004, y: 1.0000006, z: 1.0000002}
     - name: Goon_walk:Character1_LeftHandThumb3
       parentName: Goon_walk:Character1_LeftHandThumb2
       position: {x: -0.00081615127, y: -0.0009870109, z: 0.00090111577}
-      rotation: {x: -0.059298076, y: 0.055986404, z: 0.0076166145, w: 0.99663997}
+      rotation: {x: -0.059297666, y: 0.055985227, z: 0.007615217, w: 0.99664015}
       scale: {x: 1, y: 1.0000006, z: 1.0000007}
     - name: Goon_walk:Character1_LeftHandThumb4
       parentName: Goon_walk:Character1_LeftHandThumb3
@@ -1801,17 +1800,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftHandIndex1
       parentName: Goon_walk:Character1_LeftHand
       position: {x: -0.0068825595, y: -0.0017479677, z: 0.0021942612}
-      rotation: {x: 0.0126855485, y: -0.06719429, z: -0.13116337, w: 0.9889996}
+      rotation: {x: 0.012685516, y: -0.06719421, z: -0.13116333, w: 0.98899966}
       scale: {x: 1.0000007, y: 1.0000007, z: 1}
     - name: Goon_walk:Character1_LeftHandIndex2
       parentName: Goon_walk:Character1_LeftHandIndex1
       position: {x: -0.0018665381, y: -0.0015362948, z: 0.0006065138}
-      rotation: {x: -0.044366736, y: -0.016012972, z: -0.17708267, w: 0.9830651}
+      rotation: {x: -0.044367883, y: -0.016013283, z: -0.177087, w: 0.98306423}
       scale: {x: 1.0000005, y: 1.0000004, z: 1}
     - name: Goon_walk:Character1_LeftHandIndex3
       parentName: Goon_walk:Character1_LeftHandIndex2
       position: {x: -0.0005420131, y: -0.0011458307, z: 0.00023938026}
-      rotation: {x: -0.009796858, y: -0.018314062, z: -0.110404514, w: 0.9936697}
+      rotation: {x: -0.0097957, y: -0.018314298, z: -0.11040442, w: 0.99366975}
       scale: {x: 1.0000005, y: 1.0000002, z: 1.0000002}
     - name: Goon_walk:Character1_LeftHandIndex4
       parentName: Goon_walk:Character1_LeftHandIndex3
@@ -1821,17 +1820,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftHandMiddle1
       parentName: Goon_walk:Character1_LeftHand
       position: {x: -0.007075908, y: -0.002037055, z: 0.0003592193}
-      rotation: {x: -0.0031873283, y: -0.0022732902, z: -0.07567502, w: 0.9971249}
+      rotation: {x: -0.0031873188, y: -0.0022732678, z: -0.07567455, w: 0.99712497}
       scale: {x: 1.0000007, y: 1.0000005, z: 1}
     - name: Goon_walk:Character1_LeftHandMiddle2
       parentName: Goon_walk:Character1_LeftHandMiddle1
       position: {x: -0.0027834654, y: -0.0018692983, z: 0.00017338885}
-      rotation: {x: -0.0031153206, y: -0.019875498, z: -0.26428577, w: 0.9642346}
+      rotation: {x: -0.0031151422, y: -0.019875376, z: -0.2642838, w: 0.9642351}
       scale: {x: 1.0000008, y: 1.0000012, z: 1}
     - name: Goon_walk:Character1_LeftHandMiddle3
       parentName: Goon_walk:Character1_LeftHandMiddle2
       position: {x: -0.0006657064, y: -0.0016422565, z: 0.0001313533}
-      rotation: {x: -0.00026361548, y: -0.009477732, z: -0.11983436, w: 0.9927487}
+      rotation: {x: -0.00026363923, y: -0.009477527, z: -0.119830236, w: 0.99274915}
       scale: {x: 1.000001, y: 1.0000006, z: 1}
     - name: Goon_walk:Character1_LeftHandMiddle4
       parentName: Goon_walk:Character1_LeftHandMiddle3
@@ -1841,17 +1840,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftHandRing1
       parentName: Goon_walk:Character1_LeftHand
       position: {x: -0.006888036, y: -0.002421964, z: -0.0013992704}
-      rotation: {x: -0.014597468, y: 0.040323302, z: -0.05887636, w: 0.9973438}
+      rotation: {x: -0.014597474, y: 0.04032338, z: -0.05887582, w: 0.9973438}
       scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
     - name: Goon_walk:Character1_LeftHandRing2
       parentName: Goon_walk:Character1_LeftHandRing1
       position: {x: -0.0024114389, y: -0.0014064288, z: -0.00036536108}
-      rotation: {x: 0.084564336, y: -0.07520658, z: -0.26863775, w: 0.9565702}
+      rotation: {x: 0.084564395, y: -0.075206794, z: -0.2686385, w: 0.9565701}
       scale: {x: 1.0000002, y: 1.0000002, z: 1}
     - name: Goon_walk:Character1_LeftHandRing3
       parentName: Goon_walk:Character1_LeftHandRing2
       position: {x: -0.0006245951, y: -0.0013135395, z: 0.00017111925}
-      rotation: {x: 0.025864104, y: -0.031729154, z: -0.14915282, w: 0.9879665}
+      rotation: {x: 0.02586492, y: -0.031730022, z: -0.14915614, w: 0.9879659}
       scale: {x: 1.0000007, y: 1.0000006, z: 1}
     - name: Goon_walk:Character1_LeftHandRing4
       parentName: Goon_walk:Character1_LeftHandRing3
@@ -1861,17 +1860,17 @@ ModelImporter:
     - name: Goon_walk:Character1_LeftHandPinky1
       parentName: Goon_walk:Character1_LeftHand
       position: {x: -0.0060062897, y: -0.0028794159, z: -0.0029220614}
-      rotation: {x: -0.0283397, y: 0.07924904, z: -0.10883186, w: 0.9904909}
+      rotation: {x: -0.028339462, y: 0.07924827, z: -0.10883135, w: 0.99049103}
       scale: {x: 1.0000008, y: 1.0000002, z: 1.0000001}
     - name: Goon_walk:Character1_LeftHandPinky2
       parentName: Goon_walk:Character1_LeftHandPinky1
       position: {x: -0.0015006455, y: -0.0010800697, z: -0.00039571873}
-      rotation: {x: 0.0452127, y: -0.021660073, z: -0.112337366, w: 0.99240464}
+      rotation: {x: 0.045211807, y: -0.021660062, z: -0.11233357, w: 0.9924052}
       scale: {x: 0.99999946, y: 0.99999994, z: 0.9999999}
     - name: Goon_walk:Character1_LeftHandPinky3
       parentName: Goon_walk:Character1_LeftHandPinky2
       position: {x: -0.00071530236, y: -0.0009418994, z: -0.00010627723}
-      rotation: {x: 0.09005283, y: -0.047510505, z: -0.18503357, w: 0.9774436}
+      rotation: {x: 0.090053044, y: -0.04751091, z: -0.1850361, w: 0.977443}
       scale: {x: 1.0000002, y: 1.0000006, z: 1.0000001}
     - name: Goon_walk:Character1_LeftHandPinky4
       parentName: Goon_walk:Character1_LeftHandPinky3
@@ -1881,124 +1880,125 @@ ModelImporter:
     - name: Goon_walk:Character1_RightShoulder
       parentName: Goon_walk:Character1_Spine2
       position: {x: 0.004375002, y: 0.005652057, z: 0.0015966931}
-      rotation: {x: -7.634154e-10, y: -0.122814745, z: 0.084988624, w: 0.98878384}
+      rotation: {x: -0.0000000046041424, y: -0.1228149, z: 0.084988385, w: 0.98878384}
       scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
     - name: Goon_walk:Character1_RightArm
       parentName: Goon_walk:Character1_RightShoulder
-      position: {x: 0.003967225, y: -0.0016050797, z: -0.0023194544}
-      rotation: {x: 0.007507735, y: 0.027768165, z: 0.010317154, w: 0.99953294}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+      position: {x: 0.003967218, y: -0.001605075, z: -0.0023194526}
+      rotation: {x: 0.007507763, y: 0.027768105, z: 0.010317378, w: 0.999533}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
     - name: Goon_walk:Character1_RightForeArm
       parentName: Goon_walk:Character1_RightArm
-      position: {x: 0.015059975, y: -0.0034229967, z: -0.001746214}
-      rotation: {x: 0.017745258, y: 0.09234383, z: -0.0029317592, w: 0.99556476}
-      scale: {x: 1.0000005, y: 1.0000001, z: 0.9999999}
+      position: {x: 0.015059963, y: -0.0034230028, z: -0.001746221}
+      rotation: {x: 0.017745195, y: 0.09234362, z: -0.0029319632, w: 0.9955648}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1}
     - name: Goon_walk:Character1_RightHand
       parentName: Goon_walk:Character1_RightForeArm
-      position: {x: 0.012944203, y: -0.0024562434, z: 0.0009822187}
-      rotation: {x: 0.0000000043655763, y: 0.00000005820766, z: 0.00000001455192,
+      position: {x: 0.01294421, y: -0.0024562383, z: 0.0009822104}
+      rotation: {x: 0.00000000691216, y: 0.000000009822541, z: 0.000000017462298,
         w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandThumb1
       parentName: Goon_walk:Character1_RightHand
-      position: {x: 0.0027089247, y: -0.0018150429, z: 0.0033708578}
-      rotation: {x: -0.04827883, y: 0.0044222423, z: 0.043403275, w: 0.9978807}
-      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+      position: {x: 0.002708924, y: -0.0018150434, z: 0.0033708536}
+      rotation: {x: -0.04828106, y: 0.0044228635, z: 0.043405313, w: 0.99788046}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
     - name: Goon_walk:Character1_RightHandThumb2
       parentName: Goon_walk:Character1_RightHandThumb1
-      position: {x: 0.0009595194, y: -0.0007398768, z: 0.0011426905}
-      rotation: {x: -0.0588032, y: -0.008668267, z: 0.043764748, w: 0.9972722}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.000959517, y: -0.00073987455, z: 0.0011426902}
+      rotation: {x: -0.058801476, y: -0.008668552, z: 0.043762773, w: 0.9972723}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandThumb3
       parentName: Goon_walk:Character1_RightHandThumb2
-      position: {x: 0.00081615604, y: -0.0009870093, z: 0.0009011171}
-      rotation: {x: -0.059298933, y: -0.055985484, z: -0.0076137073, w: 0.9966401}
-      scale: {x: 0.9999998, y: 1.0000004, z: 1.0000004}
+      position: {x: 0.00081615866, y: -0.000987011, z: 0.0009011158}
+      rotation: {x: -0.059298787, y: -0.055985108, z: -0.0076134508, w: 0.9966401}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1}
     - name: Goon_walk:Character1_RightHandThumb4
       parentName: Goon_walk:Character1_RightHandThumb3
-      position: {x: 0.0012591798, y: -0.00143601, z: 0.0007522761}
-      rotation: {x: -0.000000034924597, y: 0.0000000043655737, z: 2.371691e-16, w: 1}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+      position: {x: 0.0012591768, y: -0.0014360074, z: 0.000752273}
+      rotation: {x: 0.00000002328306, y: 0.000000023283064, z: -0.00000001164153,
+        w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
     - name: Goon_walk:Character1_RightHandIndex1
       parentName: Goon_walk:Character1_RightHand
-      position: {x: 0.0068825576, y: -0.0017479674, z: 0.0021942586}
-      rotation: {x: 0.012685668, y: 0.067194104, z: 0.13116199, w: 0.98899984}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+      position: {x: 0.0068825553, y: -0.0017479638, z: 0.0021942582}
+      rotation: {x: 0.012685558, y: 0.067194514, z: 0.13116272, w: 0.98899966}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000006}
     - name: Goon_walk:Character1_RightHandIndex2
       parentName: Goon_walk:Character1_RightHandIndex1
-      position: {x: 0.0018665405, y: -0.0015362924, z: 0.0006065146}
-      rotation: {x: -0.044365343, y: 0.016002623, z: 0.17708538, w: 0.98306483}
-      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+      position: {x: 0.0018665398, y: -0.0015362924, z: 0.00060651515}
+      rotation: {x: -0.04436667, y: 0.016001653, z: 0.17708592, w: 0.98306465}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000005}
     - name: Goon_walk:Character1_RightHandIndex3
       parentName: Goon_walk:Character1_RightHandIndex2
-      position: {x: 0.00054202613, y: -0.0011458296, z: 0.00023936777}
-      rotation: {x: -0.009818468, y: 0.018537521, z: 0.11040984, w: 0.99366474}
-      scale: {x: 0.9999999, y: 1.0000002, z: 1}
+      position: {x: 0.0005420241, y: -0.0011458308, z: 0.00023936854}
+      rotation: {x: -0.009817776, y: 0.018536344, z: 0.11040334, w: 0.9936655}
+      scale: {x: 0.99999976, y: 1.0000004, z: 1.0000001}
     - name: Goon_walk:Character1_RightHandIndex4
       parentName: Goon_walk:Character1_RightHandIndex3
-      position: {x: 0.00027010692, y: -0.0019232983, z: 0.00034503854}
-      rotation: {x: 0.000000005864713, y: -0.0011165168, z: 0.000000011628523, w: 0.9999994}
-      scale: {x: 1, y: 1.0000004, z: 1}
+      position: {x: 0.00027010796, y: -0.0019232943, z: 0.00034503566}
+      rotation: {x: 0.000000011594484, y: -0.001116505, z: -1.3047652e-11, w: 0.9999994}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
     - name: Goon_walk:Character1_RightHandMiddle1
       parentName: Goon_walk:Character1_RightHand
-      position: {x: 0.007075911, y: -0.0020370565, z: 0.00035921868}
-      rotation: {x: -0.0031872988, y: 0.002273107, z: 0.075674444, w: 0.9971249}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000002}
+      position: {x: 0.007075909, y: -0.002037053, z: 0.0003592215}
+      rotation: {x: -0.0031874748, y: 0.0022730206, z: 0.07567617, w: 0.9971248}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
     - name: Goon_walk:Character1_RightHandMiddle2
       parentName: Goon_walk:Character1_RightHandMiddle1
-      position: {x: 0.0027834657, y: -0.0018692989, z: 0.0001733876}
-      rotation: {x: -0.003112628, y: 0.019871512, z: 0.26428425, w: 0.96423507}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000004}
+      position: {x: 0.002783465, y: -0.0018692982, z: 0.00017338745}
+      rotation: {x: -0.0031131052, y: 0.019870687, z: 0.2642833, w: 0.96423537}
+      scale: {x: 1, y: 1, z: 1.0000001}
     - name: Goon_walk:Character1_RightHandMiddle3
       parentName: Goon_walk:Character1_RightHandMiddle2
-      position: {x: 0.000665703, y: -0.0016422591, z: 0.00013134832}
-      rotation: {x: -0.00027677207, y: 0.00958853, z: 0.1198344, w: 0.9927476}
-      scale: {x: 1.0000005, y: 1.0000011, z: 1.0000002}
+      position: {x: 0.0006657047, y: -0.0016422556, z: 0.0001313451}
+      rotation: {x: -0.00027541578, y: 0.009588575, z: 0.11983276, w: 0.99274784}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
     - name: Goon_walk:Character1_RightHandMiddle4
       parentName: Goon_walk:Character1_RightHandMiddle3
-      position: {x: 0.000100394594, y: -0.0013978767, z: 0.000110801775}
-      rotation: {x: 0.000000043304627, y: -0.0011165227, z: 0.0000000014718589, w: 0.9999994}
-      scale: {x: 1.0000008, y: 1.000001, z: 1.0000005}
+      position: {x: 0.00010039365, y: -0.0013978761, z: 0.000110802226}
+      rotation: {x: 0.0000000021357325, y: -0.0011165205, z: 1.2144059e-11, w: 0.9999994}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandRing1
       parentName: Goon_walk:Character1_RightHand
-      position: {x: 0.006888032, y: -0.002421964, z: -0.0013992722}
-      rotation: {x: -0.014597541, y: -0.040323544, z: 0.05887662, w: 0.9973438}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      position: {x: 0.00688803, y: -0.0024219595, z: -0.0013992722}
+      rotation: {x: -0.014597544, y: -0.04032358, z: 0.058876593, w: 0.9973437}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandRing2
       parentName: Goon_walk:Character1_RightHandRing1
-      position: {x: 0.0024114389, y: -0.0014064296, z: -0.00036535936}
-      rotation: {x: 0.08456585, y: 0.07520215, z: 0.26863524, w: 0.9565712}
-      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000004}
+      position: {x: 0.0024114423, y: -0.0014064261, z: -0.00036536198}
+      rotation: {x: 0.084567174, y: 0.0752037, z: 0.2686367, w: 0.9565705}
+      scale: {x: 1.0000014, y: 1.0000007, z: 1.0000005}
     - name: Goon_walk:Character1_RightHandRing3
       parentName: Goon_walk:Character1_RightHandRing2
-      position: {x: 0.00062459614, y: -0.0013135382, z: 0.00017111232}
-      rotation: {x: 0.025848737, y: 0.03183883, z: 0.14915237, w: 0.98796344}
-      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000001}
+      position: {x: 0.0006245972, y: -0.0013135407, z: 0.00017111826}
+      rotation: {x: 0.025847087, y: 0.031839497, z: 0.14915699, w: 0.9879627}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000005}
     - name: Goon_walk:Character1_RightHandRing4
       parentName: Goon_walk:Character1_RightHandRing3
-      position: {x: 0.00010440063, y: -0.0015109719, z: 0.0003033353}
-      rotation: {x: -0.00000002907774, y: -0.0011165402, z: -7.149127e-11, w: 0.9999994}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+      position: {x: 0.000104399514, y: -0.0015109724, z: 0.00030333336}
+      rotation: {x: 9.769963e-15, y: -0.0011164878, z: -1.305334e-11, w: 0.9999994}
+      scale: {x: 1.0000011, y: 1.0000005, z: 1.0000004}
     - name: Goon_walk:Character1_RightHandPinky1
       parentName: Goon_walk:Character1_RightHand
-      position: {x: 0.0060062865, y: -0.0028794145, z: -0.0029220595}
-      rotation: {x: -0.028339334, y: -0.0792479, z: 0.10883082, w: 0.9904911}
-      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+      position: {x: 0.006006286, y: -0.0028794152, z: -0.0029220614}
+      rotation: {x: -0.028339423, y: -0.07924831, z: 0.108831674, w: 0.990491}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandPinky2
       parentName: Goon_walk:Character1_RightHandPinky1
-      position: {x: 0.0015006453, y: -0.0010800681, z: -0.00039571835}
-      rotation: {x: 0.04521247, y: 0.021655673, z: 0.112331055, w: 0.99240553}
-      scale: {x: 1.0000007, y: 1.000001, z: 1.0000002}
+      position: {x: 0.0015006443, y: -0.0010800698, z: -0.00039571602}
+      rotation: {x: 0.045212258, y: 0.021655025, z: 0.11233255, w: 0.99240535}
+      scale: {x: 1.0000005, y: 1, z: 1.0000002}
     - name: Goon_walk:Character1_RightHandPinky3
       parentName: Goon_walk:Character1_RightHandPinky2
-      position: {x: 0.0007153058, y: -0.0009419026, z: -0.000106282794}
-      rotation: {x: 0.090033196, y: 0.04761965, z: 0.18504404, w: 0.9774381}
-      scale: {x: 1.000001, y: 1.000001, z: 1.0000001}
+      position: {x: 0.00071530795, y: -0.0009419021, z: -0.00010628341}
+      rotation: {x: 0.09003359, y: 0.047619756, z: 0.18504901, w: 0.9774371}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
     - name: Goon_walk:Character1_RightHandPinky4
       parentName: Goon_walk:Character1_RightHandPinky3
-      position: {x: 0.00027922157, y: -0.0012510626, z: 0.000185378}
-      rotation: {x: -0.00000006995056, y: -0.0011164934, z: -0.000000023309097, w: 0.9999994}
-      scale: {x: 1.000001, y: 1.0000012, z: 1.0000002}
+      position: {x: 0.00027922064, y: -0.0012510627, z: 0.0001853777}
+      rotation: {x: 9.4101615e-11, y: -0.0011164878, z: 0.000000046540165, w: 0.9999994}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
     - name: Goon_walk:Character1_Neck
       parentName: Goon_walk:Character1_Spine2
       position: {x: 4.7967585e-10, y: 0.008547588, z: 0.0028405213}
@@ -2011,7 +2011,7 @@ ModelImporter:
         w: 1}
       scale: {x: 0.9999999, y: 1.0000002, z: 1.0000001}
     - name: Goon_walk:pCone1
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.05314807, z: -0.019596383}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 0.69362974, y: 0.69362974, z: 0.69362974}
@@ -2021,7 +2021,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:pCube1
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0.0028983487, y: 0.09225298, z: 0.009086428}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.36924076, y: 0.36924076, z: 0.36924076}
@@ -2031,7 +2031,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:pCylinder1
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.07926643, z: -0.0011071719}
       rotation: {x: 0.25881907, y: -0, z: -0, w: 0.9659259}
       scale: {x: 0.40805852, y: 0.40805852, z: 0.40805852}
@@ -2041,7 +2041,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:pCylinder2
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: 0.00548529, y: 0.090067536, z: 0.014570187}
       rotation: {x: 0.8365163, y: -0.22414386, z: -0.12940952, w: -0.4829629}
       scale: {x: 1, y: 1, z: 1}
@@ -2051,7 +2051,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface5
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0.03877796, y: 0.06768435, z: -0.005286847}
       rotation: {x: 0, y: 0, z: 0.13052619, w: 0.9914449}
       scale: {x: 0.7091321, y: 0.7091321, z: 0.7091321}
@@ -2061,7 +2061,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface6
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.089999996, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2071,7 +2071,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface7
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.089999996, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2081,7 +2081,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface8
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2091,7 +2091,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface13
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.089999996, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2101,7 +2101,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface19
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0.00063957536, y: 0.044249985, z: -0.009461076}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2111,7 +2111,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_walk:polySurface21
-      parentName: walk (1)(Clone)
+      parentName: walk_fix(Clone)
       position: {x: -0, y: 0.087356746, z: 0.0064817476}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
