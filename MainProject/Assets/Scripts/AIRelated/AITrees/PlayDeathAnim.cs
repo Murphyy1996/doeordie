@@ -21,7 +21,7 @@ public class PlayDeathAnim : Action
 
         if (this.gameObject.tag == "enemy")
         {
-
+            meleeAnim.SetFloat("Speed", 1.5f);
             meleeAnim.SetBool("isDead", true);
          
             return TaskStatus.Success;
