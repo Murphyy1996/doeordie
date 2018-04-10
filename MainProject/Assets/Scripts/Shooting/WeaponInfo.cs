@@ -85,7 +85,10 @@ public class WeaponInfo : MonoBehaviour
                     //Add the ammo picked up on this gun to the current amount of ammo
                     calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol) + pickUpAmmo;
                     ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, calculatedAmmoToAdd);
+                  //  StartCoroutine("flashText");
+                  //  StopCoroutine("flashText");
                     pickUpUsed = true;
+
                     break;
                 case weapon.dualPistol:
                     if (shootingScript.dualPistolscript == null && ammoPickupOnly == false)
@@ -95,7 +98,7 @@ public class WeaponInfo : MonoBehaviour
                     }
                     //Add the ammo picked up on this gun to the current amount of ammo
                     calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.pistol) + pickUpAmmo;
-                    ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, calculatedAmmoToAdd);
+                    ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.pistol, calculatedAmmoToAdd);               
                     pickUpUsed = true;
                     break;
                 case weapon.machineGun:
@@ -109,7 +112,9 @@ public class WeaponInfo : MonoBehaviour
                     {
                         calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun) + pickUpAmmo;
                         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.machineGun, calculatedAmmoToAdd);
+                     
                         pickUpUsed = true;
+                      
                     }
                     break;
                 case weapon.shotgun:
@@ -124,7 +129,9 @@ public class WeaponInfo : MonoBehaviour
                         calculatedAmmoToAdd = ammoManagerScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.shotgun) + pickUpAmmo;
                         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.shotgun, calculatedAmmoToAdd);
                         pickUpUsed = true;
+                        
                     }
+                
                     break;
             }
             if (ammoPickupOnly == false && pickUpUsed == true)
@@ -141,12 +148,14 @@ public class WeaponInfo : MonoBehaviour
             {
                 if (pickUpUsed == true)
                 {
+                    shootingScript.ShowPickUpAmmoLabel();
                     this.gameObject.SetActive(false);
                 }
             }
         }
     }
 
+   
     public int ReturnStartingAmmo()
     {
         return defaultAmountOfAmmo;
