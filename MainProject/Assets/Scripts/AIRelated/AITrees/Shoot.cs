@@ -18,9 +18,9 @@ public class Shoot : Action
     {
         rangedAnim = GetComponent<Animator>();
 
-        bulletOrigin = transform.Find("Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector/polySurface9/BulletOrigin").transform;
+        bulletOrigin = transform.Find("Arm_out:Character1_Reference/Arm_out:Character1_Hips/Arm_out:Character1_Spine/Arm_out:Character1_Spine1/Arm_out:Character1_Spine2/Arm_out:Character1_RightShoulder/Arm_out:Character1_RightArm/Arm_out:Character1_RightForeArm/Arm_out:Character1_RightHand/Gun/BulletOrigin").transform;
 
-        muzzleFlash = transform.Find("Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector/polySurface9/MuzzleObj").gameObject;
+        muzzleFlash = transform.Find("Arm_out:Character1_Reference/Arm_out:Character1_Hips/Arm_out:Character1_Spine/Arm_out:Character1_Spine1/Arm_out:Character1_Spine2/Arm_out:Character1_RightShoulder/Arm_out:Character1_RightArm/Arm_out:Character1_RightForeArm/Arm_out:Character1_RightHand/Gun/MuzzleObj").gameObject;
         muzzleFlash.SetActive(false);
 
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
