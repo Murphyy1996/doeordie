@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 84d1bee1de0804b41bc3c89652512381
-timeCreated: 1523264397
+timeCreated: 1523358204
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -200,62 +200,12 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'Goon_run:Character1_Ctrl_LeftUpLeg'
-      : position error = 10002.919922 mm\n\t'Goon_run:Character1_Ctrl_LeftLeg' : position
-      error = 38936.929688 mm\n\t'Goon_run:Character1_Ctrl_LeftFoot' : position error
-      = 44732.386719 mm\n\t'Goon_run:Character1_Ctrl_LeftToeBase' : position error
-      = 25358.957031 mm\n\t'Goon_run:Character1_Ctrl_RightUpLeg' : position error
-      = 10002.919922 mm\n\t'Goon_run:Character1_Ctrl_RightLeg' : position error =
-      38936.929688 mm\n\t'Goon_run:Character1_Ctrl_RightFoot' : position error = 44732.386719
-      mm\n\t'Goon_run:Character1_Ctrl_RightToeBase' : position error = 25358.957031
-      mm\n\t'Goon_run:Character1_Ctrl_Spine' : position error = 7572.281250 mm\n\t'Goon_run:Character1_Ctrl_Spine1'
-      : position error = 13602.437500 mm\n\t'Goon_run:Character1_Ctrl_Spine2' : position
-      error = 14103.755859 mm\n\t'Goon_run:Character1_Ctrl_LeftShoulder' : position
-      error = 12675.824219 mm\n\t'Goon_run:Character1_Ctrl_LeftArm' : position error
-      = 8425.130859 mm\n\t'Goon_run:Character1_Ctrl_LeftForeArm' : position error
-      = 26901.037109 mm\n\t'Goon_run:Character1_Ctrl_LeftHand' : position error =
-      22866.982422 mm\n\t'Goon_run:Character1_Ctrl_LeftHandThumb1' : position error
-      = 8117.343750 mm\n\t'Goon_run:Character1_Ctrl_LeftHandThumb2' : position error
-      = 2882.628174 mm\n\t'Goon_run:Character1_Ctrl_LeftHandThumb3' : position error
-      = 2710.417969 mm\n\t'Goon_run:Character1_Ctrl_LeftHandIndex1' : position error
-      = 12863.956055 mm\n\t'Goon_run:Character1_Ctrl_LeftHandIndex2' : position error
-      = 4313.853516 mm\n\t'Goon_run:Character1_Ctrl_LeftHandIndex3' : position error
-      = 2232.679932 mm\n\t'Goon_run:Character1_Ctrl_LeftHandMiddle1' : position error
-      = 12759.590820 mm\n\t'Goon_run:Character1_Ctrl_LeftHandMiddle2' : position error
-      = 5810.980957 mm\n\t'Goon_run:Character1_Ctrl_LeftHandMiddle3' : position error
-      = 3075.495605 mm\n\t'Goon_run:Character1_Ctrl_LeftHandRing1' : position error
-      = 12867.341797 mm\n\t'Goon_run:Character1_Ctrl_LeftHandRing2' : position error
-      = 4872.944336 mm\n\t'Goon_run:Character1_Ctrl_LeftHandRing3' : position error
-      = 2534.781006 mm\n\t'Goon_run:Character1_Ctrl_LeftHandPinky1' : position error
-      = 12589.164063 mm\n\t'Goon_run:Character1_Ctrl_LeftHandPinky2' : position error
-      = 3272.588379 mm\n\t'Goon_run:Character1_Ctrl_LeftHandPinky3' : position error
-      = 2055.315430 mm\n\t'Goon_run:Character1_Ctrl_RightShoulder' : position error
-      = 12675.824219 mm\n\t'Goon_run:Character1_Ctrl_RightArm' : position error =
-      8425.130859 mm\n\t'Goon_run:Character1_Ctrl_RightForeArm' : position error =
-      26901.039063 mm\n\t'Goon_run:Character1_Ctrl_RightHand' : position error = 22866.982422
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandThumb1' : position error = 8117.343750
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandThumb2' : position error = 2882.628174
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandThumb3' : position error = 2710.420166
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandIndex1' : position error = 12863.953125
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandIndex2' : position error = 4313.853516
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandIndex3' : position error = 2232.683105
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandMiddle1' : position error = 12759.593750
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandMiddle2' : position error = 5810.980957
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandMiddle3' : position error = 3075.492676
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandRing1' : position error = 12867.337891
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandRing2' : position error = 4872.944336
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandRing3' : position error = 2534.781006
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandPinky1' : position error = 12589.162109
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandPinky2' : position error = 3272.588379
-      mm\n\t'Goon_run:Character1_Ctrl_RightHandPinky3' : position error = 2055.320557
-      mm\n\t'Goon_run:Character1_Ctrl_Neck' : position error = 15589.737305 mm\n\t'Goon_run:Character1_Ctrl_Head'
-      : position error = 23500.876953 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 0
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -923,32 +873,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_ChestEndEffector
       parentName: run_test(Clone)
-      position: {x: -0.0010531539, y: 0.068221636, z: 0.003586831}
+      position: {x: -0.001053154, y: 0.068221636, z: 0.003586831}
       rotation: {x: 0.15279366, y: -0.10572041, z: -0.040217396, w: 0.98176366}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_ChestOriginEffector
       parentName: run_test(Clone)
-      position: {x: -0.00041579836, y: 0.049074493, z: -0.0067421147}
+      position: {x: -0.0004157984, y: 0.049074497, z: -0.0067421147}
       rotation: {x: 0.0914357, y: 0.021989549, z: 0.02863619, w: 0.9951562}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_HeadEffector
       parentName: run_test(Clone)
       position: {x: -0.0020226473, y: 0.07975923, z: 0.015636973}
-      rotation: {x: 0.13993067, y: -0.028477265, z: 0.00799124, w: 0.98971945}
+      rotation: {x: 0.1399307, y: -0.028477265, z: 0.007991242, w: 0.98971945}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_Hips
       parentName: run_test(Clone)
-      position: {x: -0.00019231856, y: 0.051621284, z: -0.007426061}
+      position: {x: -0.00019231858, y: 0.051621284, z: -0.0074260617}
       rotation: {x: -0.060276236, y: 0.039698604, z: 0.022261985, w: 0.99714357}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftUpLeg
       parentName: Goon_run:Character1_Ctrl_Hips
       position: {x: -0.0040547657, y: -0.0039187525, z: 0.0012661003}
-      rotation: {x: -0.0064695543, y: 0.012287447, z: 0.027654164, w: 0.9995211}
+      rotation: {x: -0.0064695547, y: 0.012287448, z: 0.027654165, w: 0.99952114}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftLeg
       parentName: Goon_run:Character1_Ctrl_LeftUpLeg
-      position: {x: -0.0034991181, y: -0.022167103, z: 0.0015695839}
+      position: {x: -0.0034991184, y: -0.022167105, z: 0.001569584}
       rotation: {x: 0.03257119, y: -0.0022892933, z: -0.008390255, w: 0.9994316}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftFoot
@@ -968,13 +918,13 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightLeg
       parentName: Goon_run:Character1_Ctrl_RightUpLeg
-      position: {x: 0.0034991186, y: -0.022167103, z: 0.0015695839}
+      position: {x: 0.0034991186, y: -0.022167105, z: 0.001569584}
       rotation: {x: 0.13632414, y: -0.047846522, z: -0.017695624, w: 0.98934996}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightFoot
       parentName: Goon_run:Character1_Ctrl_RightLeg
       position: {x: 0.0026676576, y: -0.025438098, z: -0.0037068992}
-      rotation: {x: -0.047593154, y: 0.54997945, z: -0.83229107, w: 0.05048817}
+      rotation: {x: 0.52572453, y: 0.16086255, z: -0.12443115, w: 0.8259866}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightToeBase
       parentName: Goon_run:Character1_Ctrl_RightFoot
@@ -1003,32 +953,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftArm
       parentName: Goon_run:Character1_Ctrl_LeftShoulder
-      position: {x: -0.0039672204, y: -0.0016050766, z: -0.00231945}
+      position: {x: -0.0039672204, y: -0.0016050767, z: -0.0023194503}
       rotation: {x: 0.27232504, y: 0.010463414, z: 0.06348861, w: 0.9600515}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftForeArm
       parentName: Goon_run:Character1_Ctrl_LeftArm
-      position: {x: -0.015059965, y: -0.0034229946, z: -0.0017462166}
+      position: {x: -0.015059966, y: -0.0034229946, z: -0.0017462167}
       rotation: {x: 0.030305285, y: -0.08849791, z: -0.00091665576, w: 0.9956148}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHand
       parentName: Goon_run:Character1_Ctrl_LeftForeArm
-      position: {x: -0.012944199, y: -0.0024562455, z: 0.0009822118}
+      position: {x: -0.0129442, y: -0.0024562455, z: 0.0009822118}
       rotation: {x: -0.09009187, y: -0.01709937, z: 0.006836402, w: 0.9957632}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandIndex1
       parentName: Goon_run:Character1_Ctrl_LeftHand
-      position: {x: -0.0068825576, y: -0.0017479657, z: 0.0021942607}
+      position: {x: -0.0068825576, y: -0.0017479658, z: 0.0021942607}
       rotation: {x: 0.07539685, y: -0.056647114, z: -0.15409778, w: 0.9835448}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandIndex2
       parentName: Goon_run:Character1_Ctrl_LeftHandIndex1
-      position: {x: -0.0018665409, y: -0.001536293, z: 0.0006065135}
+      position: {x: -0.0018665409, y: -0.001536293, z: 0.0006065136}
       rotation: {x: -0.060298473, y: -0.029767409, z: -0.19062793, w: 0.9793564}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandIndex3
       parentName: Goon_run:Character1_Ctrl_LeftHandIndex2
-      position: {x: -0.000542016, y: -0.00114583, z: 0.00023937493}
+      position: {x: -0.000542016, y: -0.0011458301, z: 0.00023937493}
       rotation: {x: -0.014729472, y: -0.028961912, z: -0.12702994, w: 0.99136657}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandIndex4
@@ -1053,24 +1003,24 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandMiddle4
       parentName: Goon_run:Character1_Ctrl_LeftHandMiddle3
-      position: {x: -0.00010041713, y: -0.0013978767, z: 0.000110780595}
+      position: {x: -0.000100417135, y: -0.0013978767, z: 0.000110780595}
       rotation: {x: -0.000000028639459, y: -0.000000056437763, z: -0.0000003147286,
         w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandPinky1
       parentName: Goon_run:Character1_Ctrl_LeftHand
-      position: {x: -0.006006288, y: -0.0028794145, z: -0.0029220611}
-      rotation: {x: -0.3374273, y: -0.030041808, z: -0.1344044, w: 0.9312227}
+      position: {x: -0.0060062883, y: -0.0028794145, z: -0.0029220611}
+      rotation: {x: -0.33742732, y: -0.03004181, z: -0.13440442, w: 0.93122274}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandPinky2
       parentName: Goon_run:Character1_Ctrl_LeftHandPinky1
-      position: {x: -0.0015006446, y: -0.0010800696, z: -0.00039571818}
+      position: {x: -0.0015006446, y: -0.0010800696, z: -0.0003957182}
       rotation: {x: 0.07996171, y: -0.005071078, z: -0.12628537, w: 0.988753}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandPinky3
       parentName: Goon_run:Character1_Ctrl_LeftHandPinky2
       position: {x: -0.0007153034, y: -0.0009419012, z: -0.000106276864}
-      rotation: {x: 0.12110392, y: -0.0103846025, z: -0.20291547, w: 0.971623}
+      rotation: {x: 0.12110392, y: -0.010384603, z: -0.20291547, w: 0.97162306}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandPinky4
       parentName: Goon_run:Character1_Ctrl_LeftHandPinky3
@@ -1080,18 +1030,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandRing1
       parentName: Goon_run:Character1_Ctrl_LeftHand
-      position: {x: -0.006888032, y: -0.0024219605, z: -0.0013992703}
-      rotation: {x: -0.17647724, y: 0.021968467, z: -0.076881245, w: 0.9810517}
+      position: {x: -0.006888032, y: -0.0024219607, z: -0.0013992703}
+      rotation: {x: -0.17647724, y: 0.021968469, z: -0.076881245, w: 0.98105174}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandRing2
       parentName: Goon_run:Character1_Ctrl_LeftHandRing1
-      position: {x: -0.0024114414, y: -0.0014064264, z: -0.00036536096}
-      rotation: {x: 0.12984352, y: -0.038375326, z: -0.2834169, w: 0.9493909}
+      position: {x: -0.0024114416, y: -0.0014064264, z: -0.00036536096}
+      rotation: {x: 0.12984352, y: -0.038375326, z: -0.2834169, w: 0.9493908}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandRing3
       parentName: Goon_run:Character1_Ctrl_LeftHandRing2
-      position: {x: -0.0006245947, y: -0.0013135384, z: 0.00017111957}
-      rotation: {x: 0.03597959, y: -0.016747424, z: -0.16927649, w: 0.9847692}
+      position: {x: -0.0006245947, y: -0.0013135385, z: 0.00017111957}
+      rotation: {x: 0.035979602, y: -0.016747424, z: -0.16927654, w: 0.9847692}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandRing4
       parentName: Goon_run:Character1_Ctrl_LeftHandRing3
@@ -1101,17 +1051,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandThumb1
       parentName: Goon_run:Character1_Ctrl_LeftHand
-      position: {x: -0.0027089238, y: -0.0018150423, z: 0.0033708576}
+      position: {x: -0.0027089238, y: -0.0018150425, z: 0.0033708578}
       rotation: {x: -0.17697929, y: -0.07371241, z: -0.128575, w: 0.97299194}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandThumb2
       parentName: Goon_run:Character1_Ctrl_LeftHandThumb1
-      position: {x: -0.0009595179, y: -0.0007398748, z: 0.0011426902}
-      rotation: {x: -0.055010043, y: -0.00064855797, z: -0.05893355, w: 0.9967448}
+      position: {x: -0.00095951796, y: -0.00073987484, z: 0.0011426902}
+      rotation: {x: -0.055010047, y: -0.000648558, z: -0.058933552, w: 0.9967449}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandThumb3
       parentName: Goon_run:Character1_Ctrl_LeftHandThumb2
-      position: {x: -0.00081615447, y: -0.00098701, z: 0.00090111716}
+      position: {x: -0.00081615447, y: -0.00098701, z: 0.0009011172}
       rotation: {x: -0.06387444, y: 0.0841805, z: -0.004151195, w: 0.9943926}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandThumb4
@@ -1126,7 +1076,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_Head
       parentName: Goon_run:Character1_Ctrl_Neck
-      position: {x: -0, y: 0.011667671, z: 0.0069445814}
+      position: {x: -0, y: 0.011667671, z: 0.006944582}
       rotation: {x: -0.0068230215, y: 0.04133675, z: 0.018078025, w: 0.9989584}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightShoulder
@@ -1136,32 +1086,32 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightArm
       parentName: Goon_run:Character1_Ctrl_RightShoulder
-      position: {x: 0.00396722, y: -0.0016050766, z: -0.00231945}
+      position: {x: 0.00396722, y: -0.0016050767, z: -0.0023194503}
       rotation: {x: -0.08442796, y: 0.097934805, z: 0.056474127, w: 0.98999566}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightForeArm
       parentName: Goon_run:Character1_Ctrl_RightArm
-      position: {x: 0.015059967, y: -0.0034229946, z: -0.0017462166}
-      rotation: {x: 0.21358389, y: 0.05176799, z: -0.010648294, w: 0.975494}
+      position: {x: 0.015059967, y: -0.0034229946, z: -0.0017462167}
+      rotation: {x: 0.2135839, y: 0.051767994, z: -0.010648295, w: 0.9754941}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHand
       parentName: Goon_run:Character1_Ctrl_RightForeArm
-      position: {x: 0.012944199, y: -0.0024562455, z: 0.0009822118}
+      position: {x: 0.0129442, y: -0.0024562455, z: 0.0009822118}
       rotation: {x: 0.024982864, y: -0.017042499, z: 0.13259824, w: 0.9907085}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandIndex1
       parentName: Goon_run:Character1_Ctrl_RightHand
-      position: {x: 0.0068825553, y: -0.0017479657, z: 0.0021942607}
+      position: {x: 0.0068825553, y: -0.0017479658, z: 0.0021942607}
       rotation: {x: -0.021582343, y: 0.1322982, z: 0.12757093, w: 0.98272943}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandIndex2
       parentName: Goon_run:Character1_Ctrl_RightHandIndex1
-      position: {x: 0.0018665409, y: -0.001536293, z: 0.0006065135}
+      position: {x: 0.0018665409, y: -0.001536293, z: 0.0006065136}
       rotation: {x: -0.04722166, y: 0.017293565, z: 0.17915827, w: 0.9825342}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandIndex3
       parentName: Goon_run:Character1_Ctrl_RightHandIndex2
-      position: {x: 0.0005420208, y: -0.00114583, z: 0.00023937493}
+      position: {x: 0.0005420208, y: -0.0011458301, z: 0.00023937493}
       rotation: {x: -0.005353065, y: 0.005175896, z: 0.12295655, w: 0.9923842}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandIndex4
@@ -1183,11 +1133,11 @@ ModelImporter:
     - name: Goon_run:Character1_Ctrl_RightHandMiddle3
       parentName: Goon_run:Character1_Ctrl_RightHandMiddle2
       position: {x: 0.0006657028, y: -0.0016422557, z: 0.00013135314}
-      rotation: {x: -0.0013607562, y: 0.011563352, z: 0.12230787, w: 0.9924239}
+      rotation: {x: -0.0013607563, y: 0.011563353, z: 0.122307874, w: 0.99242395}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandMiddle4
       parentName: Goon_run:Character1_Ctrl_RightHandMiddle3
-      position: {x: 0.00010041713, y: -0.0013978767, z: 0.000110780595}
+      position: {x: 0.000100417135, y: -0.0013978767, z: 0.000110780595}
       rotation: {x: -0.0000016412911, y: 0.0000011370298, z: -0.00000069415944, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandPinky1
@@ -1197,8 +1147,8 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandPinky2
       parentName: Goon_run:Character1_Ctrl_RightHandPinky1
-      position: {x: 0.0015006446, y: -0.0010800696, z: -0.00039571818}
-      rotation: {x: 0.04464402, y: 0.021519935, z: 0.11234389, w: 0.99243265}
+      position: {x: 0.0015006446, y: -0.0010800696, z: -0.0003957182}
+      rotation: {x: 0.044644024, y: 0.021519937, z: 0.1123439, w: 0.9924327}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandPinky3
       parentName: Goon_run:Character1_Ctrl_RightHandPinky2
@@ -1212,17 +1162,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandRing1
       parentName: Goon_run:Character1_Ctrl_RightHand
-      position: {x: 0.0068880296, y: -0.0024219605, z: -0.0013992703}
+      position: {x: 0.0068880296, y: -0.0024219607, z: -0.0013992703}
       rotation: {x: -0.21642181, y: 0.0014358532, z: 0.08415371, w: 0.9726653}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandRing2
       parentName: Goon_run:Character1_Ctrl_RightHandRing1
-      position: {x: 0.0024114414, y: -0.0014064264, z: -0.00036536096}
-      rotation: {x: 0.08997131, y: 0.072115496, z: 0.27008715, w: 0.95590657}
+      position: {x: 0.0024114416, y: -0.0014064264, z: -0.00036536096}
+      rotation: {x: 0.08997132, y: 0.0721155, z: 0.27008718, w: 0.9559066}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandRing3
       parentName: Goon_run:Character1_Ctrl_RightHandRing2
-      position: {x: 0.0006245947, y: -0.0013135384, z: 0.00017111957}
+      position: {x: 0.0006245947, y: -0.0013135385, z: 0.00017111957}
       rotation: {x: 0.07630792, y: -0.09127555, z: 0.17630835, w: 0.97711885}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandRing4
@@ -1232,17 +1182,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandThumb1
       parentName: Goon_run:Character1_Ctrl_RightHand
-      position: {x: 0.0027089238, y: -0.0018150423, z: 0.0033708576}
+      position: {x: 0.0027089238, y: -0.0018150425, z: 0.0033708578}
       rotation: {x: -0.18576641, y: 0.038333554, z: 0.06618313, w: 0.97961277}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandThumb2
       parentName: Goon_run:Character1_Ctrl_RightHandThumb1
-      position: {x: 0.0009595179, y: -0.0007398748, z: 0.0011426902}
+      position: {x: 0.00095951796, y: -0.00073987484, z: 0.0011426902}
       rotation: {x: -0.054963216, y: 0.0015084107, z: 0.061843343, w: 0.9965703}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandThumb3
       parentName: Goon_run:Character1_Ctrl_RightHandThumb2
-      position: {x: 0.0008161568, y: -0.00098701, z: 0.00090111716}
+      position: {x: 0.00081615685, y: -0.00098701, z: 0.0009011172}
       rotation: {x: -0.08233307, y: -0.06312979, z: -0.01171306, w: 0.99453443}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandThumb4
@@ -1258,22 +1208,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftAnkleEffector
       parentName: run_test(Clone)
-      position: {x: -0.008582398, y: 0.00006884733, z: 0.018121466}
+      position: {x: -0.008582398, y: 0.00006884734, z: 0.018121466}
       rotation: {x: -0.22283007, y: 0.0013233012, z: -0.020600826, w: 0.9746387}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftElbowEffector
       parentName: run_test(Clone)
-      position: {x: -0.012963697, y: 0.05660648, z: -0.010355512}
+      position: {x: -0.012963697, y: 0.056606483, z: -0.010355512}
       rotation: {x: -0.15068075, y: 0.32929373, z: 0.4128778, w: 0.835699}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftFootEffector
       parentName: run_test(Clone)
-      position: {x: -0.009798589, y: 0.005605413, z: 0.03163199}
+      position: {x: -0.00979859, y: 0.005605413, z: 0.031631995}
       rotation: {x: -0.22283009, y: 0.001322861, z: -0.02060085, w: 0.9746387}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandIndexEffector
       parentName: run_test(Clone)
-      position: {x: -0.011096567, y: 0.041014932, z: -0.00107891}
+      position: {x: -0.011096567, y: 0.041014936, z: -0.0010789101}
       rotation: {x: -0.12019962, y: 0.10334942, z: 0.9101986, w: -0.38263482}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandMiddleEffector
@@ -1283,12 +1233,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandPinkyEffector
       parentName: run_test(Clone)
-      position: {x: -0.014025858, y: 0.041213118, z: -0.003988785}
+      position: {x: -0.014025859, y: 0.041213118, z: -0.003988785}
       rotation: {x: -0.011058473, y: 0.27688545, z: 0.8775667, w: -0.39126572}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandRingEffector
       parentName: run_test(Clone)
-      position: {x: -0.013163213, y: 0.04103458, z: -0.0032690277}
+      position: {x: -0.013163214, y: 0.04103458, z: -0.0032690277}
       rotation: {x: -0.0776251, y: 0.25616607, z: 0.8800908, w: -0.39216518}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHandThumbEffector
@@ -1298,12 +1248,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftHipEffector
       parentName: run_test(Clone)
-      position: {x: -0.004105392, y: 0.040520683, z: -0.0070740744}
+      position: {x: -0.0041053924, y: 0.040520683, z: -0.007074075}
       rotation: {x: -0.31166252, y: 0.018191146, z: 0.018225463, w: 0.9498439}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftKneeEffector
       parentName: run_test(Clone)
-      position: {x: -0.006544254, y: 0.02352401, z: 0.007460486}
+      position: {x: -0.006544254, y: 0.02352401, z: 0.0074604866}
       rotation: {x: -0.2806587, y: 0.013985033, z: 0.01036665, w: 0.95964974}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_LeftShoulderEffector
@@ -1343,7 +1293,7 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandPinkyEffector
       parentName: run_test(Clone)
-      position: {x: 0.000034041404, y: 0.058300834, z: 0.024191532}
+      position: {x: 0.000034041404, y: 0.058300838, z: 0.024191532}
       rotation: {x: 0.20702462, y: 0.8476964, z: 0.48749152, w: 0.030059889}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightHandRingEffector
@@ -1363,17 +1313,17 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightKneeEffector
       parentName: run_test(Clone)
-      position: {x: 0.007311438, y: 0.019237535, z: -0.011731938}
+      position: {x: 0.007311438, y: 0.019237535, z: -0.011731939}
       rotation: {x: 0.6626407, y: 0.020009354, z: -0.045139983, w: 0.7473081}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightShoulderEffector
       parentName: run_test(Clone)
-      position: {x: 0.0074991183, y: 0.066186376, z: 0.0025511202}
+      position: {x: 0.007499119, y: 0.066186376, z: 0.0025511202}
       rotation: {x: -0.021239838, y: -0.049054503, z: -0.56601906, w: 0.8226573}
       scale: {x: 1, y: 1, z: 1}
     - name: Goon_run:Character1_Ctrl_RightWristEffector
       parentName: run_test(Clone)
-      position: {x: 0.0054670987, y: 0.051535014, z: 0.014802265}
+      position: {x: 0.0054670987, y: 0.051535018, z: 0.014802266}
       rotation: {x: -0.4893019, y: -0.55085504, z: -0.33652872, w: 0.586422}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
