@@ -72,8 +72,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                 spottedPlayer.Value = true;
             }
 
-          
-            Debug.Log(spottedPlayer.Value);
             //
 
             if (usePhysics2D) {

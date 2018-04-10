@@ -36,7 +36,10 @@ public class UIElements : MonoBehaviour
         timerText = GameObject.Find("TimerText").GetComponent<Text>();
         bestTimeLabel = GameObject.Find("BestTime").GetComponent<Text>();
         highscoreText = GameObject.Find("Highscore");
-        highscoreText.SetActive(false);
+        if (highscoreText != null)
+        {
+            highscoreText.SetActive(false);
+        }
         if (UIElements.singleton.missionBackgroundImg != null)
         {
             UIElements.singleton.missionBackgroundImg.enabled = false;

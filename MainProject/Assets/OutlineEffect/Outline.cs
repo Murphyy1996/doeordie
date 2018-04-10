@@ -50,6 +50,7 @@ namespace cakeslice
         private GameObject emptyRepresentationPoint;
         private Transform playerTransform;
         private RaycastHit raycastHit;
+        private Camera mainCamera;
 
         private void Awake()
         {
@@ -76,15 +77,25 @@ namespace cakeslice
                 playerTransform = GameObject.Find("Player").transform;
                 //Run the render tick
                 InvokeRepeating("RenderTick", 0, 0.2f);
+                Invoke("DelayedAwake", 0.3f);
             }
+        }
+
+        private void DelayedAwake()
+        {
+            mainCamera = Camera.main;
+            OnEnable();
         }
 
         private void OnEnable()
         {
             try
             {
-                Camera.main.GetComponent<OutlineEffect>().AddOutline(this);
-                outlineAllowed = true;
+                if (mainCamera != null)
+                {
+                    mainCamera.GetComponent<OutlineEffect>().AddOutline(this);
+                    outlineAllowed = true;
+                }
             }
             catch
             {
@@ -96,8 +107,11 @@ namespace cakeslice
         {
             try
             {
-                Camera.main.GetComponent<OutlineEffect>().RemoveOutline(this);
-                outlineAllowed = false;
+                if (mainCamera.GetComponent<OutlineEffect>() != null)
+                {
+                    mainCamera.GetComponent<OutlineEffect>().RemoveOutline(this);
+                    outlineAllowed = false;
+                }
             }
             catch
             {

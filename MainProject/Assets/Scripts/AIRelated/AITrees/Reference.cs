@@ -6,7 +6,7 @@ using BehaviorDesigner.Runtime.Tasks.Movement;
 
 public class Reference : MonoBehaviour
 {
-    
+
     private BehaviorTree meleeTree;
     [SerializeField] [Tooltip("Drag in an empty gameobject")] private GameObject lookObj;
     public GameObject playerTarget;
@@ -28,16 +28,16 @@ public class Reference : MonoBehaviour
     {
         SetLocationVars(meleeTree);
 
-       /* if (canSeeObject.spottedPlayer.Value)
-        {
-            AudioManage.inst.combatMusic.Play();
-            Debug.Log("turning combat music on");
-        }
-        else
-        {
-            AudioManage.inst.combatMusic.Stop();
-            Debug.Log("turning combat music off");
-        }*/
+        /* if (canSeeObject.spottedPlayer.Value)
+         {
+             AudioManage.inst.combatMusic.Play();
+             Debug.Log("turning combat music on");
+         }
+         else
+         {
+             AudioManage.inst.combatMusic.Stop();
+             Debug.Log("turning combat music off");
+         }*/
     }
 
     public void SetLocationVars(BehaviorTree behaviorTree)
@@ -46,7 +46,7 @@ public class Reference : MonoBehaviour
         behaviorTree.SetVariableValue("playerBody", body);
 
     }
-     
+
     void SpawnLookObject()
     {
         GameObject lookClone = Instantiate(lookObj, transform.position, Quaternion.identity) as GameObject;
