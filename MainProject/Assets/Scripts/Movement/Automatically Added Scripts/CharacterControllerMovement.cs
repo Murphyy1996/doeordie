@@ -240,7 +240,7 @@ public class CharacterControllerMovement : MonoBehaviour
             if (sprintToggleMode == false)
             {
                 //If the sprint button is pressed...and the character isn't flying
-                if (Input.GetKey(sprintKey) && isGrounded == true || Input.GetKey(sprintButtonController) && controllerEnabled == true && isGrounded == true)
+                if (Input.GetKey(sprintKey) || Input.GetKey(sprintButtonController) && controllerEnabled == true && isGrounded == true)
                 {
                     isInSprint = true;
                     //Set the movement speed to sprint speed
