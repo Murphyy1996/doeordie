@@ -140,6 +140,7 @@ public class Shooting : MonoBehaviour
     public void ShowPickUpAmmoLabel() //Will activate the time code
     {
         pickUpAmmoTimer = 0;
+        AudioManage.inst.pickUp.Play();
     }
 
     private void RenderWeapon() //Render the selected weapon
