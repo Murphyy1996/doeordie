@@ -20,11 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4514142961741090}
   - component: {fileID: 33411642964173104}
-  - component: {fileID: 64482947149026286}
   - component: {fileID: 23765848143947432}
-  m_Layer: 0
+  - component: {fileID: 65114267272227348}
+  - component: {fileID: 114000588224836824}
+  m_Layer: 2
   m_Name: Small Lava
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877607476277292}
   m_LocalRotation: {x: 0.000000010534478, y: 1, z: 0.0000015067499, w: 0.0000014603138}
-  m_LocalPosition: {x: -30.997295, y: -16.6, z: 10.417267}
+  m_LocalPosition: {x: 25.590515, y: 3.397194, z: 55.413055}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,17 +82,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877607476277292}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &64482947149026286
-MeshCollider:
+--- !u!65 &65114267272227348
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877607476277292}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: 10, y: 1.260797e-14, z: 10}
+  m_Center: {x: 0, y: 0, z: 0.000030517578}
+--- !u!114 &114000588224836824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877607476277292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba5f20c58110044089b27737a4a75c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
