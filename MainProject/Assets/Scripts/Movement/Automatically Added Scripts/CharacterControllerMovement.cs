@@ -240,7 +240,7 @@ public class CharacterControllerMovement : MonoBehaviour
             if (sprintToggleMode == false)
             {
                 //If the sprint button is pressed...and the character isn't flying
-                if (Input.GetKey(sprintKey) || Input.GetKey(sprintButtonController) && controllerEnabled == true)
+                if (Input.GetKey(sprintKey) && isGrounded == true || Input.GetKey(sprintButtonController) && controllerEnabled == true && isGrounded == true)
                 {
                     isInSprint = true;
                     //Set the movement speed to sprint speed
@@ -268,13 +268,9 @@ public class CharacterControllerMovement : MonoBehaviour
             {
                 if (isInSprint == true) //Sprint movement speed
                 {
-                    //If the player isn't grounded slow 
-                    if (isGrounded == false)
-                    {
-                        //Set the movement speed to sprint speed
-                        movementSpeed = sprintMovementSpeed;
-                        playSprintSound = true;
-                    }
+                    //Set the movement speed to sprint speed
+                    movementSpeed = sprintMovementSpeed;
+                    playSprintSound = true;
 
                     //If the movement speed has been changed, adjust the sprint accordingly
                     if (movementSpeedChangedOnRuntime == true)
