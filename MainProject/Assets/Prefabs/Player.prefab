@@ -8763,6 +8763,7 @@ MonoBehaviour:
   combatMusic: {fileID: 82314843804066156}
   bulletEnvironment: {fileID: 82743284834736190}
   falling: {fileID: 82587184310129734}
+  pickUp: {fileID: 82999524270196900}
   walking: {fileID: 8300000, guid: 142529350eb7c7346baaffab723ceb79, type: 3}
   running: {fileID: 8300000, guid: c82c597b8c679db4185e6d05f573d58e, type: 3}
 --- !u!114 &114305613708270920
@@ -23681,7 +23682,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1222307143
+  randomSeed: -1397776686
   InitialModule:
     serializedVersion: 3
     enabled: 1
