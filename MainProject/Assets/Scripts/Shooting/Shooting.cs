@@ -301,6 +301,7 @@ public class Shooting : MonoBehaviour
             {
                 //Change the has shot recently bool to true
                 isShooting = true;
+
                 //Start the weapon cooldown until the next bullet can be fired
                 StartCoroutine(WeaponCooldown());
                 //Try and make stuff work for the machine gun

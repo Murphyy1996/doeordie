@@ -51,7 +51,7 @@ public class WeaponInfo : MonoBehaviour
         collider.isTrigger = true;
         defaultAmountOfAmmo = pickUpAmmo;
         //If this gun is the pistol, then set hold down to shoot to false
-        if (weaponModel == weapon.pistol)
+        if (weaponModel == weapon.pistol || weaponModel == weapon.dualPistol)
         {
             holdDownToShoot = false;
         }
