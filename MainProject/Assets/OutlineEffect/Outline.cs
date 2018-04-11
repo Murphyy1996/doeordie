@@ -192,12 +192,26 @@ namespace cakeslice
                 {
                     if (mainCamera != null)
                     {
-                        mainCamera.GetComponent<OutlineEffect>().AddOutline(this);
+                        mainCameraEffectScript.AddOutline(this);
                         outlineAllowed = true;
                     }
                     else
                     {
                         mainCamera = Camera.main;
+                        mainCameraEffectScript = mainCamera.GetComponent<OutlineEffect>();
+                    }
+                }
+                else //Hide outline if no mesh is available
+                {
+                    if (mainCamera != null)
+                    {
+                        mainCameraEffectScript.RemoveOutline(this);
+                        outlineAllowed = false;
+                    }
+                    else
+                    {
+                        mainCamera = Camera.main;
+                        mainCameraEffectScript = mainCamera.GetComponent<OutlineEffect>();
                     }
                 }
             }
