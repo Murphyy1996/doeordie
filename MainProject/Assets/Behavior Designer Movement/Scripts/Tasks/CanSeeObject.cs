@@ -68,7 +68,6 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             //Custom
             if (returnedObject.Value == GameObject.Find("body"))
             {
-                Debug.Log("te");
                 spottedPlayer.Value = true;
             }
 

@@ -185,6 +185,22 @@ namespace cakeslice
                     outlineAllowed = false;
                 }
             }
+            else
+            {
+                //Force outline to show if mesh renderer is enabled etc
+                if (Renderer.enabled == true)
+                {
+                    if (mainCamera != null)
+                    {
+                        mainCamera.GetComponent<OutlineEffect>().AddOutline(this);
+                        outlineAllowed = true;
+                    }
+                    else
+                    {
+                        mainCamera = Camera.main;
+                    }
+                }
+            }
         }
 
         private bool CheckIfPlayerCanBeSeen() //Will raycast and return if this obj is visible

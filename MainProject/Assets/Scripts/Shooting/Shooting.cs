@@ -139,7 +139,6 @@ public class Shooting : MonoBehaviour
 
     public void ShowPickUpAmmoLabel() //Will activate the time code
     {
-        print("i got run");
         pickUpAmmoTimer = 0;
     }
 

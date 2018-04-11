@@ -177,7 +177,6 @@ public class Bullet : MonoBehaviour
                         if (AudioManage.inst.bulletEnvironment.isPlaying == false)
                         {
                             AudioManage.inst.bulletEnvironment.Play();
-                            Debug.Log("playing audio source");
                             Invoke("StopBulletShotEnvironment", 1f);
                         }
                     }

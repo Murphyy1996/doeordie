@@ -45,7 +45,6 @@ public class FallShake : MonoBehaviour
                     BS = this.gameObject.AddComponent<BossCameraShake>();
                     BS.ShakeitShakeit(shakeAmount, shakeTime);
                     AudioManage.inst.falling.Play();
-                    Debug.Log("playing fall noise");
                     Invoke("StopFallingNoise", 1f);
                 }
             }
