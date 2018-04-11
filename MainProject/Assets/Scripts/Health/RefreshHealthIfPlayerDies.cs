@@ -41,7 +41,14 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
                 //Restart the scene upon player death - Useful for the boss
                 if (restartSceneUponPlayerDeath == true)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    if (SceneManager.GetActiveScene().name == "Boss")
+                    {
+                        LoadingUIManager.singleton.ShowLoadingScreen("Boss");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    }
                 }
                 //Refresh pick ups
                 if (respawnPickups == true)

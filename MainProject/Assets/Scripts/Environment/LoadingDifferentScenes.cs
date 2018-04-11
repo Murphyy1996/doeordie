@@ -20,9 +20,8 @@ public class LoadingDifferentScenes : MonoBehaviour {
     }
 
     public void LoadMainLevel()
-    {
-        SceneManager.LoadScene("Starting Area");
-       
+    { 
+        SceneManager.LoadScene("Starting Area");     
     }
 
     public void LoadTest()
@@ -37,7 +36,6 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadFabio()
     {
-        print("hello");
         SceneManager.LoadScene("Level1Bl2");
     }
     public void LoadSimon()
@@ -64,11 +62,11 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadFoundry()
     {
-        SceneManager.LoadScene("JURPHYV3");
+        LoadingUIManager.singleton.ShowLoadingScreen("JURPHYV3");
     }
     public void boss()
     {
-        SceneManager.LoadScene("Boss");
+        LoadingUIManager.singleton.ShowLoadingScreen("Boss");
     }
    
 }

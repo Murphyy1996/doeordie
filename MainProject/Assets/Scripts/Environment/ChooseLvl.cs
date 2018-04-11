@@ -38,7 +38,7 @@ public class ChooseLvl : MonoBehaviour
                         UIElements.singleton.travelIndication.enabled = false;
                         break;
                     case LevelToLoad.foundry:
-                        SceneManager.LoadScene("JURPHYV3");
+                        LoadingDifferentScenes.inst.LoadFoundry();
                         UIElements.singleton.travelIndication.enabled = false;
                         break;
                     case LevelToLoad.main:
