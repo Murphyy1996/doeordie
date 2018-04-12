@@ -14,7 +14,7 @@ public class PlayCinematic : MonoBehaviour
     private float cutsceneCounter = 0;
 
     // Use this for initialization
-    private void Start ()
+    private void Start()
     {
         if (cutsceneToPlay != null)
         {
@@ -22,24 +22,23 @@ public class PlayCinematic : MonoBehaviour
         }
         Time.timeScale = 1f;
     }
-	
-	// Update is called once per frame
-	private void FixedUpdate ()
+
+    // Update is called once per frame
+    private void FixedUpdate()
     {
         cutsceneCounter = cutsceneCounter + Time.fixedDeltaTime;
 
         //Run the code to make the cutscene transition to the selected scene
         if (cutsceneCounter >= cutsceneLength)
         {
-            print("i got run");
+            GetComponentInChildren<AudioSource>().Stop();
             LoadingUIManager.singleton.ShowLoadingScreen(sceneNameToLoadAfterCutscene);
         }
 
         //Check for button input to skip the cutscene
         if (Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.Space))
         {
-            print("button press");
             cutsceneCounter = 9999;
         }
-	}
+    }
 }
