@@ -55,11 +55,11 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         }
 
         //Custom
-        public override void OnLateUpdate()
-        {
-            aimIK.solver.target = player.transform;
-            lookAtIk.solver.target = player.transform;
-        }
+//        public override void OnLateUpdate()
+//        {
+//            aimIK.solver.target = player.transform;
+//            lookAtIk.solver.target = player.transform;
+//        }
 
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
@@ -141,8 +141,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
               
                 //GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
                 //Custom
-                aimIK.enabled = true;
-                lookAtIk.enabled = true;
+//                aimIK.enabled = true;
+//                lookAtIk.enabled = true;
                 //
 
                 // Return success if an object was found
@@ -157,8 +157,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 //            }
                 
             //Custom
-            aimIK.enabled = false;
-            lookAtIk.enabled = false;
+//            aimIK.enabled = false;
+//            lookAtIk.enabled = false;
             //
        
             return TaskStatus.Failure;
