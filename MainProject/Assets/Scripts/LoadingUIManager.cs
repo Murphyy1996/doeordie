@@ -11,11 +11,17 @@ public class LoadingUIManager : MonoBehaviour
 {
     public static LoadingUIManager singleton;
     private Image thisLoadingScreen;
+    [SerializeField]
+    private Sprite[] artToUse;
 
     private void Awake()
     {
         singleton = this;
         thisLoadingScreen = GetComponent<Image>();
+        if (artToUse.Length > 0)
+        {
+            thisLoadingScreen.sprite = artToUse[Random.Range(0, artToUse.Length)];
+        }
     }
 
     public void ShowLoadingScreen(string sceneToLoad) //Enable the loading screen

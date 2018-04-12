@@ -53,13 +53,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             spottedPlayer = (SharedBool)GlobalVariables.Instance.GetVariable("globalSpotted");
             spottedPlayer.Value = false;
         }
-
-        //Custom
-        public override void OnLateUpdate()
-        {
-//            aimIK.solver.target = player.transform;
-//            lookAtIk.solver.target = player.transform;
-        }
+            
 
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
@@ -140,6 +134,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 //                }
               
                 //GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
+
                 // Return success if an object was found
                 return TaskStatus.Success;
             }
@@ -151,6 +146,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
 //                AudioManage.inst.combatMusic.Stop();  //for some reason it stops the music whenever the player cant see tthe enemy which isnt right lmao
 //            }
                 
+       
             return TaskStatus.Failure;
 
         }
@@ -165,6 +161,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             angleOffset2D = 0;
             targetTag = "";
         }
+            
 
         // Draw the line of sight representation within the scene window
         public override void OnDrawGizmos()

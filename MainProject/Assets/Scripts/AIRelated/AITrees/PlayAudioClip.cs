@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
@@ -7,6 +8,7 @@ public class PlayAudioClip : Action
 {
 
     AudioSource audioSource;
+    public AudioClip clipToPlay;
 
     public override void OnStart()
     {
@@ -16,8 +18,17 @@ public class PlayAudioClip : Action
     public override TaskStatus OnUpdate()
     {
         audioSource.enabled = true;
+        audioSource.clip = clipToPlay;
+        StartCoroutine("TurnOffClip");
 
         return TaskStatus.Success; 
+    }
+
+    IEnumerator TurnOffClip()
+    {
+        yield return new WaitForSeconds(0.1f);
+        audioSource.enabled = false;
+        yield return null;
     }
 
 

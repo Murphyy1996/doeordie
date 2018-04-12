@@ -6882,8 +6882,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
-  m_LocalRotation: {x: -0, y: -0.7059533, z: -0, w: -0.7082584}
-  m_LocalPosition: {x: -299.57, y: 6.858, z: -321.49}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.03, y: 1, z: -24.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -8987,7 +8987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb0b55f04939144cbcae4eb9feb3c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportEnabled: 0
+  teleportEnabled: 1
   teleportKeyCode: 102
   castTeleportLayers:
     serializedVersion: 2
@@ -9074,7 +9074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea375bc33d8a20b46a1348af92335de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrappleAllowed: 0
+  isGrappleAllowed: 1
   grappleRange: 35
   grappleSpeed: 55
   grappleCooldown: 1
@@ -23682,7 +23682,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1397776686
+  randomSeed: -1701321621
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -36,7 +36,7 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadFabio()
     {
-        SceneManager.LoadScene("Level1Bl2");
+        LoadingUIManager.singleton.ShowLoadingScreen("CinematicBeforeTutorial");
     }
     public void LoadSimon()
     {
