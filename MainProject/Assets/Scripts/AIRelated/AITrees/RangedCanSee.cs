@@ -1,13 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 using RootMotion.FinalIK;
 
 namespace BehaviorDesigner.Runtime.Tasks.Movement
 {
-    [TaskDescription("Check to see if the any objects are within sight of the agent.")]
+    [TaskDescription("Check to see if the any objects are within sight of the ranged AI.")]
     [TaskCategory("Movement")]
     [HelpURL("http://www.opsive.com/assets/BehaviorDesigner/Movement/documentation.php?id=11")]
     [TaskIcon("Assets/Behavior Designer Movement/Editor/Icons/{SkinColor}CanSeeObjectIcon.png")]
-    public class CanSeeObject : Conditional
+    public class RangedCanSee : Conditional
     {
         [Tooltip("Should the 2D version be used?")]
         public bool usePhysics2D;
@@ -53,12 +53,18 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             spottedPlayer = (SharedBool)GlobalVariables.Instance.GetVariable("globalSpotted");
             spottedPlayer.Value = false;
         }
-            
+
+        //Custom
+        //        public override void OnLateUpdate()
+        //        {
+//                    aimIK.solver.target = player.transform;
+//                    lookAtIk.solver.target = player.transform;
+        //        }
 
         // Returns success if an object was found otherwise failure
         public override TaskStatus OnUpdate()
         {
-          
+
             //Custom
             if (returnedObject.Value == GameObject.Find("body"))
             {
@@ -68,7 +74,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             //
 
             if (usePhysics2D) {
-               
+
                 if (targetObjects.Value != null && targetObjects.Value.Count > 0) { // If there are objects in the group list then search for the object within that list
                     GameObject objectFound = null;
                     float minAngle = Mathf.Infinity;
@@ -78,7 +84,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                         if ((obj = MovementUtility.WithinSight(transform, offset.Value, fieldOfViewAngle.Value, viewDistance.Value, targetObjects.Value[i], targetOffset.Value, true, angleOffset2D.Value, out angle, ignoreLayerMask, useTargetBone.Value, targetBone)) != null) {
                             // This object is within sight. Set it to the objectFound GameObject if the angle is less than any of the other objects
                             if (angle < minAngle) {
-                          
+
                                 minAngle = angle;
                                 objectFound = obj;
 
@@ -86,7 +92,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                         }
                     }
                     returnedObject.Value = objectFound;
-           
+
                 } else if (targetObject.Value == null) { // If the target object is null then determine if there are any objects within sight based on the layer mask
                     returnedObject.Value = MovementUtility.WithinSight2D(transform, offset.Value, fieldOfViewAngle.Value, viewDistance.Value, objectLayerMask, targetOffset.Value, angleOffset2D.Value, ignoreLayerMask);
                 } else if (!string.IsNullOrEmpty(targetTag.Value)) { // If the target tag is not null then determine if there are any objects within sight based on the tag
@@ -107,7 +113,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
                                 minAngle = angle;
                                 objectFound = obj;
 
-          
+
                             }
                         }
                     }
@@ -122,31 +128,39 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             }
             if (returnedObject.Value != null)
             {
-    
+
                 //Custom
-//                if (spottedPlayer.Value == false) //if the player cant be seen and gets scene change the bool to true
-//                {
-//                    spottedPlayer = true; 
-//                }
-//                if (spottedPlayer.Value && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
-//                {
-//                    AudioManage.inst.combatMusic.Play();
-//                }
-              
+                //                if (spottedPlayer.Value == false) //if the player cant be seen and gets scene change the bool to true
+                //                {
+                //                    spottedPlayer = true; 
+                //                }
+                //                if (spottedPlayer.Value && AudioManage.inst.combatMusic.isPlaying == false) //if the music isnt already playing and hes seen - play music
+                //                {
+                //                    AudioManage.inst.combatMusic.Play();
+                //                }
+
                 //GlobalVariables.Instance.SetVariableValue("globalSpotted", true);
+                //Custom
+                aimIK.solver.target = player.transform;
+                lookAtIk.solver.target = player.transform;
+                //
 
                 // Return success if an object was found
                 return TaskStatus.Success;
             }
             // An object is not within sight so return failure
             spottedPlayer = false;
-    
-//            if (AudioManage.inst.combatMusic.isPlaying == true && spottedPlayer.Value == false) // should stop the music from player when the player gets away or is lost?
-//            {
-//                AudioManage.inst.combatMusic.Stop();  //for some reason it stops the music whenever the player cant see tthe enemy which isnt right lmao
-//            }
-                
-       
+
+            //            if (AudioManage.inst.combatMusic.isPlaying == true && spottedPlayer.Value == false) // should stop the music from player when the player gets away or is lost?
+            //            {
+            //                AudioManage.inst.combatMusic.Stop();  //for some reason it stops the music whenever the player cant see tthe enemy which isnt right lmao
+            //            }
+
+            //Custom
+            aimIK.solver.target = null;
+            lookAtIk.solver.target = null;
+            //
+
             return TaskStatus.Failure;
 
         }
@@ -161,7 +175,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
             angleOffset2D = 0;
             targetTag = "";
         }
-            
+
 
         // Draw the line of sight representation within the scene window
         public override void OnDrawGizmos()
