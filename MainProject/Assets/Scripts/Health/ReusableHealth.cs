@@ -204,7 +204,8 @@ public class ReusableHealth : MonoBehaviour
         //Move the player back to the closest checkpoint
         if (CheckpointManager.singleton.GetCurrentCheckpoint() != null)
         {
-            transform.position = CheckpointManager.singleton.GetCurrentCheckpoint().transform.position;
+            transform.SetPositionAndRotation(CheckpointManager.singleton.GetCurrentCheckpoint().transform.position, CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation);
+            //transform.position = CheckpointManager.singleton.GetCurrentCheckpoint().transform.position;
         }
         //Rotate the player 
         transform.rotation = CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation;
