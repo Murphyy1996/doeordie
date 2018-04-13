@@ -30,6 +30,11 @@ public class LoadingUIManager : MonoBehaviour
         StartCoroutine(LoadScene(sceneToLoad));
     }
 
+    public bool IsLoadingScreenActive()
+    {
+        return thisLoadingScreen.IsActive();
+    }
+
     private IEnumerator LoadScene(string sceneName)
     {
         yield return new WaitForSeconds(0.5f);

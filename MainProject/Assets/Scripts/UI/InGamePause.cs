@@ -37,7 +37,7 @@ public class InGamePause : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true)
+        if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true && LoadingUIManager.singleton.IsLoadingScreenActive() == false)
         {
             OpenPauseMenu();
         }
