@@ -23,5 +23,9 @@ public class BossHealthBar : MonoBehaviour
         float floatCurrentHealth = currentHealth;
         float floatMaxHealth = maxHealth;
         bossCurrentHealthImage.fillAmount = floatCurrentHealth / floatMaxHealth;
+        if (currentHealth <= 0)
+        {
+            bossCurrentHealthImage.enabled = false;
+        }
     }
 }
