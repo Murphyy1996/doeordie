@@ -2812,7 +2812,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379280479709358}
   m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: 0.00012338161, w: 0.00012338161}
-  m_LocalPosition: {x: 0.0919, y: -0.0014488952, z: 0.03193988}
+  m_LocalPosition: {x: 0.0919, y: 0.00133, z: 0.02799}
   m_LocalScale: {x: 0.0025000016, y: 0.010000004, z: 0.005000005}
   m_Children: []
   m_Father: {fileID: 4437800163911790}
@@ -3020,7 +3020,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1269228002135816}
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
-  m_LocalPosition: {x: 688.322, y: 28.679688, z: 11.859055}
+  m_LocalPosition: {x: -16.34, y: 7.23, z: 257.68}
   m_LocalScale: {x: 100, y: 399.99988, z: 199.99994}
   m_Children:
   - {fileID: 4708383108758646}
@@ -3467,7 +3467,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1989867240229186}
   m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: 0.00012338161, w: 0.00012338161}
-  m_LocalPosition: {x: -0.2259, y: -0.00145, z: 0.0323}
+  m_LocalPosition: {x: -0.2259, y: 0.00077, z: 0.02741}
   m_LocalScale: {x: 0.0025000016, y: 0.010000004, z: 0.005000005}
   m_Children: []
   m_Father: {fileID: 4437800163911790}
@@ -10295,13 +10295,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.4705882, g: 0.2338145, b: 0.051903106, a: 1}
-  m_Intensity: 2.5
+  m_Color: {r: 0.4705882, g: 0.11254019, b: 0.051903106, a: 1}
+  m_Intensity: 4.04
   m_Range: 81.01
-  m_SpotAngle: 113.1
+  m_SpotAngle: 130
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10317,7 +10317,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 3.5
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -10331,13 +10331,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.4705882, g: 0.2338145, b: 0.051903106, a: 1}
-  m_Intensity: 2.5
+  m_Color: {r: 0.4705882, g: 0.11254019, b: 0.051903106, a: 1}
+  m_Intensity: 4.04
   m_Range: 81.01
-  m_SpotAngle: 113.1
+  m_SpotAngle: 130
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -10353,7 +10353,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 3.5
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -10383,10 +10383,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Resolution: 4
-  RayScatterAmount: 0.1
-  ScatteringExtinctionAmount: 0.01
+  RayScatterAmount: 0.707
+  ScatteringExtinctionAmount: 0.0816
   SkyboxExtinctionAmount: 0.9
-  LightSize: 0.8
+  LightSize: 0.953
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -10408,10 +10408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Resolution: 4
-  RayScatterAmount: 0.1
-  ScatteringExtinctionAmount: 0.01
+  RayScatterAmount: 0.707
+  ScatteringExtinctionAmount: 0.0816
   SkyboxExtinctionAmount: 0.9
-  LightSize: 0.8
+  LightSize: 0.953
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
