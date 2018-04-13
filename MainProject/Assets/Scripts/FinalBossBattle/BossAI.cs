@@ -65,6 +65,8 @@ public class BossAI : MonoBehaviour
     private float secondPhaseDodgeTimer = 0;
     [SerializeField]
     private GameObject hatchToOpen;
+    [SerializeField]
+    private GameObject startingDialogue, finalPhaseDialogue, killBossDialogue;
 
     private void Start() //Get the default position and rotations
     {
@@ -132,7 +134,7 @@ public class BossAI : MonoBehaviour
         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.machineGun, ammoToReplenishEachPhase);
         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.shotgun, ammoToReplenishEachPhase);
         //Make kingsley say you have some ammo
-        QuestManager.inst.SubtitleText("Heres some ammo!", 3f);
+        //QuestManager.inst.SubtitleText("Heres some ammo!", 3f);
     }
 
     private void ControlWheelRotation() //Control the car wheel rotation
@@ -184,7 +186,7 @@ public class BossAI : MonoBehaviour
                 //Replenish Ammo
                 ReplenishAmmo();
                 //Give player vague instructions
-                QuestManager.inst.SubtitleText("Kingsley: That'll teach him! Now just shoot the truck, shooting the tires and the big ass rocket will do extra damage!", 7);
+                //QuestManager.inst.SubtitleText("Kingsley: That'll teach him! Now just shoot the truck, shooting the tires and the big ass rocket will do extra damage!", 7);
                 currentBossPhase = bossPhases.phase2;
             }
             //Set the target move position to default
@@ -292,6 +294,9 @@ public class BossAI : MonoBehaviour
                 {
                     sakerDriver.gameObject.SetActive(false);
                 }
+                //Allow the dialogue
+                startingDialogue.SetActive(false);
+                finalPhaseDialogue.SetActive(true);
                 //Enter phase 3
                 currentBossPhase = bossPhases.phase3;
             }
@@ -371,6 +376,9 @@ public class BossAI : MonoBehaviour
             movementSpeed = movementSpeed * 2;
             //Replenish Ammo
             ReplenishAmmo();
+            //Dialogue last stuff
+            finalPhaseDialogue.SetActive(false);
+            killBossDialogue.SetActive(true);
             currentBossPhase = bossPhases.phase4;
             bossReusableHealth.healthValue = 130;
         }
