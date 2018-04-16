@@ -62,7 +62,7 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadFoundry()
     {
-        LoadingUIManager.singleton.ShowLoadingScreen("JURPHYV3");
+        LoadingUIManager.singleton.ShowLoadingScreen("CinematicAfterTutorial");
     }
     public void boss()
     {
