@@ -802,6 +802,7 @@ MonoBehaviour:
     mPropertyMappingOwner: {fileID: 0}
     mNetworkSync: 0
     mValue: 0
+  clipToPlay: {fileID: 0}
   healthBox: {fileID: 0}
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
@@ -818,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09164088ba2a2084da0169720bd82c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAIState: 1
+  currentAIState: 0
   playerDetectionSensitivity: 40
   outOfRangeGiveUpTimer: 60
   rangeToCallOtherDronesIntoBattle: 4
