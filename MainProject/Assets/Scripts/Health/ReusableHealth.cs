@@ -315,15 +315,20 @@ public class ReusableHealth : MonoBehaviour
                 GetComponent<TurretAI>().TriggerAttackState();
             }
 
-            if (this.gameObject.tag == "enemy" && behaviorTree != null)
+            if (this.gameObject.tag == "enemy" /*&& behaviorTree != null*/)
             {
                 //Play goon hit sounds
 
-                if (audioSource != null)
-                {
+               // if (audioSource != null)
+               // {
                     audioSource.enabled = true;
                     audioSource.clip = clipToPlay;
+                if (audioSource.enabled == true)
+                {
+                    Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
                 }
+                    
+               // }
              
             }
 
