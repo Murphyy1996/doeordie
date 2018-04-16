@@ -29,8 +29,12 @@ public class PlayDeathAnim : Action
             meleeAnim.SetFloat("Speed", 1.5f, 0.07f, Time.deltaTime);
             meleeAnim.SetBool("isDead", true);
 
-            aimIK.solver.target = null; //Prevent gun following player after death
-            lookAtIk.solver.target = null;
+            if (aimIK && lookAtIk != null)
+            {
+                aimIK.solver.target = null; //Prevent gun following player after death
+                lookAtIk.solver.target = null;
+            }
+          
          
             return TaskStatus.Success;
         }
