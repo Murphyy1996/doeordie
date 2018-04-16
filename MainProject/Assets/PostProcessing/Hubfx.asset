@@ -79,7 +79,7 @@ MonoBehaviour:
   motionBlur:
     m_Enabled: 1
     m_Settings:
-      shutterAngle: 52
+      shutterAngle: 36
       sampleCount: 4
       frameBlending: 0
   eyeAdaptation:
@@ -100,8 +100,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 2.4
-        threshold: 2.44
+        intensity: 0.75
+        threshold: 1.67
         softKnee: 1
         radius: 1
         antiFlicker: 1
@@ -120,27 +120,27 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0.16
-        temperature: -2.1
-        tint: -21
+        postExposure: 0.05
+        temperature: 0
+        tint: -31
         hueShift: -1
         saturation: 0.61
         contrast: 1.45
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1.02, z: 0.25}
-        blue: {x: -0.01, y: 0.07, z: 1.21}
+        blue: {x: -0.28, y: -0.3, z: 1.21}
         currentEditingChannel: 2
       colorWheels:
-        mode: 1
+        mode: 0
         log:
-          slope: {r: 1, g: 0.90564233, b: 0.7631362, a: 0.01705757}
-          power: {r: 1, g: 0.64986813, b: 0.42671013, a: -0.06823028}
+          slope: {r: 1, g: 0.81987184, b: 0.6910603, a: -0.04694243}
+          power: {r: 1, g: 0.536633, b: 0.42900038, a: -0.10023028}
           offset: {r: 0.85888565, g: 0.76353955, b: 1, a: -0.002518568}
         linear:
-          lift: {r: 1, g: 0.93089145, b: 0.7803595, a: -0.01705757}
-          gamma: {r: 1, g: 0.7466167, b: 0.54529715, a: -0.07675906}
-          gain: {r: 0.41823184, g: 0.6638317, b: 1, a: -0.017057568}
+          lift: {r: 1, g: 0.93089145, b: 0.7803595, a: 0.014942429}
+          gamma: {r: 1, g: 0.8283389, b: 0.5408386, a: -0.23675907}
+          gain: {r: 0.3499794, g: 0.575605, b: 1, a: -0.010666994}
       curves:
         master:
           curve:
@@ -155,8 +155,8 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0.5964215
               value: 0.6735537
-              inSlope: -0.051962566
-              outSlope: -0.051962566
+              inSlope: 0.35755444
+              outSlope: 0.35755444
               tangentMode: 0
             - serializedVersion: 2
               time: 1
@@ -183,8 +183,8 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0.45129225
               value: 0.5
-              inSlope: 0.05069591
-              outSlope: 0.05069591
+              inSlope: 0.47114122
+              outSlope: 0.47114122
               tangentMode: 0
             - serializedVersion: 2
               time: 1
@@ -239,8 +239,8 @@ MonoBehaviour:
             - serializedVersion: 2
               time: 0.37584552
               value: 0.677686
-              inSlope: 0.952651
-              outSlope: 0.952651
+              inSlope: 1.8506466
+              outSlope: 1.8506466
               tangentMode: 0
             - serializedVersion: 2
               time: 1
@@ -308,12 +308,12 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.177
+      intensity: 0.12
   grain:
     m_Enabled: 1
     m_Settings:
       colored: 0
-      intensity: 0.338
+      intensity: 0.371
       size: 0.3
       luminanceContribution: 0.996
   vignette:
@@ -322,7 +322,7 @@ MonoBehaviour:
       mode: 0
       color: {r: 0.26762542, g: 0.32316843, b: 0.4852941, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.268
+      intensity: 0.152
       smoothness: 1
       roundness: 1
       mask: {fileID: 0}
