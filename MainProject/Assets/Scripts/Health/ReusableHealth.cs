@@ -322,10 +322,11 @@ public class ReusableHealth : MonoBehaviour
                // if (audioSource != null)
                // {
                     audioSource.enabled = true;
+                Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
                     audioSource.clip = clipToPlay;
                 if (audioSource.enabled == true)
                 {
-                    Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+                  
                 }
                     
                // }
