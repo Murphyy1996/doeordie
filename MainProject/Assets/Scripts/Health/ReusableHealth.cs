@@ -28,6 +28,7 @@ public class ReusableHealth : MonoBehaviour
     BehaviorTree behaviorTree;
     public SharedInt behaviourHealth, currentHealth;
     public SharedBool behaviourPlayerDied;
+    public AudioClip clipToPlay;
     private UnityEngine.AI.NavMeshAgent agent;
     private Animator meleeAnimator;
     [SerializeField] private GameObject healthBox;
@@ -42,6 +43,7 @@ public class ReusableHealth : MonoBehaviour
     private bool glowRunOnce = false, returnToDefaultRunOnce = false;
     private float errorCounter = 0;
     private bool amDead = false;
+    AudioSource audioSource;
 
     private void Start()
     {
@@ -311,6 +313,18 @@ public class ReusableHealth : MonoBehaviour
             else if (this.gameObject.tag == "enemy" && GetComponent<TurretAI>() != null)
             {
                 GetComponent<TurretAI>().TriggerAttackState();
+            }
+
+            if (this.gameObject.tag == "enemy" && behaviorTree != null)
+            {
+                //Play goon hit sounds
+
+                if (audioSource != null)
+                {
+                    audioSource.enabled = true;
+                    audioSource.clip = clipToPlay;
+                }
+             
             }
 
             //If the armor or health value goes below zero, correct it to zero
