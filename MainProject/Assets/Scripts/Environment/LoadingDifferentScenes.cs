@@ -66,7 +66,7 @@ public class LoadingDifferentScenes : MonoBehaviour {
     }
     public void boss()
     {
-        LoadingUIManager.singleton.ShowLoadingScreen("Boss");
+        LoadingUIManager.singleton.ShowLoadingScreen("CinematicAfterFoundry");
     }
    
 }

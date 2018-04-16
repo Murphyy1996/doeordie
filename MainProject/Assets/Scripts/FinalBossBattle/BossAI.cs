@@ -97,7 +97,7 @@ public class BossAI : MonoBehaviour
             }
         }
         //Give player vague instructions
-        QuestManager.inst.SubtitleText("Kingsley: Okay, focus your fire on the turret!", 6f);
+        //QuestManager.inst.SubtitleText("Kingsley: Okay, focus your fire on the turret!", 6f);
         //Clamp the player cam
         Camera.main.GetComponent<FirstPersonCamera>().AllowHorizontalClamp(60f);
     }
