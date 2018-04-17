@@ -53,6 +53,7 @@ public class OptionsConfig : MonoBehaviour
     private List<KeyCode> currentKeycodes = new List<KeyCode>();
     [SerializeField]
     private Text warningText;
+    private int silentError;
 
 
 
@@ -1238,14 +1239,15 @@ public class OptionsConfig : MonoBehaviour
         }
         else //Get the components
         {
-           // try
-           // {
+            try
+            {
                 mouseX = GameObject.Find("MouseXSensSlide").GetComponent<Slider>();
                 mouseY = GameObject.Find("MouseYSensSlider").GetComponent<Slider>();
-           // }
-          //  catch
-          //  {
-           // }
+            }
+            catch
+            {
+                silentError++;
+            }
         }
     }
 

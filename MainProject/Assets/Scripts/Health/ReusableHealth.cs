@@ -268,7 +268,7 @@ public class ReusableHealth : MonoBehaviour
         {
 
             //Play goon hit sounds
-            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue)
+            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer !=  19)
             {
                
                 audioSource.enabled = true;
