@@ -13,6 +13,7 @@ public class GameOverScreen : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<Teleporting>().CancelTeleport();
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
             //Refresh player ammo
             AmmoManager ammo = player.GetComponent<AmmoManager>();
