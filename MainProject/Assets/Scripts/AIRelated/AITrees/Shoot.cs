@@ -37,7 +37,7 @@ public class Shoot : Action
 
     private IEnumerator DelayedShoot()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
 
         bullet = shooting.ReturnBulletObjectPool()[0];
         bullet.GetComponent<Bullet>().bulletOrigin = bulletOrigin;
@@ -57,7 +57,7 @@ public class Shoot : Action
 
     private IEnumerator Muzzle()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         muzzleFlash.SetActive(true);
         yield return new WaitForSeconds(0.05f);
         muzzleFlash.SetActive(false);
