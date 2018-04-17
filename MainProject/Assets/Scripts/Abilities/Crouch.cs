@@ -458,6 +458,11 @@ public class Crouch : MonoBehaviour
         toggleCrouch = value;
     }
 
+    public bool ReturnIfInToggleMode()
+    {
+        return toggleCrouch;
+    }
+
     public void SetCrouchKeycode(KeyCode keycodeToSet)
     {
         crouchKeycode = keycodeToSet;

@@ -776,6 +776,11 @@ public class CharacterControllerMovement : MonoBehaviour
         SprintEnabled(true);
     }
 
+    public bool ReturnIfSprintToggle() //Will return if the sprint is a toggle
+    {
+        return sprintToggleMode;
+    }
+
     public void SetValues(bool gravityIsEnabled, bool reduceMovementInAir, float gravityValueToSet, Camera setCamToUse, float setMovementSpeed, float setJumpHeight, KeyCode setSprintButton, bool setSprintAllowed, float setSprintSpeed, KeyCode forwardKeycode, KeyCode backwardKeycode, KeyCode rightKeycode, KeyCode leftKeycode, KeyCode jumpKeycode, KeyCode controllerJump, KeyCode controllerSprint, bool controllerAllowed, string leftAnalogX, string leftAnalogY, LayerMask roofMask, bool sprintToggle, bool bunnyHop) //When called this will set all the values required on the script
     {
         gravityAllowed = gravityIsEnabled;

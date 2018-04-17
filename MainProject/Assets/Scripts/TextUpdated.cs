@@ -9,6 +9,8 @@ public class TextUpdated : MonoBehaviour
 
     [SerializeField]
     private TextMesh crouchInstructions, zoom, grapple, sprint, slide;
+    private Crouch crouchScript;
+    private CharacterControllerMovement thisccMovement;
 
 
     // Use this for initialization
@@ -19,8 +21,8 @@ public class TextUpdated : MonoBehaviour
         zoom = GameObject.Find("PistolInstruct").GetComponent<TextMesh>();
         slide = GameObject.Find("Toggle Instruct").GetComponent<TextMesh>();
         sprint = GameObject.Find("Sprint Instruct").GetComponent<TextMesh>();
-
-
+        crouchScript = GameObject.Find("Player").GetComponent<Crouch>();
+        thisccMovement = GameObject.Find("Player").GetComponent<CharacterControllerMovement>();
 
     }
     // Update is called once per frame
@@ -41,66 +43,75 @@ public class TextUpdated : MonoBehaviour
                 }
                 if (OptionsConfig.inst.crouchKeyText.text == "Mouse1")
                 {
-                    tempKey = "Right Mouse";
+                    tempKey = "RIGHT CLICK";
                 }
                 else if (OptionsConfig.inst.crouchKeyText.text == "Mouse0")
                 {
-                    tempKey = "Left Mouse";
+                    tempKey = "LEFT CLICK";
                 }
                 else if (OptionsConfig.inst.crouchKeyText.text == "Mouse2")
                 {
-                    tempKey = "Middle Mouse";
+                    tempKey = "MIDDLE MOUSE";
                 }
 
-                crouchInstructions.text = "Press " + tempKey + " to crouch";
+                if (crouchScript.ReturnIfInToggleMode() == true)
+                {
+                    crouchInstructions.text = "Press " + tempKey + " to crouch.";
+                }
+                else
+                {
+                    crouchInstructions.text = "Hold " + tempKey + " to crouch.";
+                }
             }
             else
             {
                 GameObject.Find("CrouchInstructions").GetComponent<TextMesh>();
             }
+
             if (grapple != null)
             {
                 string tempKey = OptionsConfig.inst.grappleKeyText.text;
                 if (OptionsConfig.inst.grappleKeyText.text == "Mouse1")
                 {
-                    tempKey = "Right Mouse";
+                    tempKey = "RIGHT CLICK";
                 }
                 else if (OptionsConfig.inst.grappleKeyText.text == "Mouse0")
                 {
-                    tempKey = "Left Mouse";
+                    tempKey = "LEFT CLICK";
                 }
                 else if (OptionsConfig.inst.grappleKeyText.text == "Mouse2")
                 {
-                    tempKey = "Middle Mouse";
+                    tempKey = "MIDDLE MOUSE";
                 }
-                grapple.text = "Press " + tempKey + " to use the grapple";
+                grapple.text = "Walk over the GRAPPLE to pick it up." + Environment.NewLine + Environment.NewLine + tempKey + " to GRAPPLE onto surfaces and quickly" + Environment.NewLine + "travel long distances in a short time." + Environment.NewLine + Environment.NewLine + "Press SPACE to get out of GRAPPLE.";
             }
             else
             {
                 GameObject.Find("Grapple Instruct").GetComponent<TextMesh>();
             }
+
             if (zoom != null)
             {
                 string tempKey = OptionsConfig.inst.zoomKeyText.text;
                 if (OptionsConfig.inst.zoomKeyText.text == "Mouse1")
                 {
-                    tempKey = "Right Mouse";
+                    tempKey = "RIGHT CLICK";
                 }
                 else if (OptionsConfig.inst.zoomKeyText.text == "Mouse0")
                 {
-                    tempKey = "Left Mouse";
+                    tempKey = "LEFT CLICK";
                 }
                 else if (OptionsConfig.inst.zoomKeyText.text == "Mouse2")
                 {
-                    tempKey = "Middle Mouse";
+                    tempKey = "MIDDLE MOUSE";
                 }
-                grapple.text = "Press " + tempKey + " to use the grapple";
-                zoom.text = "Press Left mouse button to shoot and" + tempKey + Environment.NewLine + "to zoom. You can then press" + OptionsConfig.inst.weaponSwapKeyText.text + " to swap weapons";
+                zoom.text = "Walk over the Pistol to pick it up" + Environment.NewLine + "LEFT CLICK to SHOOT," + Environment.NewLine + tempKey + " to AIM.";
             }
             else
             {
                 GameObject.Find("PistolInstruct").GetComponent<TextMesh>();
             }
+
             if (slide != null)
             {
                 string tempKey = OptionsConfig.inst.crouchKeyText.text;
@@ -117,12 +128,13 @@ public class TextUpdated : MonoBehaviour
                     tempKey = "Middle Mouse";
                 }
 
-                slide.text = "To slide, while running, press" + tempKey + " to crouch";
+                slide.text = "Press " + OptionsConfig.inst.crouchKeyText.text + " whilst " + Environment.NewLine + "running to perform a SLIDE.";
             }
             else
             {
                 GameObject.Find("Toggle Instruct").GetComponent<TextMesh>();
             }
+
             if (sprint != null)
             {
                 string tempKey = OptionsConfig.inst.sprintKeyText.text;
@@ -139,8 +151,16 @@ public class TextUpdated : MonoBehaviour
                     tempKey = "Middle Mouse";
                 }
 
+                bool sprintToggle = thisccMovement.ReturnIfSprintToggle();
 
-                sprint.text = "To sprint either hold/toggle " + Environment.NewLine + tempKey;
+                if (sprintToggle == true)
+                {
+                    sprint.text = "To SPRINT toggle " + tempKey;
+                }
+                else
+                {
+                    sprint.text = "To SPRINT hold " + tempKey;
+                }
 
             }
             else
