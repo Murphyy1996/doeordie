@@ -16,6 +16,8 @@ public class InGamePause : MonoBehaviour
     private Canvas spawnedOptionsCanvas;
     private List<AudioSource> audioSourcesThatNeedsUnpausing = new List<AudioSource>();
     private ReusableHealth playerHealth;
+    private GameObject foundDeathScreen;
+    private Image deathScreenImage;
 
 
     private void Start()
@@ -33,15 +35,28 @@ public class InGamePause : MonoBehaviour
         GameObject spawnedOptionsMenu = Instantiate(optionsPrefab) as GameObject;  //THIS IS WHERE THE OPTIONS MENU IS INSTANTIATED - NEED TO USE DONTDESTROY INSTEAD
         spawnedOptionsMenu.name = "OptionsMenu";
         spawnedOptionsCanvas = spawnedOptionsMenu.GetComponent<Canvas>();
+        Invoke("DelayedStart", 0.5f);
+    }
+
+    private void DelayedStart()
+    {
+        foundDeathScreen = GameObject.Find("DeathScreen");
+        deathScreenImage = foundDeathScreen.GetComponent<Image>();
     }
 
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true && LoadingUIManager.singleton.IsLoadingScreenActive() == false && playerHealth.healthValue >= 1)
+        if (deathScreenImage != null)
         {
-            OpenPauseMenu();
+            if (deathScreenImage.color.a == 0)
+            {
+                if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true && LoadingUIManager.singleton.IsLoadingScreenActive() == false && playerHealth.healthValue >= 1)
+                {
+                    OpenPauseMenu();
+                }
+            }
         }
 
         if (Time.timeScale == 1)

@@ -295,6 +295,7 @@ public class InGameUI : MonoBehaviour
             //Do this at the end of every frame
             yield return new WaitForEndOfFrame();
         }
+        gameOverScreen.color = endColour;
     }
 
     public void makeBarBigger(float sizeToGo)
