@@ -178,4 +178,9 @@ public class FirstPersonCamera : MonoBehaviour
     {
         invertedCamera = value;
     }
+
+    public void RecenterCameraVertical()
+    {
+        verticalAxis = 0;
+    }
 }

@@ -21,6 +21,8 @@ public class GameOverScreen : MonoBehaviour
             ammo.SetAmmoAmount(AmmoManager.ammoType.shotgun, ammo.ReturnMaxAmmoForShotgun() / 2);
             //Allow camera movement again
             player.GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(false);
+            //Reset camera
+            Camera.main.GetComponent<FirstPersonCamera>().RecenterCameraVertical();
             //Allow camera movement again
             player.GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(true);
             //Fade out the game over screen
