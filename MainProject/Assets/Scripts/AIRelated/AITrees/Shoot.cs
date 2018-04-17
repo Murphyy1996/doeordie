@@ -41,7 +41,7 @@ public class Shoot : Action
 
         bullet = shooting.ReturnBulletObjectPool()[0];
         bullet.GetComponent<Bullet>().bulletOrigin = bulletOrigin;
-        bullet.GetComponent<Bullet>().recoil = 1.0f;
+        bullet.GetComponent<Bullet>().recoil = 0.5f;
         bullet.GetComponent<Bullet>().bulletDamage = shootDamage;
         bullet.GetComponent<Bullet>().playerBullet = false;
 
