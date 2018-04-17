@@ -45,6 +45,7 @@ public class Shooting : MonoBehaviour
     private Teleporting teleportScript;
     private int outOfAmmoCount = 0;
     private Text outOfAmmoPrompt;
+    private Grapple grappleScript;
 
     private float pickUpAmmoTimer = 999, pickUpAmmoLimit = 2;
 
@@ -52,6 +53,7 @@ public class Shooting : MonoBehaviour
     {
         //Get the crouch script
         crouchScript = GetComponent<Crouch>();
+        grappleScript = GetComponent<Grapple>();
         //Create the object pool parent
         GameObject objectPool = new GameObject();
         objectPool.name = "Object Pools";
@@ -446,9 +448,16 @@ public class Shooting : MonoBehaviour
     {
         if (animatorComponent != null)
         {
-            if (thisCC.velocity.magnitude >= 18)
+            if (grappleScript.IsCurrentlyGrappling() == false)
             {
-                animatorComponent.SetBool("running", true);
+                if (thisCC.velocity.magnitude >= 18)
+                {
+                    animatorComponent.SetBool("running", true);
+                }
+                else
+                {
+                    animatorComponent.SetBool("running", false);
+                }
             }
             else
             {
