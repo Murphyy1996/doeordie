@@ -13,7 +13,7 @@ public class Reference : MonoBehaviour
     public GameObject body;
     public List<GameObject> waypoint = new List<GameObject>();
 
-    CanSeeObject canSeeObject;
+    //CanSeeObject canSeeObject;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class Reference : MonoBehaviour
         SetLocationVars(meleeTree);
         SpawnLookObject();
 
-        canSeeObject = GetComponent<CanSeeObject>();
+        //canSeeObject = GetComponent<CanSeeObject>();
     }
 
     void Update()
