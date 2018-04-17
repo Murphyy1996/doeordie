@@ -319,18 +319,11 @@ public class ReusableHealth : MonoBehaviour
             {
                 //Play goon hit sounds
 
-               // if (audioSource != null)
-               // {
-                    audioSource.enabled = true;
-                Debug.Log("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
-                    audioSource.clip = clipToPlay;
-                if (audioSource.enabled == true)
+                if (audioSource != null)
                 {
-                  
+                    audioSource.enabled = true;
+                    audioSource.clip = clipToPlay;
                 }
-                    
-               // }
-             
             }
 
             //If the armor or health value goes below zero, correct it to zero
