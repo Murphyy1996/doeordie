@@ -361,6 +361,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1657
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4678392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4678393}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4678393
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 4678392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2363
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5766062
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +724,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1602
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &14677306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 14677307}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14677307
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 14677306}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2345
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &18719881
 GameObject:
@@ -1611,6 +1667,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1347
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &41623519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 41623520}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41623520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41623519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2364
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42225717
 GameObject:
@@ -3020,6 +3104,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1241
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &87591877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 87591878}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &87591878
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 87591877}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2394
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88157364
 GameObject:
@@ -5227,6 +5339,62 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 901
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &147703538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 147703539}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147703539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147703538}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2403
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &149312472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 149312473}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &149312473
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149312472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2385
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149430552
 GameObject:
   m_ObjectHideFlags: 0
@@ -5590,6 +5758,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 712
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &160117923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 160117924}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &160117924
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160117923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2324
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161680649
 GameObject:
@@ -6731,7 +6927,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4520639040489316, guid: 8ab16b6c10f1495449969f9e54b28181, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ab16b6c10f1495449969f9e54b28181, type: 2}
@@ -8206,6 +8402,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1377
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &235565553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 235565554}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &235565554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235565553}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2344
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235948531
 GameObject:
   m_ObjectHideFlags: 0
@@ -8541,6 +8765,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 789
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &253442690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 253442691}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253442691
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253442690}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2366
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254263860
 GameObject:
@@ -9890,6 +10142,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1526
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &301478719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 301478720}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &301478720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301478719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2350
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302010634
 GameObject:
@@ -15077,6 +15357,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1413
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &356559822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 356559823}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &356559823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356559822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2405
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356567216
 GameObject:
   m_ObjectHideFlags: 0
@@ -15395,6 +15703,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 486
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &365367011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 365367012}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &365367012
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365367011}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2397
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366884997
 GameObject:
@@ -15899,6 +16235,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 523
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &377531676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 377531677}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377531677
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 377531676}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2370
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &378289504
 GameObject:
@@ -16804,6 +17168,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1349
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408495651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 408495652}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &408495652
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408495651}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2351
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408766074
 GameObject:
   m_ObjectHideFlags: 0
@@ -16831,6 +17223,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1345
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &409712996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 409712997}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409712997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 409712996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2380
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410392549
 GameObject:
@@ -16999,6 +17419,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2042
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &417795203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 417795204}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417795204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 417795203}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2390
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &418483423
 GameObject:
@@ -17654,6 +18102,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1916
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &440201401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 440201402}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440201402
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440201401}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2361
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440803571
 GameObject:
@@ -18798,6 +19274,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &472539709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 472539710}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472539710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472539709}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2378
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &472944697
 GameObject:
   m_ObjectHideFlags: 0
@@ -19275,6 +19779,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1974141877}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &484478031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 484478032}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484478032
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484478031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2367
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484482812
 GameObject:
@@ -22163,6 +22695,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1443
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &563239934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 563239935}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &563239935
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563239934}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2389
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &563308937
 GameObject:
   m_ObjectHideFlags: 0
@@ -22498,6 +23058,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 445
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &570342917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 570342918}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570342918
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570342917}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2337
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &571115311
 GameObject:
@@ -24580,6 +25168,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &632205734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 632205735}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632205735
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632205734}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2354
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633522810
 GameObject:
   m_ObjectHideFlags: 0
@@ -24933,6 +25549,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1921
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &645743248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 645743249}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &645743249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 645743248}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2333
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645956893
 GameObject:
@@ -25810,6 +26454,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1942
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &672595176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 672595177}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672595177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672595176}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2386
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673063257
 GameObject:
   m_ObjectHideFlags: 0
@@ -26037,6 +26709,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1944
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &683523577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 683523578}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683523578
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 683523577}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2384
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683929943
 GameObject:
@@ -27430,6 +28130,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1480
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &719563052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 719563053}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719563053
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719563052}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2388
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719712955
 GameObject:
   m_ObjectHideFlags: 0
@@ -27597,6 +28325,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 868
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &729551480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 729551481}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729551481
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729551480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2402
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731353719
 GameObject:
@@ -28644,6 +29400,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 184
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &765753027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 765753028}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765753028
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765753027}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2347
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766115118
 GameObject:
@@ -30014,6 +30798,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 569
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &797781271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 797781272}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797781272
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797781271}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2356
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &798250035
 GameObject:
   m_ObjectHideFlags: 0
@@ -30384,6 +31196,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 157
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &809335068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 809335069}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809335069
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809335068}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2373
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809640113
 GameObject:
   m_ObjectHideFlags: 0
@@ -30579,6 +31419,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1668
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &813068633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 813068634}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &813068634
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 813068633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2341
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814516480
 GameObject:
@@ -31536,6 +32404,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1043
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &841261804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 841261805}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841261805
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841261804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2411
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &843577929
 GameObject:
   m_ObjectHideFlags: 0
@@ -31594,6 +32490,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 292
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &844245574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 844245575}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844245575
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844245574}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2368
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845453941
 GameObject:
@@ -32216,6 +33140,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 454
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &856865624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 856865625}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &856865625
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856865624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2352
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859120589
 GameObject:
   m_ObjectHideFlags: 0
@@ -32691,6 +33643,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1875
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &873947757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 873947758}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873947758
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873947757}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2396
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &874377641
 GameObject:
@@ -36204,6 +37184,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 193
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &960357943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 960357944}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &960357944
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960357943}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2372
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960743605
 GameObject:
   m_ObjectHideFlags: 0
@@ -36686,6 +37694,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1704
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &975775812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 975775813}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975775813
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 975775812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2331
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976280044
 GameObject:
   m_ObjectHideFlags: 0
@@ -37018,6 +38054,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 652
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &985535805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 985535806}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &985535806
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 985535805}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2414
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985633149
 GameObject:
@@ -37531,6 +38595,34 @@ Transform:
   - {fileID: 760179902}
   m_Father: {fileID: 36120747}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &997376514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 997376515}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997376515
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997376514}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2401
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997702452
 GameObject:
@@ -38126,6 +39218,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1012157129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1012157130}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1012157130
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012157129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2387
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1013861180
 GameObject:
   m_ObjectHideFlags: 0
@@ -38661,6 +39781,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033379547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1033379548}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033379548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033379547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2398
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1033697891
 GameObject:
   m_ObjectHideFlags: 0
@@ -38831,6 +39979,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1928
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1037677859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1037677860}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1037677860
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1037677859}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2374
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037757121
 GameObject:
@@ -39144,6 +40320,34 @@ Transform:
   - {fileID: 779830431}
   m_Father: {fileID: 572266876}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1051109372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1051109373}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051109373
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051109372}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2379
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1051109796
 GameObject:
@@ -43471,6 +44675,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1788
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083800700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1083800701}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083800701
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083800700}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2392
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085258331
 GameObject:
   m_ObjectHideFlags: 0
@@ -43582,6 +44814,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 519
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1088655814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1088655815}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088655815
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1088655814}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2360
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089334819
 GameObject:
@@ -44851,6 +46111,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2137
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1121451039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1121451040}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1121451040
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121451039}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2349
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122170317
 GameObject:
   m_ObjectHideFlags: 0
@@ -44934,6 +46222,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 883
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1125820270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1125820271}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125820271
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125820270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2391
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126010728
 GameObject:
@@ -45497,6 +46813,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2238
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146010540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1146010541}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146010541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146010540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2325
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1147927058
 GameObject:
   m_ObjectHideFlags: 0
@@ -45748,6 +47092,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1010
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1152579791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1152579792}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152579792
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152579791}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2408
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152941671
 GameObject:
@@ -46028,6 +47400,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 866
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1163524842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1163524843}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1163524843
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163524842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2413
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164260564
 GameObject:
@@ -46545,7 +47945,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4579928806145630, guid: ef5de45a349b28e439a776535f459ea1, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef5de45a349b28e439a776535f459ea1, type: 2}
@@ -46913,6 +48313,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1123
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188836486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1188836487}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188836487
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188836486}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2329
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189874110
 GameObject:
@@ -50106,8 +51534,127 @@ Transform:
   - {fileID: 1200455337}
   - {fileID: 860895403}
   - {fileID: 1903118341}
+  - {fileID: 160117924}
+  - {fileID: 1146010541}
+  - {fileID: 1662114637}
+  - {fileID: 1871666551}
+  - {fileID: 1336956698}
+  - {fileID: 1188836487}
+  - {fileID: 1280837971}
+  - {fileID: 975775813}
+  - {fileID: 1516573920}
+  - {fileID: 645743249}
+  - {fileID: 1915208776}
+  - {fileID: 1408658269}
+  - {fileID: 1959859879}
+  - {fileID: 570342918}
+  - {fileID: 1214870438}
+  - {fileID: 2121601539}
+  - {fileID: 1840122720}
+  - {fileID: 813068634}
+  - {fileID: 1808514110}
+  - {fileID: 2091777205}
+  - {fileID: 235565554}
+  - {fileID: 14677307}
+  - {fileID: 2098583940}
+  - {fileID: 765753028}
+  - {fileID: 2082291550}
+  - {fileID: 1121451040}
+  - {fileID: 301478720}
+  - {fileID: 408495652}
+  - {fileID: 856865625}
+  - {fileID: 1966196093}
+  - {fileID: 632205735}
+  - {fileID: 1724518572}
+  - {fileID: 797781272}
+  - {fileID: 1496399825}
+  - {fileID: 1223781071}
+  - {fileID: 2064149377}
+  - {fileID: 1088655815}
+  - {fileID: 440201402}
+  - {fileID: 1992441978}
+  - {fileID: 4678393}
+  - {fileID: 41623520}
+  - {fileID: 1358404773}
+  - {fileID: 253442691}
+  - {fileID: 484478032}
+  - {fileID: 844245575}
+  - {fileID: 1678271663}
+  - {fileID: 377531677}
+  - {fileID: 1413436528}
+  - {fileID: 960357944}
+  - {fileID: 809335069}
+  - {fileID: 1037677860}
+  - {fileID: 1923947202}
+  - {fileID: 2042612558}
+  - {fileID: 1299710519}
+  - {fileID: 472539710}
+  - {fileID: 1051109373}
+  - {fileID: 409712997}
+  - {fileID: 1568441672}
+  - {fileID: 1740530428}
+  - {fileID: 2018517158}
+  - {fileID: 683523578}
+  - {fileID: 149312473}
+  - {fileID: 672595177}
+  - {fileID: 1012157130}
+  - {fileID: 719563053}
+  - {fileID: 563239935}
+  - {fileID: 417795204}
+  - {fileID: 1125820271}
+  - {fileID: 1083800701}
+  - {fileID: 1665880314}
+  - {fileID: 87591878}
+  - {fileID: 2024484046}
+  - {fileID: 873947758}
+  - {fileID: 365367012}
+  - {fileID: 1033379548}
+  - {fileID: 1874094235}
+  - {fileID: 1732822842}
+  - {fileID: 997376515}
+  - {fileID: 729551481}
+  - {fileID: 147703539}
+  - {fileID: 1426559873}
+  - {fileID: 356559823}
+  - {fileID: 1613260629}
+  - {fileID: 1700206619}
+  - {fileID: 1152579792}
+  - {fileID: 1920820520}
+  - {fileID: 2021219945}
+  - {fileID: 841261805}
+  - {fileID: 1785430606}
+  - {fileID: 1163524843}
+  - {fileID: 985535806}
   m_Father: {fileID: 0}
   m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1214870437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1214870438}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214870438
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214870437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2338
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1215193009
 GameObject:
@@ -50505,6 +52052,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 769
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1223781070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1223781071}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223781071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223781070}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2358
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224452828
 GameObject:
@@ -52377,6 +53952,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 382
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1280837970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1280837971}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280837971
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280837970}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2330
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1280986425
 GameObject:
   m_ObjectHideFlags: 0
@@ -53223,6 +54826,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2048
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1299710518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1299710519}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299710519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299710518}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2377
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300526611
 GameObject:
   m_ObjectHideFlags: 0
@@ -53556,7 +55187,7 @@ Transform:
   - {fileID: 1176513826}
   - {fileID: 627309053}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -10, z: 0}
 --- !u!1 &1301989582
 GameObject:
@@ -57866,6 +59497,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1077
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1336956697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1336956698}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336956698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336956697}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2328
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337099502
 GameObject:
   m_ObjectHideFlags: 0
@@ -58793,6 +60452,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1977
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1358404772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1358404773}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358404773
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358404772}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2365
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360157009
 GameObject:
@@ -60468,6 +62155,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1086
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1408658268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1408658269}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1408658269
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408658268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2335
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410271595
 GameObject:
   m_ObjectHideFlags: 0
@@ -60581,6 +62296,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1199
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1413436527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1413436528}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413436528
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413436527}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2371
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413513042
 GameObject:
@@ -61057,6 +62800,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2032
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426559872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1426559873}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426559873
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426559872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2404
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1428425573
 GameObject:
@@ -63594,6 +65365,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1496399824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1496399825}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496399825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1496399824}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2357
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496899776
 GameObject:
   m_ObjectHideFlags: 0
@@ -64293,6 +66092,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1955
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1516573919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1516573920}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1516573920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1516573919}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2332
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1516726097
 GameObject:
@@ -65992,6 +67819,10 @@ Prefab:
       propertyPath: m_Name
       value: GoonMeleeTree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1456290171146992, guid: f47accc947ef89f47954ea38220b49bf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f47accc947ef89f47954ea38220b49bf, type: 2}
   m_IsPrefabParent: 0
@@ -66022,6 +67853,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1968
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1568441671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1568441672}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568441672
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568441671}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2381
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568950412
 GameObject:
@@ -70816,6 +72675,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 944
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1613260628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1613260629}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1613260629
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1613260628}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2406
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613937323
 GameObject:
   m_ObjectHideFlags: 0
@@ -71966,7 +73853,54 @@ Prefab:
       objectReference: {fileID: 960743605}
     - target: {fileID: 1353527112839898, guid: 0ed01899435001d418a1558d363ec841, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020367717448548, guid: 0ed01899435001d418a1558d363ec841,
+        type: 2}
+      propertyPath: mBehaviorSource.mTaskData.JSONSerialization
+      value: "{\n\t\"EntryTask\":{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(-661.124,-89)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(-1.12402344,121)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Sequence\",\n\t\t\"Instant\":true,\n\t\t\"AbortTypeabortType\":\"None\",\n\t\t\"Children\":[{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Parallel\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(-1.12408447,115.615372)\"\n\t\t\t},\n\t\t\t\"ID\":2,\n\t\t\t\"Name\":\"Parallel\",\n\t\t\t\"Instant\":true,\n\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\"Children\":[{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Repeater\",\n\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\"Offset\":\"(-163.077026,123.076942)\"\n\t\t\t\t},\n\t\t\t\t\"ID\":3,\n\t\t\t\t\"Name\":\"Repeater\",\n\t\t\t\t\"Instant\":true,\n\t\t\t\t\"SharedIntcount\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\"Int32mValue\":1\n\t\t\t\t},\n\t\t\t\t\"SharedBoolrepeatForever\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t},\n\t\t\t\t\"SharedBoolendOnFailure\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t},\n\t\t\t\t\"Children\":[{\n\t\t\t\t\t\"Type\":\"GetCurrentHealth\",\n\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\"Offset\":\"(-0.000122070313,110)\"\n\t\t\t\t\t},\n\t\t\t\t\t\"ID\":4,\n\t\t\t\t\t\"Name\":\"Get
+        Current Health\",\n\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\"SharedIntcurrentAIHealth\":{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\"Int32mValue\":0\n\t\t\t\t\t}\n\t\t\t\t}]\n\t\t\t},{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Repeater\",\n\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\"Offset\":\"(0,119.230766)\"\n\t\t\t\t},\n\t\t\t\t\"ID\":5,\n\t\t\t\t\"Name\":\"Repeater\",\n\t\t\t\t\"Instant\":true,\n\t\t\t\t\"SharedIntcount\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"Int32mValue\":1\n\t\t\t\t},\n\t\t\t\t\"SharedBoolrepeatForever\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t},\n\t\t\t\t\"SharedBoolendOnFailure\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t},\n\t\t\t\t\"Children\":[{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Selector\",\n\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\"Offset\":\"(-1.1239624,119.064545)\"\n\t\t\t\t\t},\n\t\t\t\t\t\"ID\":6,\n\t\t\t\t\t\"Name\":\"Selector\",\n\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(-536.217651,153.237244)\",\n\t\t\t\t\t\t\t\"Comment\":\"Main
+        AI death branch\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":7,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"CheckIfDead\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-37.7200928,136.766663)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":8,\n\t\t\t\t\t\t\t\"Name\":\"Check
+        If Dead\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"PlayAudioClip\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(78.16113,137.666931)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":9,\n\t\t\t\t\t\t\t\"Name\":\"Play
+        Audio Clip\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"PlayDeathAnim\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(208.3543,136.766663)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":10,\n\t\t\t\t\t\t\t\"Name\":\"Play
+        Death Anim\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(0,140)\",\n\t\t\t\t\t\t\t\"Comment\":\"Main
+        attack branch\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":11,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.RangedCanSee\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-73.13224,153.921066)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":12,\n\t\t\t\t\t\t\t\"Name\":\"Ranged
+        Can See\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedGameObjectListtargetObjects\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObjectList\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"List`1mValue\":[]\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":4,\n\t\t\t\t\t\t\t\"SharedFloatfieldOfViewAngle\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"SinglemValue\":100\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatviewDistance\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"SinglemValue\":30\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0.07,0)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatangleOffset2D\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBooluseTargetBone\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"HumanBodyBonestargetBone\":\"Hips\",\n\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolspottedPlayer\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Selector\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(82.20935,149.333374)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":13,\n\t\t\t\t\t\t\t\"Name\":\"Selector\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\"Offset\":\"(-132.737061,132.666809)\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"ID\":14,\n\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"Self\",\n\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.Math.BoolComparison\",\n\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-114.4494,121.613037)\",\n\t\t\t\t\t\t\t\t\t\t\"Comment\":\"Only
+        run while player is alive\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"ID\":15,\n\t\t\t\t\t\t\t\t\t\"Name\":\"Bool
+        Comparison\",\n\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\"SharedBoolbool1\":{\n\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerDied\",\n\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\"IsGlobal\":true,\n\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"SharedBoolbool2\":{\n\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Parallel\",\n\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(103.186707,131.345032)\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"ID\":16,\n\t\t\t\t\t\t\t\t\t\"Name\":\"Parallel\",\n\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Repeater\",\n\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-398.333221,238.500244)\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"ID\":17,\n\t\t\t\t\t\t\t\t\t\t\"Name\":\"Repeater\",\n\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\"SharedIntcount\":{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\"Int32mValue\":1\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"SharedBoolrepeatForever\":{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"SharedBoolendOnFailure\":{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(2.500122,138.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"ID\":18,\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.Pursue\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-127.5,114.629288)\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":19,\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Pursue\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloattargetDistPrediction\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":20\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloattargetDistPredictionMult\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":5\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatspeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":10\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatangularSpeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"rotation\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":200\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatarriveDistance\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":17\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolstopOnTaskEnd\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolupdateRotation\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(2.500122,128.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":20,\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.CanSeeObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-117.5,128.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":21,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Can
+        See Object\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectListtargetObjects\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObjectList\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"List`1mValue\":[]\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"StringmValue\":\"\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":4,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatfieldOfViewAngle\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":100\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatviewDistance\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":30\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0.07,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatangleOffset2D\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBooluseTargetBone\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"HumanBodyBonestargetBone\":\"Hips\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolspottedPlayer\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(2.500122,128.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":22,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.WithinDistance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-210.7446,138.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":23,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Within
+        Distance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatmagnitude\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoollineOfSight\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":16776759,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.RotateTowards\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-80.7445145,138.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":24,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Rotate
+        Towards\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrotationEpsilon\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatmaxLookAtRotationDelta\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolonlyY\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetRotation\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Wait\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(55.07184,138.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":25,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Wait\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatwaitTime\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0.31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolrandomWait\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrandomWaitMin\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrandomWaitMax\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"Shoot\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(168.216492,138.942261)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":26,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Shoot\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Wait\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(112.500122,128.500244)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":27,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Wait\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatwaitTime\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0.31\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolrandomWait\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrandomWaitMin\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrandomWaitMax\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(340.000122,230)\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"ID\":28,\n\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\"Instant\":false,\n\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.ReturnSuccess\",\n\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-179.999878,120)\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"ID\":29,\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Return
+        Success\",\n\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(0.000122070313,110)\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":30,\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"Self\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Inverter\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-59.9998779,110)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":31,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Inverter\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.WithinDistance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(0.000122070313,110)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":32,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Within
+        Distance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatmagnitude\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoollineOfSight\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":16776759,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.Seek\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(50.0001221,110)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":33,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Seek\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetPosition\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerPos\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatspeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":10\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatangularSpeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"rotation\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":200\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatarriveDistance\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolstopOnTaskEnd\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolupdateRotation\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Repeater\",\n\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(240.000122,250)\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"ID\":34,\n\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Repeater\",\n\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\"SharedIntcount\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Int32mValue\":1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolrepeatForever\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolendOnFailure\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(0.000122070313,110)\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":35,\n\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"Self\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.WithinDistance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-99.99988,120)\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Comment\":\"distance
+        to stop chasing\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":36,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Within
+        Distance\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatmagnitude\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":20\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoollineOfSight\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":16776759,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Selector\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(80.00012,120)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":37,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Selector\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(-99.99988,140)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":38,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"AbortTypeabortType\":\"Self\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Inverter\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(0.000122070313,120)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":39,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Inverter\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.CanSeeObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(0.000122070313,120)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":40,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Can
+        See Object\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectListtargetObjects\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObjectList\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"List`1mValue\":[]\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"StringmValue\":\"\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":4,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatfieldOfViewAngle\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatviewDistance\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0.07,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatangleOffset2D\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBooluseTargetBone\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"HumanBodyBonestargetBone\":\"Hips\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolspottedPlayer\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.Seek\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(120.000122,120)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":41,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Seek\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetPosition\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerPos\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatspeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatangularSpeed\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"rotation\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatarriveDistance\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolstopOnTaskEnd\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolupdateRotation\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.RotateTowards\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Offset\":\"(100.000122,140)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"ID\":42,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"Rotate
+        Towards\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatrotationEpsilon\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedFloatmaxLookAtRotationDelta\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SinglemValue\":50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedBoolonlyY\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"SharedVector3targetRotation\":{\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t\t}]\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(328.0193,148.7428)\",\n\t\t\t\t\t\t\t\"Comment\":\"Player
+        has fired branch\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":43,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"HasFired\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(0.986206055,137.973572)\",\n\t\t\t\t\t\t\t\t\"Comment\":\"Simulate
+        hearing\\n\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":44,\n\t\t\t\t\t\t\t\"Name\":\"Has
+        Fired\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"IsAlive\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(120.986206,137.973572)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":45,\n\t\t\t\t\t\t\t\"Name\":\"Is
+        Alive\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.Math.SetBool\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(230.9862,137.973572)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":46,\n\t\t\t\t\t\t\t\"Name\":\"Set
+        Bool\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstoreResult\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"updatePosition\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.Math.SetBool\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(340.9862,137.973572)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":47,\n\t\t\t\t\t\t\t\"Name\":\"Set
+        Bool\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstoreResult\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"wandering\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.RotateTowards\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(460.986267,137.973572)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":48,\n\t\t\t\t\t\t\t\"Name\":\"Rotate
+        Towards\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\"SharedFloatrotationEpsilon\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"SinglemValue\":0.5\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatmaxLookAtRotationDelta\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"SinglemValue\":180\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolonlyY\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedVector3targetRotation\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(940.5469,163.71521)\",\n\t\t\t\t\t\t\t\"Comment\":\"Main
+        AI hearing branch\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":49,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.WithinDistance\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(10.546875,123.71521)\",\n\t\t\t\t\t\t\t\t\"Comment\":\"heard
+        player\\n\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":50,\n\t\t\t\t\t\t\t\"Name\":\"Within
+        Distance\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\"SharedGameObjecttargetObject\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":\"target\",\n\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedStringtargetTag\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\t\t\t\"Name\":\"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"LayerMaskobjectLayerMask\":16776759,\n\t\t\t\t\t\t\t\"SharedFloatmagnitude\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"SinglemValue\":6\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoollineOfSight\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"LayerMaskignoreLayerMask\":4,\n\t\t\t\t\t\t\t\"SharedVector3offset\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedVector3targetOffset\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedGameObjectreturnedObject\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":\"\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"IsAlive\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(130.546875,123.71521)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":51,\n\t\t\t\t\t\t\t\"Name\":\"Is
+        Alive\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.Math.SetBool\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(240.546875,123.71521)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":52,\n\t\t\t\t\t\t\t\"Name\":\"Set
+        Bool\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstoreResult\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"updatePosition\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.Math.SetBool\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(350.546875,123.71521)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":53,\n\t\t\t\t\t\t\t\"Name\":\"Set
+        Bool\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstoreResult\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"wandering\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.RotateTowards\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(470.546875,123.71521)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":54,\n\t\t\t\t\t\t\t\"Name\":\"Rotate
+        Towards\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"BooleanusePhysics2D\":false,\n\t\t\t\t\t\t\t\"SharedFloatrotationEpsilon\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"SinglemValue\":0.5\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatmaxLookAtRotationDelta\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"SinglemValue\":10\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolonlyY\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedGameObjecttarget\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\t\t\t\"Name\":\"playerBody\",\n\t\t\t\t\t\t\t\t\"IsShared\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedVector3targetRotation\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(1628.12048,153.870972)\",\n\t\t\t\t\t\t\t\"Comment\":\"Patrolling
+        Branch\\n\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":55,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.CustomPatrol\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-0.425048828,130.231018)\",\n\t\t\t\t\t\t\t\t\"Comment\":\"Place
+        waypoints on reference script (On AI game object\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":56,\n\t\t\t\t\t\t\t\"Name\":\"Custom
+        Patrol\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolrandomPatrol\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatwaypointPauseDuration\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"SinglemValue\":7\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedGameObjectListwaypoints\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObjectList\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"List`1mValue\":[]\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatspeed\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"speed\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"SinglemValue\":5\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatangularSpeed\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":\"rotation\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"SinglemValue\":200\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedFloatarriveDistance\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"SinglemValue\":0.2\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstopOnTaskEnd\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolupdateRotation\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":true\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}]\n\t\t\t\t\t}]\n\t\t\t\t}]\n\t\t\t}]\n\t\t}]\n\t},\n\t\"DetachedTasks\":[{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(-1868.62,756.8967)\",\n\t\t\t\"Comment\":\"Defensive
+        behaviour branch\"\n\t\t},\n\t\t\"ID\":57,\n\t\t\"Name\":\"Sequence\",\n\t\t\"Instant\":true,\n\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\"Children\":[{\n\t\t\t\"Type\":\"IsDamaged\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(-214.801575,149.411926)\"\n\t\t\t},\n\t\t\t\"ID\":58,\n\t\t\t\"Name\":\"Is
+        Damaged\",\n\t\t\t\"Instant\":true\n\t\t},{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.UnityAnimator.SetBoolParameter\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(-84.80154,149.411926)\"\n\t\t\t},\n\t\t\t\"ID\":59,\n\t\t\t\"Name\":\"Set
+        Bool Parameter\",\n\t\t\t\"Instant\":true,\n\t\t\t\"SharedGameObjecttargetGameObject\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\"Name\":\"\"\n\t\t\t},\n\t\t\t\"SharedStringparamaterName\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\"Name\":\"\",\n\t\t\t\t\"StringmValue\":\"isRunning\"\n\t\t\t},\n\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\"Name\":\"\",\n\t\t\t\t\"BooleanmValue\":true\n\t\t\t},\n\t\t\t\"BooleansetOnce\":false\n\t\t},{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.UnityAnimator.SetBoolParameter\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(65.19883,149.411926)\"\n\t\t\t},\n\t\t\t\"ID\":60,\n\t\t\t\"Name\":\"Set
+        Bool Parameter\",\n\t\t\t\"Instant\":true,\n\t\t\t\"SharedGameObjecttargetGameObject\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\"Name\":\"\"\n\t\t\t},\n\t\t\t\"SharedStringparamaterName\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\"Name\":\"\",\n\t\t\t\t\"StringmValue\":\"isShooting\"\n\t\t\t},\n\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\"Name\":\"\",\n\t\t\t\t\"BooleanmValue\":false\n\t\t\t},\n\t\t\t\"BooleansetOnce\":false\n\t\t},{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Movement.Cover\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(203.7796,151.807922)\"\n\t\t\t},\n\t\t\t\"ID\":61,\n\t\t\t\"Name\":\"Cover\",\n\t\t\t\"Instant\":true,\n\t\t\t\"SharedFloatmaxCoverDistance\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":1000\n\t\t\t},\n\t\t\t\"LayerMaskavailableLayerCovers\":16777216,\n\t\t\t\"SharedIntmaxRaycasts\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedInt\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"Int32mValue\":100\n\t\t\t},\n\t\t\t\"SharedFloatrayStep\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":1\n\t\t\t},\n\t\t\t\"SharedFloatcoverOffset\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":2\n\t\t\t},\n\t\t\t\"SharedBoollookAtCoverPoint\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"BooleanmValue\":false\n\t\t\t},\n\t\t\t\"SharedFloatrotationEpsilon\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":1\n\t\t\t},\n\t\t\t\"SharedFloatmaxLookAtRotationDelta\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":10\n\t\t\t},\n\t\t\t\"SharedFloatspeed\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":10\n\t\t\t},\n\t\t\t\"SharedFloatangularSpeed\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":120\n\t\t\t},\n\t\t\t\"SharedFloatarriveDistance\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"SinglemValue\":0.2\n\t\t\t},\n\t\t\t\"SharedBoolstopOnTaskEnd\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"BooleanmValue\":true\n\t\t\t},\n\t\t\t\"SharedBoolupdateRotation\":{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\"Name\":null,\n\t\t\t\t\"BooleanmValue\":true\n\t\t\t}\n\t\t}]\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(-1530,550)\",\n\t\t\t\"Comment\":\"AI
+        Shot Behaviour\"\n\t\t},\n\t\t\"ID\":62,\n\t\t\"Name\":\"Sequence\",\n\t\t\"Instant\":true,\n\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\"Children\":[{\n\t\t\t\"Type\":\"AIShot\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(0.9042969,115.373108)\"\n\t\t\t},\n\t\t\t\"ID\":63,\n\t\t\t\"Name\":\"AI
+        Shot\",\n\t\t\t\"Instant\":true,\n\t\t\t\"BooleanhasBeenHit\":false\n\t\t},{\n\t\t\t\"Type\":\"PlayAudioClip\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(125.127441,127.179504)\"\n\t\t\t},\n\t\t\t\"ID\":64,\n\t\t\t\"Name\":\"Play
+        Audio Clip\",\n\t\t\t\"Instant\":true\n\t\t}]\n\t}],\n\t\"Variables\":[{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\"Name\":\"speed\",\n\t\t\"IsShared\":true,\n\t\t\"SinglemValue\":5\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\"Name\":\"rotation\",\n\t\t\"IsShared\":true,\n\t\t\"SinglemValue\":200\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\"Name\":\"target\",\n\t\t\"IsShared\":true\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\"Name\":\"playerBody\",\n\t\t\"IsShared\":true\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObjectList\",\n\t\t\"Name\":\"waypoints\",\n\t\t\"IsShared\":true,\n\t\t\"List`1mValue\":[]\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedVector3\",\n\t\t\"Name\":\"playerPos\",\n\t\t\"IsShared\":true,\n\t\t\"Vector3mValue\":\"(0,0,0)\"\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\"Name\":\"updatePosition\",\n\t\t\"IsShared\":true,\n\t\t\"BooleanmValue\":false\n\t},{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\"Name\":\"wandering\",\n\t\t\"IsShared\":true,\n\t\t\"BooleanmValue\":false\n\t}]\n}"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ed01899435001d418a1558d363ec841, type: 2}
@@ -73041,6 +74975,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1880
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1662114636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1662114637}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1662114637
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1662114636}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2326
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1662163760
 GameObject:
   m_ObjectHideFlags: 0
@@ -73210,6 +75172,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1393582025}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1665880313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1665880314}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1665880314
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665880313}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2393
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1666421337
 Prefab:
@@ -73654,6 +75644,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1166
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1678271662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1678271663}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678271663
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678271662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2369
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678307321
 GameObject:
@@ -75176,6 +77194,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1700206618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1700206619}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700206619
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700206618}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2407
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700979061
 GameObject:
   m_ObjectHideFlags: 0
@@ -76032,6 +78078,34 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3681543e5b0f59742b73073cb379cdc6, type: 2}
   m_PrefabInternal: {fileID: 1928804182}
+--- !u!1 &1724518571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1724518572}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724518572
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1724518571}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2355
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724548633
 GameObject:
   m_ObjectHideFlags: 0
@@ -76227,6 +78301,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2119
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1732822841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1732822842}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732822842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732822841}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 28.33, y: 0.85, z: -33.41}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2400
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733878378
 GameObject:
@@ -79650,6 +81752,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1740530427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1740530428}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740530428
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740530427}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2382
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1740745752
 GameObject:
   m_ObjectHideFlags: 0
@@ -80907,7 +83037,7 @@ Transform:
   m_LocalScale: {x: 1.7836353, y: 0.15707137, z: 0.82}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780324013
 GameObject:
@@ -81050,6 +83180,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1275
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785430605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1785430606}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785430606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785430605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2412
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1786068689
 GameObject:
@@ -81939,6 +84097,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1762
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1808514109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1808514110}
+  m_Layer: 0
+  m_Name: PistolPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1808514110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808514109}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.08038, y: 0.95095205, z: -11.304757}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2342
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808665314
 GameObject:
@@ -83239,6 +85425,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 942
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1840122719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1840122720}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1840122720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840122719}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2340
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1840979357
 GameObject:
   m_ObjectHideFlags: 0
@@ -84031,6 +86245,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 872
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1871666550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1871666551}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1871666551
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1871666550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2327
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1872894138
 GameObject:
   m_ObjectHideFlags: 0
@@ -84058,6 +86300,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 428
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1874094234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1874094235}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1874094235
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874094234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2399
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877760918
 GameObject:
@@ -85490,6 +87760,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 536
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1915208775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1915208776}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915208776
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915208775}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2334
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917206245
 GameObject:
   m_ObjectHideFlags: 0
@@ -85573,6 +87871,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1521
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1920820519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1920820520}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920820520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920820519}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2409
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1921057145
 GameObject:
@@ -85713,6 +88039,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1373
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1923947201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1923947202}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923947202
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1923947201}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2375
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924242732
 GameObject:
@@ -86957,6 +89311,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2179
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1959859878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1959859879}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959859879
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959859878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2336
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960353419
 GameObject:
   m_ObjectHideFlags: 0
@@ -87312,6 +89694,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2202
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1966196092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1966196093}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1966196093
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1966196092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2353
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967306978
 GameObject:
@@ -88003,6 +90413,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 84
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1992441977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1992441978}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1992441978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992441977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2362
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993472510
 GameObject:
@@ -88772,6 +91210,34 @@ Transform:
   m_Father: {fileID: 432637863}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2018517157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2018517158}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2018517158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018517157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2383
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2019587014
 GameObject:
   m_ObjectHideFlags: 0
@@ -88884,6 +91350,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1568
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021219944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2021219945}
+  m_Layer: 0
+  m_Name: DualPistolPickUp transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2021219945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021219944}
+  m_LocalRotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+  m_LocalPosition: {x: 24.76, y: 1.12, z: -28.72}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2410
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2022696760
 GameObject:
   m_ObjectHideFlags: 0
@@ -88967,6 +91461,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2024484045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2024484046}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2024484046
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024484045}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2395
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024671686
 GameObject:
@@ -89417,6 +91939,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 905
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2042612557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2042612558}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2042612558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042612557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2376
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045026395
 GameObject:
@@ -90319,6 +92869,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1608
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2064149376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2064149377}
+  m_Layer: 0
+  m_Name: ShotgunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064149377
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064149376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.25, y: 1.05, z: -35.22031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2359
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064228864
 GameObject:
   m_ObjectHideFlags: 0
@@ -90846,6 +93424,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 646
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082291549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2082291550}
+  m_Layer: 0
+  m_Name: MachineGunPickup transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082291550
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082291549}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.522995, y: -59.260006, z: -137.796}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2348
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2082974087
 GameObject:
   m_ObjectHideFlags: 0
@@ -91185,6 +93791,34 @@ Transform:
   m_Father: {fileID: 1212866998}
   m_RootOrder: 2008
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2091777204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2091777205}
+  m_Layer: 0
+  m_Name: med box transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091777205
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091777204}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -97.22503, y: -53.564743, z: -25.355724}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2343
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091928724
 GameObject:
   m_ObjectHideFlags: 0
@@ -91464,6 +94098,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 1872
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2098583939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2098583940}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098583940
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098583939}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2346
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099966891
 GameObject:
@@ -92197,6 +94859,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212866998}
   m_RootOrder: 475
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2121601538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2121601539}
+  m_Layer: 0
+  m_Name: MachineGunPickup (1) transform empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121601539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2121601538}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81773, y: 0.28935996, z: -36.031788}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1212866998}
+  m_RootOrder: 2339
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2124111916
 GameObject:
