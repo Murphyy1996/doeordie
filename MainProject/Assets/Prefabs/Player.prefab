@@ -6883,7 +6883,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.03, y: 1, z: -24.8}
+  m_LocalPosition: {x: 311.3977, y: 248.69789, z: -226.46457}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -7797,7 +7797,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a10bd6916c9e0d64a82378b65d93c94c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b2eed187bf088ec45b3443ca65fe5483, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9139,6 +9139,7 @@ MonoBehaviour:
     mPropertyMappingOwner: {fileID: 0}
     mNetworkSync: 0
     mValue: 0
+  clipToPlay: {fileID: 0}
   healthBox: {fileID: 0}
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
@@ -23682,7 +23683,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1701321621
+  randomSeed: 1310259218
   InitialModule:
     serializedVersion: 3
     enabled: 1
