@@ -416,9 +416,6 @@ public class OptionsConfig : MonoBehaviour
             {
                 //Make sure it equals the default
                 crouchToggle.isOn = CrouchTog;
-                Debug.Log("pressing button");
-
-
             }
             else //Allow for updating and changing on runtime
             {
@@ -1248,7 +1245,6 @@ public class OptionsConfig : MonoBehaviour
            // }
           //  catch
           //  {
-                print("retrieving component");
            // }
         }
     }

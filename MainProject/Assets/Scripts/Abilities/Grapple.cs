@@ -176,7 +176,8 @@ public class Grapple : MonoBehaviour
     //Key press will be checked here
     private void Update()
     {
-        if (Input.GetKeyDown(grappleKeycode) && inRangeForGrapple == true && isAtGrappleDestination == true && teleportScript.ReturnIfTeleporting() == false && inCooldown == false && isCarryingObj == false && teleportScript.ReturnIfTeleportButtonHeld() == false)
+        //&& isAtGrappleDestination == true
+        if (Input.GetKeyDown(grappleKeycode) && inRangeForGrapple == true && teleportScript.ReturnIfTeleporting() == false && inCooldown == false && isCarryingObj == false && teleportScript.ReturnIfTeleportButtonHeld() == false)
         {
             grappleButtonPressed = true;
         }
