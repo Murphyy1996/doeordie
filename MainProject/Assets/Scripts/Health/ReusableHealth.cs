@@ -75,6 +75,7 @@ public class ReusableHealth : MonoBehaviour
         behaviourPlayerDied = (SharedBool)GlobalVariables.Instance.GetVariable("playerDied");
 
         meleeAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         healthBox = GameObject.Find("HealthPickup");
 
         //If this object is the player
@@ -262,8 +263,19 @@ public class ReusableHealth : MonoBehaviour
 
     public void ApplyDamage(int damageValue) //This code will apply the damage value when called
     {
+  
         if (invincible == false)
         {
+
+            //Play goon hit sounds
+            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer !=  19)
+            {
+               
+                audioSource.enabled = true;
+                audioSource.clip = clipToPlay;
+                audioSource.Play();
+            }
+
             if (AudioManage.inst.combatMusic != null)
             {
                 if (AudioManage.inst.combatMusic.isPlaying == false)
@@ -271,7 +283,7 @@ public class ReusableHealth : MonoBehaviour
                     AudioManage.inst.combatMusic.Play();
                 }
             }
-
+                
 
             //This should make the object glow
             if (glowWhenDamaged == true)
@@ -313,17 +325,6 @@ public class ReusableHealth : MonoBehaviour
             else if (this.gameObject.tag == "enemy" && GetComponent<TurretAI>() != null)
             {
                 GetComponent<TurretAI>().TriggerAttackState();
-            }
-
-            if (this.gameObject.tag == "enemy" /*&& behaviorTree != null*/)
-            {
-                //Play goon hit sounds
-
-                if (audioSource != null)
-                {
-                    audioSource.enabled = true;
-                    audioSource.clip = clipToPlay;
-                }
             }
 
             //If the armor or health value goes below zero, correct it to zero
@@ -481,6 +482,7 @@ public class ReusableHealth : MonoBehaviour
 
     IEnumerator CheckAIDeath()
     {
+
         behaviourHealth.Value = healthValue;
         if (this.gameObject.GetComponent<ReusableHealth>().healthValue <= 0)
         {

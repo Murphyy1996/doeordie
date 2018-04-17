@@ -425,4 +425,13 @@ public class Teleporting : MonoBehaviour
     {
         return teleportButtonHeld;
     }
+
+    public void CancelTeleport() //This will be called on death
+    {
+        teleportButtonHeld = false;
+        if (teleportEmpty != null)
+        {
+            Destroy(teleportEmpty);
+        }
+    }
 }
