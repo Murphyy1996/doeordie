@@ -26,7 +26,7 @@ public class LoadingDifferentScenes : MonoBehaviour {
 
     public void LoadTest()
     {
-        SceneManager.LoadScene("Test");
+        SaveSystemManager.inst.LoadGame();
     }
 
     public void LoadRoss()

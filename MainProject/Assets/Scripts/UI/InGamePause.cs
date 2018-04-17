@@ -122,7 +122,7 @@ public class InGamePause : MonoBehaviour
 
     }
 
-    private void ClosePauseMenu()
+    public void ClosePauseMenu()
     {
         foreach (AudioSource audioSource in audioSourcesThatNeedsUnpausing)
         {
