@@ -15,10 +15,12 @@ public class InGamePause : MonoBehaviour
     private GameObject optionsPrefab;
     private Canvas spawnedOptionsCanvas;
     private List<AudioSource> audioSourcesThatNeedsUnpausing = new List<AudioSource>();
+    private ReusableHealth playerHealth;
 
 
     private void Start()
     {
+        playerHealth = GetComponent<ReusableHealth>();
         if (pauseMenuPrefab != null)
         {
             GameObject pause = Instantiate(pauseMenuPrefab);
@@ -37,7 +39,7 @@ public class InGamePause : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true && LoadingUIManager.singleton.IsLoadingScreenActive() == false)
+        if (Input.GetKeyUp(KeyCode.Escape) && allowedToPause == true && LoadingUIManager.singleton.IsLoadingScreenActive() == false && playerHealth.healthValue >= 1)
         {
             OpenPauseMenu();
         }
