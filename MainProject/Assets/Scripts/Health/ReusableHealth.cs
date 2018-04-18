@@ -333,14 +333,6 @@ public class ReusableHealth : MonoBehaviour
             if (healthValue < 0)
             {
                 healthValue = 0;
-                if (AudioManage.inst.combatMusic != null)
-                {
-                    if (AudioManage.inst.combatMusic.isPlaying == true)
-                    {
-                        AudioManage.inst.combatMusic.Stop();
-                    }
-                }
-
             }
             if (armorValue < 0)
             {
@@ -489,13 +481,6 @@ public class ReusableHealth : MonoBehaviour
         if (this.gameObject.GetComponent<ReusableHealth>().healthValue <= 0)
         {
             Invoke("PlayExplosion", 1.65f);
-            if (AudioManage.inst.combatMusic != null)
-            {
-                if (AudioManage.inst.combatMusic.isPlaying == true)
-                {
-                    AudioManage.inst.combatMusic.Stop();
-                }
-            }
 
             if (this.gameObject.tag == "enemy")
             {

@@ -69,12 +69,6 @@ public class TurretAI : MonoBehaviour
 
     }
 
-    private void OnDisable() //Disable combat moosic
-    {
-        AudioManage.inst.combatMusic.Stop();
-    }
-
-
     void Update()
     {
         timer += Time.deltaTime;

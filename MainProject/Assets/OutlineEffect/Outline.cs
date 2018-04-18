@@ -163,7 +163,14 @@ namespace cakeslice
             else //Hide this outline
             {
                 eraseRenderer = true;
-                mainCameraEffectScript.RemoveOutline(this);
+                try
+                {
+                    mainCameraEffectScript.RemoveOutline(this);
+                }
+                catch
+                {
+                    int fakeError = 1;
+                }
             }
         }
 
