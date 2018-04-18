@@ -6882,8 +6882,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 311.3977, y: 248.69789, z: -226.46457}
+  m_LocalRotation: {x: -0, y: -0.7059533, z: -0, w: -0.7082584}
+  m_LocalPosition: {x: -299.57, y: 6.858, z: -321.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -8826,7 +8826,7 @@ MonoBehaviour:
   slopeLimit: 45
   cameraType: 0
   fieldOfView: 60
-  cameraXAxisSensitivity: 4
+  cameraXAxisSensitivity: 5
   cameraYAxisSensitivity: 4
   cameraYClampValue: 80
   invertYAxis: 0
@@ -8949,8 +8949,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToTriggerShake: -25
-  shakeAmount: 0.15
-  shakeTime: 0.5
+  shakeAmount: 0.19
+  shakeTime: 0.38
   layer:
     serializedVersion: 2
     m_Bits: 32769
@@ -8987,7 +8987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb0b55f04939144cbcae4eb9feb3c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportEnabled: 1
+  teleportEnabled: 0
   teleportKeyCode: 102
   castTeleportLayers:
     serializedVersion: 2
@@ -9003,7 +9003,7 @@ MonoBehaviour:
   cooldown: 0
   isTeleporting: 0
   teleportExitPending: 0
-  teleportCoolDown: 2
+  teleportCoolDown: 1.5
   currentTeleportDirection: 0
   lastTeleportDirection: 0
   teleportIndicator: {fileID: 1696088197617024, guid: ea107b7ecabe52b4a8900f228dc90b9f,
@@ -9049,7 +9049,7 @@ MonoBehaviour:
   defaultFOV: 0
   zoomAmount: 20
   zoomSpeed: 0.65
-  amountToSlowDownDuringZoom: 3
+  amountToSlowDownDuringZoom: 3.55
 --- !u!114 &114704878897406090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9074,10 +9074,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea375bc33d8a20b46a1348af92335de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrappleAllowed: 1
+  isGrappleAllowed: 0
   grappleRange: 35
-  grappleSpeed: 55
-  grappleCooldown: 1
+  grappleSpeed: 65
+  grappleCooldown: 0.75
   grapplePointLayer: 9
   grappleLayerMask:
     serializedVersion: 2
@@ -23683,7 +23683,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1310259218
+  randomSeed: -1480308025
   InitialModule:
     serializedVersion: 3
     enabled: 1
