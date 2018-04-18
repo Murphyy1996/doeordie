@@ -69,6 +69,11 @@ public class TurretAI : MonoBehaviour
 
     }
 
+    private void OnDisable()
+    {
+        AudioManage.inst.combatMusic.Stop();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -226,11 +231,7 @@ public class TurretAI : MonoBehaviour
         }
         else
         {
-            //return;
-            if (AudioManage.inst.combatMusic != null)
-            {
-                AudioManage.inst.combatMusic.Stop();
-            }
+            return;
         }
 
     }
