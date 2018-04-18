@@ -12,7 +12,7 @@ public class Shoot : Action
     Animator rangedAnim;
     GameObject bullet, muzzleFlash;
     Transform playerTransform, bulletOrigin;
-    int shootDamage = 10;
+    public int shootDamage = 10;
 
     public override void OnStart()
     {

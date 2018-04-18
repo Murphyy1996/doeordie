@@ -7,6 +7,7 @@ using BehaviorDesigner.Runtime.Tasks;
 public class Attack : Action
 {
 
+    public int damageToPlayer = 5;
     private Transform playerTransform;
 
     public override void OnStart()
@@ -26,7 +27,7 @@ public class Attack : Action
         transform.rotation = Quaternion.Slerp(transform.rotation, tarRot, Time.smoothDeltaTime * 50f); //Add variable for alert turn speed
 
         //Apply damage when player is hit
-        playerTransform.GetComponent<ReusableHealth>().ApplyDamage(5);
+        playerTransform.GetComponent<ReusableHealth>().ApplyDamage(damageToPlayer);
 
         return TaskStatus.Success; 
 
