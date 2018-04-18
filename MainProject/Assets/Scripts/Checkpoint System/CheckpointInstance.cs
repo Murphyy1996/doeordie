@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class CheckpointInstance : MonoBehaviour
 {
+    private ReusableHealth playerHealth;
+
     //Make sure the checkpoint is invisible
     private void Start()
     {
         GetComponent<MeshRenderer>().enabled = false;
+        playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
     }
 
     private void OnTriggerEnter(Collider otherObject)
@@ -17,7 +20,7 @@ public class CheckpointInstance : MonoBehaviour
         //If the other object is the player
         if (otherObject.tag == "Player")
         {
-            if (CheckpointManager.singleton != null)
+            if (CheckpointManager.singleton != null && playerHealth.healthValue > 0)
             {
                 //Do not set the checkpoint multiple times
                 if (CheckpointManager.singleton.GetCurrentCheckpoint() != this.gameObject)

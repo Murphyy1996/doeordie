@@ -18,6 +18,10 @@ public class InstantKill : MonoBehaviour
         {
             other.gameObject.GetComponent<ReusableHealth>().healthValue = 0;
             other.gameObject.GetComponent<ReusableHealth>().CheckToSeeIfDead();
+            if (other.gameObject.GetComponent<Grapple>() != null)
+            {
+                other.gameObject.GetComponent<Grapple>().ExitGrapple();
+            }
         }
     }
 }

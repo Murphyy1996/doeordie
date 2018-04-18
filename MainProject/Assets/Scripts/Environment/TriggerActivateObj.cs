@@ -11,6 +11,7 @@ public class TriggerActivateObj : MonoBehaviour
     [SerializeField]
     private GameObject[] objsToTurnOff;
     private Collider thisCollider;
+    private ReusableHealth playerHealth;
 
     private void Start()
     {
@@ -37,12 +38,13 @@ public class TriggerActivateObj : MonoBehaviour
         {
             GetComponent<MeshRenderer>().enabled = false;
         }
+        playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
     }
 
     //Test to see if the player has entered the collider
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && playerHealth.healthValue > 0)
         {
             if (objsToActivate.Length != 0)
             {
