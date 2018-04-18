@@ -796,12 +796,13 @@ MonoBehaviour:
   turnSpeed: 1
   timeBetweenShots: 1
   turretDamage: 5
-  maxSightDistance: 20
+  maxSightDistance: 17
   maxFieldOfView: 20
   rayLayer:
     serializedVersion: 2
     m_Bits: 573713
   lookAnim: {fileID: 111607812029087764}
+  manuallyTriggerAttack: 0
   currentState: 1
 --- !u!114 &114082388618863546
 MonoBehaviour:
@@ -883,6 +884,7 @@ MonoBehaviour:
     mPropertyMappingOwner: {fileID: 0}
     mNetworkSync: 0
     mValue: 0
+  clipToPlay: {fileID: 0}
   healthBox: {fileID: 0}
   wepToDrop: {fileID: 0}
   bloods: {fileID: 1692625562509538, guid: 050ac1ec8a0acc947a78a6132593b54b, type: 2}
