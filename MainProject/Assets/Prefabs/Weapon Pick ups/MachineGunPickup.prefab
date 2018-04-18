@@ -132,6 +132,10 @@ MonoBehaviour:
   color: 1
   eraseRenderer: 0
   hideBehindObjects: 1
+  pickUpOutlineRange: 50
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114113753389496080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,9 +151,9 @@ MonoBehaviour:
   weaponModelToSpawn: {fileID: 1039733901574872, guid: f98b6db537a67f34993eb9f65add703c,
     type: 2}
   weaponModel: 2
-  damage: 10
+  damage: 9
   fireDelay: 0.1
-  recoilStrength: 0.6
+  recoilStrength: 0.65
   pickUpAmmo: 40
   holdDownToShoot: 1
 --- !u!114 &114442055011901816
