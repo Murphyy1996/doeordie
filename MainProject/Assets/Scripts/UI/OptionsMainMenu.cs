@@ -6,6 +6,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.IO;
+using System;
+using UnityEngine.PostProcessing;
 
 public class OptionsMainMenu : MonoBehaviour
 {
@@ -35,15 +39,183 @@ public class OptionsMainMenu : MonoBehaviour
     private Dropdown resolutionDropdown;
     [SerializeField]
     private Slider volume;
+    private string optionsPath;
 
     private void Awake() //Get any required components if neccesary
     {
         optionsSingletonReference = GameObject.Find("OptionsManager").GetComponent<OptionsConfig>();
 
         //Read options file
-
+        LoadGame();
         //Mark the initial load as completed
         initialLoadCompleted = true;
+    }
+
+    private void LoadGame() //Will load options if possible
+    {
+        //Get the file path of the leadboard file
+        optionsPath = Environment.CurrentDirectory + @"\Options.txt";
+        if (File.Exists(optionsPath))
+        {
+            int lineCount = 0;
+            //Open the leaderboard file to read from.
+            foreach (string line in File.ReadAllLines(optionsPath))
+            {
+                lineCount++;
+                if (line != "")
+                {
+                    if (lineCount == 1)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            invertTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            invertTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 2)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            windowedTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            windowedTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 3)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            sprintTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            sprintTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 4)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            zoomTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            zoomTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 5)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            crouchTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            crouchTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 6)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            vSyncTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            vSyncTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 7) //crouch
+                    {
+
+                        OptionsConfig.inst.crouchKeycode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
+                    }
+                    else if (lineCount == 8) //grapple
+                    {
+                        OptionsConfig.inst.grappleKeycode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
+                    }
+                    else if (lineCount == 9) //sprint
+                    {
+                        OptionsConfig.inst.sprintKeycode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
+                    }
+                    else if (lineCount == 10) //doom
+                    {
+                        OptionsConfig.inst.zoomKeycode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
+                    }
+                    else if (lineCount == 11) //volume - has some problem
+                    {
+                        volume.value = int.Parse(line.ToString());
+                    }
+                    else if (lineCount == 12)  //res
+                    {
+                        resolutionDropdown.value = int.Parse(line.ToString());
+                    }
+                    else if (lineCount == 13)  //post P
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            postProcessingTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            postProcessingTogRef.isOn = false;
+                        }
+                    }
+                    else if (lineCount == 14)
+                    {
+                        //float amount = int.Parse(line.ToString());
+                        //OptionsConfig.inst.mouseX.value = amount;
+                    }
+                    else if (lineCount == 15)
+                    {
+                        //float amount = int.Parse(line.ToString());
+                        //OptionsConfig.inst.mouseY.value = amount;
+                    }
+                    else if (lineCount == 16)
+                    {
+                        OptionsConfig.inst.weaponSwapcode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
+                    }
+                }
+            }
+        }
+    }
+    public void SaveGame() //Save the current options into the options file
+    {
+        //Get the file path of the leadboard file
+        optionsPath = Environment.CurrentDirectory + @"\Options.txt";
+
+
+        //Check if the file path exists and if not create it
+        // Create a file to write to.
+        using (StreamWriter currentLine = File.CreateText(optionsPath))
+        {
+            //SAVES ALL THE TOGGLE VALUES
+            currentLine.WriteLine(invertTogRef.isOn); //save the state of the camera invert 1
+            currentLine.WriteLine(windowedTogRef.isOn);//save the state of the fullscreen 2 
+            currentLine.WriteLine(sprintTogRef.isOn); //save the sprint toggle value 3
+            currentLine.WriteLine(zoomTogRef.isOn); //save zoom toggle value 4 
+            currentLine.WriteLine(crouchTogRef.isOn); //crouch toggle value 5
+            currentLine.WriteLine(vSyncTogRef.isOn); // vsync toggle  value 6
+            //SAVE THE KEYBIND VALUES
+            currentLine.WriteLine(optionsSingletonReference.crouchKeycode.ToString()); // crouch keycode value 7
+            currentLine.WriteLine(optionsSingletonReference.grappleKeycode.ToString()); // vsync toggle  value   8
+            currentLine.WriteLine(optionsSingletonReference.sprintKeycode.ToString()); // vsync toggle  value   9
+            currentLine.WriteLine(optionsSingletonReference.zoomKeycode.ToString()); // vsync toggle  value   10
+            //SAVE VOLUME
+            currentLine.WriteLine(volume.value.ToString()); // vsync toggle  value   11
+                                                            //SAVE RES VALUE
+            currentLine.WriteLine(resolutionDropdown.value.ToString()); // vsync toggle  value   12
+            currentLine.WriteLine(postProcessingTogRef.isOn); //save whether the post proccessing is on or not 13
+            currentLine.WriteLine(0); //saves the value of the mouse sensitibity onther x axis    14
+            currentLine.WriteLine(0); //saves the value of the mouse sensitibity onther y axis    15
+            currentLine.WriteLine(optionsSingletonReference.weaponSwapcode.ToString()); //116
+
+        }
     }
     private void Update()
     {
