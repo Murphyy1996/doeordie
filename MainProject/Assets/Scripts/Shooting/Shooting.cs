@@ -362,6 +362,10 @@ public class Shooting : MonoBehaviour
                             case WeaponInfo.weapon.machineGun:
                                     AudioManage.inst.machShot.Play();
                                 break;
+
+                            case WeaponInfo.weapon.shotgun:
+                                    AudioManage.inst.shotgun.Play();
+                                    break;
                         }
                     }
                     catch

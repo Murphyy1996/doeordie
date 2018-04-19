@@ -1851,6 +1851,7 @@ GameObject:
   - component: {fileID: 82743284834736190}
   - component: {fileID: 82587184310129734}
   - component: {fileID: 82999524270196900}
+  - component: {fileID: 82735304452707244}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -7695,7 +7696,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -8108,6 +8109,86 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!82 &82735304452707244
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456101617986670}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ac20621665ea36c4db27977f3644bb7f, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!82 &82743284834736190
 AudioSource:
   m_ObjectHideFlags: 1
@@ -8117,7 +8198,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9da4f47a923968c469f963b3a5368bc8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 21139958fb2d4364ca1e03557f24a528, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8495,7 +8576,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -8764,8 +8845,9 @@ MonoBehaviour:
   bulletEnvironment: {fileID: 82743284834736190}
   falling: {fileID: 82587184310129734}
   pickUp: {fileID: 82999524270196900}
-  walking: {fileID: 8300000, guid: 142529350eb7c7346baaffab723ceb79, type: 3}
-  running: {fileID: 8300000, guid: c82c597b8c679db4185e6d05f573d58e, type: 3}
+  shotgun: {fileID: 82735304452707244}
+  walking: {fileID: 8300000, guid: 890622fc4f0f3f842bb8ebcbfa957be1, type: 3}
+  running: {fileID: 8300000, guid: 17cdd80507a7447438c1d610c48e731f, type: 3}
 --- !u!114 &114305613708270920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8949,7 +9031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountToTriggerShake: -25
-  shakeAmount: 0.19
+  shakeAmount: 0.15
   shakeTime: 0.38
   layer:
     serializedVersion: 2
@@ -9176,6 +9258,7 @@ MonoBehaviour:
     type: 2}
   optionsPrefab: {fileID: 1862540417847076, guid: ea6347d208f74ba4f868ce344107b5ed,
     type: 2}
+  paused: 1
 --- !u!114 &114906111210062906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23683,7 +23766,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1480308025
+  randomSeed: -1911980974
   InitialModule:
     serializedVersion: 3
     enabled: 1
