@@ -131,6 +131,8 @@ public class InGamePause : MonoBehaviour
         AudioManage.inst.slide.Stop();
         AudioManage.inst.grapple.Stop();
         AudioManage.inst.pistolShot.Stop();
+        AudioManage.inst.machShot.Stop();
+        Debug.Log(AudioManage.inst.pistolShot.isPlaying);
         if (AudioManage.inst.background != null)
         {
             AudioManage.inst.background.Stop();
