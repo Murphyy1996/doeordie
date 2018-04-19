@@ -304,4 +304,13 @@ public class OptionsMainMenu : MonoBehaviour
         miscOptionsTab.SetActive(true);
         controlOptionsTab.SetActive(false);
     }
+
+    public void ResetButtonKeycodes()
+    {
+        optionsSingletonReference.sprintKeycode = KeyCode.LeftShift;
+        optionsSingletonReference.zoomKeycode = KeyCode.Mouse2;
+        optionsSingletonReference.grappleKeycode = KeyCode.Mouse1;
+        optionsSingletonReference.crouchKeycode = KeyCode.LeftControl;
+        optionsSingletonReference.weaponSwapcode = KeyCode.Q;
+    }
 }
