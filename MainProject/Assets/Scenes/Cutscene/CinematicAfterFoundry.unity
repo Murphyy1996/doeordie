@@ -209,67 +209,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114023061001496882, guid: fad1269b50c03a241b154face37b31e7,
+    - target: {fileID: 223130671724864012, guid: fad1269b50c03a241b154face37b31e7,
         type: 2}
-      propertyPath: sceneNameToLoadAfterCutscene
-      value: Boss
+      propertyPath: m_SortingOrder
+      value: 99
       objectReference: {fileID: 0}
-    - target: {fileID: 114411366486744858, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114025255833013956, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114025255833013956, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 114025255833013956, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 224479898089169496, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.3360301
-      objectReference: {fileID: 0}
-    - target: {fileID: 224479898089169496, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.2953864
-      objectReference: {fileID: 0}
-    - target: {fileID: 224479898089169496, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23068386435938700, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 49c2a1c66b6c9fe4b81f98bd237f2e58, type: 2}
-    - target: {fileID: 114023061001496882, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: cutsceneToPlay
-      value: 
-      objectReference: {fileID: 15200000, guid: 0f339e0e8a2112d4e86f08d7dd5e0ea4,
-        type: 3}
-    - target: {fileID: 114023061001496882, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: cutsceneLength
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 82400871515745902, guid: fad1269b50c03a241b154face37b31e7,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0f339e0e8a2112d4e86f08d7dd5e0ea4, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fad1269b50c03a241b154face37b31e7, type: 2}
   m_IsPrefabParent: 0
