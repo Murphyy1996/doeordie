@@ -67,9 +67,11 @@ public class BossAI : MonoBehaviour
     private GameObject hatchToOpen;
     [SerializeField]
     private GameObject startingDialogue, finalPhaseDialogue, killBossDialogue;
+    private Shooting playerShootingScript;
 
     private void Start() //Get the default position and rotations
     {
+        playerShootingScript = GameObject.Find("Player").GetComponent<Shooting>();
         defaultPosition = transform.position;
         defaultRotation = transform.rotation;
         //Create the direction decide cube
@@ -133,6 +135,7 @@ public class BossAI : MonoBehaviour
     {
         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.machineGun, ammoToReplenishEachPhase);
         ammoManagerScript.SetAmmoAmount(AmmoManager.ammoType.shotgun, ammoToReplenishEachPhase);
+        playerShootingScript.ShowPickUpAmmoLabel();
         //Make kingsley say you have some ammo
         //QuestManager.inst.SubtitleText("Heres some ammo!", 3f);
     }
