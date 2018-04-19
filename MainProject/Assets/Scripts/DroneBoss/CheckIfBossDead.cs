@@ -20,6 +20,16 @@ public class CheckIfBossDead : MonoBehaviour
             }
             if (doorToTurnOff != null)
             {
+                //Destroy all small drones
+                GameObject[] foundEnemies = GameObject.FindGameObjectsWithTag("enemy");
+                foreach (GameObject enemy in foundEnemies)
+                {
+                    if (enemy.layer == 19)
+                    {
+                        Destroy(enemy.gameObject);
+                    }
+                }
+                //Turn on the kingsley door
                 doorToTurnOff.SetActive(false);
                 Destroy(this);
             }
