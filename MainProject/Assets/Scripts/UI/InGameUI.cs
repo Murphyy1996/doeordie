@@ -169,6 +169,14 @@ public class InGameUI : MonoBehaviour
         {
             //Stop the current clip
             AudioManage.inst.player.Stop();
+            //start crouching sounds
+            //check if crouching sounds are currently player and if not play the crouch sound
+            if (AudioManage.inst.crouch.isPlaying == false && move.GetCurrentSpeedandDirection().magnitude != 0)
+            {
+                AudioManage.inst.crouch.Play();
+                Debug.Log("Playing crouch noise");
+            }
+           
             //Load the sprite for the position indicator
             state.sprite = crouch;
         }

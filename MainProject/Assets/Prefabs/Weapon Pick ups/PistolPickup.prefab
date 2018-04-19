@@ -127,7 +127,7 @@ MonoBehaviour:
   weaponModelToSpawn: {fileID: 1979800240846160, guid: 79fef06cd7978fc49a8c497548db5942,
     type: 2}
   weaponModel: 0
-  damage: 7
+  damage: 5
   fireDelay: 0.1
   recoilStrength: 0.1
   pickUpAmmo: 50
@@ -146,3 +146,7 @@ MonoBehaviour:
   color: 1
   eraseRenderer: 0
   hideBehindObjects: 1
+  pickUpOutlineRange: 50
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0

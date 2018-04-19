@@ -2,7 +2,7 @@
 using UnityEngine;
 
 //Script author: James Murphy
-//Date Created: 09/032017
+//Date Created: 09/03/2017
 //Script purpose: Mouse look for the camera with clamp
 //Script location: On the camera object
 
@@ -57,7 +57,7 @@ public class FirstPersonCamera : MonoBehaviour
         defaultLocalPos = transform.localPosition;
     }
 
-    private void LateUpdate()
+    private void LateUpdate() //Camera movement code is here
     {
         //Get the character controller script
         if (ccMovement == null)
@@ -94,6 +94,12 @@ public class FirstPersonCamera : MonoBehaviour
             {
                 horizontalAxis += Input.GetAxis("Mouse X") * sensitivityX;
                 horizontalAxis = Mathf.Clamp(horizontalAxis, -horizontalClampValue, horizontalClampValue);
+            }
+            //If the camera has gone past the clamp
+            if (horizontalAxis > horizontalClampValue || horizontalAxis < -horizontalClampValue)
+            {
+                print("resetting the clamp");
+                horizontalAxis = 0;
             }
 
             //Run this code if gravity is enabled

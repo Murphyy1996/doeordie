@@ -12,7 +12,7 @@ public class AudioManage : MonoBehaviour
 
     public static AudioManage inst;
 
-    public AudioSource background, pistolShot, machShot, teleport, death, slide, grapple, player, combatMusic, bulletEnvironment, falling, pickUp;
+    public AudioSource background, pistolShot, machShot, teleport, death, slide, grapple, player, combatMusic, bulletEnvironment, falling, pickUp, shotgun, crouch;
     public AudioClip walking, running;
     CharacterControllerMovement thisCC;
 

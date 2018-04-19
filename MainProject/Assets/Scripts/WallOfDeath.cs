@@ -20,6 +20,6 @@ public class WallOfDeath : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, playerPosition.position, lerpSpeed);
-        transform.rotation = Quaternion.Slerp(transform.rotation, playerPosition.rotation, lerpSpeed);
+//        transform.rotation = Quaternion.Slerp(transform.rotation, playerPosition.rotation, lerpSpeed);
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class JumpUpandDown : MonoBehaviour
@@ -62,7 +63,14 @@ public class JumpUpandDown : MonoBehaviour
         gunLowerEmpty = gunLower.transform;
         //Set the default gun target
         gunLerpTarget = defaultGunPosition;
-        allowedToLerp = true;
+        if (SceneManager.GetActiveScene().name == "Boss")
+        {
+            allowedToLerp = false;
+        }
+        else
+        {
+            allowedToLerp = true;
+        }
     }
 
 

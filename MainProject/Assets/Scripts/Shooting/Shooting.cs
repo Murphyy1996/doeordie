@@ -46,6 +46,7 @@ public class Shooting : MonoBehaviour
     private int outOfAmmoCount = 0;
     private Text outOfAmmoPrompt;
     private Grapple grappleScript;
+    private Canvas pauseMenu, optionsMenu;
 
     private float pickUpAmmoTimer = 999, pickUpAmmoLimit = 2;
 
@@ -86,6 +87,8 @@ public class Shooting : MonoBehaviour
     private void DelayedAwake() //Get the out of ammo prompt
     {
         outOfAmmoPrompt = GameObject.Find("OutOfAmmoPrompt").GetComponent<Text>();
+        pauseMenu = GameObject.Find("Pause menu").GetComponent<Canvas>();
+        optionsMenu = GameObject.Find("OptionsMenu").GetComponent<Canvas>();
     }
 
     private void Start()
@@ -296,8 +299,10 @@ public class Shooting : MonoBehaviour
         //    print("gun cooldown finished? " + gunCooldownFinished);
         //    print("weapon change cooldown finished? " + weaponChangeCooldownFinished);
         //}
-        //Do not allow if there is no currently selected weapon
-        if (currentWeaponScript != null && currentWeaponObj != null && allowedToShoot == true && CheckIfYouHaveEnoughAmmoToShoot() == true && gunCooldownFinished == true && weaponChangeCooldownFinished == true)
+        if (pauseMenu != null && optionsMenu != null)
+        {
+//Do not allow if there is no currently selected weapon
+        if (currentWeaponScript != null && currentWeaponObj != null && allowedToShoot == true && CheckIfYouHaveEnoughAmmoToShoot() == true && gunCooldownFinished == true && weaponChangeCooldownFinished == true && pauseMenu.enabled == false && optionsMenu.enabled == false)
         {
             //This if will shoot the bullet and remove the relevant ammo
             if (Input.GetMouseButton(0) && Time.timeScale != 0 && currentWeaponScript.holdDownToShoot == true || Input.GetMouseButtonDown(0) && Time.timeScale != 0 && currentWeaponScript.holdDownToShoot == false)
@@ -350,13 +355,17 @@ public class Shooting : MonoBehaviour
                         switch (currentWeaponScript.weaponModel)
                         {
                             case WeaponInfo.weapon.pistol:
-                                AudioManage.inst.pistolShot.Play();
+                                    AudioManage.inst.pistolShot.Play();                              
                                 break;
 
 
                             case WeaponInfo.weapon.machineGun:
-                                AudioManage.inst.machShot.Play();
+                                    AudioManage.inst.machShot.Play();
                                 break;
+
+                            case WeaponInfo.weapon.shotgun:
+                                    AudioManage.inst.shotgun.Play();
+                                    break;
                         }
                     }
                     catch
@@ -437,6 +446,8 @@ public class Shooting : MonoBehaviour
         {
             isShooting = false;
         }
+        }
+        
     }
 
     private void StopShotgunAnimation()

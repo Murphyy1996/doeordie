@@ -36,6 +36,7 @@ public class ReusableHealth : MonoBehaviour
     [SerializeField] private GameObject bloods;
     [SerializeField] private ParticleSystem explos;
     [SerializeField] private GameObject workingExplosion;
+    private CharacterControllerMovement playerCC;
 
     private int decidingPoint;
     bool wepDropped = false, playerDied = false;
@@ -47,6 +48,12 @@ public class ReusableHealth : MonoBehaviour
 
     private void Start()
     {
+
+        //If this object is player
+        if (this.gameObject.name == "Player")
+        {
+            playerCC = GetComponent<CharacterControllerMovement>();
+        }
         //Only run this code if allowed to glow when damaged
         if (glowWhenDamaged == true)
         {
@@ -344,7 +351,10 @@ public class ReusableHealth : MonoBehaviour
                 InGameUI.inst.makeBarBigger(1.2f);
                 //Make a shot force exit the players grapple
                 GetComponent<Grapple>().ExitGrapple();
-                this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.2f, 0.1f);
+                if (playerCC.ReturnObjectPlayerIsStandingOnAccurate() != null)
+                {
+                    this.gameObject.AddComponent<BossCameraShake>().ShakeitShakeit(0.2f, 0.1f);
+                }
             }
             else if (Time.timeScale == 0)
             {

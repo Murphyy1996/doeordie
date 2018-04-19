@@ -18,10 +18,16 @@ public class InGamePause : MonoBehaviour
     private ReusableHealth playerHealth;
     private GameObject foundDeathScreen;
     private Image deathScreenImage;
+    public bool paused = false;
+    public static InGamePause inst;
+
+    
+
 
 
     private void Start()
     {
+        inst = this;
         playerHealth = GetComponent<ReusableHealth>();
         if (pauseMenuPrefab != null)
         {
@@ -138,7 +144,7 @@ public class InGamePause : MonoBehaviour
             AudioManage.inst.background.Stop();
         }
         shouldbeVisible = true;
-
+        paused = true;
     }
 
     public void ClosePauseMenu()
@@ -170,6 +176,7 @@ public class InGamePause : MonoBehaviour
     public void ContinueButton()
     {
         ClosePauseMenu();
+        paused = false;
     }
 
     public void ReturnToMenuButton()
@@ -186,6 +193,7 @@ public class InGamePause : MonoBehaviour
     {
         GameObject.Find("OptionsMenu").GetComponent<Canvas>().enabled = true;
         ClosePauseMenu();
+        paused = true;
         if (GameObject.Find("OptionsMenu").GetComponent<Canvas>().enabled == false)
         {
             OpenPauseMenu();
