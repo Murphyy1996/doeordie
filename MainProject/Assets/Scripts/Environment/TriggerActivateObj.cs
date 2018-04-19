@@ -44,6 +44,10 @@ public class TriggerActivateObj : MonoBehaviour
     //Test to see if the player has entered the collider
     private void OnTriggerEnter(Collider other)
     {
+        if (playerHealth == null)
+        {
+            playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
+        }
         if (other.tag == "Player" && playerHealth.healthValue > 0)
         {
             if (objsToActivate.Length != 0)
