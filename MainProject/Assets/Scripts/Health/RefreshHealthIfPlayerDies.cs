@@ -10,10 +10,12 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
 {
     private ReusableHealth thisHealth, playerHealth;
     [SerializeField]
-    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false, restartSceneUponPlayerDeath = false, respawnPickups = true;
+    private bool refreshPositionUponPlayerDeath = false, destroyAllSpawnedDrones = false, restartSceneUponPlayerDeath = false, respawnPickups = true, respawnViaTimer = false;
     private Vector3 defaultPosition;
     private GameObject[] foundPickups;
-
+    private float timer = 0;
+    [SerializeField]
+    private float timeToSpawnPickUpsAfter = 30;
     // Use this for initialization
     private void Start()
     {
@@ -22,7 +24,7 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
         playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
         defaultPosition = transform.position;
         foundPickups = GameObject.FindGameObjectsWithTag("Pickup");
-        
+
         //Delete this script is the required references are not got
         if (thisHealth == null || playerHealth == null)
         {
@@ -36,8 +38,10 @@ public class RefreshHealthIfPlayerDies : MonoBehaviour
         //If the players health is zero or below
         if (thisHealth != null && playerHealth != null)
         {
-            if (playerHealth.healthValue <= 0)
+            timer = timer + Time.fixedDeltaTime;
+            if (playerHealth.healthValue <= 0 || timer > timeToSpawnPickUpsAfter && respawnViaTimer == true)
             {
+                timer = 0;
                 //Restart the scene upon player death - Useful for the boss
                 if (restartSceneUponPlayerDeath == true)
                 {
