@@ -627,6 +627,7 @@ MonoBehaviour:
   droneBounceValue: 200
   canBeTriggeredByOtherDrones: 1
   explosObj: {fileID: 1317293259946584}
+  isAttackingPlayer: 0
 --- !u!114 &114242299568251310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -674,6 +675,7 @@ MonoBehaviour:
     mPropertyMappingOwner: {fileID: 0}
     mNetworkSync: 0
     mValue: 0
+  clipToPlay: {fileID: 0}
   healthBox: {fileID: 0}
   wepToDrop: {fileID: 0}
   bloods: {fileID: 0}
@@ -743,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89100fa6aaf9fdc47843ee8a8caf8674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 4
+  attackDamage: 20
   knifeSpeed: 8
   attackCooldownTime: 2
   damageCooldownTime: 1
