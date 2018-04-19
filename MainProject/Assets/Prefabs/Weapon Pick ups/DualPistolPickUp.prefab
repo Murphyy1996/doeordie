@@ -187,7 +187,7 @@ MonoBehaviour:
   weaponModel: 1
   damage: 14
   fireDelay: 0.1
-  recoilStrength: 0.3
+  recoilStrength: 0.357
   pickUpAmmo: 50
   holdDownToShoot: 1
 --- !u!114 &114594692099081322
@@ -218,3 +218,7 @@ MonoBehaviour:
   color: 1
   eraseRenderer: 0
   hideBehindObjects: 1
+  pickUpOutlineRange: 50
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0

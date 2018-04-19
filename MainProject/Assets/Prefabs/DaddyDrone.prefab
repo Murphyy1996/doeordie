@@ -565,9 +565,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1097620416224886}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 3
-  m_AngularDrag: 2
+  m_Mass: 6.96
+  m_Drag: 6.5
+  m_AngularDrag: 5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -766,10 +766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1002bac73bb51f45b51c8552835275d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthValue: 350
-  armorValue: 300
-  maxHealth: 350
-  maxArmor: 300
+  healthValue: 700
+  armorValue: 0
+  maxHealth: 700
+  maxArmor: 0
   destroyAfterDeath: 1
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
@@ -828,8 +828,8 @@ MonoBehaviour:
     m_Bits: 49409
   patrolRange: 10
   selectedPatrolDirection: 1
-  movementSpeed: 15
-  turningSpeed: 5
+  movementSpeed: 20
+  turningSpeed: 10
   collisionCheckLayerMask:
     serializedVersion: 2
     m_Bits: 49153
@@ -840,6 +840,7 @@ MonoBehaviour:
   droneBounceValue: 150
   canBeTriggeredByOtherDrones: 1
   explosObj: {fileID: 1019455838995662}
+  isAttackingPlayer: 0
 --- !u!114 &114975907417968864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -851,7 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89100fa6aaf9fdc47843ee8a8caf8674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 4
+  attackDamage: 30
   knifeSpeed: 8
   attackCooldownTime: 2
   damageCooldownTime: 1
