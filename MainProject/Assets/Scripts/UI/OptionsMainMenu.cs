@@ -29,9 +29,12 @@ public class OptionsMainMenu : MonoBehaviour
     [SerializeField]
     private GameObject visualOptionsTab, controlOptionsTab, miscOptionsTab;
     private bool waitingForInput = false;
-
     private Event keyevent; //the event that occurs when a new key is being chosen.
     private KeyCode newKey = KeyCode.Numlock; //the refrence for the new keycode input that is added.
+    [SerializeField]
+    private Dropdown resolutionDropdown;
+    [SerializeField]
+    private Slider volume;
 
     private void Awake() //Get any required components if neccesary
     {
@@ -227,6 +230,26 @@ public class OptionsMainMenu : MonoBehaviour
             grappleInputText.text = optionsSingletonReference.grappleKeycode.ToString();
             swapInputText.text = optionsSingletonReference.weaponSwapcode.ToString();
             sprintInputText.text = optionsSingletonReference.sprintKeycode.ToString();
+
+            //Control the game resolution
+            switch (resolutionDropdown.value)
+            {
+                case 0:
+                    Screen.SetResolution(1920, 1080, Screen.fullScreen);
+                    break;
+                case 1:
+                    Screen.SetResolution(1440, 900, Screen.fullScreen);
+                    break;
+                case 2:
+                    Screen.SetResolution(1366, 768, Screen.fullScreen);
+                    break;
+                case 3:
+                    Screen.SetResolution(1280, 720, Screen.fullScreen);
+                    break;
+            }
+
+            //Control game volume
+            AudioListener.volume = volume.value;
         }
     }
 
