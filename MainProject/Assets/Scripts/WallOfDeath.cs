@@ -5,10 +5,10 @@ using UnityEngine;
 public class WallOfDeath : MonoBehaviour
 {
     [SerializeField]
-    float speed = 1f;
+    float lerpSpeed = 1f;
 
     [SerializeField]
-    GameObject player;
+    Transform playerPosition; 
 
     // Use this for initialization
     void Start()
@@ -19,6 +19,7 @@ public class WallOfDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		
+        transform.position = Vector3.Lerp(transform.position, playerPosition.position, lerpSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, playerPosition.rotation, lerpSpeed);
     }
 }
