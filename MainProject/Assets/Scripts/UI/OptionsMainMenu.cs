@@ -28,6 +28,10 @@ public class OptionsMainMenu : MonoBehaviour
     private bool initialLoadCompleted = false;
     [SerializeField]
     private GameObject visualOptionsTab, controlOptionsTab, miscOptionsTab;
+    private bool waitingForInput = false;
+
+    private Event keyevent; //the event that occurs when a new key is being chosen.
+    private KeyCode newKey = KeyCode.Numlock; //the refrence for the new keycode input that is added.
 
     private void Awake() //Get any required components if neccesary
     {
@@ -105,13 +109,152 @@ public class OptionsMainMenu : MonoBehaviour
             {
                 Screen.fullScreen = false;
             }
-            //Update the values of the button inputs
+
+            //If an input has been pressed, stop other toggles being interactable
+            if (zoomKeycodeRef.isOn == true)
+            {
+                waitingForInput = true;
+                zoomKeycodeRef.interactable = true;
+                sprintKeycodeRef.interactable = false;
+                crouchKeycodeRef.interactable = false;
+                grappleKeycodeRef.interactable = false;
+                weaponSwapKeycodeRef.interactable = false;
+                if (newKey != KeyCode.Numlock)
+                {
+                    //Set the key to the new key
+                    optionsSingletonReference.zoomKeycode = newKey;
+                    //Make sure no more inputs can be made
+                    waitingForInput = false;
+                    //Turn off this toggle as its no longer needed
+                    zoomKeycodeRef.isOn = false;
+                    //Set new key back to the default key
+                    newKey = KeyCode.Numlock;
+                }
+            }
+            else if (sprintKeycodeRef.isOn == true)
+            {
+                waitingForInput = true;
+                zoomKeycodeRef.interactable = false;
+                sprintKeycodeRef.interactable = true;
+                crouchKeycodeRef.interactable = false;
+                grappleKeycodeRef.interactable = false;
+                weaponSwapKeycodeRef.interactable = false;
+                if (newKey != KeyCode.Numlock)
+                {
+                    //Set the key to the new key
+                    optionsSingletonReference.sprintKeycode = newKey;
+                    //Make sure no more inputs can be made
+                    waitingForInput = false;
+                    //Turn off this toggle as its no longer needed
+                    sprintKeycodeRef.isOn = false;
+                    //Set new key back to the default key
+                    newKey = KeyCode.Numlock;
+                }
+            }
+            else if (crouchKeycodeRef.isOn == true)
+            {
+                waitingForInput = true;
+                zoomKeycodeRef.interactable = false;
+                sprintKeycodeRef.interactable = false;
+                crouchKeycodeRef.interactable = true;
+                grappleKeycodeRef.interactable = false;
+                weaponSwapKeycodeRef.interactable = false;
+                if (newKey != KeyCode.Numlock)
+                {
+                    //Set the key to the new key
+                    optionsSingletonReference.crouchKeycode = newKey;
+                    //Make sure no more inputs can be made
+                    waitingForInput = false;
+                    //Turn off this toggle as its no longer needed
+                    crouchKeycodeRef.isOn = false;
+                    //Set new key back to the default key
+                    newKey = KeyCode.Numlock;
+                }
+            }
+            else if (grappleKeycodeRef.isOn == true)
+            {
+                waitingForInput = true;
+                zoomKeycodeRef.interactable = false;
+                sprintKeycodeRef.interactable = false;
+                crouchKeycodeRef.interactable = false;
+                grappleKeycodeRef.interactable = true;
+                weaponSwapKeycodeRef.interactable = false;
+                if (newKey != KeyCode.Numlock)
+                {
+                    //Set the key to the new key
+                    optionsSingletonReference.grappleKeycode = newKey;
+                    //Make sure no more inputs can be made
+                    waitingForInput = false;
+                    //Turn off this toggle as its no longer needed
+                    grappleKeycodeRef.isOn = false;
+                    //Set new key back to the default key
+                    newKey = KeyCode.Numlock;
+                }
+            }
+            else if (weaponSwapKeycodeRef.isOn == true)
+            {
+                waitingForInput = true;
+                zoomKeycodeRef.interactable = false;
+                sprintKeycodeRef.interactable = false;
+                crouchKeycodeRef.interactable = false;
+                grappleKeycodeRef.interactable = false;
+                weaponSwapKeycodeRef.interactable = true;
+                if (newKey != KeyCode.Numlock)
+                {
+                    //Set the key to the new key
+                    optionsSingletonReference.weaponSwapcode = newKey;
+                    //Make sure no more inputs can be made
+                    waitingForInput = false;
+                    //Turn off this toggle as its no longer needed
+                    weaponSwapKeycodeRef.isOn = false;
+                    //Set new key back to the default key
+                    newKey = KeyCode.Numlock;
+                }
+            }
+            else
+            {
+                waitingForInput = false;
+                zoomKeycodeRef.interactable = true;
+                sprintKeycodeRef.interactable = true;
+                crouchKeycodeRef.interactable = true;
+                grappleKeycodeRef.interactable = true;
+                weaponSwapKeycodeRef.interactable = true;
+            }
+
+            //Update the string of the button inputs
             zoomInputText.text = optionsSingletonReference.zoomKeycode.ToString();
             crouchInputText.text = optionsSingletonReference.crouchKeycode.ToString();
             grappleInputText.text = optionsSingletonReference.grappleKeycode.ToString();
             swapInputText.text = optionsSingletonReference.weaponSwapcode.ToString();
             sprintInputText.text = optionsSingletonReference.sprintKeycode.ToString();
+        }
+    }
 
+    private void OnGUI() //Used for detecting key changes
+    {
+        keyevent = Event.current;
+        if (keyevent.isKey && waitingForInput == true)
+        {
+            newKey = keyevent.keyCode;
+            waitingForInput = false;
+        }
+        else if (waitingForInput == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                newKey = KeyCode.Mouse0;
+                waitingForInput = false;
+            }
+            if (Input.GetKeyDown(KeyCode.Mouse1))
+            {
+                newKey = KeyCode.Mouse1;
+                waitingForInput = false;
+            }
+            if (Input.GetKeyDown(KeyCode.Mouse2))
+            {
+                newKey = KeyCode.Mouse2;
+                waitingForInput = false;
+            }
         }
     }
 
