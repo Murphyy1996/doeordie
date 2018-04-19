@@ -6,8 +6,8 @@ public class PushPlayer : MonoBehaviour
 {
 
     private GameObject player;
-    private float pushDistance = 1f;
-    private Vector3 offset = new Vector3(-2f, 0f, 0f);
+    private float pushDistance = 2f;
+    private Vector3 offset = new Vector3(1f, 0f, 0f);
 
 	void Start () 
     {
@@ -20,10 +20,23 @@ public class PushPlayer : MonoBehaviour
         
         if (other.GetComponent<Collider>().tag == "Player")
         {
+            Debug.Log("col");
             Vector3 enemyPos = this.gameObject.transform.position;
-            Vector3 directionToPush = (enemyPos - player.transform.position);
+            Vector3 directionToPush = enemyPos - player.transform.position;
+   
+        }
+
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.GetComponent<Collider>().tag == "Player")
+        {
+            Debug.Log("col");
+            Vector3 enemyPos = this.gameObject.transform.position;
+            Vector3 directionToPush = enemyPos - player.transform.position;
             directionToPush.y = 0f;
-            player.transform.position += directionToPush + offset * pushDistance;
+            player.transform.position += offset * pushDistance * Time.deltaTime;
             //MovePlayer();
         }
 
