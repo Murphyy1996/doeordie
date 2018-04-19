@@ -16,9 +16,9 @@ public class OptionsConfig : MonoBehaviour
     public static OptionsConfig inst; //setting this script up as a singleton
     [SerializeField]
     [Header("Saved Options")]
-    private bool CamInvert = false;
+    public bool CamInvert = false;
     [SerializeField]
-    private bool sprintTog, CrouchTog, buttonPress = false, zoomToggleBool, vysncbool, postPEnabled = true; //by default the camera is not invert.
+    public bool sprintTog, CrouchTog, buttonPress = false, zoomToggleBool, vysncbool, postPEnabled = true; //by default the camera is not invert.
     [Header("Component References")]
     [SerializeField]
     private Toggle invertCamToggle;
@@ -36,7 +36,7 @@ public class OptionsConfig : MonoBehaviour
     private int lastKnownScene = 0;
     public Dropdown resolution;
     //Variables for setting keycodes
-    private KeyCode crouchKeycode = KeyCode.LeftControl, sprintKeycode = KeyCode.LeftShift, zoomKeycode = KeyCode.Mouse2, grappleKeycode = KeyCode.Mouse1, weaponSwapcode = KeyCode.Q;
+    public KeyCode crouchKeycode = KeyCode.LeftControl, sprintKeycode = KeyCode.LeftShift, zoomKeycode = KeyCode.Mouse2, grappleKeycode = KeyCode.Mouse1, weaponSwapcode = KeyCode.Q;
     private KeyCode defaultCrouchKeycode = KeyCode.LeftControl, defaultSprintKeycode = KeyCode.LeftShift, defaultZoomKeycode = KeyCode.Mouse2, defaultGrappleKeycode = KeyCode.Mouse1, defaultWeaponCode = KeyCode.Q;
     private bool runOnceKeyInput = false, warningActivation = false;
     private KeyCode newKey; //the refrence for the new keycode input that is added.
@@ -80,123 +80,130 @@ public class OptionsConfig : MonoBehaviour
     {
         //Don't destroy this object on load
         DontDestroyOnLoad(this);
-        //Get required components
-        LoadComponents();
-        //Get the player if possible
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        vol.value = 1;
-        Invoke("LoadOptions", 0.3f);
-        Invoke("DelayedStart", 1f);
-        inputWarning.enabled = false;
-        warningText.enabled = false;
+        if (SceneManager.GetActiveScene().name != "MainMenuTest")
+        {
+            //Get required components
+            LoadComponents();
+            //Get the player if possible
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            vol.value = 1;
+            Invoke("LoadOptions", 0.3f);
+            Invoke("DelayedStart", 1f);
+            inputWarning.enabled = false;
+            warningText.enabled = false;
+        }
     }
 
     private void LoadComponents() //This method will get the components
     {
-        if (invertCamToggle == null) //finds
-        {
-            invertCamToggle = GameObject.Find("InvertCam").GetComponent<Toggle>();
-        }
-        if (sprintToggle == null)  //finds
-        {
-            sprintToggle = GameObject.Find("SprintHold").GetComponent<Toggle>();
-        }
-        if (zoomTog == null)  //finds
-        {
-            zoomTog = GameObject.Find("ZoomTog").GetComponent<Toggle>();
-        }
-        if (fullscreen == null) //finds
-        {
-            fullscreen = GameObject.Find("Fullscreen").GetComponent<Toggle>();
-        }
-        if (vSync == null)
-        {
-            vSync = GameObject.Find("VSync").GetComponent<Toggle>();
-        }
-        if (vol == null)
-        {
-            vol = GameObject.Find("Volume").GetComponent<Slider>();
-        }
-        if (resolution == null)
-        {
-            resolution = GameObject.Find("Dropdown").GetComponent<Dropdown>();
-        }
-        if (crouchToggle == null)
-        {
-            crouchToggle = GameObject.Find("CrouchHold").GetComponent<Toggle>();
-        }
-        if (postPToggle == null)
-        {
-            postPToggle = GameObject.Find("PostP").GetComponent<Toggle>();
-        }
-        //Get the toggles for the input objects here
-        if (crouchInputKey == null)
+        if (SceneManager.GetActiveScene().name != "MainMenuTest")
         {
 
-            crouchInputKey = GameObject.Find("CrouchInput").GetComponent<Toggle>();
-            crouchKeyText = crouchInputKey.gameObject.GetComponentInChildren<Text>();
-            crouchKeyText.text = crouchKeycode.ToString();
+            if (invertCamToggle == null) //finds
+            {
+                invertCamToggle = GameObject.Find("InvertCam").GetComponent<Toggle>();
+            }
+            if (sprintToggle == null)  //finds
+            {
+                sprintToggle = GameObject.Find("SprintHold").GetComponent<Toggle>();
+            }
+            if (zoomTog == null)  //finds
+            {
+                zoomTog = GameObject.Find("ZoomTog").GetComponent<Toggle>();
+            }
+            if (fullscreen == null) //finds
+            {
+                fullscreen = GameObject.Find("Fullscreen").GetComponent<Toggle>();
+            }
+            if (vSync == null)
+            {
+                vSync = GameObject.Find("VSync").GetComponent<Toggle>();
+            }
+            if (vol == null)
+            {
+                vol = GameObject.Find("Volume").GetComponent<Slider>();
+            }
+            if (resolution == null)
+            {
+                resolution = GameObject.Find("Dropdown").GetComponent<Dropdown>();
+            }
+            if (crouchToggle == null)
+            {
+                crouchToggle = GameObject.Find("CrouchHold").GetComponent<Toggle>();
+            }
+            if (postPToggle == null)
+            {
+                postPToggle = GameObject.Find("PostP").GetComponent<Toggle>();
+            }
+            //Get the toggles for the input objects here
+            if (crouchInputKey == null)
+            {
 
-        }
-        if (sprintKeyText == null)
-        {
-            sprintInputKey = GameObject.Find("SprintInput").GetComponent<Toggle>();
-            sprintKeyText = sprintInputKey.gameObject.GetComponentInChildren<Text>();
-            sprintKeyText.text = sprintKeycode.ToString();
-        }
-        if (zoomKeyText == null)
-        {
-            zoomInputKey = GameObject.Find("ZoomInput").GetComponent<Toggle>();
-            zoomKeyText = zoomInputKey.gameObject.GetComponentInChildren<Text>();
-            zoomKeyText.text = zoomKeycode.ToString();
-        
-        }
-        if (grappleKeyText == null)
-        {
-            grappleInputKey = GameObject.Find("GrappleInput").GetComponent<Toggle>();
-            grappleKeyText = grappleInputKey.gameObject.GetComponentInChildren<Text>();
-            grappleKeyText.text = grappleKeycode.ToString();
-        }
-        if (weaponSwapKeyText == null)
-        {
-            weaponSwapInputkey = GameObject.Find("WeaponInput").GetComponent<Toggle>();
-            weaponSwapKeyText = weaponSwapInputkey.gameObject.GetComponentInChildren<Text>();
-            weaponSwapKeyText.text = weaponSwapcode.ToString();
-        }
-       
-        if (menu == null)
-        {
-            menu = GameObject.Find("Options").GetComponent<Transform>();
-        }
-        if (fpsScript == null && SceneManager.GetActiveScene().buildIndex != 0) //when I add this build index bit in - breaks options - HERE MURP
-        {
-            fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
-        }
-        if (fpsScript != null)
-        {
-            mouseXCurrent = fpsScript.GetCurrentXSensitivity();
-            mouseYCurrent = fpsScript.GetCurrentYSensitivity();
-        }
-        if (mouseX == null)
-        {
-            GameObject.Find("MouseXSensSlide");
-        }
-        if (mouseY == null)
-        {
-            GameObject.Find("MouseYSensSlider");
-        }
-        if (inputWarning == null)
-        {
-            GameObject.Find("InputWarning");
-        }
-        //if (currentKeycodes == null)
-       // {
-           
+                crouchInputKey = GameObject.Find("CrouchInput").GetComponent<Toggle>();
+                crouchKeyText = crouchInputKey.gameObject.GetComponentInChildren<Text>();
+                crouchKeyText.text = crouchKeycode.ToString();
 
-       // }
-        if (warningText == null)
-        {
-            GameObject.Find("WarningText");
+            }
+            if (sprintKeyText == null)
+            {
+                sprintInputKey = GameObject.Find("SprintInput").GetComponent<Toggle>();
+                sprintKeyText = sprintInputKey.gameObject.GetComponentInChildren<Text>();
+                sprintKeyText.text = sprintKeycode.ToString();
+            }
+            if (zoomKeyText == null)
+            {
+                zoomInputKey = GameObject.Find("ZoomInput").GetComponent<Toggle>();
+                zoomKeyText = zoomInputKey.gameObject.GetComponentInChildren<Text>();
+                zoomKeyText.text = zoomKeycode.ToString();
+
+            }
+            if (grappleKeyText == null)
+            {
+                grappleInputKey = GameObject.Find("GrappleInput").GetComponent<Toggle>();
+                grappleKeyText = grappleInputKey.gameObject.GetComponentInChildren<Text>();
+                grappleKeyText.text = grappleKeycode.ToString();
+            }
+            if (weaponSwapKeyText == null)
+            {
+                weaponSwapInputkey = GameObject.Find("WeaponInput").GetComponent<Toggle>();
+                weaponSwapKeyText = weaponSwapInputkey.gameObject.GetComponentInChildren<Text>();
+                weaponSwapKeyText.text = weaponSwapcode.ToString();
+            }
+
+            if (menu == null)
+            {
+                menu = GameObject.Find("Options").GetComponent<Transform>();
+            }
+            if (fpsScript == null && SceneManager.GetActiveScene().buildIndex != 0) //when I add this build index bit in - breaks options - HERE MURP
+            {
+                fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
+            }
+            if (fpsScript != null)
+            {
+                mouseXCurrent = fpsScript.GetCurrentXSensitivity();
+                mouseYCurrent = fpsScript.GetCurrentYSensitivity();
+            }
+            if (mouseX == null)
+            {
+                GameObject.Find("MouseXSensSlide");
+            }
+            if (mouseY == null)
+            {
+                GameObject.Find("MouseYSensSlider");
+            }
+            if (inputWarning == null)
+            {
+                GameObject.Find("InputWarning");
+            }
+            //if (currentKeycodes == null)
+            // {
+
+
+            // }
+            if (warningText == null)
+            {
+                GameObject.Find("WarningText");
+            }
         }
     }
 
@@ -211,71 +218,77 @@ public class OptionsConfig : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //Force this singleton to get references on the main menu as it seems to have an issue
-        if (SceneManager.GetActiveScene().buildIndex == 0 && menu == null)
+        if (SceneManager.GetActiveScene().name != "MainMenuTest")
         {
-            LoadComponents();
-        }
-        //The below code controls the rest of the options
-        if (mainCamera == null) //Check if the camera is in the scene
-        {
-            mainCamera = Camera.main;
-        }
-        else //Control the relevent toggles and references
-        {
-            //Have the option controls above the if in order to allow them to set defaults
-            ControlCameraInvertToggle();
-            ControlCrouchToggle();
-            ControlSprintToggle();
-            ControlZoomToggle();
-            ControlVsyncToggle();
-            ControlVolumeSlider();
-            //The control the input keycodes specifically
-            ControlCrouchKeycode();
-            ControlSprintKeycode();
-            ControlZoomKeycode();
-            ControlGrappleKeycode();
-          
-            PostProcessingToggle();
-            ControlMouseSens();
-            ControlWeaponSwapKeycode();
-            /*if (currentKeycodes == null)
+            //Force this singleton to get references on the main menu as it seems to have an issue
+            if (SceneManager.GetActiveScene().buildIndex == 0 && menu == null)
             {
-                currentKeycodes.Add(crouchKeycode);
-                currentKeycodes.Add(sprintKeycode);
-                currentKeycodes.Add(zoomKeycode);
-                currentKeycodes.Add(grappleKeycode);
-                currentKeycodes.Add(weaponSwapcode);
-                Debug.Log("adding to the list2");
-            }*/
-            if (warningActivation == true)
-            {
-                StopAllCoroutines();
-                StartCoroutine("LoadWarning");
-                warningActivation = false;
-
+                LoadComponents();
             }
-            //Update the last known scene when all components references have been got
-            if (SceneManager.GetActiveScene().buildIndex != lastKnownScene && resolution != null)
+            //The below code controls the rest of the options
+            if (mainCamera == null) //Check if the camera is in the scene
             {
-                lastKnownScene = SceneManager.GetActiveScene().buildIndex;
+                mainCamera = Camera.main;
+            }
+            else //Control the relevent toggles and references
+            {
+                //Have the option controls above the if in order to allow them to set defaults
+                ControlCameraInvertToggle();
+                ControlCrouchToggle();
+                ControlSprintToggle();
+                ControlZoomToggle();
+                ControlVsyncToggle();
+                ControlVolumeSlider();
+                //The control the input keycodes specifically
+                ControlCrouchKeycode();
+                ControlSprintKeycode();
+                ControlZoomKeycode();
+                ControlGrappleKeycode();
+
+                PostProcessingToggle();
+                ControlMouseSens();
+                ControlWeaponSwapKeycode();
+                /*if (currentKeycodes == null)
+                {
+                    currentKeycodes.Add(crouchKeycode);
+                    currentKeycodes.Add(sprintKeycode);
+                    currentKeycodes.Add(zoomKeycode);
+                    currentKeycodes.Add(grappleKeycode);
+                    currentKeycodes.Add(weaponSwapcode);
+                    Debug.Log("adding to the list2");
+                }*/
+                if (warningActivation == true)
+                {
+                    StopAllCoroutines();
+                    StartCoroutine("LoadWarning");
+                    warningActivation = false;
+
+                }
+                //Update the last known scene when all components references have been got
+                if (SceneManager.GetActiveScene().buildIndex != lastKnownScene && resolution != null)
+                {
+                    lastKnownScene = SceneManager.GetActiveScene().buildIndex;
+                }
             }
         }
     }
 
     private void OnLevelWasLoaded() //Run code when the scene loads
     {
-        //If you are on any scene other than the main menu
-        if (SceneManager.GetActiveScene().buildIndex != 0)
+        if (SceneManager.GetActiveScene().name != "MainMenuTest")
         {
-            //This will make sure the options are saved if the scene has simply been restarted
-            if (SceneManager.GetActiveScene().buildIndex == lastKnownScene)
+            //If you are on any scene other than the main menu
+            if (SceneManager.GetActiveScene().buildIndex != 0)
             {
-                lastKnownScene = 9999;
+                //This will make sure the options are saved if the scene has simply been restarted
+                if (SceneManager.GetActiveScene().buildIndex == lastKnownScene)
+                {
+                    lastKnownScene = 9999;
+                }
             }
+            //get all the components on the options menu
+            Invoke("LoadComponents", 0.2f);
         }
-        //get all the components on the options menu
-        Invoke("LoadComponents", 0.2f);
     }
 
     public void ChangeFullscreenSetting()
@@ -620,22 +633,22 @@ public class OptionsConfig : MonoBehaviour
     private void OnGUI() //Used for detecting key changes
     {
         keyevent = Event.current;
-       // Debug.LogError(" RUNNING GUI");
+        // Debug.LogError(" RUNNING GUI");
         if (keyevent.isKey && waitforKey == true)
         {
-           // Debug.LogError(" RUNNING key events");
+            // Debug.LogError(" RUNNING key events");
             newKey = keyevent.keyCode;
-            
+
             foreach (KeyCode key in currentKeycodes)
             {
-                
+
                 if (newKey == key)
                 {
                     warningActivation = true;
                     //needs to update and add the new keys to the list but when i do it normal way it no work
-                    
+
                 }
-             
+
             }
             waitforKey = false;
             currentKeycodes.Clear();
@@ -736,7 +749,7 @@ public class OptionsConfig : MonoBehaviour
             {
                 //Make sure it equals the default
                 sprintInputKey.isOn = false;
-                
+
             }
             else //Allow for updating and changing on runtime
             {
@@ -857,7 +870,7 @@ public class OptionsConfig : MonoBehaviour
             {
                 //Make sure it equals the default
                 grappleInputKey.isOn = false;
-              
+
             }
             else //Allow for updating and changing on runtime
             {
@@ -918,7 +931,7 @@ public class OptionsConfig : MonoBehaviour
             {
                 //Make sure it equals the default
                 weaponSwapInputkey.isOn = false;
-                
+
             }
             else //Allow for updating and changing on runtime
             {
@@ -992,13 +1005,13 @@ public class OptionsConfig : MonoBehaviour
             currentLine.WriteLine(OptionsConfig.inst.zoomKeycode.ToString()); // vsync toggle  value   10
             //SAVE VOLUME
             currentLine.WriteLine(OptionsConfig.inst.vol.value.ToString()); // vsync toggle  value   11
-         //   Debug.Log("Saved as" + vol.value);
-            //SAVE RES VALUE
+                                                                            //   Debug.Log("Saved as" + vol.value);
+                                                                            //SAVE RES VALUE
             currentLine.WriteLine(OptionsConfig.inst.resolution.value.ToString()); // vsync toggle  value   12
 
             currentLine.WriteLine(OptionsConfig.inst.postPEnabled); //save whether the post proccessing is on or not 13
 
-           
+
 
             currentLine.WriteLine(OptionsConfig.inst.mouseX.value.ToString()); //saves the value of the mouse sensitibity onther x axis    14
             currentLine.WriteLine(OptionsConfig.inst.mouseY.value.ToString()); //saves the value of the mouse sensitibity onther y axis    15
@@ -1113,8 +1126,8 @@ public class OptionsConfig : MonoBehaviour
 
                     else if (lineCount == 11) //volume - has some problem
                     {
-                      //  float counterNumber = int.Parse(line.ToString());
-                      //  OptionsConfig.inst.vol.value = counterNumber;
+                        //  float counterNumber = int.Parse(line.ToString());
+                        //  OptionsConfig.inst.vol.value = counterNumber;
                         OptionsConfig.inst.vol.value = int.Parse(line.ToString());
                     }
                     else if (lineCount == 12)  //res
@@ -1132,7 +1145,7 @@ public class OptionsConfig : MonoBehaviour
                             OptionsConfig.inst.postPToggle.isOn = false;
                         }
                     }
-                   
+
                     else if (lineCount == 14)
                     {
                         float amount = int.Parse(line.ToString());
@@ -1205,20 +1218,20 @@ public class OptionsConfig : MonoBehaviour
         }
     }
 
-   
 
-  private void ControlMouseSens()
+
+    private void ControlMouseSens()
     {
         // StopAllCoroutines();
         // StartCoroutine(ApplyMouseSens());
-   
-        
+
+
         if (mouseY != null && mouseX != null)
         {
             //If on a new scene set the value of the  ui so it can transfer accross scene
             if (SceneManager.GetActiveScene().buildIndex != lastKnownScene)
             {
-                
+
                 //Make sure it equals the default
                 mouseY.value = mouseYCurrent;
                 mouseX.value = mouseXCurrent;
@@ -1230,10 +1243,10 @@ public class OptionsConfig : MonoBehaviour
             {
                 if (fpsScript != null)
                 {
-                    
+
                     fpsScript.ChangeXSensitivity(mouseX.value);
                     fpsScript.ChangeYSensitivity(mouseY.value);
-                 //   Debug.Log("changing sensitivty");
+                    //   Debug.Log("changing sensitivty");
                 }
             }
         }
@@ -1258,8 +1271,8 @@ public class OptionsConfig : MonoBehaviour
         yield return new WaitForSeconds(2f);
         inputWarning.enabled = false;
         warningText.enabled = false;
-      
-     //   Debug.Log("Removing warning");
+
+        //   Debug.Log("Removing warning");
     }
 
 }
