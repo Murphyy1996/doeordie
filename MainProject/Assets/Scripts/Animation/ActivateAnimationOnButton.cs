@@ -12,6 +12,8 @@ public class ActivateAnimationOnButton : MonoBehaviour
     private KeyCode activationButton = KeyCode.E;
     [SerializeField]
     private Animator[] animatorComponents;
+    [SerializeField]
+    private GameObject[] objects;
     private bool playerInZone = false;
     private bool objActivated = false;
     private void Start() //Destroy the script if it wont work
@@ -39,6 +41,7 @@ public class ActivateAnimationOnButton : MonoBehaviour
     {
         if (playerInZone == true)
         {
+            UIElements.singleton.travelIndication.enabled = true;
             if (Input.GetKey(activationButton))
             {
                 foreach (Animator animator in animatorComponents)
@@ -46,7 +49,17 @@ public class ActivateAnimationOnButton : MonoBehaviour
                     animator.enabled = true;
                     objActivated = true;
                 }
+                foreach (GameObject obj in objects)
+                {
+                    obj.SetActive(true);
+                }
+                Destroy(this);
+                UIElements.singleton.travelIndication.enabled = false;
             }
+        }
+        else
+        {
+            UIElements.singleton.travelIndication.enabled = false;
         }
     }
     private void OnTriggerStay(Collider otherObject)

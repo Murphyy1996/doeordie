@@ -19,6 +19,8 @@ public class WeaponListUI : MonoBehaviour
     private Shooting shootingScript;
     private Outline slot1Outline, slot2Outline, slot3Outline, slot4Outline;
     private Text slot1Ammo, slot2Ammo, slot3Ammo, slot4Ammo;
+    private Vector3 defaultTextSize;
+    private float defaultXTextPos;
 
     private void Start() //Get required components
     {
@@ -34,6 +36,8 @@ public class WeaponListUI : MonoBehaviour
         slot2Ammo = slot2Image.gameObject.GetComponentInChildren<Text>();
         slot3Ammo = slot3Image.gameObject.GetComponentInChildren<Text>();
         slot4Ammo = slot4Image.gameObject.GetComponentInChildren<Text>();
+        defaultTextSize = slot2Ammo.gameObject.transform.localScale;
+        defaultXTextPos = slot2Ammo.rectTransform.position.x;
         playerObj = GameObject.Find("Player");
         ammoScript = playerObj.GetComponent<AmmoManager>();
         shootingScript = playerObj.GetComponent<Shooting>();
@@ -139,6 +143,16 @@ public class WeaponListUI : MonoBehaviour
 
     private void UpdateAmmoCounters() //Update the ammo counters
     {
+        //Force ammo counter sizes
+        slot1Ammo.transform.localScale = defaultTextSize;
+        slot2Ammo.transform.localScale = defaultTextSize;
+        slot3Ammo.transform.localScale = defaultTextSize;
+        slot4Ammo.transform.localScale = defaultTextSize;
+        //Force ammo counter positions
+        slot1Ammo.rectTransform.position = new Vector3(defaultXTextPos, slot1Ammo.rectTransform.position.y, slot1Ammo.rectTransform.position.z);
+        slot2Ammo.rectTransform.position = new Vector3(defaultXTextPos, slot2Ammo.rectTransform.position.y, slot2Ammo.rectTransform.position.z);
+        slot3Ammo.rectTransform.position = new Vector3(defaultXTextPos, slot3Ammo.rectTransform.position.y, slot3Ammo.rectTransform.position.z);
+        slot4Ammo.rectTransform.position = new Vector3(defaultXTextPos, slot4Ammo.rectTransform.position.y, slot4Ammo.rectTransform.position.z);
         //Reset the ammo counters
         slot1Ammo.text = "";
         slot2Ammo.text = "";
