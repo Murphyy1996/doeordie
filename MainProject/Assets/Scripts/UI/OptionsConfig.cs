@@ -54,6 +54,7 @@ public class OptionsConfig : MonoBehaviour
     [SerializeField]
     private Text warningText;
     private int silentError;
+    private bool potentialExtraKey = false;
 
 
 
@@ -248,6 +249,23 @@ public class OptionsConfig : MonoBehaviour
                 PostProcessingToggle();
                 ControlMouseSens();
                 ControlWeaponSwapKeycode();
+                //Allow detection of shift keys
+                if (potentialExtraKey == true)
+                {
+                    if (Input.GetKeyDown(KeyCode.LeftShift))
+                    {
+                        newKey = KeyCode.LeftShift;
+                        potentialExtraKey = false;
+                        waitforKey = false;
+                    }
+                    else if (Input.GetKeyDown(KeyCode.RightShift))
+                    {
+                        newKey = KeyCode.RightShift;
+                        potentialExtraKey = false;
+                        waitforKey = false;
+                    }
+                }
+                //ControlKeycodes();
                 /*if (currentKeycodes == null)
                 {
                     currentKeycodes.Add(crouchKeycode);
@@ -417,6 +435,50 @@ public class OptionsConfig : MonoBehaviour
                     fpsScript.SetInvertedCamera(CamInvert);
                 }
             }
+        }
+    }
+
+    private void ControlKeycodes() //Control interactability of keycodes
+    {
+        if (zoomTog.isOn == true)
+        {
+            zoomTog.interactable = true;
+            sprintToggle.interactable = false;
+            crouchToggle.interactable = false;
+            grappleInputKey.interactable = false;
+            weaponSwapInputkey.interactable = false;
+        }
+        else if (sprintToggle.isOn == true)
+        {
+            zoomTog.interactable = false;
+            sprintToggle.interactable = true;
+            crouchToggle.interactable = false;
+            grappleInputKey.interactable = false;
+            weaponSwapInputkey.interactable = false;
+        }
+        else if (crouchToggle.isOn == true)
+        {
+            zoomTog.interactable = false;
+            sprintToggle.interactable = false;
+            crouchToggle.interactable = true;
+            grappleInputKey.interactable = false;
+            weaponSwapInputkey.interactable = false;
+        }
+        else if (grappleInputKey.isOn == true)
+        {
+            zoomTog.interactable = false;
+            sprintToggle.interactable = false;
+            crouchToggle.interactable = false;
+            grappleInputKey.interactable = true;
+            weaponSwapInputkey.interactable = false;
+        }
+        else if (weaponSwapInputkey.isOn == true)
+        {
+            zoomTog.interactable = false;
+            sprintToggle.interactable = false;
+            crouchToggle.interactable = false;
+            grappleInputKey.interactable = false;
+            weaponSwapInputkey.interactable = true;
         }
     }
 
@@ -633,12 +695,11 @@ public class OptionsConfig : MonoBehaviour
     private void OnGUI() //Used for detecting key changes
     {
         keyevent = Event.current;
-        // Debug.LogError(" RUNNING GUI");
         if (keyevent.isKey && waitforKey == true)
         {
             // Debug.LogError(" RUNNING key events");
             newKey = keyevent.keyCode;
-
+            potentialExtraKey = false;
             foreach (KeyCode key in currentKeycodes)
             {
 
@@ -656,21 +717,27 @@ public class OptionsConfig : MonoBehaviour
         }
         else if (waitforKey == true) //Mouse inputs and other keys not supported by the keyevent manager
         {
-            //Debug.LogError("not RUNNING key events");
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                potentialExtraKey = false;
                 newKey = KeyCode.Mouse0;
                 waitforKey = false;
             }
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            else if (Input.GetKeyDown(KeyCode.Mouse1))
             {
+                potentialExtraKey = false;
                 newKey = KeyCode.Mouse1;
                 waitforKey = false;
             }
-            if (Input.GetKeyDown(KeyCode.Mouse2))
+            else if (Input.GetKeyDown(KeyCode.Mouse2))
             {
+                potentialExtraKey = false;
                 newKey = KeyCode.Mouse2;
                 waitforKey = false;
+            }
+            else
+            {
+                potentialExtraKey = true;
             }
         }
 
