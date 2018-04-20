@@ -565,9 +565,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1097620416224886}
   serializedVersion: 2
-  m_Mass: 11.5
-  m_Drag: 12.1
-  m_AngularDrag: 12.61
+  m_Mass: 3
+  m_Drag: 6.3
+  m_AngularDrag: 10.4
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -730,6 +730,8 @@ MonoBehaviour:
   destroyAllSpawnedDrones: 1
   restartSceneUponPlayerDeath: 0
   respawnPickups: 1
+  respawnViaTimer: 0
+  timeToSpawnPickUpsAfter: 30
 --- !u!114 &114783374997852794
 MonoBehaviour:
   m_ObjectHideFlags: 1
