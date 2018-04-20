@@ -40,5 +40,9 @@ public class PlayCinematic : MonoBehaviour
         {
             cutsceneCounter = 9999;
         }
+
+        //Force the mouse to be centered and invisible
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
