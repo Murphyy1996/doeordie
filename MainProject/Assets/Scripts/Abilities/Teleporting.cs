@@ -249,11 +249,18 @@ public class Teleporting : MonoBehaviour
                 teleportButtonPressed = false;
                 teleportEmpty.SetActive(false);
             }
-            else if (Input.GetKeyDown(teleportKeyCode) && cooldown == false || Input.GetKeyDown(KeyCode.Mouse0) && cooldown == false)
+            else if (Input.GetKeyDown(teleportKeyCode) && cooldown == false)
             {
                 tempTeleportStrength = teleportStrength;
                 teleportButtonPressed = true;
-                StandardTeleportCode();
+                StandardTeleportCode(false);
+            }
+            else if (Input.GetKeyDown(KeyCode.Mouse0) && cooldown == false)
+            {
+                tempTeleportStrength = teleportStrength;
+                teleportButtonPressed = true;
+                teleportButtonHeld = true;
+                StandardTeleportCode(true);
             }
         }
         else
@@ -287,13 +294,10 @@ public class Teleporting : MonoBehaviour
         return teleportableSurface;
     }
 
-    private void StandardTeleportCode() //Teleport code is here
+    private void StandardTeleportCode(bool usingClick) //Teleport code is here
     {
         try
         {
-            //Stop any grapple
-            //grappleScript.ExitGrapple();
-
             //Disable player input
             movementScript.IsPlayerInputEnabled(false);
 
@@ -333,6 +337,21 @@ public class Teleporting : MonoBehaviour
             CancelInvoke();
             cooldown = false;
             isTeleporting = false;
+        }
+
+        //If using click is true and the user didn't teleport
+        if (cooldown == false)
+        {
+            if (teleportIndicator != null)
+            {
+                Destroy(teleportIndicator);
+            }
+            teleportEnabled = false;
+            teleportButtonHeld = false;
+            teleportEnabled = true;
+            teleportButtonHeld = true;
+            teleportButtonPressed = false;
+            cooldown = false;
         }
 
         //Enable player input again
