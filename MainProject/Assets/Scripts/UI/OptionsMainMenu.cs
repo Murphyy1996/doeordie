@@ -40,6 +40,7 @@ public class OptionsMainMenu : MonoBehaviour
     [SerializeField]
     private Slider volume;
     private string optionsPath;
+    private bool potentialExtraKey = false;
 
     private void Awake() //Get any required components if neccesary
     {
@@ -423,6 +424,20 @@ public class OptionsMainMenu : MonoBehaviour
             //Control game volume
             AudioListener.volume = volume.value;
         }
+
+        if (potentialExtraKey == true && waitingForInput == true)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                potentialExtraKey = false;
+                newKey = KeyCode.LeftShift;
+            }
+            else if(Input.GetKeyDown(KeyCode.RightShift))
+            {
+                potentialExtraKey = false;
+                newKey = KeyCode.RightShift;
+            }
+        }
     }
 
     private void OnGUI() //Used for detecting key changes
@@ -431,6 +446,12 @@ public class OptionsMainMenu : MonoBehaviour
         if (keyevent.isKey && waitingForInput == true)
         {
             newKey = keyevent.keyCode;
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                newKey = KeyCode.LeftShift;
+                waitingForInput = false;
+                potentialExtraKey = false;
+            }
             waitingForInput = false;
         }
         else if (waitingForInput == true)
@@ -439,16 +460,23 @@ public class OptionsMainMenu : MonoBehaviour
             {
                 newKey = KeyCode.Mouse0;
                 waitingForInput = false;
+                potentialExtraKey = false;
             }
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            else if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 newKey = KeyCode.Mouse1;
                 waitingForInput = false;
+                potentialExtraKey = false;
             }
-            if (Input.GetKeyDown(KeyCode.Mouse2))
+            else if (Input.GetKeyDown(KeyCode.Mouse2))
             {
                 newKey = KeyCode.Mouse2;
                 waitingForInput = false;
+                potentialExtraKey = false;
+            }
+            else
+            {
+                potentialExtraKey = true;
             }
         }
     }
