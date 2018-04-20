@@ -8121,7 +8121,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ac20621665ea36c4db27977f3644bb7f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8201,7 +8201,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 21139958fb2d4364ca1e03557f24a528, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9340,7 +9340,7 @@ MonoBehaviour:
     type: 2}
   optionsPrefab: {fileID: 1862540417847076, guid: ea6347d208f74ba4f868ce344107b5ed,
     type: 2}
-  paused: 0
+  paused: 1
 --- !u!114 &114906111210062906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -23848,7 +23848,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1106732240
+  randomSeed: -926922957
   InitialModule:
     serializedVersion: 3
     enabled: 1
