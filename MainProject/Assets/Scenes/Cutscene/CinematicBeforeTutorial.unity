@@ -254,6 +254,22 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 99
       objectReference: {fileID: 0}
+    - target: {fileID: 82400871515745902, guid: fad1269b50c03a241b154face37b31e7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 09343fd5714fc674daa96199a9dd0c7f, type: 3}
+    - target: {fileID: 114023061001496882, guid: fad1269b50c03a241b154face37b31e7,
+        type: 2}
+      propertyPath: cutsceneLength
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023061001496882, guid: fad1269b50c03a241b154face37b31e7,
+        type: 2}
+      propertyPath: cutsceneToPlay
+      value: 
+      objectReference: {fileID: 15200000, guid: 09343fd5714fc674daa96199a9dd0c7f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fad1269b50c03a241b154face37b31e7, type: 2}
   m_IsPrefabParent: 0
