@@ -52,6 +52,8 @@ public class Menu : MonoBehaviour
             {
                 options.enabled = false;
             }
+            //Pause the game
+            GameObject.Find("Player").GetComponent<InGamePause>().OpenPauseMenu();
         }
     }
 
@@ -79,7 +81,7 @@ public class Menu : MonoBehaviour
             }
 
         }
-      
+
     }
 
     private void OnLevelWasLoaded(int level)
