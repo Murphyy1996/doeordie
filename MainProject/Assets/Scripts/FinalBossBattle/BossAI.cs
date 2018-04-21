@@ -84,6 +84,10 @@ public class BossAI : MonoBehaviour
         Invoke("DelayedStart", 0.2f);
         randomSeed = System.DateTime.Now.Millisecond;
         Random.InitState(randomSeed);
+        if (TimerController.singleton != null)
+        {
+            TimerController.singleton.StartTimer();
+        }
     }
 
     private void DelayedStart()
@@ -528,6 +532,13 @@ public class BossAI : MonoBehaviour
                         truckRigidbody.gameObject.GetComponent<MeshCollider>().enabled = false;
                         truckRigidbody.useGravity = true;
                         //truckRigidbody.isKinematic = false;
+                        //Stop the boss shooting you
+                        phase4Turret.GetComponent<TurretAI>().stopDamage = true;
+                        //Stop the timer as the boss has been killed
+                        if (TimerController.singleton != null)
+                        {
+                            TimerController.singleton.StopTimer();
+                        }
                         bossDead = true;
                     }
                     targetRotation = Quaternion.Euler(transform.rotation.x, 180f, bossFlipTargetRotation);

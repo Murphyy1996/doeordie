@@ -21,6 +21,8 @@ public class TurretAI : MonoBehaviour
     [SerializeField] [Range(0f, 50f)] [Tooltip("How far can the turret see")] private int maxSightDistance = 50;
     [SerializeField] [Range(0f, 50f)] [Tooltip("The maximum cone of sight")] private int maxFieldOfView = 45;
     [SerializeField] private LayerMask rayLayer;
+    [HideInInspector]
+    public bool stopDamage = false;
 
     //General Variables
     private float timer, playerShotNearby, maxShotDetection = 40f;
@@ -275,10 +277,13 @@ public class TurretAI : MonoBehaviour
     //Player has been spotted in FOV, shoot the player
     void ForceShootAtPlayer()
     {
-        playerHealthScript.CalculateHitDirection(transform.position);
-        playerHealthScript.ApplyDamage(turretDamage);
-        
-        StartCoroutine(MuzzleFlash());
+        if (stopDamage == false)
+        {
+            playerHealthScript.CalculateHitDirection(transform.position);
+            playerHealthScript.ApplyDamage(turretDamage);
+
+            StartCoroutine(MuzzleFlash());
+        }
     }
 
     //Enable/Disable muzzle flash for the turret
