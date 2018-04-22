@@ -167,7 +167,7 @@ public class ReusableHealth : MonoBehaviour
                         }
                     }
                     //Death audio (Need to change depending on obj though)
-                    AudioManage.inst.death.Play();
+                    //AudioManage.inst.death.Play();
                     //Destroy this game object
                     if (workingExplosion != null)
                     {

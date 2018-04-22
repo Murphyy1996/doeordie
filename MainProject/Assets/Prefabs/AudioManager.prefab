@@ -121,7 +121,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -201,7 +201,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -281,7 +281,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -361,7 +361,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -441,7 +441,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -521,7 +521,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -550,8 +550,16 @@ MonoBehaviour:
   machShot: {fileID: 8300000, guid: d0d899e2c2e67554c99963757352adf2, type: 3}
   teleport: {fileID: 82312643473191576}
   death: {fileID: 0}
+  enemyDeath: {fileID: 0}
   slide: {fileID: 0}
   grapple: {fileID: 0}
   player: {fileID: 0}
+  combatMusic: {fileID: 0}
+  bulletEnvironment: {fileID: 0}
+  falling: {fileID: 0}
+  pickUp: {fileID: 0}
+  shotgun: {fileID: 0}
+  crouch: {fileID: 0}
+  sneakMusic: {fileID: 0}
   walking: {fileID: 0}
   running: {fileID: 0}

@@ -19,14 +19,14 @@ public class PlayAudioClip : Action
     {
         audioSource.enabled = true;
         audioSource.clip = clipToPlay;
-        StartCoroutine("TurnOffClip");
+        //StartCoroutine("TurnOffClip");
 
         return TaskStatus.Success; 
     }
 
     IEnumerator TurnOffClip()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.3f);
         audioSource.enabled = false;
         yield return null;
     }
