@@ -10,7 +10,7 @@ public class ChooseLvl : MonoBehaviour
 {
     public enum LevelToLoad
     {
-        main, test, simon, ross, fabio, foundry, hub, barracks, mainmenu, speedrun, boss
+        main, test, simon, ross, fabio, foundry, hub, barracks, mainmenu, speedrun, boss, endCredits
     };
     [SerializeField]
     private LevelToLoad selectedLevel;
@@ -77,15 +77,14 @@ public class ChooseLvl : MonoBehaviour
                         LoadingDifferentScenes.inst.boss();
                         UIElements.singleton.travelIndication.enabled = false;
                         break;
+                    case LevelToLoad.endCredits:
+                        LoadingUIManager.singleton.ShowLoadingScreen("CinematicAfterSpeedrun");
+                        UIElements.singleton.travelIndication.enabled = false;
+                        break;
                 }
 
             }
-
-
         }
-
-
-
     }
     private void OnTriggerExit(Collider other)
     {
