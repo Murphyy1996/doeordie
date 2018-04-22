@@ -751,6 +751,13 @@ public class Grapple : MonoBehaviour
     {
         isAtGrappleDestination = true;
         grappleTime = 0;
+        if (AudioManage.inst.grapple != null)
+        {
+            if (AudioManage.inst.grapple.isPlaying == true)
+            {
+                AudioManage.inst.grapple.Stop();
+            }
+        }
         if (momentumNumber != 0 && forceGrappleMomentum == false)
         {
             if (grappleMomentumEmpty != null)
