@@ -368,7 +368,6 @@ public class Grapple : MonoBehaviour
             lineRenderer.SetPosition(1, grappleHitPoint.transform.position);
             //Enable the grapple line
             lineRenderer.enabled = true;
-            AudioManage.inst.grapple.Play();
         }
     }
 
@@ -414,6 +413,7 @@ public class Grapple : MonoBehaviour
                     currentlyGrappledEnemyObj = rayhit.collider.gameObject;
                     //Run the enemy pull towards code
                     SetUpObjPullTowards();
+                    AudioManage.inst.grapple.Play();
                 }
             }
             //If the object layer isn't on the stop grapple layer
@@ -434,6 +434,7 @@ public class Grapple : MonoBehaviour
                 rotatingObjSpeed = 0;
                 //Force exit other grapples
                 ExitGrapple();
+                AudioManage.inst.grapple.Play();
                 //Wipe rotation zones from the triggers as they are no longer needed
                 Optimization.singleton.RemoveAllRotationZones();
                 //Cancel prior grapples
