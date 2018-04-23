@@ -22,6 +22,8 @@ public class AddHealth : MonoBehaviour {
         {
             if (healthScript.healthValue != healthScript.maxHealth)
             {
+                AudioManage.inst.healthPickup.Play();
+                Debug.Log("playing health audio pls");
                 healthScript.healthValue += amountToIncrease;
                 //Don't let it go passed the max value
                 if (healthScript.healthValue > healthScript.maxHealth)
