@@ -17,13 +17,12 @@ public class ForceMouseIntoPosition : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            print("hello");
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
     }
