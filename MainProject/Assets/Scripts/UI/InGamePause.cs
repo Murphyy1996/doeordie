@@ -145,6 +145,8 @@ public class InGamePause : MonoBehaviour
         }
         shouldbeVisible = true;
         paused = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void ClosePauseMenu()
@@ -208,6 +210,8 @@ public class InGamePause : MonoBehaviour
     private void PauseGame()
     {
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         if (QuestManager.inst.subtitleAudioSource.isPlaying == true)
         {
             QuestManager.inst.subtitleAudioSource.Pause();
