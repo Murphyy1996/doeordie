@@ -12,9 +12,12 @@ public class Menu : MonoBehaviour
 
     private void Update()
     {
-        if (options.enabled == true && Input.GetKeyDown(KeyCode.Escape))
+        if (options != null)
         {
-            GoBackToMenu();
+            if (options.enabled == true && Input.GetKeyDown(KeyCode.Escape))
+            {
+                GoBackToMenu();
+            }
         }
     }
 
