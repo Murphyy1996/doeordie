@@ -21,7 +21,7 @@ public class InGameUI : MonoBehaviour
     private Vector3 defaultHealthScale;
 
 
-  //  [SerializeField]
+    //  [SerializeField]
     public Text ammoText, pickedAmmo;
     GameObject player;
     Shooting shot;
@@ -98,17 +98,17 @@ public class InGameUI : MonoBehaviour
             if (currentWeaponScript.weaponModel == WeaponInfo.weapon.pistol)
             {
                 weaponImage.sprite = pistol;
-				ammoText.text = "Infinite";
-             //   blackBullet.enabled = false;
-              //  redBullet.enabled = false;
+                ammoText.text = "Infinite";
+                //   blackBullet.enabled = false;
+                //  redBullet.enabled = false;
 
             }
             if (currentWeaponScript.weaponModel == WeaponInfo.weapon.machineGun)
             {
                 weaponImage.sprite = machGun;
                 ammoText.text = "" + ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
-              //  blackBullet.enabled = true;
-              //  redBullet.enabled = true;
+                //  blackBullet.enabled = true;
+                //  redBullet.enabled = true;
             }
             if (currentWeaponScript.weaponModel == WeaponInfo.weapon.shotgun)
             {
@@ -121,7 +121,7 @@ public class InGameUI : MonoBehaviour
         float currentHealth = hel.healthValue;
         float maxHealth = hel.maxHealth;
         Health.fillAmount = currentHealth / maxHealth;
-       // blackBullet.fillAmount = ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun) / 1f;
+        // blackBullet.fillAmount = ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun) / 1f;
         // blackBullet.fillAmount = ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun) / ammoScript.ReturnMaxAmmoForMachineGun();
         //blackBullet.fillAmount = ammoScript.ReturnMaxAmmoForMachineGun() / ammoScript.ReturnAmountOfAmmoForWeapon(AmmoManager.ammoType.machineGun);
         ChangeImage();
@@ -174,9 +174,8 @@ public class InGameUI : MonoBehaviour
             if (AudioManage.inst.crouch.isPlaying == false && move.GetCurrentSpeedandDirection().magnitude != 0)
             {
                 AudioManage.inst.crouch.Play();
-                Debug.Log("Playing crouch noise");
             }
-           
+
             //Load the sprite for the position indicator
             state.sprite = crouch;
         }
@@ -315,11 +314,11 @@ public class InGameUI : MonoBehaviour
         {
             Health.transform.localScale = Health.transform.localScale * sizeToGo;
         }
-      //  else if (Health.transform.localScale != defaultHealthScale)
-      //  {
-            // makeBarSmall(2);
+        //  else if (Health.transform.localScale != defaultHealthScale)
+        //  {
+        // makeBarSmall(2);
         //    return;
-       // }
+        // }
     }
 
     private void makeBarSmall(float sizeToGo)

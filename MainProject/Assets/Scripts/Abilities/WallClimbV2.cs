@@ -87,19 +87,22 @@ public class WallClimbV2 : MonoBehaviour
 
     private void Update() //Detect button presses
     {
-        if (Input.GetKeyDown(wallRunKey))
+        if (crouchScript != null)
         {
-            wallRunKeyPressedDown = true;
-        }
+            if (Input.GetKeyDown(wallRunKey))
+            {
+                wallRunKeyPressedDown = true;
+            }
 
-        if (Input.GetKey(wallRunKey) && crouchScript.IsPlayerCrouching() == false && wallRunKeyPressedDown == true)
-        {
-            wallRunKeyBeingHeld = true;
-        }
-        else
-        {
-            wallRunKeyPressedDown = false;
-            wallRunKeyBeingHeld = false;
+            if (Input.GetKey(wallRunKey) && crouchScript.IsPlayerCrouching() == false && wallRunKeyPressedDown == true)
+            {
+                wallRunKeyBeingHeld = true;
+            }
+            else
+            {
+                wallRunKeyPressedDown = false;
+                wallRunKeyBeingHeld = false;
+            }
         }
     }
 

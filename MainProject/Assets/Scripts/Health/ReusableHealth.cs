@@ -122,6 +122,8 @@ public class ReusableHealth : MonoBehaviour
             {
                 //Fade in the game over screen
                 InGameUI.inst.FadeInGameOver(1);
+                //Make the player invicible
+                invincible = true;
                 //Stop movement etc
                 GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(false);
                 GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(false);

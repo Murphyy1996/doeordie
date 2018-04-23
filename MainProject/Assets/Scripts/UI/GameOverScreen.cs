@@ -8,10 +8,12 @@ using UnityEngine;
 
 public class GameOverScreen : MonoBehaviour
 {
+    private bool runOnce = false;
     private void Update() //Check for button presses
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space) && runOnce == false)
         {
+            runOnce = true;
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<Teleporting>().CancelTeleport();
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
@@ -42,8 +44,17 @@ public class GameOverScreen : MonoBehaviour
             QuestManager.inst.UnPauseGame();
             //Allow the player to shoot
             player.GetComponent<Shooting>().allowedToShoot = true;
-            //Destroy this script as its no longer needed
-            Destroy(this);
+            //Run the destroy code slightly late to give the player a slight grace period of health upon respawning
+            Invoke("DestroyMe", 0.5f);
         }
+    }
+
+    private void DestroyMe()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        //Don't make the player invinicble any more
+        player.GetComponent<ReusableHealth>().SetInvincibleValue(false);
+        //Destroy this script as its no longer needed
+        Destroy(this);
     }
 }

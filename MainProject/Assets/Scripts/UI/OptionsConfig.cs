@@ -97,114 +97,121 @@ public class OptionsConfig : MonoBehaviour
 
     private void LoadComponents() //This method will get the components
     {
-        if (SceneManager.GetActiveScene().name != "MainMenuTest")
+        try
         {
-
-            if (invertCamToggle == null) //finds
-            {
-                invertCamToggle = GameObject.Find("InvertCam").GetComponent<Toggle>();
-            }
-            if (sprintToggle == null)  //finds
-            {
-                sprintToggle = GameObject.Find("SprintHold").GetComponent<Toggle>();
-            }
-            if (zoomTog == null)  //finds
-            {
-                zoomTog = GameObject.Find("ZoomTog").GetComponent<Toggle>();
-            }
-            if (fullscreen == null) //finds
-            {
-                fullscreen = GameObject.Find("Fullscreen").GetComponent<Toggle>();
-            }
-            if (vSync == null)
-            {
-                vSync = GameObject.Find("VSync").GetComponent<Toggle>();
-            }
-            if (vol == null)
-            {
-                vol = GameObject.Find("Volume").GetComponent<Slider>();
-            }
-            if (resolution == null)
-            {
-                resolution = GameObject.Find("Dropdown").GetComponent<Dropdown>();
-            }
-            if (crouchToggle == null)
-            {
-                crouchToggle = GameObject.Find("CrouchHold").GetComponent<Toggle>();
-            }
-            if (postPToggle == null)
-            {
-                postPToggle = GameObject.Find("PostP").GetComponent<Toggle>();
-            }
-            //Get the toggles for the input objects here
-            if (crouchInputKey == null)
+            if (SceneManager.GetActiveScene().name != "MainMenuTest")
             {
 
-                crouchInputKey = GameObject.Find("CrouchInput").GetComponent<Toggle>();
-                crouchKeyText = crouchInputKey.gameObject.GetComponentInChildren<Text>();
-                crouchKeyText.text = crouchKeycode.ToString();
+                if (invertCamToggle == null) //finds
+                {
+                    invertCamToggle = GameObject.Find("InvertCam").GetComponent<Toggle>();
+                }
+                if (sprintToggle == null)  //finds
+                {
+                    sprintToggle = GameObject.Find("SprintHold").GetComponent<Toggle>();
+                }
+                if (zoomTog == null)  //finds
+                {
+                    zoomTog = GameObject.Find("ZoomTog").GetComponent<Toggle>();
+                }
+                if (fullscreen == null) //finds
+                {
+                    fullscreen = GameObject.Find("Fullscreen").GetComponent<Toggle>();
+                }
+                if (vSync == null)
+                {
+                    vSync = GameObject.Find("VSync").GetComponent<Toggle>();
+                }
+                if (vol == null)
+                {
+                    vol = GameObject.Find("Volume").GetComponent<Slider>();
+                }
+                if (resolution == null)
+                {
+                    resolution = GameObject.Find("Dropdown").GetComponent<Dropdown>();
+                }
+                if (crouchToggle == null)
+                {
+                    crouchToggle = GameObject.Find("CrouchHold").GetComponent<Toggle>();
+                }
+                if (postPToggle == null)
+                {
+                    postPToggle = GameObject.Find("PostP").GetComponent<Toggle>();
+                }
+                //Get the toggles for the input objects here
+                if (crouchInputKey == null)
+                {
 
-            }
-            if (sprintKeyText == null)
-            {
-                sprintInputKey = GameObject.Find("SprintInput").GetComponent<Toggle>();
-                sprintKeyText = sprintInputKey.gameObject.GetComponentInChildren<Text>();
-                sprintKeyText.text = sprintKeycode.ToString();
-            }
-            if (zoomKeyText == null)
-            {
-                zoomInputKey = GameObject.Find("ZoomInput").GetComponent<Toggle>();
-                zoomKeyText = zoomInputKey.gameObject.GetComponentInChildren<Text>();
-                zoomKeyText.text = zoomKeycode.ToString();
+                    crouchInputKey = GameObject.Find("CrouchInput").GetComponent<Toggle>();
+                    crouchKeyText = crouchInputKey.gameObject.GetComponentInChildren<Text>();
+                    crouchKeyText.text = crouchKeycode.ToString();
 
-            }
-            if (grappleKeyText == null)
-            {
-                grappleInputKey = GameObject.Find("GrappleInput").GetComponent<Toggle>();
-                grappleKeyText = grappleInputKey.gameObject.GetComponentInChildren<Text>();
-                grappleKeyText.text = grappleKeycode.ToString();
-            }
-            if (weaponSwapKeyText == null)
-            {
-                weaponSwapInputkey = GameObject.Find("WeaponInput").GetComponent<Toggle>();
-                weaponSwapKeyText = weaponSwapInputkey.gameObject.GetComponentInChildren<Text>();
-                weaponSwapKeyText.text = weaponSwapcode.ToString();
-            }
+                }
+                if (sprintKeyText == null)
+                {
+                    sprintInputKey = GameObject.Find("SprintInput").GetComponent<Toggle>();
+                    sprintKeyText = sprintInputKey.gameObject.GetComponentInChildren<Text>();
+                    sprintKeyText.text = sprintKeycode.ToString();
+                }
+                if (zoomKeyText == null)
+                {
+                    zoomInputKey = GameObject.Find("ZoomInput").GetComponent<Toggle>();
+                    zoomKeyText = zoomInputKey.gameObject.GetComponentInChildren<Text>();
+                    zoomKeyText.text = zoomKeycode.ToString();
 
-            if (menu == null)
-            {
-                menu = GameObject.Find("Options").GetComponent<Transform>();
-            }
-            if (fpsScript == null && SceneManager.GetActiveScene().buildIndex != 0) //when I add this build index bit in - breaks options - HERE MURP
-            {
-                fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
-            }
-            if (fpsScript != null)
-            {
-                mouseXCurrent = fpsScript.GetCurrentXSensitivity();
-                mouseYCurrent = fpsScript.GetCurrentYSensitivity();
-            }
-            if (mouseX == null)
-            {
-                GameObject.Find("MouseXSensSlide");
-            }
-            if (mouseY == null)
-            {
-                GameObject.Find("MouseYSensSlider");
-            }
-            if (inputWarning == null)
-            {
-                GameObject.Find("InputWarning");
-            }
-            //if (currentKeycodes == null)
-            // {
+                }
+                if (grappleKeyText == null)
+                {
+                    grappleInputKey = GameObject.Find("GrappleInput").GetComponent<Toggle>();
+                    grappleKeyText = grappleInputKey.gameObject.GetComponentInChildren<Text>();
+                    grappleKeyText.text = grappleKeycode.ToString();
+                }
+                if (weaponSwapKeyText == null)
+                {
+                    weaponSwapInputkey = GameObject.Find("WeaponInput").GetComponent<Toggle>();
+                    weaponSwapKeyText = weaponSwapInputkey.gameObject.GetComponentInChildren<Text>();
+                    weaponSwapKeyText.text = weaponSwapcode.ToString();
+                }
+
+                if (menu == null)
+                {
+                    menu = GameObject.Find("Options").GetComponent<Transform>();
+                }
+                if (fpsScript == null && SceneManager.GetActiveScene().buildIndex != 0) //when I add this build index bit in - breaks options - HERE MURP
+                {
+                    fpsScript = Camera.main.GetComponent<FirstPersonCamera>();
+                }
+                if (fpsScript != null)
+                {
+                    mouseXCurrent = fpsScript.GetCurrentXSensitivity();
+                    mouseYCurrent = fpsScript.GetCurrentYSensitivity();
+                }
+                if (mouseX == null)
+                {
+                    GameObject.Find("MouseXSensSlide");
+                }
+                if (mouseY == null)
+                {
+                    GameObject.Find("MouseYSensSlider");
+                }
+                if (inputWarning == null)
+                {
+                    GameObject.Find("InputWarning");
+                }
+                //if (currentKeycodes == null)
+                // {
 
 
-            // }
-            if (warningText == null)
-            {
-                GameObject.Find("WarningText");
+                // }
+                if (warningText == null)
+                {
+                    GameObject.Find("WarningText");
+                }
             }
+        }
+        catch
+        {
+            int inCinematic = 1;
         }
     }
 

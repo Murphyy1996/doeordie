@@ -139,14 +139,17 @@ public class LedgeClimbV2 : MonoBehaviour
 
     private void Update() //This code is used for checking button keypresses
     {
-        //If space is being held and the conditions are passed, check to see if the player is standing on 
-        if (Input.GetKey(KeyCode.Space) && grapple.IsCurrentlyGrappling() == false && firstPerson.isShaking == false)
+        if (firstPerson != null)
         {
-            shouldCheckForClimableLedge = true;
-        }
-        else
-        {
-            shouldCheckForClimableLedge = false;
+            //If space is being held and the conditions are passed, check to see if the player is standing on 
+            if (Input.GetKey(KeyCode.Space) && grapple.IsCurrentlyGrappling() == false && firstPerson.isShaking == false)
+            {
+                shouldCheckForClimableLedge = true;
+            }
+            else
+            {
+                shouldCheckForClimableLedge = false;
+            }
         }
     }
 
