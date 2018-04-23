@@ -149,6 +149,10 @@ public class InGamePause : MonoBehaviour
 
     public void ClosePauseMenu()
     {
+        if (QuestManager.inst.subtitleAudioSource.clip != null)
+        {
+            QuestManager.inst.subtitleAudioSource.UnPause();
+        }
         foreach (AudioSource audioSource in audioSourcesThatNeedsUnpausing)
         {
             audioSource.UnPause();
@@ -204,6 +208,10 @@ public class InGamePause : MonoBehaviour
     private void PauseGame()
     {
         Time.timeScale = 0;
+        if (QuestManager.inst.subtitleAudioSource.isPlaying == true)
+        {
+            QuestManager.inst.subtitleAudioSource.Pause();
+        }
     }
 
     public void Leaderboard()
