@@ -13,7 +13,8 @@ public class InGamePause : MonoBehaviour
     private bool allowedToPause = true, shouldbeVisible = false;
     [SerializeField]
     private GameObject optionsPrefab;
-    private Canvas spawnedOptionsCanvas;
+    [SerializeField]
+    public Canvas spawnedOptionsCanvas;
     private List<AudioSource> audioSourcesThatNeedsUnpausing = new List<AudioSource>();
     private ReusableHealth playerHealth;
     private GameObject foundDeathScreen;
@@ -21,7 +22,7 @@ public class InGamePause : MonoBehaviour
     public bool paused = false;
     public static InGamePause inst;
 
-    
+
 
 
 
@@ -197,7 +198,12 @@ public class InGamePause : MonoBehaviour
         {
             OpenPauseMenu();
         }
+        Invoke("PauseGame", 0.1f);
+    }
 
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
     }
 
     public void Leaderboard()
