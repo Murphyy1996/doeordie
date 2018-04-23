@@ -1,24 +1,26 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Fungus
 {
     /// <summary>
     /// Sets the mouse cursor sprite.
     /// </summary>
-    [CommandInfo("Sprite", 
-                 "Set Mouse Cursor", 
+    [CommandInfo("Sprite",
+                 "Set Mouse Cursor",
                  "Sets the mouse cursor sprite.")]
     [AddComponentMenu("")]
-    public class SetMouseCursor : Command 
+    public class SetMouseCursor : Command
     {
         [Tooltip("Texture to use for cursor. Will use default mouse cursor if no sprite is specified")]
-        [SerializeField] protected Texture2D cursorTexture;
+        [SerializeField]
+        protected Texture2D cursorTexture;
 
         [Tooltip("The offset from the top left of the texture to use as the target point")]
-        [SerializeField] protected Vector2 hotSpot;
+        [SerializeField]
+        protected Vector2 hotSpot;
 
         // Cached static cursor settings
         protected static Texture2D activeCursorTexture;
@@ -29,12 +31,12 @@ namespace Fungus
         public static void ResetMouseCursor()
         {
             // Change mouse cursor back to most recent settings
-            Cursor.SetCursor(activeCursorTexture, activeHotspot, CursorMode.Auto);
+            //Cursor.SetCursor(activeCursorTexture, activeHotspot, CursorMode.Auto);
         }
 
         public override void OnEnter()
         {
-            Cursor.SetCursor(cursorTexture, hotSpot, CursorMode.Auto);
+            //Cursor.SetCursor(cursorTexture, hotSpot, CursorMode.Auto);
 
             activeCursorTexture = cursorTexture;
             activeHotspot = hotSpot;

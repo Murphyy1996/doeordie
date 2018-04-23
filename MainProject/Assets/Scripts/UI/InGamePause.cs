@@ -102,14 +102,14 @@ public class InGamePause : MonoBehaviour
         //Control the visibility of the cursor
         if (shouldbeVisible == true)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
 
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
     }
 

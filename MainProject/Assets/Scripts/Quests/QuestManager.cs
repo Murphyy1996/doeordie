@@ -13,7 +13,7 @@ public class QuestManager : MonoBehaviour
     public List<QuestTemplate> complete = new List<QuestTemplate>();
     private Quaternion preDialogueCamRotation, preDialogueRotation;
     private bool preConvoGrappleVal = false, preConvoTeleportVal = false;
-  //  private NavMeshObstacle playerNav;
+    //  private NavMeshObstacle playerNav;
     private Camera mainCamera;
     private FirstPersonCamera fpsScript;
     public bool inConvo = false;
@@ -34,8 +34,8 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
-       // playerNav = GetComponent<NavMeshObstacle>();
-       // playerNav.enabled = false;
+        // playerNav = GetComponent<NavMeshObstacle>();
+        // playerNav.enabled = false;
     }
 
     private void Update()
@@ -58,7 +58,7 @@ public class QuestManager : MonoBehaviour
     public void StartDialogue() //Pause the game, stop the camera and show the mouse
     {
         inConvo = true;
-       // playerNav.enabled = true;
+        // playerNav.enabled = true;
         preConvoGrappleVal = GetComponent<Grapple>().IsGrappleAllowed();
         preConvoTeleportVal = GetComponent<Teleporting>().ReturnIfTeleportEnabled();
         GetComponent<ReusableHealth>().SetInvincibleValue(true);
@@ -69,8 +69,8 @@ public class QuestManager : MonoBehaviour
         GetComponent<Shooting>().SetShootAllowedValue(false);
         GetComponent<InGamePause>().SetAllowedToPause(false);
         Camera.main.GetComponent<FirstPersonCamera>().IsCameraAllowedToMove(false);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
     }
 
     public bool CheckIfQuestCompleted(QuestTemplate questReference) //This will return whether a quest is completed or not
@@ -153,8 +153,8 @@ public class QuestManager : MonoBehaviour
         GetComponent<Teleporting>().SetTeleportEnabledValue(preConvoTeleportVal);
         GetComponent<Grapple>().SetGrappleAllowedValue(preConvoGrappleVal);
         Camera.main.GetComponent<FirstPersonCamera>().IsCameraAllowedToMove(true);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
         UnPauseGame();
     }
 

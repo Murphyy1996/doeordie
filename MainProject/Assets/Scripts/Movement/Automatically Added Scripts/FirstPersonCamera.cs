@@ -45,7 +45,7 @@ public class FirstPersonCamera : MonoBehaviour
         rotationY = 0;
         rotationX = 0;
         //Lock the cursor to the center of the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         //Set the player variable
         player = thisTransform.parent;
         //By default disable camera movement

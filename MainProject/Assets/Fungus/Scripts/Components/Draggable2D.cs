@@ -1,7 +1,7 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
@@ -18,23 +18,29 @@ namespace Fungus
     public class Draggable2D : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
     {
         [Tooltip("Is object dragging enabled")]
-        [SerializeField] protected bool dragEnabled = true;
+        [SerializeField]
+        protected bool dragEnabled = true;
 
         [Tooltip("Move object back to its starting position when drag is cancelled")]
         [FormerlySerializedAs("returnToStartPos")]
-        [SerializeField] protected bool returnOnCancelled = true;
+        [SerializeField]
+        protected bool returnOnCancelled = true;
 
         [Tooltip("Move object back to its starting position when drag is completed")]
-        [SerializeField] protected bool returnOnCompleted = true;
+        [SerializeField]
+        protected bool returnOnCompleted = true;
 
         [Tooltip("Time object takes to return to its starting position")]
-        [SerializeField] protected float returnDuration = 1f;
+        [SerializeField]
+        protected float returnDuration = 1f;
 
         [Tooltip("Mouse texture to use when hovering mouse over object")]
-        [SerializeField] protected Texture2D hoverCursor;
+        [SerializeField]
+        protected Texture2D hoverCursor;
 
         [Tooltip("Use the UI Event System to check for drag events. Clicks that hit an overlapping UI object will be ignored. Camera must have a PhysicsRaycaster component, or a Physics2DRaycaster for 2D colliders.")]
-        [SerializeField] protected bool useEventSystem;
+        [SerializeField]
+        protected bool useEventSystem;
 
         protected Vector3 startingPosition;
         protected bool updatePosition = false;
@@ -51,7 +57,7 @@ namespace Fungus
 
         public void UnregisterHandler(DragCompleted handler)
         {
-            if(dragCompletedHandlers.Contains(handler))
+            if (dragCompletedHandlers.Contains(handler))
             {
                 dragCompletedHandlers.Remove(handler);
             }
@@ -69,7 +75,7 @@ namespace Fungus
             }
         }
 
-        protected virtual void OnTriggerEnter2D(Collider2D other) 
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
             if (!dragEnabled)
             {
@@ -81,7 +87,7 @@ namespace Fungus
             eventDispatcher.Raise(new DragEntered.DragEnteredEvent(this, other));
         }
 
-        protected virtual void OnTriggerExit2D(Collider2D other) 
+        protected virtual void OnTriggerExit2D(Collider2D other)
         {
             if (!dragEnabled)
             {
@@ -157,7 +163,7 @@ namespace Fungus
                     LeanTween.move(gameObject, startingPosition, returnDuration).setEase(LeanTweenType.easeOutExpo);
                 }
             }
-            else if(returnOnCompleted)
+            else if (returnOnCompleted)
             {
                 LeanTween.move(gameObject, startingPosition, returnDuration).setEase(LeanTweenType.easeOutExpo);
             }
@@ -180,7 +186,7 @@ namespace Fungus
                 return;
             }
 
-            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+            //Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
         }
 
         #region Legacy OnMouseX methods
@@ -216,7 +222,7 @@ namespace Fungus
                 DoPointerEnter();
             }
         }
-        
+
         protected virtual void OnMouseExit()
         {
             if (!useEventSystem)

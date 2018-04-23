@@ -31,7 +31,7 @@ public class ThirdPersonCamera : MonoBehaviour
         rotationX = thisTransform.eulerAngles.x;
 
         //Lock the cursor to the center of the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         //Add the required components
         thisCollider = gameObject.AddComponent<BoxCollider>();
