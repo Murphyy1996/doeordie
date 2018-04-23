@@ -20,7 +20,6 @@ public class PushPlayer : MonoBehaviour
         
         if (other.GetComponent<Collider>().tag == "Player")
         {
-            Debug.Log("col");
             Vector3 enemyPos = this.gameObject.transform.position;
             Vector3 directionToPush = enemyPos - player.transform.position;
    
