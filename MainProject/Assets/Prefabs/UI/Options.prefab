@@ -5290,16 +5290,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 471430665dbe1b2428cc59229ab4d69c, type: 3}
-    m_FontSize: 14
+    m_FontSize: 160
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 160
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Return To Mission
 --- !u!114 &114841608002233928
@@ -8143,7 +8143,7 @@ RectTransform:
   m_GameObject: {fileID: 1490244632649734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.105345, y: 0.12363577, z: 0.12363577}
   m_Children: []
   m_Father: {fileID: 224749641354329404}
   m_RootOrder: 0
