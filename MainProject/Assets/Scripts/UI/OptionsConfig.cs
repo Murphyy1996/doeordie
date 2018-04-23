@@ -262,13 +262,16 @@ public class OptionsConfig : MonoBehaviour
                 ControlZoomKeycode();
                 ControlGrappleKeycode();
                 //Set the bool accordingly
-                if (volumetricToggle.isOn == true)
+                if (volumetricToggle != null)
                 {
-                    volumetricLights = true;
-                }
-                else
-                {
-                    volumetricLights = false;
+                    if (volumetricToggle.isOn == true)
+                    {
+                        volumetricLights = true;
+                    }
+                    else
+                    {
+                        volumetricLights = false;
+                    }
                 }
                 PostProcessingToggle();
                 ControlMouseSens();
