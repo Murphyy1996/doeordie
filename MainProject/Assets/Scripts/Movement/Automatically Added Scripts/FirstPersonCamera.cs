@@ -33,6 +33,8 @@ public class FirstPersonCamera : MonoBehaviour
     [HideInInspector]
     public bool horizontalClampAllowed = false;
     private float horizontalClampValue;
+    [HideInInspector]
+    public bool isShaking = false;
 
     private void Awake() //Get components and set defaults
     {

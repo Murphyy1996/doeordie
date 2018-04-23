@@ -20,13 +20,14 @@ public class BossCameraShake : MonoBehaviour
             if (shakeDuration > 0)
             {
                 camTransform.localPosition = fpsCam.defaultLocalPos + Random.insideUnitSphere * shakeAmount;
-
+                fpsCam.isShaking = true;
                 shakeDuration -= Time.deltaTime * decreaseFactor;
             }
             else
             {
                 shakeDuration = 0f;
                 camTransform.localPosition = fpsCam.defaultLocalPos;
+                fpsCam.isShaking = false;
                 //Once returned to position, turn this script off
                 Destroy(this);
             }
