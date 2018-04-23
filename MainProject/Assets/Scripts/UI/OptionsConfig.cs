@@ -18,12 +18,12 @@ public class OptionsConfig : MonoBehaviour
     [Header("Saved Options")]
     public bool CamInvert = false;
     [SerializeField]
-    public bool sprintTog, CrouchTog, buttonPress = false, zoomToggleBool, vysncbool, postPEnabled = true; //by default the camera is not invert.
+    public bool sprintTog, CrouchTog, buttonPress = false, zoomToggleBool, vysncbool, postPEnabled = true, volumetricLights = true; //by default the camera is not invert.
     [Header("Component References")]
     [SerializeField]
     private Toggle invertCamToggle;
     [SerializeField]
-    private Toggle crouchToggle, sprintToggle, fullscreen, vSync, zoomTog, crouchInputKey, sprintInputKey, zoomInputKey, grappleInputKey, postPToggle, weaponSwapInputkey; //a refrence to the toggles
+    private Toggle crouchToggle, sprintToggle, fullscreen, vSync, zoomTog, crouchInputKey, sprintInputKey, zoomInputKey, grappleInputKey, postPToggle, weaponSwapInputkey, volumetricToggle; //a refrence to the toggles
     public Slider vol, mouseX, mouseY;
     public Text sprintKeyText, grappleKeyText, zoomKeyText, crouchKeyText, weaponSwapKeyText; //refrence to the buttons text so that it can be changed when a new input is chosen
     private Camera mainCamera;
@@ -55,7 +55,7 @@ public class OptionsConfig : MonoBehaviour
     private Text warningText;
     private int silentError;
     private bool potentialExtraKey = false;
-
+    private VolumetricLightRenderer volumetricRendererScript;
 
 
     private void Awake()
@@ -117,6 +117,11 @@ public class OptionsConfig : MonoBehaviour
                 if (fullscreen == null) //finds
                 {
                     fullscreen = GameObject.Find("Fullscreen").GetComponent<Toggle>();
+                }
+                if (volumetricToggle == null)
+                {
+                    volumetricToggle = GameObject.Find("volumetricToggle").GetComponent<Toggle>();
+                    volumetricToggle.isOn = volumetricLights;
                 }
                 if (vSync == null)
                 {
@@ -207,6 +212,10 @@ public class OptionsConfig : MonoBehaviour
                 {
                     GameObject.Find("WarningText");
                 }
+                if (Camera.main.GetComponent<VolumetricLightRenderer>() != null)
+                {
+                    volumetricRendererScript = Camera.main.GetComponent<VolumetricLightRenderer>();
+                }
             }
         }
         catch
@@ -252,10 +261,29 @@ public class OptionsConfig : MonoBehaviour
                 ControlSprintKeycode();
                 ControlZoomKeycode();
                 ControlGrappleKeycode();
-
+                //Set the bool accordingly
+                if (volumetricToggle.isOn == true)
+                {
+                    volumetricLights = true;
+                }
+                else
+                {
+                    volumetricLights = false;
+                }
                 PostProcessingToggle();
                 ControlMouseSens();
                 ControlWeaponSwapKeycode();
+                if (volumetricRendererScript != null)
+                {
+                    if (volumetricLights == true)
+                    {
+                        volumetricRendererScript.enabled = true;
+                    }
+                    else
+                    {
+                        volumetricRendererScript.enabled = false;
+                    }
+                }
                 //Allow detection of shift keys
                 if (potentialExtraKey == true)
                 {
@@ -1092,7 +1120,7 @@ public class OptionsConfig : MonoBehaviour
             Debug.Log("mouse X saved as" + mouseX.value);
 
             currentLine.WriteLine(OptionsConfig.inst.weaponSwapcode.ToString()); //116
-
+            currentLine.WriteLine(volumetricToggle.isOn.ToString()); //17
         }
         Invoke("DelayedStart", 1f);
     }
@@ -1237,8 +1265,17 @@ public class OptionsConfig : MonoBehaviour
 
 
                     }
-
-
+                    else if (lineCount == 17)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            volumetricLights = true;
+                        }
+                        else
+                        {
+                            volumetricLights = false;
+                        }
+                    }
                 }
             }
         }

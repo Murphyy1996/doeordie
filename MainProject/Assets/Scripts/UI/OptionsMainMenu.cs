@@ -19,7 +19,7 @@ public class OptionsMainMenu : MonoBehaviour
     [Header("Toggle References")]
     private Toggle sprintTogRef;
     [SerializeField]
-    private Toggle zoomTogRef, crouchTogRef, invertTogRef, windowedTogRef, vSyncTogRef, postProcessingTogRef;
+    private Toggle zoomTogRef, crouchTogRef, invertTogRef, windowedTogRef, vSyncTogRef, postProcessingTogRef, volumetricTogRef;
     [SerializeField]
     [Header("Keycode References")]
     private Toggle zoomKeycodeRef;
@@ -45,7 +45,7 @@ public class OptionsMainMenu : MonoBehaviour
     private void Awake() //Get any required components if neccesary
     {
         optionsSingletonReference = GameObject.Find("OptionsManager").GetComponent<OptionsConfig>();
-
+        volumetricTogRef.isOn = OptionsConfig.inst.volumetricLights;
         //Read options file
         LoadGame();
         //Mark the initial load as completed
@@ -181,6 +181,17 @@ public class OptionsMainMenu : MonoBehaviour
                     {
                         OptionsConfig.inst.weaponSwapcode = (KeyCode)System.Enum.Parse(typeof(KeyCode), line.ToString());
                     }
+                    else if (lineCount == 17)
+                    {
+                        if (line.ToString() == "True")
+                        {
+                            volumetricTogRef.isOn = true;
+                        }
+                        else
+                        {
+                            volumetricTogRef.isOn = false;
+                        }
+                    }
                 }
             }
         }
@@ -215,7 +226,7 @@ public class OptionsMainMenu : MonoBehaviour
             currentLine.WriteLine(0); //saves the value of the mouse sensitibity onther x axis    14
             currentLine.WriteLine(0); //saves the value of the mouse sensitibity onther y axis    15
             currentLine.WriteLine(optionsSingletonReference.weaponSwapcode.ToString()); //116
-
+            currentLine.WriteLine(optionsSingletonReference.volumetricLights.ToString()); //17
         }
     }
     private void Update()
@@ -275,6 +286,15 @@ public class OptionsMainMenu : MonoBehaviour
             else
             {
                 optionsSingletonReference.vysncbool = false;
+            }
+            //Control the volumetric toggle option
+            if (volumetricTogRef.isOn == true)
+            {
+                optionsSingletonReference.volumetricLights = true;
+            }
+            else
+            {
+                optionsSingletonReference.volumetricLights = false;
             }
             //Control the windowed toggle option
             if (windowedTogRef.isOn == true)
@@ -432,7 +452,7 @@ public class OptionsMainMenu : MonoBehaviour
                 potentialExtraKey = false;
                 newKey = KeyCode.LeftShift;
             }
-            else if(Input.GetKeyDown(KeyCode.RightShift))
+            else if (Input.GetKeyDown(KeyCode.RightShift))
             {
                 potentialExtraKey = false;
                 newKey = KeyCode.RightShift;
