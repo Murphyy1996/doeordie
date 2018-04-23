@@ -10,7 +10,7 @@ public class ForceMouseIntoPosition : MonoBehaviour
 {
     private void Awake() //Control the mouse on the tick, independent of timescale
     {
-        Invoke("Tick", 0.1f);
+        InvokeRepeating("Tick", 0, 0.1f);
     }
 
     private void Tick()

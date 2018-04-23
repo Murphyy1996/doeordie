@@ -33,10 +33,12 @@ public class PlayCinematic : MonoBehaviour
         {
             GetComponentInChildren<AudioSource>().Stop();
             LoadingUIManager.singleton.ShowLoadingScreen(sceneNameToLoadAfterCutscene);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         //Check for button input to skip the cutscene
-        if (Input.GetKey(KeyCode.Escape) || Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Escape) || Input.GetKeyUp(KeyCode.Space))
         {
             cutsceneCounter = 9999;
         }

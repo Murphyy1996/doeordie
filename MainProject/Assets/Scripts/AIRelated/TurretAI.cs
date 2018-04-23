@@ -73,7 +73,13 @@ public class TurretAI : MonoBehaviour
 
     private void OnDisable()
     {
-        AudioManage.inst.combatMusic.Stop();
+        if (AudioManage.inst != null)
+        {
+            if (AudioManage.inst.combatMusic != null)
+            {
+                AudioManage.inst.combatMusic.Stop();
+            }
+        }
     }
 
     void Update()
