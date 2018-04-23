@@ -11,8 +11,8 @@ public class Shooting : MonoBehaviour
 {
     private AmmoManager ammoManagerScript;
     private Crouch crouchScript;
-    [SerializeField]
-    private bool allowedToShoot = true;
+    [HideInInspector]
+    public bool allowedToShoot = true;
     [SerializeField]
     private GameObject bulletPrefab, bulletHitDecalPrefab;
     private List<GameObject> bulletObjPool = new List<GameObject>();

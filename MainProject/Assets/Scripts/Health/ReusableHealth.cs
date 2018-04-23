@@ -131,6 +131,8 @@ public class ReusableHealth : MonoBehaviour
                 behaviourPlayerDied.Value = true;
                 //Audio
                 AudioManage.inst.death.Play();
+                //Don't allow any more shooting
+                GetComponent<Shooting>().allowedToShoot = false;
                 //Delay the actual death
                 Invoke("DelayedPlayerDeathCode", 1f);
             }
@@ -270,14 +272,14 @@ public class ReusableHealth : MonoBehaviour
 
     public void ApplyDamage(int damageValue) //This code will apply the damage value when called
     {
-  
+
         if (invincible == false)
         {
 
             //Play goon hit sounds
-            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer !=  19)
+            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer != 19)
             {
-               if (audioSource != null)
+                if (audioSource != null)
                 {
                     audioSource.enabled = true;
                     audioSource.clip = clipToPlay;
@@ -292,7 +294,7 @@ public class ReusableHealth : MonoBehaviour
                     AudioManage.inst.combatMusic.Play();
                 }
             }
-                
+
 
             //This should make the object glow
             if (glowWhenDamaged == true)

@@ -40,6 +40,8 @@ public class GameOverScreen : MonoBehaviour
             InGameUI.inst.FadeOutGameOver(2f);
             //Unpause the game
             QuestManager.inst.UnPauseGame();
+            //Allow the player to shoot
+            player.GetComponent<Shooting>().allowedToShoot = true;
             //Destroy this script as its no longer needed
             Destroy(this);
         }
