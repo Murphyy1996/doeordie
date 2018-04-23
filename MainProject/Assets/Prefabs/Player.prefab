@@ -2998,6 +2998,7 @@ GameObject:
   - component: {fileID: 114474184252223480}
   - component: {fileID: 114574688848084876}
   - component: {fileID: 114551195056591872}
+  - component: {fileID: 114628855932058072}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -9349,6 +9350,17 @@ MonoBehaviour:
   lastTeleportDirection: 0
   teleportIndicator: {fileID: 1696088197617024, guid: ea107b7ecabe52b4a8900f228dc90b9f,
     type: 2}
+--- !u!114 &114628855932058072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792804878406356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7da17d3efe60fb418b7f9ebf825e52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114651548056989190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9517,6 +9529,7 @@ MonoBehaviour:
     type: 2}
   optionsPrefab: {fileID: 1862540417847076, guid: ea6347d208f74ba4f868ce344107b5ed,
     type: 2}
+  spawnedOptionsCanvas: {fileID: 0}
   paused: 0
 --- !u!114 &114906111210062906
 MonoBehaviour:
