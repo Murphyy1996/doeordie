@@ -31,7 +31,7 @@ public class PushPlayer : MonoBehaviour
     {
         if (other.GetComponent<Collider>().tag == "Player")
         {
-            print("stop jumping on head");
+            Debug.Log("stop jumping on head");
             Vector3 enemyPos = this.gameObject.transform.position;
             Vector3 directionToPush = enemyPos - player.transform.position;
             directionToPush.y = 0f;
