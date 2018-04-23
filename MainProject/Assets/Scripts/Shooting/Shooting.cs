@@ -365,6 +365,7 @@ public class Shooting : MonoBehaviour
 
                             case WeaponInfo.weapon.shotgun:
                                     AudioManage.inst.shotgun.Play();
+                                    Debug.Log("shotgun noise plays pls");
                                     break;
                         }
                     }
