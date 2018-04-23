@@ -44,6 +44,10 @@ public class Menu : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex != 0)
         {
+            if (OptionsConfig.inst != null)
+            {
+                OptionsConfig.inst.SaveOptions();
+            }
             if (options == null)
             {
                 options = GameObject.Find("OptionsMenu").GetComponent<Canvas>();
