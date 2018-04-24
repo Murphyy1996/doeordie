@@ -470,7 +470,7 @@ public class Shooting : MonoBehaviour
     {
         if (animatorComponent != null)
         {
-            if (grappleScript.IsCurrentlyGrappling() == false && currentWeaponScript.weaponModel != WeaponInfo.weapon.shotgun)
+            if (grappleScript.IsCurrentlyGrappling() == false) //&& currentWeaponScript.weaponModel != WeaponInfo.weapon.shotgun)
             {
                 if (thisCC.velocity.magnitude >= 18)
                 {
