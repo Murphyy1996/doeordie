@@ -192,9 +192,15 @@ public class Teleporting : MonoBehaviour
 
     private void TeleportFailsafe() //Force the player to the teleport point
     {
-        if (gameoverScreen.color.a == 0)
+        if (gameoverScreen.color.a == 0 && CanActuallyTeleport() == true)
         {
-            transform.position = teleportEmpty.transform.position;
+            if (teleportPointScript != null)
+            {
+                if (teleportPointScript.AmInObject() == false)
+                {
+                    transform.position = teleportEmpty.transform.position;
+                }
+            }
         }
         isTeleporting = false;
         failSafeTimer = 0;
