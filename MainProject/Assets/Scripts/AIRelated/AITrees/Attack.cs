@@ -9,9 +9,11 @@ public class Attack : Action
 
     public int damageToPlayer = 5;
     private Transform playerTransform;
+    ReusableHealth reusableHealth;
 
     public override void OnStart()
     {
+        reusableHealth = GetComponent<ReusableHealth>();
         base.OnStart();
     }
 
@@ -27,6 +29,7 @@ public class Attack : Action
         transform.rotation = Quaternion.Slerp(transform.rotation, tarRot, Time.smoothDeltaTime * 50f); //Add variable for alert turn speed
 
         //Apply damage when player is hit
+        playerTransform.GetComponent<ReusableHealth>().CalculateHitDirection(this.gameObject.transform.position);
         playerTransform.GetComponent<ReusableHealth>().ApplyDamage(damageToPlayer);
 
         return TaskStatus.Success; 
