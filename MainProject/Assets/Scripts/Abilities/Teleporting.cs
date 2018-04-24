@@ -37,6 +37,7 @@ public class Teleporting : MonoBehaviour
     private float failSafeTimer = 0;
     private WallClimbV2 wallClimbScript;
     private Vector3 defaultTeleportIndicatorLocalPosition;
+    private ReusableHealth playerHealth;
 
     public enum teleportDirection
     {
@@ -62,6 +63,7 @@ public class Teleporting : MonoBehaviour
         grappleScript = GetComponent<Grapple>();
         wallClimbScript = GetComponent<WallClimbV2>();
         teleportIndicatorParent = GameObject.Find("TeleportIndicatorParent").transform;
+        playerHealth = GetComponent<ReusableHealth>();
         Invoke("GetCamera", 0.02f);
     }
 
@@ -242,25 +244,34 @@ public class Teleporting : MonoBehaviour
             {
                 teleportEmpty.transform.SetParent(teleportIndicatorParent);
             }
-            //Will control whether you exit the teleport or enter it
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (playerHealth.playerIsDead == false)
+            {
+                //Will control whether you exit the teleport or enter it
+                if (Input.GetKeyDown(KeyCode.Mouse1))
+                {
+                    teleportButtonHeld = false;
+                    teleportButtonPressed = false;
+                    teleportEmpty.SetActive(false);
+                }
+                else if (Input.GetKeyDown(teleportKeyCode) && cooldown == false)
+                {
+                    tempTeleportStrength = teleportStrength;
+                    teleportButtonPressed = true;
+                    StandardTeleportCode(false);
+                }
+                else if (Input.GetKeyDown(KeyCode.Mouse0) && cooldown == false)
+                {
+                    tempTeleportStrength = teleportStrength;
+                    teleportButtonPressed = true;
+                    teleportButtonHeld = true;
+                    StandardTeleportCode(true);
+                }
+            }
+            else
             {
                 teleportButtonHeld = false;
                 teleportButtonPressed = false;
                 teleportEmpty.SetActive(false);
-            }
-            else if (Input.GetKeyDown(teleportKeyCode) && cooldown == false)
-            {
-                tempTeleportStrength = teleportStrength;
-                teleportButtonPressed = true;
-                StandardTeleportCode(false);
-            }
-            else if (Input.GetKeyDown(KeyCode.Mouse0) && cooldown == false)
-            {
-                tempTeleportStrength = teleportStrength;
-                teleportButtonPressed = true;
-                teleportButtonHeld = true;
-                StandardTeleportCode(true);
             }
         }
         else
@@ -342,9 +353,9 @@ public class Teleporting : MonoBehaviour
         //If using click is true and the user didn't teleport
         if (cooldown == false)
         {
-            if (teleportIndicator != null)
+            if (teleportEmpty != null)
             {
-                Destroy(teleportIndicator);
+                teleportEmpty.SetActive(false);
             }
             teleportEnabled = false;
             teleportButtonHeld = false;
@@ -370,6 +381,7 @@ public class Teleporting : MonoBehaviour
         }
         else
         {
+            CancelTeleport();
             cooldown = false;
         }
     }
@@ -447,10 +459,12 @@ public class Teleporting : MonoBehaviour
 
     public void CancelTeleport() //This will be called on death
     {
+        CancelInvoke();
+        teleportExitPending = true;
         teleportButtonHeld = false;
         if (teleportEmpty != null)
         {
-            Destroy(teleportEmpty);
+            teleportEmpty.SetActive(false);
         }
     }
 }

@@ -17,9 +17,10 @@ public class TeleportPoint : MonoBehaviour
     private Transform camTransform;
     private FirstPersonCamera fpsScript;
     private float rayLength;
-
+    private ReusableHealth playerHealth;
     private void OnEnable() //Size the collider depending the size of the player collider
     {
+        playerHealth = GameObject.Find("Player").GetComponent<ReusableHealth>();
         hasPlayerLOS = false;
         isInObject = false;
         this.gameObject.layer = 2;
@@ -98,31 +99,44 @@ public class TeleportPoint : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            hasPlayerLOS = false;
+        }
     }
 
     private void FixedUpdate()
     {
-        RaycastAtPlayer();
-        //if this object is active
-        if (teleportScript != null && this.isActiveAndEnabled == true && spawnedVisualIndicator != null)
+        if (playerHealth.healthValue > 0 )
         {
-            //Decide what colour to set the teleport indicator
-            if (isInObject == true || hasPlayerLOS == false)
+            RaycastAtPlayer();
+            //if this object is active
+            if (teleportScript != null && this.isActiveAndEnabled == true && spawnedVisualIndicator != null)
             {
-                ColourTeleportIndicatorRed();
-            }
-            else
-            {
-                if (teleportScript.CanActuallyTeleport() == true)
-                {
-                    ColourTeleportIndicatorBlue();
-                }
-                else
+                //Decide what colour to set the teleport indicator
+                if (isInObject == true || hasPlayerLOS == false)
                 {
                     ColourTeleportIndicatorRed();
                 }
+                else
+                {
+                    if (teleportScript.CanActuallyTeleport() == true)
+                    {
+                        ColourTeleportIndicatorBlue();
+                    }
+                    else
+                    {
+                        ColourTeleportIndicatorRed();
+                    }
+                }
+                //AutoAlignRaycast();
             }
-            //AutoAlignRaycast();
+        }
+        else
+        {
+            isInObject = true;
+            hasPlayerLOS = false;
+            ColourTeleportIndicatorRed();
         }
     }
     private void AutoAlignRaycast()

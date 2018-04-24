@@ -15,6 +15,11 @@ public class GameOverScreen : MonoBehaviour
         {
             runOnce = true;
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+            //Move the player back to the closest checkpoint
+            if (CheckpointManager.singleton.GetCurrentCheckpoint() != null)
+            {
+                player.transform.SetPositionAndRotation(CheckpointManager.singleton.GetCurrentCheckpoint().transform.position, CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation);
+            }
             player.GetComponent<Teleporting>().CancelTeleport();
             player.GetComponent<Teleporting>().SetTeleportEnabledValue(false);
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
@@ -46,8 +51,10 @@ public class GameOverScreen : MonoBehaviour
             //Allow the player to shoot
             player.GetComponent<Shooting>().allowedToShoot = true;
             player.GetComponent<Teleporting>().SetTeleportEnabledValue(true);
-            //Run the destroy code slightly late to give the player a slight grace period of health upon respawning
-            Invoke("DestroyMe", 0.5f);
+            player.GetComponent<ReusableHealth>().SetInvincibleValue(false);
+            player.GetComponent<ReusableHealth>().playerIsDead = false;
+            player.GetComponent<ReusableHealth>().runOnce = false;
+            Destroy(this);
         }
     }
 
@@ -57,6 +64,6 @@ public class GameOverScreen : MonoBehaviour
         //Don't make the player invinicble any more
         player.GetComponent<ReusableHealth>().SetInvincibleValue(false);
         //Destroy this script as its no longer needed
-        Destroy(this);
+
     }
 }

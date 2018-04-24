@@ -13,6 +13,7 @@ public class ReusableHealth : MonoBehaviour
     [SerializeField]
     private bool destroyAfterDeath = false;
     private List<Drone> droneScriptList = new List<Drone>();
+    [SerializeField]
     private bool bloodDecalsCreated = false, invincible = false;
     [SerializeField]
     [Header("Optional")]
@@ -45,6 +46,8 @@ public class ReusableHealth : MonoBehaviour
     private float errorCounter = 0;
     private bool amDead = false;
     AudioSource audioSource;
+    public bool playerIsDead = false;
+    public bool runOnce = false;
 
     private void Start()
     {
@@ -118,17 +121,21 @@ public class ReusableHealth : MonoBehaviour
         if (healthValue <= 0) //Check if the health value is below zero and if so, destroy the object
         {
             amDead = true;
-            if (this.gameObject.tag == "Player") //If it is the player respawn at the latest checkpoint
+            if (this.gameObject.tag == "Player" && runOnce == false) //If it is the player respawn at the latest checkpoint
             {
+                runOnce = true;
+                playerIsDead = true;
                 //Fade in the game over screen
                 InGameUI.inst.FadeInGameOver(1);
                 //Make the player invicible
                 invincible = true;
                 //Stop movement etc
+                GetComponent<Teleporting>().CancelTeleport();
                 GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(false);
                 GetComponentInChildren<FirstPersonCamera>().IsCameraAllowedToMove(false);
                 GetComponent<Crouch>().enabled = false;
                 GetComponent<Crouch>().enabled = true;
+                GetComponent<Teleporting>().SetTeleportEnabledValue(false);
                 //Set behaviour tree reference to player died
                 behaviourPlayerDied.Value = true;
                 //Audio
@@ -222,8 +229,6 @@ public class ReusableHealth : MonoBehaviour
             transform.SetPositionAndRotation(CheckpointManager.singleton.GetCurrentCheckpoint().transform.position, CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation);
             //transform.position = CheckpointManager.singleton.GetCurrentCheckpoint().transform.position;
         }
-        //Rotate the player 
-        transform.rotation = CheckpointManager.singleton.GetCurrentCheckpoint().transform.rotation;
         //Force the player camera back in line
         Camera.main.transform.localPosition = new Vector3(0, Camera.main.transform.localPosition.y, 0);
 
