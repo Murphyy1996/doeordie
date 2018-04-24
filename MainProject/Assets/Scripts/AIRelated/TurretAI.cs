@@ -37,6 +37,7 @@ public class TurretAI : MonoBehaviour
     [HideInInspector]
     public bool manuallyTriggerAttack = false;
     private float forceAttackTimer = 0;
+    public AudioSource audioSource;
 
     //Script References
     ReusableHealth playerHealthScript;
@@ -257,6 +258,11 @@ public class TurretAI : MonoBehaviour
                     AudioManage.inst.combatMusic.Play();
                 }
             }
+
+            audioSource.enabled = true;
+
+            audioSource.Play();
+
             bullet = shooting.ReturnBulletObjectPool()[0];
             bullet.GetComponent<Bullet>().bulletOrigin = bulletOrigin;
             bullet.GetComponent<Bullet>().recoil = 0.8f;
