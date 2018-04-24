@@ -2997,7 +2997,6 @@ GameObject:
   - component: {fileID: 114199863897683918}
   - component: {fileID: 199791837912434462}
   - component: {fileID: 198427487591693392}
-  - component: {fileID: 114474184252223480}
   - component: {fileID: 114574688848084876}
   - component: {fileID: 114551195056591872}
   - component: {fileID: 114628855932058072}
@@ -9376,20 +9375,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 49153
   destroyThisScriptAfterSetUp: 0
---- !u!114 &114474184252223480
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1792804878406356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddae2dfa96f7f2b4ab5228a147fcdf1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectatorCamPrefab: {fileID: 1904816796624256, guid: 950af988a1bede6479ad59b6a229135e,
-    type: 2}
-  spawnedSpectatorCam: {fileID: 0}
 --- !u!114 &114494744595845300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9637,6 +9622,8 @@ MonoBehaviour:
   maxHealth: 100
   maxArmor: 0
   destroyAfterDeath: 0
+  bloodDecalsCreated: 0
+  invincible: 0
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
@@ -9674,6 +9661,8 @@ MonoBehaviour:
   bloods: {fileID: 0}
   explos: {fileID: 0}
   workingExplosion: {fileID: 0}
+  playerIsDead: 0
+  runOnce: 0
 --- !u!114 &114812025907779568
 MonoBehaviour:
   m_ObjectHideFlags: 1
