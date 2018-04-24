@@ -9,11 +9,17 @@ public class PlayAudioSource : Action
 
     public AudioSource audioSource;
 
+
+
     public override TaskStatus OnUpdate()
     {
-        audioSource.enabled = true;
+        if (audioSource != null)
+        {
+            audioSource.enabled = true;
+            audioSource.Play();
 
-        StartCoroutine("TurnOffClip");
+            StartCoroutine("TurnOffClip");
+        }
 
         return TaskStatus.Success; 
     }
