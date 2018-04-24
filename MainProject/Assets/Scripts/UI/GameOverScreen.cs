@@ -16,6 +16,7 @@ public class GameOverScreen : MonoBehaviour
             runOnce = true;
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             player.GetComponent<Teleporting>().CancelTeleport();
+            player.GetComponent<Teleporting>().SetTeleportEnabledValue(false);
             player.GetComponent<CharacterControllerMovement>().IsPlayerInputEnabled(true);
             //Refresh player ammo
             AmmoManager ammo = player.GetComponent<AmmoManager>();
@@ -44,6 +45,7 @@ public class GameOverScreen : MonoBehaviour
             QuestManager.inst.UnPauseGame();
             //Allow the player to shoot
             player.GetComponent<Shooting>().allowedToShoot = true;
+            player.GetComponent<Teleporting>().SetTeleportEnabledValue(true);
             //Run the destroy code slightly late to give the player a slight grace period of health upon respawning
             Invoke("DestroyMe", 0.5f);
         }
