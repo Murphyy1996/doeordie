@@ -579,6 +579,6 @@ public class BossAI : MonoBehaviour
 
     private void TransitionToPlatformingSection() //Transition to the on foot section
     {
-        LoadingUIManager.singleton.ShowLoadingScreen("SpeedRun");
+        LoadingUIManager.singleton.ShowLoadingScreen("AfterBoss");
     }
 }
