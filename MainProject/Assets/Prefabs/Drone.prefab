@@ -267,7 +267,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487657286132412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 654.1025, y: 65.04181, z: -181.65994}
+  m_LocalPosition: {x: -3.22, y: 14.94, z: 4.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4280521297106408}
@@ -671,7 +671,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aa94ff31ff38cd246b6eee931840451c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -916,6 +916,8 @@ MonoBehaviour:
   maxHealth: 15
   maxArmor: 20
   destroyAfterDeath: 1
+  bloodDecalsCreated: 0
+  invincible: 0
   bossHealthUI: {fileID: 0}
   glowWhenDamaged: 0
   glowMaterialRegularHit: {fileID: 0}
@@ -953,6 +955,8 @@ MonoBehaviour:
   bloods: {fileID: 0}
   explos: {fileID: 0}
   workingExplosion: {fileID: 0}
+  playerIsDead: 0
+  runOnce: 0
 --- !u!114 &114580049160972660
 MonoBehaviour:
   m_ObjectHideFlags: 1
