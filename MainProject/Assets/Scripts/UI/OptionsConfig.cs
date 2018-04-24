@@ -1090,8 +1090,35 @@ public class OptionsConfig : MonoBehaviour
     {
         //Get the file path of the leadboard file
         optionsPath = Environment.CurrentDirectory + @"\Options.txt";
-
-
+        if (resolution != null)
+        {
+            switch (resolution.value)
+            {
+                case 0:
+                    Screen.SetResolution(1920, 1080, Screen.fullScreen);
+                    break;
+                case 1:
+                    Screen.SetResolution(1440, 900, Screen.fullScreen);
+                    break;
+                case 2:
+                    Screen.SetResolution(1366, 768, Screen.fullScreen);
+                    break;
+                case 3:
+                    Screen.SetResolution(1280, 720, Screen.fullScreen);
+                    break;
+            }
+        }
+        if (fullscreen != null)
+        {
+            if (fullscreen.isOn == true)
+            {
+                Screen.fullScreen = true;
+            }
+            else
+            {
+                Screen.fullScreen = false;
+            }
+        }
         //Check if the file path exists and if not create it
         // Create a file to write to.
         using (StreamWriter currentLine = File.CreateText(optionsPath))
@@ -1120,7 +1147,6 @@ public class OptionsConfig : MonoBehaviour
 
             currentLine.WriteLine(OptionsConfig.inst.mouseX.value.ToString()); //saves the value of the mouse sensitibity onther x axis    14
             currentLine.WriteLine(OptionsConfig.inst.mouseY.value.ToString()); //saves the value of the mouse sensitibity onther y axis    15
-            Debug.Log("mouse X saved as" + mouseX.value);
 
             currentLine.WriteLine(OptionsConfig.inst.weaponSwapcode.ToString()); //116
             currentLine.WriteLine(volumetricToggle.isOn.ToString()); //17

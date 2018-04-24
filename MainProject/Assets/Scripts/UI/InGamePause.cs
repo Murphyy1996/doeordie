@@ -154,17 +154,15 @@ public class InGamePause : MonoBehaviour
         {
             AudioManage.inst.machShot.Stop();
         }
-      
+
         if (AudioManage.inst.background != null)
         {
             AudioManage.inst.background.Stop();
         }
         shouldbeVisible = true;
         paused = true;
-        Debug.Log("before lock state runs");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Debug.Log("after lock state runs");
     }
 
     public void ClosePauseMenu()
