@@ -433,6 +433,8 @@ public class BossAI : MonoBehaviour
             targetID = 0;
             //Mark the final phase as ready
             finalPhaseReady = true;
+            startingDialogue.SetActive(false);
+            killBossDialogue.SetActive(true);
             //Remove the look animation to make the rotate around the tunnel correctly
             phase4Turret.GetComponent<TurretAI>().lookAnim = null;
             //Force the drone to attack the player
@@ -573,6 +575,7 @@ public class BossAI : MonoBehaviour
 
     private void TransitionToPlatformingSection() //Transition to the on foot section
     {
+        killBossDialogue.SetActive(false);
         LoadingUIManager.singleton.ShowLoadingScreen("AfterBoss");
     }
 }
