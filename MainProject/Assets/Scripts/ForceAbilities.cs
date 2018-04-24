@@ -32,8 +32,11 @@ public class ForceAbilities : MonoBehaviour
         }
         else
         {
-            grappleScript.SetGrappleAllowedValue(true);
-            teleportScript.SetTeleportEnabledValue(true);
+            if (teleportScript != null && grappleScript != null)
+            {
+                grappleScript.SetGrappleAllowedValue(true);
+                teleportScript.SetTeleportEnabledValue(true);
+            }
         }
     }
 }

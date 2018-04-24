@@ -204,7 +204,7 @@ public class ReusableHealth : MonoBehaviour
         crouchScript.StopAllCoroutines();
         GetComponent<CharacterControllerMovement>().StopAllMovement();
         GetComponent<Grapple>().ExitGrapple();
-
+        GetComponent<Teleporting>().CancelTeleport();
         //Set health back to default
         healthValue = maxHealth;
         armorValue = maxArmor;
@@ -215,6 +215,7 @@ public class ReusableHealth : MonoBehaviour
         //Get weapon ammos back to default
         Shooting shootScript = GetComponent<Shooting>();
         AmmoManager ammoScript = GetComponent<AmmoManager>();
+
         //Move the player back to the closest checkpoint
         if (CheckpointManager.singleton.GetCurrentCheckpoint() != null)
         {
