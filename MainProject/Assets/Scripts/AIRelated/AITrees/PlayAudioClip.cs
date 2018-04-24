@@ -7,18 +7,13 @@ using BehaviorDesigner.Runtime.Tasks;
 public class PlayAudioClip : Action
 {
 
-    AudioSource audioSource;
-    public AudioClip clipToPlay;
-
-    public override void OnStart()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public AudioSource audioSource;
+    //public AudioClip clipToPlay;
 
     public override TaskStatus OnUpdate()
     {
         audioSource.enabled = true;
-        audioSource.clip = clipToPlay;
+        //audioSource.clip = clipToPlay;
         //StartCoroutine("TurnOffClip");
 
         return TaskStatus.Success; 

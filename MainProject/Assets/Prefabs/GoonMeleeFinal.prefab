@@ -2760,6 +2760,7 @@ GameObject:
   - component: {fileID: 114159499615312174}
   - component: {fileID: 114430921333297556}
   - component: {fileID: 114122764097587606}
+  - component: {fileID: 82203665341622174}
   m_Layer: 0
   m_Name: GoonMeleeFinal
   m_TagString: enemy
@@ -7799,6 +7800,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.029970646, y: 0.09461519, z: 0.032434676}
   m_Center: {x: 0.0010892285, y: 0.050817307, z: -0.0015583038}
+--- !u!82 &82203665341622174
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1683947661033846}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a89ecaf80bced5548a9f3649617c1e83, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!82 &82693811526847446
 AudioSource:
   m_ObjectHideFlags: 1
@@ -8002,7 +8083,7 @@ MonoBehaviour:
         Bool\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"SharedBoolboolValue\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"\",\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"SharedBoolstoreResult\":{\n\t\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedBool\",\n\t\t\t\t\t\t\t\t\"Name\":\"wandering\",\n\t\t\t\t\t\t\t\t\"IsShared\":true,\n\t\t\t\t\t\t\t\t\"BooleanmValue\":false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(-1052.69556,150)\",\n\t\t\t\t\t\t\t\"Comment\":\"Main
         AI death branch\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":11,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"CheckIfDead\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-77.78923,139.49353)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":12,\n\t\t\t\t\t\t\t\"Name\":\"Check
         If Dead\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"PlayAudioClip\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(38.2161865,138.562988)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":13,\n\t\t\t\t\t\t\t\"Name\":\"Play
-        Audio Clip\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"AudioClipclipToPlay\":0\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"PlayDeathAnim\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(160.444763,143.060974)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":14,\n\t\t\t\t\t\t\t\"Name\":\"Play
+        Audio Clip\",\n\t\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\t\"AudioSourceaudioSource\":0\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"PlayDeathAnim\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(160.444763,143.060974)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":14,\n\t\t\t\t\t\t\t\"Name\":\"Play
         Death Anim\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t}]\n\t\t\t\t\t},{\n\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\"Offset\":\"(-565.4149,149.889175)\",\n\t\t\t\t\t\t\t\"Comment\":\"AI
         low health branch\\n\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"ID\":15,\n\t\t\t\t\t\t\"Name\":\"Sequence\",\n\t\t\t\t\t\t\"Instant\":true,\n\t\t\t\t\t\t\"AbortTypeabortType\":\"Both\",\n\t\t\t\t\t\t\"Children\":[{\n\t\t\t\t\t\t\t\"Type\":\"IsDamaged\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-180.512833,136.666626)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":16,\n\t\t\t\t\t\t\t\"Name\":\"Is
         Damaged\",\n\t\t\t\t\t\t\t\"Instant\":true\n\t\t\t\t\t\t},{\n\t\t\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Basic.UnityAnimator.SetBoolParameter\",\n\t\t\t\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\t\t\t\"Offset\":\"(-53.3333435,140)\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"ID\":17,\n\t\t\t\t\t\t\t\"Name\":\"Set
@@ -8063,7 +8144,7 @@ MonoBehaviour:
         startIndex: 
         dataPosition: 
         unityObjects:
-        - {fileID: 8300000, guid: 0129d5fae5a19bd4cbcbfdb1a8be8266, type: 3}
+        - {fileID: 82203665341622174}
         byteData: 
         byteDataArray: 
       Version: 1.5.11
