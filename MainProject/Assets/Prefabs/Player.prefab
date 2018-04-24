@@ -6892,7 +6892,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792804878406356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.099141, y: -14.47, z: 24.290009}
+  m_LocalPosition: {x: 14.03, y: 1, z: -24.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4291218491665536}
@@ -7728,7 +7728,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e719091106bd8e542aab8151de236aa2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7808,7 +7808,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d4862216d1381fa44bf182b5214deccc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9505,7 +9505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eb0b55f04939144cbcae4eb9feb3c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportEnabled: 1
+  teleportEnabled: 0
   teleportKeyCode: 102
   castTeleportLayers:
     serializedVersion: 2
@@ -9603,7 +9603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea375bc33d8a20b46a1348af92335de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrappleAllowed: 1
+  isGrappleAllowed: 0
   grappleRange: 35
   grappleSpeed: 65
   grappleCooldown: 0.75
@@ -24214,7 +24214,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1742615677
+  randomSeed: 2028496107
   InitialModule:
     serializedVersion: 3
     enabled: 1
