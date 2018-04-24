@@ -147,50 +147,52 @@ public class ReusableHealth : MonoBehaviour
             }
             else //If this another object that isn't the player destroy it
             {
-                if (this.gameObject == QuestReward.inst.RetriveTargetGO())
+                if (this.gameObject.name != "Player")
                 {
-                    QuestReward.inst.killVIPTrue();
-                }
-                //Destroy all bullet holes if there are any
-                foreach (Transform currentTransform in transform)
-                {
-                    if (currentTransform.name == "decalFollowPointObj")
+                    if (this.gameObject == QuestReward.inst.RetriveTargetGO())
                     {
-                        Destroy(currentTransform.gameObject);
+                        QuestReward.inst.killVIPTrue();
                     }
-                }
-
-                //Destroy enemies to allow for animation unless they're drones
-                if (this.gameObject.tag == "enemy" && this.gameObject.GetComponent<Drone>() == null)
-                {
-                    //Disable colliders
-                    if (GetComponent<Collider>() != null)
+                    //Destroy all bullet holes if there are any
+                    foreach (Transform currentTransform in transform)
                     {
-                        GetComponent<Collider>().enabled = false;
-                    }
-                    //Only spawn blood if needed
-                    if (bloods != null)
-                    {
-                        if (this.gameObject.GetComponent<BehaviorTree>() != null && bloodDecalsCreated == false)
+                        if (currentTransform.name == "decalFollowPointObj")
                         {
-                            bloodDecalsCreated = true;
-                            Invoke("SpawnBlood", 0.5f);
+                            Destroy(currentTransform.gameObject);
                         }
                     }
-                    //Death audio (Need to change depending on obj though)
-                    //AudioManage.inst.death.Play();
-                    //Destroy this game object
-                    if (workingExplosion != null)
-                    {
-                        Invoke("WorkingExplosionCode", 0.6f);
-                    }
-                    Invoke("DestroyGameobject", 1f);
-                }
-                else //For generic objects just destroy them
-                {
-                    Destroy(this.gameObject);
-                }
 
+                    //Destroy enemies to allow for animation unless they're drones
+                    if (this.gameObject.tag == "enemy" && this.gameObject.GetComponent<Drone>() == null)
+                    {
+                        //Disable colliders
+                        if (GetComponent<Collider>() != null)
+                        {
+                            GetComponent<Collider>().enabled = false;
+                        }
+                        //Only spawn blood if needed
+                        if (bloods != null)
+                        {
+                            if (this.gameObject.GetComponent<BehaviorTree>() != null && bloodDecalsCreated == false)
+                            {
+                                bloodDecalsCreated = true;
+                                Invoke("SpawnBlood", 0.5f);
+                            }
+                        }
+                        //Death audio (Need to change depending on obj though)
+                        //AudioManage.inst.death.Play();
+                        //Destroy this game object
+                        if (workingExplosion != null)
+                        {
+                            Invoke("WorkingExplosionCode", 0.6f);
+                        }
+                        Invoke("DestroyGameobject", 1f);
+                    }
+                    else //For generic objects just destroy them
+                    {
+                        Destroy(this.gameObject);
+                    }
+                }
             }
         }
     }

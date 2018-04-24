@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.ImageEffects;
+using UnityEngine.UI;
 
 public class Teleporting : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class Teleporting : MonoBehaviour
     private WallClimbV2 wallClimbScript;
     private Vector3 defaultTeleportIndicatorLocalPosition;
     private ReusableHealth playerHealth;
+    private Image gameoverScreen;
 
     public enum teleportDirection
     {
@@ -89,6 +91,14 @@ public class Teleporting : MonoBehaviour
             teleportEmpty.transform.SetParent(teleportIndicatorParent);
             //Turn on the empty
             teleportEmpty.SetActive(false);
+        }
+        try
+        {
+            gameoverScreen = GameObject.Find("DeathScreen").GetComponent<Image>();
+        }
+        catch
+        {
+            print("couldn't get game over screen");
         }
     }
 
@@ -180,9 +190,12 @@ public class Teleporting : MonoBehaviour
         defaultGrappleValue = value;
     }
 
-    private void TeleportFailsafe() //Force the player to a point
+    private void TeleportFailsafe() //Force the player to the teleport point
     {
-        transform.position = teleportEmpty.transform.position;
+        if (gameoverScreen.color.a == 0)
+        {
+            transform.position = teleportEmpty.transform.position;
+        }
         isTeleporting = false;
         failSafeTimer = 0;
         if (defaultGrappleValue == true)
