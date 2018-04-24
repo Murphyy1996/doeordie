@@ -301,9 +301,6 @@ public class BossAI : MonoBehaviour
                 {
                     sakerDriver.gameObject.SetActive(false);
                 }
-                //Allow the dialogue
-                startingDialogue.SetActive(false);
-                finalPhaseDialogue.SetActive(true);
                 //Enter phase 3
                 currentBossPhase = bossPhases.phase3;
             }
@@ -383,9 +380,6 @@ public class BossAI : MonoBehaviour
             movementSpeed = movementSpeed * 2;
             //Replenish Ammo
             ReplenishAmmo();
-            //Dialogue last stuff
-            finalPhaseDialogue.SetActive(false);
-            killBossDialogue.SetActive(true);
             currentBossPhase = bossPhases.phase4;
             bossReusableHealth.healthValue = 130;
         }
