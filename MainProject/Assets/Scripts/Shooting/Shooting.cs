@@ -313,6 +313,11 @@ public class Shooting : MonoBehaviour
                     //Try and make stuff work for the machine gun
                     if (animatorComponent != null)
                     {
+                        //Dual pistol shoot code
+                        if (currentWeaponScript.weaponModel == WeaponInfo.weapon.dualPistol)
+                        {
+                            animatorComponent.SetBool("rightHand", !animatorComponent.GetBool("rightHand"));
+                        }
                         animatorComponent.SetBool("shooting", true);
                         if (currentWeaponScript.weaponModel == WeaponInfo.weapon.shotgun)
                         {
