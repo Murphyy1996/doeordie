@@ -38,6 +38,7 @@ public class TurretAI : MonoBehaviour
     public bool manuallyTriggerAttack = false;
     private float forceAttackTimer = 0;
     public AudioSource audioSource;
+    public AudioClip clipToPlay;
 
     //Script References
     ReusableHealth playerHealthScript;
@@ -89,6 +90,8 @@ public class TurretAI : MonoBehaviour
 
         FieldOfView();
         LookAtPlayer();
+
+        audioSource.clip = clipToPlay;
     }
 
     void FixedUpdate()

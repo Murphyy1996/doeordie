@@ -724,7 +724,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4fec9a1cbab05af4a91cb5e1092def1c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -886,6 +886,7 @@ MonoBehaviour:
   lookAnim: {fileID: 111607812029087764}
   manuallyTriggerAttack: 0
   audioSource: {fileID: 82857899809907928}
+  clipToPlay: {fileID: 8300000, guid: 4fec9a1cbab05af4a91cb5e1092def1c, type: 3}
   currentState: 1
 --- !u!114 &114082388618863546
 MonoBehaviour:
