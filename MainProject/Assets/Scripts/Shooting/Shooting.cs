@@ -470,15 +470,36 @@ public class Shooting : MonoBehaviour
     {
         if (animatorComponent != null)
         {
-            if (grappleScript.IsCurrentlyGrappling() == false) //&& currentWeaponScript.weaponModel != WeaponInfo.weapon.shotgun)
+            if (grappleScript.IsCurrentlyGrappling() == false)
             {
-                if (thisCC.velocity.magnitude >= 18)
+                if (currentWeaponScript.weaponModel != WeaponInfo.weapon.shotgun)
                 {
-                    animatorComponent.SetBool("running", true);
+                    if (thisCC.velocity.magnitude >= 18)
+                    {
+                        animatorComponent.SetBool("running", true);
+                    }
+                    else
+                    {
+                        animatorComponent.SetBool("running", false);
+                    }
                 }
                 else
                 {
-                    animatorComponent.SetBool("running", false);
+                    if (animatorComponent.GetBool("Shooting") == false)
+                    {
+                        if (thisCC.velocity.magnitude >= 18)
+                        {
+                            animatorComponent.SetBool("running", true);
+                        }
+                        else
+                        {
+                            animatorComponent.SetBool("running", false);
+                        }
+                    }
+                    else
+                    {
+                        animatorComponent.SetBool("running", false);
+                    }
                 }
             }
             else

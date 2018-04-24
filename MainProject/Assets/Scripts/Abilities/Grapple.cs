@@ -801,6 +801,10 @@ public class Grapple : MonoBehaviour
         }
         if (grappleHitPoint != null)
         {
+            if (AudioManage.inst.unGrapple != null)
+            {
+                AudioManage.inst.unGrapple.Play();
+            }
             Destroy(grappleHitPoint);
         }
         movement.JumpEnabled(true);
