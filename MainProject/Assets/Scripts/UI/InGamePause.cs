@@ -134,19 +134,37 @@ public class InGamePause : MonoBehaviour
         fpsScript.IsCameraAllowedToMove(false);
         //Enable the pause menu
         pauseObj.GetComponent<Canvas>().enabled = true;
-        AudioManage.inst.player.Stop();
-        AudioManage.inst.slide.Stop();
-        AudioManage.inst.grapple.Stop();
-        AudioManage.inst.pistolShot.Stop();
-        AudioManage.inst.machShot.Stop();
+        if (AudioManage.inst.player != null)
+        {
+            AudioManage.inst.player.Stop();
+        }
+        if (AudioManage.inst.slide != null)
+        {
+            AudioManage.inst.slide.Stop();
+        }
+        if (AudioManage.inst.grapple != null)
+        {
+            AudioManage.inst.grapple.Stop();
+        }
+        if (AudioManage.inst.pistolShot)
+        {
+            AudioManage.inst.pistolShot.Stop();
+        }
+        if (AudioManage.inst.machShot != null)
+        {
+            AudioManage.inst.machShot.Stop();
+        }
+      
         if (AudioManage.inst.background != null)
         {
             AudioManage.inst.background.Stop();
         }
         shouldbeVisible = true;
         paused = true;
+        Debug.Log("before lock state runs");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        Debug.Log("after lock state runs");
     }
 
     public void ClosePauseMenu()
