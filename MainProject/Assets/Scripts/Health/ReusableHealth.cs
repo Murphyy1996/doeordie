@@ -285,7 +285,7 @@ public class ReusableHealth : MonoBehaviour
         {
 
             //Play goon hit sounds
-            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer != 19)
+            if (this.gameObject.tag == "enemy" && behaviourHealth.Value <= healthValue && this.gameObject.layer != 19 && !GetComponent<TurretAI>())
             {
                 if (audioSource != null)
                 {
