@@ -199,6 +199,7 @@ public class Teleporting : MonoBehaviour
                 if (teleportPointScript.AmInObject() == false)
                 {
                     transform.position = teleportEmpty.transform.position;
+                    cooldown = true;
                 }
             }
         }
@@ -211,7 +212,6 @@ public class Teleporting : MonoBehaviour
         blurEffect.enabled = false;
         runOncePerTeleport = false;
         teleportEmpty.transform.SetParent(transform);
-        cooldown = true;
         StopAllCoroutines();
         StartCoroutine(Cooldown());
         //Turn off the teleport point
