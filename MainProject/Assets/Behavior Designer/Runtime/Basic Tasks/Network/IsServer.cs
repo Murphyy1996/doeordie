@@ -6,7 +6,7 @@ namespace BehaviorDesigner.Runtime.Tasks.Basic.UnityNetwork
     {
         public override TaskStatus OnUpdate()
         {
-            return NetworkServer.active ? TaskStatus.Success : TaskStatus.Failure;
+            return TaskStatus.Success;
         }
     }
 }
