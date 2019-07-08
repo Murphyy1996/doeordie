@@ -1,0 +1,83 @@
+﻿using System;
+using UnityEngine;
+
+//Script author: James Murphy
+//Date Created: 09/03/2017
+//Script purpose: Mouse look for the camera with clamp
+//Script location: On the player object
+
+
+public class PlayerCamera : MonoBehaviour
+{
+    //Inspector variables
+    [Header("Configuration")]
+    public GameObject cameraPrefab;
+    public bool cameraEnabled = true, invert = false;
+    public float fov = 75, sensUpDown, sensLeftRight, clampUpDownAngle = 100, clampLeftRightAngle = 360;
+    //Non inspector variables that contain various position and rotation variables
+    private float defaultFOV, defaultSensUpDown, defaultSensLeftRight;
+    float upDownAxis = 20, leftRightAxis = 20;
+    //Non inspector variables for transforms and scripts
+    private Transform camTransform, playerTransform;
+    private PlayerMovement playerMovement;
+
+    private void Awake() //Get components and set defaults
+    {
+        //Get default camera settings
+        defaultFOV = fov;
+        defaultSensUpDown = sensUpDown;
+        defaultSensLeftRight = sensLeftRight;
+        //Get the player transform and movement
+        playerTransform = transform;
+        playerMovement = GetComponent<PlayerMovement>();
+        //If possible spawn the camera
+        if (cameraPrefab != null)
+        {
+            GameObject spawnedCamera = Instantiate(cameraPrefab, transform.position, transform.rotation) as GameObject;
+            spawnedCamera.transform.SetParent(transform.parent);
+            spawnedCamera.name = "Player Camera";
+            spawnedCamera.tag = "MainCamera";
+            camTransform = spawnedCamera.transform;
+            camTransform.SetPositionAndRotation(playerTransform.position, playerTransform.rotation);
+        }
+        else
+        {
+            print("Camera prefab empty, cannot spawn");
+        }
+    }
+
+    private void LateUpdate() //Camera movement code is here
+    {
+        if (cameraEnabled == true && Time.timeScale != 0)
+        {
+            float tempSensUpDown = sensUpDown;
+            if (invert == true)
+            {
+                tempSensUpDown = -sensUpDown;
+            }
+            //Clamp the vertical axis
+            upDownAxis += Input.GetAxis(InputManager.singleton.lookUpDown) * -tempSensUpDown;
+            upDownAxis = Mathf.Clamp(upDownAxis, -clampUpDownAngle, clampUpDownAngle);
+            //Clamp the horizontal axis
+            leftRightAxis += Input.GetAxis(InputManager.singleton.lookLeftRight) * sensLeftRight;
+            leftRightAxis = Mathf.Clamp(leftRightAxis, -clampLeftRightAngle, clampLeftRightAngle);
+            //If the camera has gone past the clamp
+            if (leftRightAxis > clampLeftRightAngle || leftRightAxis < -clampLeftRightAngle)
+            {
+                print("resetting the clamp");
+                leftRightAxis = 0;
+            }
+            //Run this code if gravity is enabled
+            camTransform.eulerAngles = new Vector3(camTransform.eulerAngles.x, leftRightAxis, camTransform.eulerAngles.z);
+            //Rotate the camera for vertical input
+            camTransform.eulerAngles = new Vector3(upDownAxis, camTransform.eulerAngles.y, camTransform.eulerAngles.z);
+        }
+    }
+
+    //Methods that can be called from other scripts
+    public void ResetCameraSensitivity()
+    {
+        sensLeftRight = defaultSensLeftRight;
+        sensUpDown = defaultSensUpDown;
+    }
+}
