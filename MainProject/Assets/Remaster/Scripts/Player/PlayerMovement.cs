@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private Grapple grappleScript;
     private Vector3 lastPosition = new Vector3(0, 0, 0);
     //Variables for the sprint toggle
-    private bool sprintToggleMode = false, isInSprint = false, regularJumpPending = false, bunnyHopEnabled = false;
+    private bool sprintToggleMode = false, isInSprint = false, regularJumpPending = false;
     private GameObject jumpCheckForward, jumpCheckBack, JumpCheckLeft, JumpCheckRight;
     private bool pendingGravityReset = false;
     private WallClimbV2 wallClimbScript;
@@ -92,19 +92,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update() //Run key presses for sprinting and jumping
     {
         //Detect the key presses for jumping
-        if (bunnyHopEnabled == false)
+        if (Input.GetKey(jumpKey))
         {
-            if (Input.GetKeyDown(jumpKey))
-            {
-                regularJumpPending = true;
-            }
-        }
-        else
-        {
-            if (Input.GetKey(jumpKey))
-            {
-                regularJumpPending = true;
-            }
+            regularJumpPending = true;
         }
         if (sprintToggleMode == true)
         {

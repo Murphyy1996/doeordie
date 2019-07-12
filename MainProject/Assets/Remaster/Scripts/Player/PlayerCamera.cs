@@ -6,17 +6,16 @@ using UnityEngine;
 //Script purpose: Mouse look for the camera with clamp
 //Script location: On the player object
 
-
 public class PlayerCamera : MonoBehaviour
 {
     //Inspector variables
     [Header("Configuration")]
     public GameObject cameraPrefab;
     public bool cameraEnabled = true, invert = false;
-    public float fov = 75, sensUpDown, sensLeftRight, clampUpDownAngle = 100, clampLeftRightAngle = 360;
+    public float fov = 75, sensUpDown, sensLeftRight, clampUpDownAngle = 100;
     //Non inspector variables that contain various position and rotation variables
     private float defaultFOV, defaultSensUpDown, defaultSensLeftRight;
-    private float upDownAxis = 0, leftRightAxis = 0;
+    private float upDownAxis = 0;
     //Non inspector variables for transforms and scripts
     private InputManager inputManager;
     private Transform camTransform, playerTransform;
@@ -64,14 +63,9 @@ public class PlayerCamera : MonoBehaviour
             {
                 upDownAxis = Mathf.Clamp(upDownAxis, -clampUpDownAngle, clampUpDownAngle);
             }
-            //Clamp the horizontal axis
-            leftRightAxis += Input.GetAxis(inputManager.lookLeftRight) * sensLeftRight;
-            if (clampLeftRightAngle > 0)
-            {
-                leftRightAxis = Mathf.Clamp(leftRightAxis, -clampLeftRightAngle, clampLeftRightAngle);
-            }
-            //Run this code if gravity is enabled
-            camTransform.eulerAngles = new Vector3(upDownAxis, leftRightAxis, camTransform.eulerAngles.z);
+            //Control the camera and the player rotations
+            camTransform.eulerAngles = new Vector3(upDownAxis, camTransform.eulerAngles.y, camTransform.eulerAngles.z);
+            transform.Rotate(0f, Input.GetAxis(inputManager.lookLeftRight) * sensLeftRight, 0f, Space.World);
         }
     }
 
