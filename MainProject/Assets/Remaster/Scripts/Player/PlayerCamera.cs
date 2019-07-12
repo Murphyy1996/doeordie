@@ -16,8 +16,9 @@ public class PlayerCamera : MonoBehaviour
     public float fov = 75, sensUpDown, sensLeftRight, clampUpDownAngle = 100, clampLeftRightAngle = 360;
     //Non inspector variables that contain various position and rotation variables
     private float defaultFOV, defaultSensUpDown, defaultSensLeftRight;
-    float upDownAxis = 20, leftRightAxis = 20;
+    private float upDownAxis = 0, leftRightAxis = 0;
     //Non inspector variables for transforms and scripts
+    private InputManager inputManager;
     private Transform camTransform, playerTransform;
     private PlayerMovement playerMovement;
 
@@ -34,7 +35,7 @@ public class PlayerCamera : MonoBehaviour
         if (cameraPrefab != null)
         {
             GameObject spawnedCamera = Instantiate(cameraPrefab, transform.position, transform.rotation) as GameObject;
-            spawnedCamera.transform.SetParent(transform.parent);
+            spawnedCamera.transform.SetParent(transform);
             spawnedCamera.name = "Player Camera";
             spawnedCamera.tag = "MainCamera";
             camTransform = spawnedCamera.transform;
@@ -44,6 +45,8 @@ public class PlayerCamera : MonoBehaviour
         {
             print("Camera prefab empty, cannot spawn");
         }
+        //Get the input manager script
+        inputManager = InputManager.singleton;
     }
 
     private void LateUpdate() //Camera movement code is here
@@ -56,21 +59,19 @@ public class PlayerCamera : MonoBehaviour
                 tempSensUpDown = -sensUpDown;
             }
             //Clamp the vertical axis
-            upDownAxis += Input.GetAxis(InputManager.singleton.lookUpDown) * -tempSensUpDown;
-            upDownAxis = Mathf.Clamp(upDownAxis, -clampUpDownAngle, clampUpDownAngle);
-            //Clamp the horizontal axis
-            leftRightAxis += Input.GetAxis(InputManager.singleton.lookLeftRight) * sensLeftRight;
-            leftRightAxis = Mathf.Clamp(leftRightAxis, -clampLeftRightAngle, clampLeftRightAngle);
-            //If the camera has gone past the clamp
-            if (leftRightAxis > clampLeftRightAngle || leftRightAxis < -clampLeftRightAngle)
+            upDownAxis += Input.GetAxis(inputManager.lookUpDown) * -tempSensUpDown;
+            if (clampUpDownAngle > 0)
             {
-                print("resetting the clamp");
-                leftRightAxis = 0;
+                upDownAxis = Mathf.Clamp(upDownAxis, -clampUpDownAngle, clampUpDownAngle);
+            }
+            //Clamp the horizontal axis
+            leftRightAxis += Input.GetAxis(inputManager.lookLeftRight) * sensLeftRight;
+            if (clampLeftRightAngle > 0)
+            {
+                leftRightAxis = Mathf.Clamp(leftRightAxis, -clampLeftRightAngle, clampLeftRightAngle);
             }
             //Run this code if gravity is enabled
-            camTransform.eulerAngles = new Vector3(camTransform.eulerAngles.x, leftRightAxis, camTransform.eulerAngles.z);
-            //Rotate the camera for vertical input
-            camTransform.eulerAngles = new Vector3(upDownAxis, camTransform.eulerAngles.y, camTransform.eulerAngles.z);
+            camTransform.eulerAngles = new Vector3(upDownAxis, leftRightAxis, camTransform.eulerAngles.z);
         }
     }
 

@@ -17,11 +17,13 @@ public class InputManager : MonoBehaviour
     [Header("Action Keymaps")]
     public KeyCode interactionKey = KeyCode.Q;
     public KeyCode grappleKey = KeyCode.E, teleportKey = KeyCode.F;
+    [Header("Debug Keymaps")]
+    public KeyCode mouseFreeLook = KeyCode.F1;
+    public KeyCode camDebugFocusToggle = KeyCode.F2;
 
     private void Awake() //Initialise this singleton
     {
         singleton = this;
         this.gameObject.name = "Input Manager";
-        DontDestroyOnLoad(this.gameObject);
     }
 }
